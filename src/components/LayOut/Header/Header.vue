@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>{{title}}</h1>
+    <h1>MyCoinP</h1>
     <button type="button" class="btn_menu"><span>gnb</span></button>
 	<div v-if="$screen.width < 1199">
 		<HeaderLanguage/>
