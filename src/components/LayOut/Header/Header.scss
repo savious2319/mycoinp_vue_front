@@ -1,2 +1,77 @@
 @import "@/assets/scss/function.scss";
-.header {}
+.header {
+    width: 100%;
+    position: relative;
+    >h1 {
+        font-size: 0;
+        background-image: url(#{$img}/logo.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100% auto;
+    }
+    >button {
+        &.btn_menu {
+            @include displayflex(column, center, space-between, unset);
+            width: 16px;
+            height: 16px;
+            font-size: 0;
+            &::before,
+            &::after,
+            >span {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+            &.active {
+                &::before {
+                    transform: translateY(7px) rotate(45deg);
+                }
+                &::after {
+                    transform: translateY(-7px) rotate(-45deg);
+                }
+                >span {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 63px;
+        padding-top: 44px;
+        >h1 {
+            width: 110px;
+            height: 32px;
+            margin-left: 40px;
+        }
+        .btn_menu {
+            position: absolute;
+            top: 10px;
+            left: 16px;
+        }
+    }
+    @media (max-width: 1199px) {
+        @include displayflex(row, center, center, unset);
+        height: 46px;
+        border-bottom: 1px solid #242936;
+        >h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 20px;
+        }
+        .btn_menu {
+            margin-right: auto;
+            margin-left: 15px;
+        }
+        >div {
+            @include displayflex(row, center, flex-start, unset);
+            margin-right: 15px;
+            margin-left: auto;
+        }
+    }
+}

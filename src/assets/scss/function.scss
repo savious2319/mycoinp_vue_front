@@ -1,7 +1,71 @@
+$img: "~@/assets/img";
 @mixin displayflex($direction, $align, $justify, $wrap) {
     display: flex;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
     flex-wrap: $wrap;
+}
+
+@mixin navigation ($size) {
+    @include displayflex(row, center, flex-start, unset);
+    @if $size=='mobile' {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    height: 47px;
+    >div {
+        @if $size=='mobile' {
+            width: 100%;
+            background-color: #1b1e25;
+        }
+        @include displayflex(row, center, center, unset);
+        height: 100%;
+        >a {
+            @if $size=='tab' {
+                @include displayflex(row, center, center, unset);
+                font-size: 17px;
+                padding: 0 20px;
+            }
+            @else {
+                @include displayflex(column, center, center, unset);
+                font-size: 13px;
+                &:not(:last-of-type) {
+                    width: calc(25% - 10px);
+                }
+            }
+            position: relative;
+            height: 100%;
+            &::after {
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            &:last-of-type {
+                font-size: 0;
+                @if $size=='mobile' {
+                    width: 40px;
+                }
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    @if $size=='tab' {
+                        background-image: url(#{$img}/ico_navigation_last_tab.png);
+                        width: 22px;
+                        height: 4px;
+                    }
+                    @else {
+                        background-image: url(#{$img}/ico_navigation_last_mobile.png);
+                        width: 4px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
 }

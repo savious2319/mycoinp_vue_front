@@ -1,22 +1,19 @@
 <template>
-  <footer>
-    <ul>
-		<li><a href="#">About us</a></li>
-		<li><a href="#">Terms of Use</a></li>
-		<li><a href="#">Privacy Policy</a></li>
-		<li><a href="#">Disclaimer</a></li>
-		<li><a href="#">Bussiness Alliance</a></li>
-		<li><a href="#">Advertising</a></li>
-	</ul>
-    <p>Copyright ⓒMyCoinP. All Right Reserved.</p>
-  </footer>
+	<footer>
+		<div>
+			<a href="#">About us</a>
+			<a href="#">Terms of Use</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Disclaimer</a>
+			<a href="#">Bussiness Alliance</a>
+			<a href="#">Advertising</a>
+		</div>
+		<p>Copyright ⓒMyCoinP. All Right Reserved.</p>
+	</footer>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-@Component
-export default class Footer extends Vue {
-  @Prop() private msg!: string;
+export default {
 }
 </script>
 

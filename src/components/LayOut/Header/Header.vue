@@ -1,22 +1,26 @@
 <template>
-  <header>
-    <h1>MyCoinP</h1>
-    <button type="button" class="btn_gnb">GNB</button>
-    <button type="button" class="btn_language">language</button>
-    <button type="button" class="btn_backup">backup</button>
-  </header>
+  <div class="header">
+    <h1>{{title}}</h1>
+    <button type="button" class="btn_menu"><span>gnb</span></button>
+	<div v-if="$screen.width < 1199">
+		<HeaderLanguage/>
+		<HeaderBackUp/>
+	</div>
+  </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import HeaderLanguage from '@/components/LayOut/Header/Header-Language/Header-Language.vue';
+import HeaderBackUp from '@/components/LayOut/Header/Header-BackUp/Header-BackUp.vue';
 
-@Component
-export default class Header extends Vue {
-  @Prop() private msg!: string;
+export default {
+	components: {
+		HeaderLanguage,
+		HeaderBackUp
+	},
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "Header.scss";
 </style>

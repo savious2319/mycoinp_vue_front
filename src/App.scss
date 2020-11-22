@@ -2,7 +2,42 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import "@/assets/scss/function.scss";
 #app {
-    @include displayflex(column, flex-start, flex-start, unset);
+    display: grid;
     width: 100vw;
     min-height: 100vh;
+    >section {
+        @include displayflex(column, flex-start, flex-start, unset);
+    }
+    @media (min-width: 1200px) {
+        $header: 200px;
+        grid-template-columns: 200px auto;
+        >header {
+            @include displayflex(column, flex-start, flex-start, unset);
+            min-height: 100vh;
+            background-color: #13131f;
+            >.btnSet {
+                @include displayflex(column, center, center, unset);
+                margin-top: auto;
+                margin-bottom: 30px;
+                padding: 0 6px;
+                width: 100%;
+                >i {
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                    background-color: #212531;
+                    margin: 15px 0;
+                }
+            }
+        }
+        >section {
+            padding-left: 8px;
+        }
+    }
+    @media (max-width: 1199px) {
+        grid-template-rows: 93px auto;
+        >header {
+            background-color: #1b1e25;
+        }
+    }
 }

@@ -1,1 +1,56 @@
-.header {}
+@import "@/assets/scss/function.scss";
+.navigation {
+    width: 100%;
+    >div {
+        >a {
+            transition: all 0.2s ease-in-out 0s;
+            color: #67686f;
+            &.router-link-exact-active {
+                color: #fff;
+                &::after {
+                    content: '';
+                    background-color: #68bb42;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        @include displayflex(column, center, flex-start, unset);
+        padding: 0 5px;
+        >div {
+            @include displayflex(column, flex-start, flex-start, unset);
+            width: 100%;
+            padding-left: 33px;
+            padding-right: 5px;
+            border-bottom: 1px solid #242936;
+            >a {
+                @include displayflex(row, center, flex-start, unset);
+                width: 100%;
+                line-height: 1;
+                font-size: 17px;
+                margin-bottom: 40px;
+                &::before {
+                    content: '';
+                    width: 18px;
+                    height: 16px;
+                    background-image: url(#{$img}/ico_navi.png);
+                    background-repeat: no-repeat;
+                    margin-right: 7px;
+                }
+                &.router-link-exact-active {
+                    &::after {
+                        width: 2px;
+                        height: 20px;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 640px) and (max-width: 1199px) {
+        @include navigation('tab');
+    }
+    @media (max-width: 639px) {
+        @include navigation('mobile');
+    }
+}

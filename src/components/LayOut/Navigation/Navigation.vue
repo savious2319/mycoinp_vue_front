@@ -1,15 +1,24 @@
 <template>
-  <aside>
-    Navigation
-  </aside>
+	<div class="navigation">
+		<div>
+			<router-link class-active="active" to="/">Portfolio <span>[25]</span></router-link>
+			<router-link class-active="active" to="/all-coin">All Coin <span>[3122]</span></router-link>
+			<router-link class-active="active" to="/exchange">Exchange <span>[41]</span></router-link>
+			<router-link class-active="active" to="/finance">Finance <span>[41]</span></router-link>
+			<router-link class-active="active" to="/plus">++Plus</router-link>
+		</div>
+		<NavigationGasPrice v-if="$screen.width > 639"/>
+	</div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPrice/Navigation-GasPrice.vue';
 
-@Component
-export default class Navigation extends Vue {
-  @Prop() private msg!: string;
+export default {
+	components: {
+		NavigationGasPrice,
+	},
+
 }
 </script>
 

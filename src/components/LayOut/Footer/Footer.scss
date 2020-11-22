@@ -10,7 +10,7 @@ footer {
     @media (max-width: 639px) {
         display: none;
     }
-    >ul {
+    >div {
         @media (min-width: 891px) {
             @include displayflex(row, center, flex-start, unset);
             margin-right: auto;
@@ -20,28 +20,25 @@ footer {
             @include displayflex(row, center, center, unset);
             width: 100%;
         }
-        >li {
-            @include displayflex(row, center, flex-start, unset);
-            height: 100%;
+        >a {
             &:not(:first-of-type) {
                 margin-left: 23px;
             }
-            >a {
-                color: #67686f;
-                font-size: 12px;
-                transition: all 0.2s ease-in-out 0s;
-                &:hover {
-                    color: #fff;
-                }
+            color: #67686f;
+            font-size: 12px;
+            transition: all 0.2s ease-in-out 0s;
+            line-height: 1;
+            &:hover {
+                color: #fff;
             }
         }
     }
     >p {
-        @media (min-width: 891px) {
+        @media (min-width: 890px) {
             @include displayflex(row, center, flex-start, unset);
             height: 100%;
         }
-        @media (max-width: 890px) {
+        @media (max-width: 889px) {
             @include displayflex(row, center, center, unset);
             width: 100%;
             margin-top: 10px;
@@ -49,5 +46,6 @@ footer {
         margin-left: auto;
         font-size: 12px;
         color: #67686f;
+        line-height: 1;
     }
 }
