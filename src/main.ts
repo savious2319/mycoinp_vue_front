@@ -19,7 +19,6 @@ Vue.component('HeaderBackUp', HeaderBackUp)
 Vue.component('Navigation', Navigation)
 Vue.component('Aside', Aside)
 Vue.component('Footer', Footer)
-/** 전역 컴포넌트 Start */
 
 Vue.config.productionTip = false
 new Vue({
