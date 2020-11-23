@@ -1,5 +1,7 @@
 <template>
-    <button type="button" class="btn_backup">Backup</button>
+<span class="btn_backup">
+    <button type="button">Backup</button>
+</span>
 </template>
 
 <script lang="ts">

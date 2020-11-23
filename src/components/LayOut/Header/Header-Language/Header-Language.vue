@@ -1,5 +1,7 @@
 <template>
-	<button type="button" class="btn_language krw">KRW</button>
+<span class="btn_language">
+	<button type="button" class="krw">KRW</button>
+</span>
 </template>
 
 <script lang="ts">

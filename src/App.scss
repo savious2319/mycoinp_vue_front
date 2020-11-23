@@ -40,4 +40,16 @@
             background-color: #1b1e25;
         }
     }
+    @media (max-width: 640px) {
+        >header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        >section {
+            padding-top: 46px;
+            min-height: 200vh;
+        }
+    }
 }
