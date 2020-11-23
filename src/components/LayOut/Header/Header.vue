@@ -10,14 +10,7 @@
 </template>
 
 <script lang="ts">
-import HeaderLanguage from '@/components/LayOut/Header/Header-Language/Header-Language.vue';
-import HeaderBackUp from '@/components/LayOut/Header/Header-BackUp/Header-BackUp.vue';
-
 export default {
-	components: {
-		HeaderLanguage,
-		HeaderBackUp
-	},
 }
 </script>
 

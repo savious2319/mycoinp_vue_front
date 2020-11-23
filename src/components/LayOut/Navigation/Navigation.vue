@@ -12,13 +12,7 @@
 </template>
 
 <script lang="ts">
-import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPrice/Navigation-GasPrice.vue';
-
 export default {
-	components: {
-		NavigationGasPrice,
-	},
-
 }
 </script>
 

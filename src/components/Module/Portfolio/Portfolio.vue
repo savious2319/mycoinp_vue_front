@@ -5,11 +5,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Portfolio extends Vue {
-  @Prop() private msg!: string;
+export default {
 }
 </script>
 
