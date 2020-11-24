@@ -2,7 +2,7 @@
   <div class="header">
     <h1>MyCoinP</h1>
     <button type="button" class="btn_menu"><span>gnb</span></button>
-	<div v-if="$screen.width < 1199">
+	<div v-if="$screen.width < 1200">
 		<HeaderLanguage/>
 		<HeaderBackUp/>
 	</div>

@@ -51,5 +51,15 @@
             padding-top: 46px;
             min-height: 200vh;
         }
+        >footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+            bottom: 0;
+            &.hide {
+                bottom: -47px;
+            }
+        }
     }
 }

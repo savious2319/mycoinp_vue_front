@@ -9,11 +9,6 @@ $img: "~@/assets/img";
 
 @mixin navigation ($size) {
     @include displayflex(row, center, flex-start, unset);
-    @if $size=='mobile' {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-    }
     height: 47px;
     >div {
         @if $size=='mobile' {

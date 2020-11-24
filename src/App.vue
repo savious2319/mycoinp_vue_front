@@ -9,16 +9,49 @@
 				<HeaderBackUp/>
 			</div>
 		</header>
-		<Aside v-if="$screen.width < 639"/>
+		<Aside v-if="$screen.width < 640"/>
 		<section>
 			<router-view/>
 			<Footer v-if="$screen.width > 639"/>
-			<Navigation v-else/>
 		</section>
+		<footer v-if="$screen.width < 640" :class="{ 'hide': !showNavbar }">
+			<Navigation/>
+		</footer>
 	</div>
 </template>
-<script lang="ts">
+<script>
+const OFFSET = 60;
 export default {
+    data () {
+        return {
+            showNavbar: true,
+            lastScrollPosition: 0,
+            scrollValue: 0
+        }
+    },
+    mounted () {
+        this.lastScrollPosition = window.pageYOffset
+        window.addEventListener('scroll', this.onScroll)
+        const viewportMeta = document.createElement('meta')
+        viewportMeta.name = 'viewport'
+        viewportMeta.content = 'width=device-width, initial-scale=1'
+        document.head.appendChild(viewportMeta)
+    },
+    beforeDestroy () {
+        window.removeEventListener('scroll', this.onScroll)
+    },
+    methods: {
+        onScroll () {
+            if (window.pageYOffset < 0) {
+            return
+            }
+            if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+            return
+            }
+            this.showNavbar = window.pageYOffset < this.lastScrollPosition
+            this.lastScrollPosition = window.pageYOffset
+        }
+    }
 }
 </script>
 <style scoped lang="scss">
