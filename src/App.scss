@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import "@/assets/scss/function.scss";
 #app {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     >section {
         @include displayflex(column, flex-start, flex-start, unset);
@@ -42,6 +42,7 @@
         }
     }
     @media (max-width: 640px) {
+        overflow-x: hidden;
         >header {
             background-color: #1b1e25;
             position: fixed;
