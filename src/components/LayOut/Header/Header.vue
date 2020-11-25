@@ -1,16 +1,25 @@
 <template>
-  <div class="header">
+<div class="header">
     <h1>MyCoinP</h1>
-    <button type="button" class="btn_menu"><span>gnb</span></button>
-	<div v-if="$screen.width < 1200">
-		<HeaderLanguage/>
-		<HeaderBackUp/>
-	</div>
-  </div>
+    <button type="button" class="btn_menu" @click="btnAside"><span>gnb</span></button>
+    <div v-if="$screen.width < 1200">
+        <HeaderLanguage/>
+        <HeaderBackUp/>
+    </div>
+</div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    methods: {
+        btnAside: function(){
+            if(this.$parent.aside == false){
+                this.$parent.aside = true;
+            } else{
+                this.$parent.aside = false;
+            }
+        }
+    }
 }
 </script>
 

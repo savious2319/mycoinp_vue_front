@@ -3,7 +3,6 @@
     width: 100%;
     >div {
         >a {
-            transition: all 0.2s ease-in-out 0s;
             color: #67686f;
             &.router-link-exact-active {
                 color: #fff;
@@ -47,7 +46,7 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1199px) {
+    @media (min-width: 737px) and (max-width: 1199px) {
         @include navigation('tab');
     }
     @media (max-width: 639px) {

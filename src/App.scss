@@ -34,14 +34,14 @@
             padding-left: 8px;
         }
     }
-    @media (min-width: 641px) and (max-width: 1199px) {
+    @media (min-width: 737px) and (max-width: 1199px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: #1b1e25;
         }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 736px) {
         overflow-x: hidden;
         >header {
             background-color: #1b1e25;
@@ -58,7 +58,6 @@
             position: fixed;
             left: 0;
             width: 100%;
-            transition: all 0.5s ease-in-out;
             bottom: 0;
             &.hide {
                 bottom: -47px;

@@ -1,4 +1,5 @@
 $img: "~@/assets/img";
+$moAside: 270px;
 @mixin displayflex($direction, $align, $justify, $wrap) {
     display: flex;
     flex-direction: $direction;

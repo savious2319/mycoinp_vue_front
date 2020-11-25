@@ -1,1 +1,97 @@
-aside {}
+@import "@/assets/scss/function.scss";
+aside {
+    @media (min-width: 737px) {}
+    @media (max-width: 736px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $moAside;
+        height: 100vh;
+        z-index: 9;
+        &::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        >.header {
+            @include displayflex(row, center, flex-start, unset);
+            background-color: #242936;
+            height: 78px;
+            padding-left: 20px;
+            position: relative;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 88.5px;
+                height: 36px;
+                background-image: url(#{$img}/aside_logo.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
+            >button {
+                position: absolute;
+                top: 18px;
+                right: 23px;
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                background-image: url(#{$img}/ico_close.png);
+                background-size: 100% auto;
+                transform: rotate(720deg);
+            }
+        }
+        >.body {
+            background-color: #f8f8f8;
+            height: calc(100vh - 123px);
+            overflow-y: auto;
+            padding-left: 20px;
+            >a {
+                height: 45px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #444444;
+            }
+        }
+        >.footer {
+            @include displayflex(row, center, center, unset);
+            background-color: #dddddd;
+            height: 45px;
+            font-size: 10px;
+            color: #999999;
+        }
+        &.hide {
+            left: -$moAside;
+            &::before {
+                display: none;
+            }
+            >.header {
+                >button {
+                    transform: rotate(-720deg);
+                }
+            }
+        }
+    }
+    >.body {
+        >a {
+            @include displayflex(row, center, flex-start, unset);
+            width: 100%;
+            &.new {
+                &::after {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(#{$img}/ico_new.png);
+                    background-size: 100% auto;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
