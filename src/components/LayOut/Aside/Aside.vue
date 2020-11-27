@@ -17,7 +17,7 @@
             <router-link to="/">API</router-link>
             <router-link to="/">Widget</router-link>
             <router-link to="/">FAQ</router-link>
-            <router-link to="/">PUSH_TEST</router-link>
+            <router-link to="/" v-if="$screen.width < 736">PUSH_TEST</router-link>
         </div>
         <div class="footer" v-if="$screen.width < 736">
             Copyright ⓒ  MyCoinP. All Right Reserved.
