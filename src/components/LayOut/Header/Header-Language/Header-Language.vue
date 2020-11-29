@@ -118,8 +118,7 @@ export default {
             } else{
                 this.isLayerLang = false;
             }
-        }
-,
+        },
         btnCurrency: function(){
 			this.article.isCurrency = true;
 			this.article.isLanguage = false;

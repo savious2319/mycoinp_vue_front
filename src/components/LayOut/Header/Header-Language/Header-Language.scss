@@ -20,12 +20,7 @@
         @include mask;
     }
     >.layer_lang {
-        z-index: 2;
-        position: fixed;
-        background-color: #fff;
-        overflow: hidden;
-        border-radius: 10px;
-        width: 300px;
+        @include layer(300px);
         >.tab_btn {
             @include displayflex(row, flex-start, flex-start, unset);
             >button {
