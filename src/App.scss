@@ -34,14 +34,14 @@
             padding-left: 8px;
         }
     }
-    @media (min-width: 737px) and (max-width: 1199px) {
+    @media (min-width: 641px) and (max-width: 1199px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: #1b1e25;
         }
     }
-    @media (max-width: 736px) {
+    @media (max-width: 640px) {
         overflow-x: hidden;
         >header {
             background-color: #1b1e25;
@@ -49,15 +49,18 @@
             top: 0;
             left: 0;
             width: 100%;
+            z-index: 2;
         }
         >section {
             padding-top: 46px;
+            z-index: 1;
         }
         >footer {
             position: fixed;
             left: 0;
             width: 100%;
             bottom: 0;
+            z-index: 1;
             &.hide {
                 bottom: -47px;
             }

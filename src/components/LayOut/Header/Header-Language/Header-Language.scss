@@ -1,347 +1,134 @@
 @import "@/assets/scss/function.scss";
 .btn_language {
     >button {
+        @include language;
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         line-height: 1;
         color: #fff;
+        &::before {
+            margin-top: 2px;
+        }
         @media (min-width: 1200px) {
             font-size: 16px;
         }
         @media (max-width: 1199px) {
             font-size: 14px;
         }
-        &::before {
-            content: '';
-            display: inline-block;
-            width: 16px;
-            height: 11px;
-            margin-right: 5px;
-            vertical-align: middle;
-            background-image: url(#{$img}/flags.png);
-            margin-right: 5px;
-            margin-top: 2px;
-        }
-        &.usd:before {
-            background-position: 0 -154px;
-        }
-        &.eur:before {
-            background-position: -256px -33px;
-        }
-        &.krw:before {
-            background-position: -80px -77px;
-        }
-        &.jpy:before {
-            background-position: -224px -66px;
-        }
-        &.cny:before {
-            background-position: -176px -22px;
-        }
-        &.aud:before {
-            background-position: -192px 0
-        }
-        &.brl:before {
-            background-position: -176px -11px
-        }
-        &.cad:before {
-            background-position: -16px -22px
-        }
-        &.chf:before {
-            background-position: -96px -22px
-        }
-        &.gbp:before {
-            background-position: -112px -44px
-        }
-        &.hkd:before {
-            background-position: -144px -55px
-        }
-        &.rub:before {
-            background-position: -96px -121px
-        }
-        &.idr:before {
-            background-position: -256px -55px
-        }
-        &.inr:before {
-            background-position: -64px -66px;
-        }
-        &.mxn:before {
-            background-position: -96px -99px;
-        }
-        &.nzd:before {
-            background-position: -48px -110px
-        }
-        &.php:before {
-            background-position: -144px -110px;
-        }
-        &.sgd:before {
-            background-position: -224px -121px;
-        }
-        &.thb:before {
-            background-position: -16px -143px
-        }
-        &.vnd:before {
-            background-position: -128px -154px
-        }
-        &.try:before {
-            background-position: -144px -143px
-        }
-        &.aed:before {
-            background-position: -16px 0
-        }
-        &.all:before {
-            background-position: -80px 0
-        }
-        &.ang:before {
-            background-position: -112px 0
-        }
-        &.aoa:before {
-            background-position: -128px 0
-        }
-        &.ars:before {
-            background-position: -144px 0;
-        }
-        &.awg:before {
-            background-position: -208px 0
-        }
-        &.bbd:before {
-            background-position: 0 -11px;
-        }
-        &.bdt:before {
-            background-position: -16px -11px;
-        }
-        &.bgn:before {
-            background-position: -64px -11px;
-        }
-        &.bhd:before {
-            background-position: -80px -11px;
-        }
-        &.bob:before {
-            background-position: -160px -11px;
-        }
-        &.bsd:before {
-            background-position: -192px -11px;
-        }
-        &.bwp:before {
-            background-position: -240px -11px;
-        }
-        &.byn:before {
-            background-position: -256px -11px;
-        }
-        &.clp:before {
-            background-position: -144px -22px;
-        }
-        &.cop:before {
-            background-position: -192px -22px;
-        }
-        &.crc:before {
-            background-position: -208px -22px;
-        }
-        &.czk:before {
-            background-position: -16px -33px
-        }
-        &.dkk:before {
-            background-position: -64px -33px
-        }
-        &.dop:before {
-            background-position: -96px -33px;
-        }
-        &.egp:before {
-            background-position: -160px -33px;
-        }
-        &.gel:before {
-            background-position: -144px -44px;
-        }
-        &.ghs:before {
-            background-position: -208px -44px;
-        }
-        &.gtq:before {
-            background-position: -80px -55px;
-        }
-        &.hnl:before {
-            background-position: -176px -55px
-        }
-        &.hrk:before {
-            background-position: -192px -55px;
-        }
-        &.huf:before {
-            background-position: -224px -55px
-        }
-        &.idr:before {
-            background-position: -256px -55px;
-        }
-        &.ils:before {
-            background-position: -16px -66px;
-        }
-        &.isk:before {
-            background-position: -128px -66px
-        }
-        &.irr:before {
-            background-position: -112px -66px;
-        }
-        &.jmd:before {
-            background-position: -192px -66px;
-        }
-        &.jod:before {
-            background-position: -208px -66px;
-        }
-        &.kes:before {
-            background-position: -240px -66px;
-        }
-        &.khr:before {
-            background-position: 0 -77px;
-        }
-        &.kwd:before {
-            background-position: -112px -77px;
-        }
-        &.kyd:before {
-            background-position: -128px -77px;
-        }
-        &.kzt:before {
-            background-position: -144px -77px;
-        }
-        &.lkr:before {
-            background-position: -224px -77px;
-        }
-        &.lsl:before {
-            background-position: -256px -77px;
-        }
-        &.ltc:before {
-            background-position: 0 -88px;
-        }
-        &.mad:before {
-            background-position: -64px -88px;
-        }
-        &.mdl:before {
-            background-position: -96px -88px;
-        }
-        &.mur:before {
-            background-position: -48px -99px;
-        }
-        &.mvr:before {
-            background-position: -64px -99px;
-        }
-        &.mwk:before {
-            background-position: -80px -99px;
-        }
-        &.mxn:before {
-            background-position: -96px -99px;
-        }
-        &.myr:before {
-            background-position: -112px -99px;
-        }
-        &.mzn:before {
-            background-position: -128px -99px;
-        }
-        &.nad:before {
-            background-position: -144px -99px;
-        }
-        &.ngn:before {
-            background-position: -208px -99px;
-        }
-        &.nio:before {
-            background-position: -224px -99px;
-        }
-        &.nok:before {
-            background-position: -256px -99px;
-        }
-        &.nzd:before {
-            background-position: -48px -110px;
-        }
-        &.omr:before {
-            background-position: -64px -110px;
-        }
-        &.pab:before {
-            background-position: -80px -110px;
-        }
-        &.pen:before {
-            background-position: -96px -110px;
-        }
-        &.pgk:before {
-            background-position: -128px -110px;
-        }
-        &.php:before {
-            background-position: -144px -110px
-        }
-        &.pkr:before {
-            background-position: -160px -110px
-        }
-        &.pln:before {
-            background-position: -176px -110px
-        }
-        &.pyg:before {
-            background-position: -16px -121px
-        }
-        &.qar:before {
-            background-position: -32px -121px;
-        }
-        &.ron:before {
-            background-position: -160px -88px;
-        }
-        &.rsd:before {
-            background-position: -80px -121px;
-        }
-        &.rwf:before {
-            background-position: -112px -121px;
-        }
-        &.sar:before {
-            background-position: -128px -121px;
-        }
-        &.sdg:before {
-            background-position: -192px -121px
-        }
-        &.sek:before {
-            background-position: -208px -121px;
-        }
-        &.srd:before {
-            background-position: -112px -132px;
-        }
-        &.szl:before {
-            background-position: -208px -132px
-        }
-        &.thb:before {
-            background-position: -16px -143px;
-        }
-        &.ttd:before {
-            background-position: -160px -143px;
-        }
-        &.twd:before {
-            background-position: -192px -143px;
-        }
-        &.tzs:before {
-            background-position: -208px -143px
-        }
-        &.uah:before {
-            background-position: -224px -143px
-        }
-        &.ugx:before {
-            background-position: -240px -143px
-        }
-        &.uyu:before {
-            background-position: -16px -154px;
-        }
-        &.uzs:before {
-            background-position: -32px -154px;
-        }
-        &.ves:before {
-            background-position: -80px -154px;
-        }
-        &.xaf:before {
-            background-position: -160px -22px
-        }
-        &.xcd:before {
-            background-position: -48px 0
-        }
-        &.xof:before {
-            background-position: -112px -22px
-        }
-        &.yer:before {
-            background-position: -224px -154px;
-        }
-        &.zar:before {
-            background-position: -256px -154px;
-        }
-        &.zmw:before {
-            background-position: -16px -165px;
+    }
+    >.mask {
+        @include mask;
+    }
+    >.layer_lang {
+        z-index: 2;
+        position: fixed;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 10px;
+        width: 300px;
+        >.tab_btn {
+            @include displayflex(row, flex-start, flex-start, unset);
+            >button {
+                @include displayflex(column, center, center, unset);
+                width: (100%/3);
+                height: 40px;
+                color: #bfbfbf;
+                font-size: 13px;
+                font-weight: 500;
+                border-bottom: 1px solid #e8e8e8;
+                &.on {
+                    color: #68bb42;
+                    border-bottom-color: #68bb42;
+                }
+            }
+        }
+        >article {
+            padding: 6px 20px;
+            >.scarch {
+                margin-bottom: 10px;
+                position: relative;
+                >input[type=text] {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 0;
+                    box-shadow: none;
+                    padding: 0 10px 0 25px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    background-color: #f8f8f8;
+                    &::placeholder {
+                        color: #bfbfbf;
+                    }
+                }
+                >button {
+                    font-size: 0;
+                    width: 11px;
+                    height: 11px;
+                    background-color: transparent;
+                    border: 0;
+                    background-image: url(#{$img}/ico-clear-2.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                }
+            }
+            >.vuescroll {
+                height: 200px !important;
+                .currency {
+                    @include displayflex(row, flex-start, flex-start, wrap);
+                    padding: 10px 0;
+                    >button {
+                        @include displayflex(row, center, flex-start, unset);
+                        @include language;
+                        width: (100%/4);
+                        font-weight: 500;
+                        font-size: 13px;
+                        color: #444;
+                        &:not(:nth-of-type(-n+4)) {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            >.dateFormat {
+                @include displayflex(column, flex-start, flex-start, wrap);
+                >label {
+                    @include displayflex(row, center, flex-start, wrap);
+                    width: 100%;
+                    font-size: 13px;
+                    font-weight: 500;
+                    height: 32px;
+                    >input[type=radio] {
+                        width: 15px;
+                        height: 15px;
+                        appearance: none;
+                        background-image: url(#{$img}/radio-trad-off.png);
+                        background-repeat: no-repeat;
+                        background-size: 100% auto;
+                        margin-right: 10px;
+                        &:checked {
+                            background-image: url(#{$img}/radio-trad-on.png);
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 1200px) {
+            bottom: 53px;
+            left: 170px;
+        }
+        @media (min-width: 641px) and (max-width: 1199px) {
+            top: 45px;
+            right: 15px;
+        }
+        @media (max-width: 640px) {
+            top: 55px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

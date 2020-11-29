@@ -1,7 +1,9 @@
 <template>
 <div class="header">
     <h1>MyCoinP</h1>
-    <button type="button" class="btn_menu" @click="btnAside"><span>gnb</span></button>
+    <button type="button" class="btn_menu" :class="{'active': aside}" @click="btnAside"><span>gnb</span></button>
+    <Aside :class="{'hide': !aside}"/>
+
     <div v-if="$screen.width < 1200">
         <HeaderLanguage/>
         <HeaderBackUp/>
@@ -11,12 +13,17 @@
 
 <script>
 export default {
+    data () {
+        return {
+            aside: false,
+        }
+    },
     methods: {
         btnAside: function(){
-            if(this.$parent.aside == false){
-                this.$parent.aside = true;
+            if(this.aside == false){
+                this.aside = true;
             } else{
-                this.$parent.aside = false;
+                this.aside = false;
             }
         }
     }
@@ -24,5 +31,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import "Header.scss";
+    @import "Header.scss";
 </style>

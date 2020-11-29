@@ -1,13 +1,38 @@
 @import "@/assets/scss/function.scss";
 aside {
-    @media (min-width: 737px) {}
-    @media (max-width: 736px) {
+    z-index: 9;
+    @media (min-width: 641px) {
+        position: absolute;
+        top: 45px;
+        left: 15px;
+        width: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transform: scale(1);
+        &.hide {
+            transform: scale(0);
+        }
+        >.body {
+            >a {
+                @include displayflex(row, center, flex-start, unset);
+                font-size: 13px;
+                line-height: 1;
+                color: #444;
+                padding-left: 45px;
+                height: 40px;
+                &:hover {
+                    background-color: #e8e8e8;
+                }
+            }
+        }
+    }
+    @media (max-width: 640px) {
         position: fixed;
         top: 0;
         left: 0;
         width: $moAside;
         height: 100vh;
-        z-index: 9;
         &::before {
             content: '';
             position: fixed;

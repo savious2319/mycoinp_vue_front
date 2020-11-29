@@ -27,7 +27,7 @@
 
 <script>
 export default {
-        methods: {
+    methods: {
         btnAside: function(){
             if(this.$parent.aside == false){
                 this.$parent.aside = true;

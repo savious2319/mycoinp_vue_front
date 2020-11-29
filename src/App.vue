@@ -9,7 +9,6 @@
 				<HeaderBackUp/>
 			</div>
 		</header>
-        <Aside v-if="$screen.width < 736" :class="{'hide': !aside}"/>
 		<section>
 			<router-view/>
 			<Footer v-if="$screen.width > 737"/>
@@ -22,10 +21,10 @@
 <script>
 const OFFSET = 60;
 export default {
-    name: 'portfolio',
+    name: 'App',
     data () {
         return {
-            aside: false,
+            floor: false,
             showNavbar: true,
             lastScrollPosition: 0,
             scrollValue: 0
@@ -45,10 +44,10 @@ export default {
     methods: {
         onScroll () {
             if (window.pageYOffset < 0) {
-            return
+                return
             }
             if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
-            return
+                return
             }
             this.showNavbar = window.pageYOffset < this.lastScrollPosition
             this.lastScrollPosition = window.pageYOffset
@@ -57,5 +56,5 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-  @import "App.scss";
+    @import "App.scss";
 </style>
