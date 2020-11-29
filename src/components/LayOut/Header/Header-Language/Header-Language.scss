@@ -20,11 +20,11 @@
         @include mask;
     }
     >.layer_lang {
-        @include layer(300px);
+        @include layer(350px);
         >.tab_btn {
             @include displayflex(row, flex-start, flex-start, unset);
             >button {
-                @include displayflex(column, center, center, unset);
+                @include displayflex(row, center, center, unset);
                 width: (100%/3);
                 height: 40px;
                 color: #bfbfbf;
@@ -124,6 +124,7 @@
             top: 55px;
             left: 50%;
             transform: translateX(-50%);
+            width: 320px;
         }
     }
 }

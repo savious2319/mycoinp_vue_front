@@ -135,7 +135,6 @@ export default {
 			this.article.isDataFormat = true;
         }
     }
-
 }
 </script>
 
