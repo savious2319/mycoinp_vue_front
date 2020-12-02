@@ -2,7 +2,7 @@
 	<div id="app">
 		<header>
 			<Header/>
-			<Navigation v-if="$screen.width > 737"/>
+			<Navigation v-if="$screen.width > 641"/>
 			<div class="btnSet" v-if="$screen.width > 1199">
 				<HeaderLanguage/>
 				<i/>
@@ -11,9 +11,9 @@
 		</header>
 		<section>
 			<router-view/>
-			<Footer v-if="$screen.width > 737"/>
+			<Footer v-if="$screen.width > 641"/>
 		</section>
-		<footer v-if="$screen.width < 736" :class="{'hide': !showNavbar}">
+		<footer v-if="$screen.width < 640" :class="{'hide': !showNavbar}">
 			<Navigation/>
 		</footer>
 	</div>

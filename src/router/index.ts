@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Portfolio from '../components/Module/Portfolio/Portfolio.vue'
+import Cryptocurrency from '../components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue'
+//import LegalTender from '../components/Module/Portfolio/LegalTender/LegalTender.vue'
 
 Vue.use(VueRouter)
 
@@ -8,14 +9,19 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'portfolio',
-    component: Portfolio
+    component: Cryptocurrency
+  },
+  {
+    path: '/portfolio/cryptocurrency',
+    name: 'portfolio',
+    component: Cryptocurrency
   },
   /*
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
-  }
+    path: '/portfolio/legaltender',
+    name: 'LegalTender',
+    component: LegalTender
+  },
   */
 ]
 

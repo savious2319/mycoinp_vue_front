@@ -1,6 +1,6 @@
 <template>
     <aside>
-        <div class="header" v-if="$screen.width < 736">
+        <div class="header" v-if="$screen.width < 640">
             <button type="button" @click="btnAside">닫기</button>
         </div>
         <div class="body">
@@ -17,9 +17,9 @@
             <router-link to="/">API</router-link>
             <router-link to="/">Widget</router-link>
             <router-link to="/">FAQ</router-link>
-            <router-link to="/" v-if="$screen.width < 736">PUSH_TEST</router-link>
+            <router-link to="/" v-if="$screen.width < 640">PUSH_TEST</router-link>
         </div>
-        <div class="footer" v-if="$screen.width < 736">
+        <div class="footer" v-if="$screen.width < 640">
             Copyright ⓒ  MyCoinP. All Right Reserved.
         </div>
     </aside>
