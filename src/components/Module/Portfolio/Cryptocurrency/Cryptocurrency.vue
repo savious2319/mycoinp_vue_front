@@ -1,16 +1,40 @@
 <template>
     <section>
-        <div class="left" v-if="$screen.width > 641">
-			<CryptocurrencyLeft/>
-        </div>
-        <div class="right" v-if="$screen.width > 641">
+        <vue-scroll class="left" :ops="ops">
+            <CryptocurrencyLeft/>
+        </vue-scroll>
+        <vue-scroll class="right" :ops="ops">
 			<CryptocurrencyRight/>
-        </div>
+        </vue-scroll>
     </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    data () {
+		return {
+			ops:{
+				scrollPanel: {
+					scrollingX: false,
+					scrollingY: true,
+				},
+				rail: {
+					opacity: 1,
+					background: '#13131f',
+					size: '4px',
+
+				},
+				bar: {
+					background: '#282d3a',
+					keepShow: true,
+					opacity: 1,
+					hover: false,
+					size: '4px',
+				}
+			},
+		}
+	},
+
 }
 </script>
 

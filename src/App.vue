@@ -9,10 +9,10 @@
 				<HeaderBackUp/>
 			</div>
 		</header>
-		<section>
+		<div class="container">
 			<router-view/>
 			<Footer v-if="$screen.width > 641"/>
-		</section>
+		</div>
 		<footer v-if="$screen.width < 640" :class="{'hide': !showNavbar}">
 			<Navigation/>
 		</footer>

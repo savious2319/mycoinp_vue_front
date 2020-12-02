@@ -8,6 +8,13 @@ $moAside: 270px;
     flex-wrap: $wrap;
 }
 
+@mixin displayGrid($columns, $rows, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+}
+
 @mixin navigation ($size) {
     @include displayflex(row, center, flex-start, unset);
     height: 47px;
@@ -455,6 +462,19 @@ $moAside: 270px;
                 font-weight: 500;
                 font-size: 16px;
             }
+        }
+    }
+}
+
+@mixin section {
+    width: 100%;
+    @media (min-width: 1200px) {
+        padding: 0 50px;
+        @include displayGrid(50% 50%, auto, 3px);
+        >.left,
+        >.right {
+            height: calc(100vh - 42px) !important;
+            background-color: #13131f;
         }
     }
 }

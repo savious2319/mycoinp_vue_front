@@ -4,7 +4,7 @@
 #app {
     width: 100%;
     min-height: 100vh;
-    >section {
+    >.container {
         @include displayflex(column, flex-start, flex-start, unset);
     }
     @media (min-width: 1200px) {
@@ -30,7 +30,7 @@
                 }
             }
         }
-        >section {
+        >.container {
             padding-left: 8px;
         }
     }
@@ -51,7 +51,7 @@
             width: 100%;
             z-index: 2;
         }
-        >section {
+        >.container {
             padding-top: 46px;
             z-index: 1;
         }
