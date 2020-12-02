@@ -11,5 +11,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "Cryptocurrency-Left-Advertisement.scss";
+  @import "PortfolioDetail.scss";
 </style>
