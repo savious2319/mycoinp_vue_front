@@ -2,7 +2,7 @@
 	<div class="navigation">
 		<div>
 			<router-link class-active="active" to="/">Portfolio <span>[25]</span></router-link>
-			<router-link class-active="active" to="/all-coin">All Coin <span>[3122]</span></router-link>
+			<router-link class-active="active" to="/allcoin">All Coin <span>[3122]</span></router-link>
 			<router-link class-active="active" to="/exchange">Exchange <span>[41]</span></router-link>
 			<router-link class-active="active" to="/finance">Finance <span>[41]</span></router-link>
 			<router-link class-active="active" to="/plus">++Plus</router-link>

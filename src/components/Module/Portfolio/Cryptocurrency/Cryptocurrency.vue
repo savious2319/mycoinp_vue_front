@@ -1,11 +1,10 @@
 <template>
     <section>
         <div class="left" v-if="$screen.width > 641">
-            <span style="color:#fff">left</span>
+			<CryptocurrencyLeft/>
         </div>
         <div class="right" v-if="$screen.width > 641">
-            <span style="color:#fff">right</span>
-
+			<CryptocurrencyRight/>
         </div>
     </section>
 </template>
