@@ -470,6 +470,8 @@ $moAside: 270px;
     width: 100%;
     @media (min-width: 1200px) {
         padding: 0 50px;
+    }
+    @media (min-width: 641px) {
         @include displayGrid(50% 50%, auto, 3px);
         >.left,
         >.right {
