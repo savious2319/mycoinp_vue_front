@@ -1,11 +1,12 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Cryptocurrency from '../components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue'
 import LegalTender from '../components/Module/Portfolio/LegalTender/LegalTender.vue'
 import AllCoin from '../components/Module/AllCoin/AllCoin.vue'
 import Exchanges from '../components/Module/Exchanges/Exchanges.vue'
+const app = createApp(App)
 
-Vue.use(VueRouter)
+app.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {

@@ -1,11 +1,12 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueScreen from 'vue-screen';
 import vuescroll from 'vuescroll';
+const app = createApp(App)
 
-Vue.use(VueScreen); 
-Vue.use(vuescroll); 
+app.use(VueScreen); 
+app.use(vuescroll); 
 
 /** LayOut Start */
 import Header from '@/components/LayOut/Header/Header.vue';
@@ -16,13 +17,13 @@ import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPri
 import Aside from '@/components/LayOut/Aside/Aside.vue';
 import Footer from '@/components/LayOut/Footer/Footer.vue';
 
-Vue.component('Header', Header)
-Vue.component('HeaderLanguage', HeaderLanguage)
-Vue.component('HeaderBackUp', HeaderBackUp)
-Vue.component('Navigation', Navigation)
-Vue.component('NavigationGasPrice', NavigationGasPrice)
-Vue.component('Aside', Aside)
-Vue.component('Footer', Footer)
+app.component('Header', Header)
+app.component('HeaderLanguage', HeaderLanguage)
+app.component('HeaderBackUp', HeaderBackUp)
+app.component('Navigation', Navigation)
+app.component('NavigationGasPrice', NavigationGasPrice)
+app.component('Aside', Aside)
+app.component('Footer', Footer)
 /** LayOut End */
 
 /** Portfolio Cryptocurrency Start */
@@ -40,19 +41,19 @@ import CryptocurrencyRightOfficialMessages from '@/components/Module/Portfolio/C
 import CryptocurrencyRightPortfolioDetail from '@/components/Module/Portfolio/Cryptocurrency/Right/PortfolioDetail/PortfolioDetail.vue';
 import CryptocurrencyRightTradingView from '@/components/Module/Portfolio/Cryptocurrency/Right/TradingView/TradingView.vue';
 
-Vue.component('Cryptocurrency', Cryptocurrency)
+app.component('Cryptocurrency', Cryptocurrency)
 
-Vue.component('CryptocurrencyLeft', CryptocurrencyLeft)
-Vue.component('CryptocurrencyLeftAdvertisement', CryptocurrencyLeftAdvertisement)
-Vue.component('CryptocurrencyLeftPortfolio', CryptocurrencyLeftPortfolio)
-Vue.component('CryptocurrencyLeftTotalValue', CryptocurrencyLeftTotalValue)
+app.component('CryptocurrencyLeft', CryptocurrencyLeft)
+app.component('CryptocurrencyLeftAdvertisement', CryptocurrencyLeftAdvertisement)
+app.component('CryptocurrencyLeftPortfolio', CryptocurrencyLeftPortfolio)
+app.component('CryptocurrencyLeftTotalValue', CryptocurrencyLeftTotalValue)
 
-Vue.component('CryptocurrencyRight', CryptocurrencyRight)
-Vue.component('CryptocurrencyRightAdvertisement', CryptocurrencyRightAdvertisement)
-Vue.component('CryptocurrencyRightBuySell', CryptocurrencyRightBuySell)
-Vue.component('CryptocurrencyRightOfficialMessages', CryptocurrencyRightOfficialMessages)
-Vue.component('CryptocurrencyRightPortfolioDetail', CryptocurrencyRightPortfolioDetail)
-Vue.component('CryptocurrencyRightTradingView', CryptocurrencyRightTradingView)
+app.component('CryptocurrencyRight', CryptocurrencyRight)
+app.component('CryptocurrencyRightAdvertisement', CryptocurrencyRightAdvertisement)
+app.component('CryptocurrencyRightBuySell', CryptocurrencyRightBuySell)
+app.component('CryptocurrencyRightOfficialMessages', CryptocurrencyRightOfficialMessages)
+app.component('CryptocurrencyRightPortfolioDetail', CryptocurrencyRightPortfolioDetail)
+app.component('CryptocurrencyRightTradingView', CryptocurrencyRightTradingView)
 /** Portfolio Cryptocurrency End */
 
 /** Portfolio LegalTender Start */
@@ -70,19 +71,19 @@ import LegalTenderRightOfficialMessages from '@/components/Module/Portfolio/Lega
 import LegalTenderRightPortfolioDetail from '@/components/Module/Portfolio/LegalTender/Right/PortfolioDetail/PortfolioDetail.vue';
 import LegalTenderRightTradingView from '@/components/Module/Portfolio/LegalTender/Right/TradingView/TradingView.vue';
 
-Vue.component('LegalTender', LegalTender)
+app.component('LegalTender', LegalTender)
 
-Vue.component('LegalTenderLeft', LegalTenderLeft)
-Vue.component('LegalTenderLeftAdvertisement', LegalTenderLeftAdvertisement)
-Vue.component('LegalTenderLeftPortfolio', LegalTenderLeftPortfolio)
-Vue.component('LegalTenderLeftTotalValue', LegalTenderLeftTotalValue)
+app.component('LegalTenderLeft', LegalTenderLeft)
+app.component('LegalTenderLeftAdvertisement', LegalTenderLeftAdvertisement)
+app.component('LegalTenderLeftPortfolio', LegalTenderLeftPortfolio)
+app.component('LegalTenderLeftTotalValue', LegalTenderLeftTotalValue)
 
-Vue.component('LegalTenderRight', LegalTenderRight)
-Vue.component('LegalTenderRightAdvertisement', LegalTenderRightAdvertisement)
-Vue.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
-Vue.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
-Vue.component('LegalTenderRightPortfolioDetail', LegalTenderRightPortfolioDetail)
-Vue.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
+app.component('LegalTenderRight', LegalTenderRight)
+app.component('LegalTenderRightAdvertisement', LegalTenderRightAdvertisement)
+app.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
+app.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
+app.component('LegalTenderRightPortfolioDetail', LegalTenderRightPortfolioDetail)
+app.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
 /** Portfolio LegalTender End */
 
 /** AllCoin Start */
@@ -93,11 +94,11 @@ import AllCoinRight from '@/components/Module/AllCoin/Right/Right.vue';
 import AllCoinRightCoinDetail from '@/components/Module/AllCoin/Right/CoinDetail/CoinDetail.vue';
 import AllCoinRightTradingView from '@/components/Module/AllCoin/Right/TradingView/TradingView.vue';
 
-Vue.component('AllCoin', AllCoin)
-Vue.component('AllCoinLeftAllCoinList', AllCoinLeftAllCoinList)
-Vue.component('AllCoinRight', AllCoinRight)
-Vue.component('AllCoinRightCoinDetail', AllCoinRightCoinDetail)
-Vue.component('AllCoinRightTradingView', AllCoinRightTradingView)
+app.component('AllCoin', AllCoin)
+app.component('AllCoinLeftAllCoinList', AllCoinLeftAllCoinList)
+app.component('AllCoinRight', AllCoinRight)
+app.component('AllCoinRightCoinDetail', AllCoinRightCoinDetail)
+app.component('AllCoinRightTradingView', AllCoinRightTradingView)
 /** AllCoin End */
 
 /** Exchanges Start */
@@ -105,14 +106,10 @@ import Exchanges from '@/components/Module/Exchanges/Exchanges.vue';
 import ExchangesLeftExchangeList from '@/components/Module/Exchanges/Left/ExchangeList/ExchangeList.vue';
 import ExchangesRightExchangeCoinList from '@/components/Module/Exchanges/Right/ExchangeCoinList/ExchangeCoinList.vue';
 
-Vue.component('Exchanges', Exchanges)
-Vue.component('ExchangesLeftExchangeList', ExchangesLeftExchangeList)
-Vue.component('ExchangesRightExchangeCoinList', ExchangesRightExchangeCoinList)
+app.component('Exchanges', Exchanges)
+app.component('ExchangesLeftExchangeList', ExchangesLeftExchangeList)
+app.component('ExchangesRightExchangeCoinList', ExchangesRightExchangeCoinList)
 /** Exchanges End */
 
 
-Vue.config.productionTip = false
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+app.mount('#app')
