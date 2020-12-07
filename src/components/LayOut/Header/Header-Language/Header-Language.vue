@@ -12,19 +12,19 @@
 				<input type="text" placeholder="Search..."> 
 				<button type="button">삭제</button>
 			</div>
-			<vue-scroll class="vuescroll" :ops="ops">
+			<perfect-scrollbar>
 				<div class="currency">
 					<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
 				</div>
-			</vue-scroll>			
+			</perfect-scrollbar>
 		</article>
 
 		<article v-if="article.isLanguage">
-			<vue-scroll class="vuescroll" :ops="ops">
+			<perfect-scrollbar>
 				<div class="currency">
 					<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
 				</div>
-			</vue-scroll>			
+			</perfect-scrollbar>
 		</article>
 
 		<article v-if="article.isDataFormat">
@@ -51,25 +51,6 @@ export default {
 				isCurrency: true,
 				isLanguage: false,
 				isDataFormat: false
-			},
-			ops:{
-				scrollPanel: {
-					scrollingX: false,
-					scrollingY: true,
-				},
-				rail: {
-					opacity: 1,
-					background: '#f0f0f0',
-					size: '4px',
-
-				},
-				bar: {
-					background: '#cbcbcb',
-					keepShow: true,
-					opacity: 1,
-					hover: false,
-					size: '4px',
-				}
 			},
 			langs:[
 				{symbol: "usd", coin_cd: "100001", mark: "$"},

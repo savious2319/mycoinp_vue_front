@@ -1,17 +1,13 @@
-import { createApp } from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Cryptocurrency from '../components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue'
 import LegalTender from '../components/Module/Portfolio/LegalTender/LegalTender.vue'
 import AllCoin from '../components/Module/AllCoin/AllCoin.vue'
 import Exchanges from '../components/Module/Exchanges/Exchanges.vue'
-const app = createApp(App)
 
-app.use(VueRouter)
-
-const routes: Array<RouteConfig> = [
+const routes = [
   {
     path: '/',
-    name: 'portfolio',
+    name: 'Home',
     component: Cryptocurrency
   },
   {
@@ -36,9 +32,8 @@ const routes: Array<RouteConfig> = [
   },
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 

@@ -1,12 +1,15 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import VueScreen from 'vue-screen';
-import vuescroll from 'vuescroll';
-const app = createApp(App)
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import PerfectScrollbar from 'vue3-perfect-scrollbar';
+import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
+import { VueWindowSizePlugin } from 'vue-window-size/option-api';
 
-app.use(VueScreen); 
-app.use(vuescroll); 
+const app = createApp(App);
+
+app.use(router);
+app.use(PerfectScrollbar);
+app.use(VueWindowSizePlugin);
 
 /** LayOut Start */
 import Header from '@/components/LayOut/Header/Header.vue';

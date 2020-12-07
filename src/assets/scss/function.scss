@@ -473,8 +473,7 @@ $moAside: 270px;
     }
     @media (min-width: 641px) {
         @include displayGrid(50% 50%, auto, 3px);
-        >.left,
-        >.right {
+        .ps {
             height: calc(100vh - 42px) !important;
             background-color: #13131f;
         }

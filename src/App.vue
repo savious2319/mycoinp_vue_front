@@ -1,22 +1,22 @@
 <template>
-	<div id="app">
-		<header>
-			<Header/>
-			<Navigation v-if="$screen.width > 641"/>
-			<div class="btnSet" v-if="$screen.width > 1199">
-				<HeaderLanguage/>
-				<i/>
-				<HeaderBackUp/>
-			</div>
-		</header>
-		<div class="container">
-			<router-view/>
-			<Footer v-if="$screen.width > 641"/>
-		</div>
-		<footer v-if="$screen.width < 640" :class="{'hide': !showNavbar}">
-			<Navigation/>
-		</footer>
-	</div>
+  <div id="mycoinp">
+      <header>
+        <Header/>
+        <Navigation v-if="$windowWidth > 641"/>
+        <div class="btnSet" v-if="$windowWidth > 1199">
+          <HeaderLanguage/>
+          <i/>
+          <HeaderBackUp/>
+        </div>
+      </header>
+      <div class="container">
+        <router-view />
+        <Footer v-if="$windowWidth > 641"/>
+      </div>
+      <footer v-if="$windowWidth < 640" :class="{'hide': !showNavbar}">
+        <Navigation/>
+      </footer>
+  </div>
 </template>
 <script>
 const OFFSET = 60;
@@ -38,7 +38,7 @@ export default {
         viewportMeta.content = 'width=device-width, initial-scale=1'
         document.head.appendChild(viewportMeta)
     },
-    beforeDestroy () {
+    beforeMount () {
         window.removeEventListener('scroll', this.onScroll)
     },
     methods: {

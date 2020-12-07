@@ -1,11 +1,11 @@
 <template>
     <section>
-        <vue-scroll class="left" :ops="ops">
+        <perfect-scrollbar>
             <CryptocurrencyLeft/>
-        </vue-scroll>
-        <vue-scroll class="right" :ops="ops">
+        </perfect-scrollbar>
+        <perfect-scrollbar>
 			<CryptocurrencyRight/>
-        </vue-scroll>
+        </perfect-scrollbar>
     </section>
 </template>
 

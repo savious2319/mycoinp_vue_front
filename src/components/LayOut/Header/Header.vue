@@ -4,7 +4,7 @@
     <button type="button" class="btn_menu" :class="{'active': aside}" @click="btnAside"><span>gnb</span></button>
     <Aside :class="{'hide': !aside}"/>
 
-    <div v-if="$screen.width < 1200">
+    <div v-if="$windowWidth < 1200">
         <HeaderLanguage/>
         <HeaderBackUp/>
     </div>

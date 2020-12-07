@@ -1,9 +1,9 @@
 <template>
     <section>
-        <div class="left" v-if="$screen.width > 641">
+        <div class="left" v-if="$windowWidth > 641">
             <span style="color:#fff">left</span>
         </div>
-        <div class="right" v-if="$screen.width > 641">
+        <div class="right" v-if="$windowWidth > 641">
             <span style="color:#fff">right</span>
 
         </div>

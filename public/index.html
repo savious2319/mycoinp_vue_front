@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>
         <%= htmlWebpackPlugin.options.title %>
@@ -58,6 +58,44 @@
         
         a:hover {
             text-decoration: none;
+        }
+        
+        .btn_language .ps .ps__rail-y,
+        .btn_language .ps .ps__rail-y:hover,
+        .btn_language .ps .ps__rail-y:focus,
+        .btn_language .ps .ps__rail-y.ps--clicking {
+            opacity: 1 !important;
+            background-color: #f0f0f0;
+            width: 8px;
+        }
+        
+        .btn_language .ps__rail-y>.ps__thumb-y,
+        .btn_language .ps__rail-y:hover>.ps__thumb-y,
+        .btn_language .ps__rail-y:focus>.ps__thumb-y,
+        .btn_language .ps__rail-y.ps--clicking .ps__thumb-y {
+            width: 8px;
+            background-color: #cbcbcb;
+            border-radius: 0;
+            right: 0;
+        }
+        
+        section .ps .ps__rail-y,
+        section .ps .ps__rail-y:hover,
+        section .ps .ps__rail-y:focus,
+        section .ps .ps__rail-y.ps--clicking {
+            opacity: 1 !important;
+            background-color: transparent;
+            width: 4px;
+        }
+        
+        section .ps__rail-y>.ps__thumb-y,
+        section .ps__rail-y:hover>.ps__thumb-y,
+        section .ps__rail-y:focus>.ps__thumb-y,
+        section .ps__rail-y.ps--clicking .ps__thumb-y {
+            width: 4px;
+            background-color: #282d3a;
+            border-radius: 0;
+            right: 4px;
         }
     </style>
 </head>

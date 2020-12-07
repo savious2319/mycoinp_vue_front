@@ -71,7 +71,7 @@
                     transform: translateY(-50%);
                 }
             }
-            >.vuescroll {
+            >.ps {
                 height: 200px !important;
                 .currency {
                     @include displayflex(row, flex-start, flex-start, wrap);
