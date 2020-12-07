@@ -34,8 +34,11 @@ import Cryptocurrency from '@/components/Module/Portfolio/Cryptocurrency/Cryptoc
 
 import CryptocurrencyLeft from '@/components/Module/Portfolio/Cryptocurrency/Left/Left.vue';
 import CryptocurrencyLeftAdvertisement from '@/components/Module/Portfolio/Cryptocurrency/Left/Advertisement/Advertisement.vue';
-import CryptocurrencyLeftPortfolio from '@/components/Module/Portfolio/Cryptocurrency/Left/Portfolio/Portfolio.vue';
 import CryptocurrencyLeftTotalValue from '@/components/Module/Portfolio/Cryptocurrency/Left/TotalValue/TotalValue.vue';
+import CryptocurrencyLeftPortfolio from '@/components/Module/Portfolio/Cryptocurrency/Left/Portfolio/Portfolio.vue';
+import CryptocurrencyLeftPortfoliobyCoins from '@/components/Module/Portfolio/Cryptocurrency/Left/Portfolio/byCoins/byCoins.vue';
+import CryptocurrencyLeftPortfoliobyWallets from '@/components/Module/Portfolio/Cryptocurrency/Left/Portfolio/byWallets/byWallets.vue';
+import CryptocurrencyLeftPortfoliobyDates from '@/components/Module/Portfolio/Cryptocurrency/Left/Portfolio/byDates/byDates.vue';
 
 import CryptocurrencyRight from '@/components/Module/Portfolio/Cryptocurrency/Right/Right.vue';
 import CryptocurrencyRightAdvertisement from '@/components/Module/Portfolio/Cryptocurrency/Right/Advertisement/Advertisement.vue';
@@ -48,8 +51,11 @@ app.component('Cryptocurrency', Cryptocurrency)
 
 app.component('CryptocurrencyLeft', CryptocurrencyLeft)
 app.component('CryptocurrencyLeftAdvertisement', CryptocurrencyLeftAdvertisement)
-app.component('CryptocurrencyLeftPortfolio', CryptocurrencyLeftPortfolio)
 app.component('CryptocurrencyLeftTotalValue', CryptocurrencyLeftTotalValue)
+app.component('CryptocurrencyLeftPortfolio', CryptocurrencyLeftPortfolio)
+app.component('CryptocurrencyLeftPortfoliobyCoins', CryptocurrencyLeftPortfoliobyCoins)
+app.component('CryptocurrencyLeftPortfoliobyWallets', CryptocurrencyLeftPortfoliobyWallets)
+app.component('CryptocurrencyLeftPortfoliobyDates', CryptocurrencyLeftPortfoliobyDates)
 
 app.component('CryptocurrencyRight', CryptocurrencyRight)
 app.component('CryptocurrencyRightAdvertisement', CryptocurrencyRightAdvertisement)
@@ -64,8 +70,8 @@ import LegalTender from '@/components/Module/Portfolio/LegalTender/LegalTender.v
 
 import LegalTenderLeft from '@/components/Module/Portfolio/LegalTender/Left/Left.vue';
 import LegalTenderLeftAdvertisement from '@/components/Module/Portfolio/LegalTender/Left/Advertisement/Advertisement.vue';
-import LegalTenderLeftPortfolio from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/Portfolio.vue';
 import LegalTenderLeftTotalValue from '@/components/Module/Portfolio/LegalTender/Left/TotalValue/TotalValue.vue';
+import LegalTenderLeftPortfolio from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/Portfolio.vue';
 
 import LegalTenderRight from '@/components/Module/Portfolio/LegalTender/Right/Right.vue';
 import LegalTenderRightAdvertisement from '@/components/Module/Portfolio/LegalTender/Right/Advertisement/Advertisement.vue';

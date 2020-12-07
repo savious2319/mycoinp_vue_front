@@ -475,7 +475,44 @@ $moAside: 270px;
         @include displayGrid(50% 50%, auto, 3px);
         .ps {
             height: calc(100vh - 42px) !important;
-            background-color: #13131f;
+        }
+    }
+}
+
+@mixin table {
+    th,
+    td {
+        padding: 15px 0;
+    }
+    >thead {
+        >tr {
+            >th {
+                font-size: 14px;
+                color: #67686f;
+                font-weight: 500;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+    }
+    >tbody {
+        >tr {
+            >th,
+            >td {
+                border-bottom: 2px solid #1c1e2a;
+                color: #fff;
+                line-height: 1;
+                letter-spacing: -0.15px;
+                >em {
+                    font-style: normal;
+                    font-size: 11px;
+                    color: #67686f;
+                    vertical-align: top;
+                }
+                >span {
+                    color: #ffe640;
+                }
+            }
         }
     }
 }

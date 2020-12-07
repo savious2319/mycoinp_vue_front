@@ -1,7 +1,7 @@
 <template>
-  <Advertisement/>
-  <TotalValue/>
-  <Portfolio/>
+  <CryptocurrencyLeftAdvertisement/>
+  <CryptocurrencyLeftTotalValue/>
+  <CryptocurrencyLeftPortfolio/>
 </template>
 
 <script lang="ts">

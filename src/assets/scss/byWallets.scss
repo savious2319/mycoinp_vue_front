@@ -1,0 +1,48 @@
+@import "@/assets/scss/function.scss";
+table {
+    @include table;
+    @mixin textAlign {
+        $widths: 1 17% left 15px, 2 9% center 15px, 3 12% right 15px, 4 auto right 15px, 5 22% right 13px, 6 21% right 13px;
+        @each $name,
+        $width,
+        $align,
+        $size in $widths {
+            &:nth-of-type(#{$name}) {
+                width: $width;
+                text-align: $align;
+                font-size: $size;
+            }
+        }
+    }
+    >thead>tr>th {
+        @include textAlign;
+        >button {
+            @include displayflex(row, center, center, unset);
+            background-color: transparent;
+            font-size: 14px;
+            color: #67686f;
+            line-height: 1;
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 11px;
+                height: 7.5px;
+                background-repeat: no-repeat;
+                background-image: url(#{$img}/select-arrow.png);
+                background-size: 100% auto;
+                margin-left: 2.5px;
+                transform: rotate(180deg);
+            }
+            &.active::after {
+                transform: rotate(0);
+            }
+        }
+    }
+    >tbody>tr>td {
+        @include textAlign;
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+            color: #fff0d0;
+        }
+    }
+}
