@@ -1,7 +1,7 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+  <Advertisement/>
+  <TotalValue/>
+  <Portfolio/>
 </template>
 
 <script lang="ts">
