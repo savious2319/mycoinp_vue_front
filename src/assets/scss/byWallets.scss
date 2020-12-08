@@ -1,48 +1,131 @@
 @import "@/assets/scss/function.scss";
-table {
-    @include table;
-    @mixin textAlign {
-        $widths: 1 17% left 15px, 2 9% center 15px, 3 12% right 15px, 4 auto right 15px, 5 22% right 13px, 6 21% right 13px;
+@mixin textAlign {
+    @media (min-width: 641px) {
+        $widths: 1 17% left, 2 9% center, 3 74% right;
         @each $name,
         $width,
-        $align,
-        $size in $widths {
+        $align in $widths {
             &:nth-of-type(#{$name}) {
                 width: $width;
                 text-align: $align;
-                font-size: $size;
+            }
+        }
+        &:nth-of-type(3) {
+            >p {
+                >span {
+                    &:nth-of-type(1) {
+                        width: 16%;
+                    }
+                    &:nth-of-type(2) {
+                        width: 25%;
+                    }
+                    &:nth-of-type(3),
+                    &:nth-of-type(4) {
+                        width: 29%;
+                    }
+                }
             }
         }
     }
-    >thead>tr>th {
-        @include textAlign;
-        >button {
-            @include displayflex(row, center, center, unset);
-            background-color: transparent;
-            font-size: 14px;
-            color: #67686f;
-            line-height: 1;
-            &::after {
-                content: '';
-                display: inline-block;
-                width: 11px;
-                height: 7.5px;
-                background-repeat: no-repeat;
-                background-image: url(#{$img}/select-arrow.png);
-                background-size: 100% auto;
-                margin-left: 2.5px;
-                transform: rotate(180deg);
+    @media (max-width: 640px) {
+        $widths: 1 29% left, 2 15% center, 3 56% right;
+        @each $name,
+        $width,
+        $align in $widths {
+            &:nth-of-type(#{$name}) {
+                width: $width;
+                text-align: $align;
             }
-            &.active::after {
-                transform: rotate(0);
+        }
+        &:nth-of-type(3) {
+            >p {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 8px;
             }
         }
     }
-    >tbody>tr>td {
-        @include textAlign;
-        &:nth-of-type(5),
-        &:nth-of-type(6) {
-            color: #fff0d0;
+}
+
+table {
+    >thead {
+        >tr {
+            >th {
+                @include textAlign;
+                padding: 15px 0;
+                font-size: 14px;
+                color: #67686f;
+                font-weight: 500;
+                line-height: 1;
+                text-align: center;
+                >span,
+                >p>span {
+                    display: inline-block;
+                    letter-spacing: -0.3px;
+                }
+                >button {
+                    @include displayflex(row, center, center, unset);
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: #67686f;
+                    line-height: 1;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 11px;
+                        height: 7.5px;
+                        background-repeat: no-repeat;
+                        background-image: url(#{$img}/select-arrow.png);
+                        background-size: 100% auto;
+                        margin-left: 2.5px;
+                        transform: rotate(180deg);
+                    }
+                    &.active::after {
+                        transform: rotate(0);
+                    }
+                }
+            }
+        }
+    }
+    >tbody {
+        >tr {
+            &:not(:last-of-type) {
+                >td {
+                    border-bottom: 2px solid #1c1e2a;
+                }
+            }
+            >td {
+                @include textAlign;
+                padding: 15px 0;
+                &:nth-of-type(5),
+                &:nth-of-type(6) {
+                    color: #fff0d0;
+                }
+                >span,
+                >p>span {
+                    color: #fff;
+                    line-height: 1;
+                    letter-spacing: -0.3px;
+                    font-size: 15px;
+                    font-weight: 200;
+                    display: inline-block;
+                    &:nth-of-type(3) {
+                        font-size: 13px;
+                    }
+                    &:nth-of-type(4) {
+                        font-size: 13px;
+                    }
+                    >em {
+                        font-style: normal;
+                        font-size: 11px;
+                        color: #67686f;
+                        vertical-align: top;
+                    }
+                    >abbr {
+                        color: #ffe640;
+                    }
+                }
+            }
         }
     }
 }

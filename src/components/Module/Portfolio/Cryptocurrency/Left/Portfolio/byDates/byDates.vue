@@ -2,30 +2,54 @@
   <table>
     <thead>
       <tr>
-        <th>Date</th>
-        <th><button type="button" class="active">All</button></th>
-        <th>Coin</th>
-        <th>Exchange</th>
-        <th>Price</th>
-        <th>Amount</th>
+        <th>
+          <span>Date</span>
+        </th>
+        <th>
+          <button type="button" class="active">All</button>
+        </th>
+        <th>
+          <p>
+            <span>Coin</span>
+            <span>Exchange</span>
+            <span>Price</span>
+            <span>Amount</span>
+          </p>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>2020-07-20</td>
-        <td class="rise">Sell</td>
-        <td>GUSD</td>
-        <td>Upbit</td>
-        <td><em>₫</em>123,456,78<span>K</span></td>
-        <td>123,456,78<span>K</span></td>
+        <td>
+          <span>2020-07-20</span>
+        </td>
+        <td>
+          <span class="rise">Sell</span>
+        </td>
+        <td>
+          <p>
+            <span>GUSD</span>
+            <span>Upbit</span>
+            <span><em>₫</em>123,456,78<abbr>K</abbr></span>
+            <span>123,456,78<abbr>K</abbr></span>
+          </p>
+        </td>
       </tr>
       <tr>
-        <td>2020-07-20</td>
-        <td class="fall">Buy</td>
-        <td>GUSD</td>
-        <td>Upbit</td>
-        <td><em>₫</em>123,456,78<span>K</span></td>
-        <td>123,456,78<span>K</span></td>
+        <td>
+          <span>2020-07-20</span>
+        </td>
+        <td>
+          <span class="fall">Buy</span>
+        </td>
+        <td>
+          <p>
+            <span>GUSD</span>
+            <span>Upbit</span>
+            <span><em>₫</em>123,456,78<abbr>K</abbr></span>
+            <span>123,456,78<abbr>K</abbr></span>
+          </p>
+        </td>
       </tr>
     </tbody>
   </table>

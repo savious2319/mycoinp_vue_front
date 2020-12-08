@@ -479,40 +479,33 @@ $moAside: 270px;
     }
 }
 
-@mixin table {
-    th,
-    td {
-        padding: 15px 0;
-    }
-    >thead {
-        >tr {
-            >th {
-                font-size: 14px;
-                color: #67686f;
-                font-weight: 500;
-                line-height: 1;
-                text-align: center;
-            }
+@mixin table {}
+
+@mixin realTime ($name, $color) {
+    @keyframes #{$name} {
+        0% {
+            color: #fff;
+        }
+        100% {
+            color: $color !important;
         }
     }
-    >tbody {
-        >tr {
-            >th,
-            >td {
-                border-bottom: 2px solid #1c1e2a;
-                color: #fff;
-                line-height: 1;
-                letter-spacing: -0.15px;
-                >em {
-                    font-style: normal;
-                    font-size: 11px;
-                    color: #67686f;
-                    vertical-align: top;
-                }
-                >span {
-                    color: #ffe640;
-                }
-            }
-        }
+    animation-name: $name;
+    animation-duration: 0.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.rise {
+    color: #0fc14b !important;
+    &.realTime {
+        @include realTime(rise, #0fc14b);
+    }
+}
+
+.fall {
+    color: #e4b677 !important;
+    &.realTime {
+        @include realTime(fall, #e4b677);
     }
 }
