@@ -1,6 +1,5 @@
 @import "@/assets/scss/function.scss";
 .Portfolio {
-    background-color: #13131f;
     padding: 15px;
     >.tab {
         @include displayflex(row, flex-start, flex-start, unset);
