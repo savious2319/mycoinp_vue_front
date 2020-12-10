@@ -70,6 +70,7 @@ aside {
                 background-image: url(#{$img}/ico_close.png);
                 background-size: 100% auto;
                 transform: rotate(720deg);
+                transition: all 0.3s ease-in-out;
             }
         }
         >.body {
