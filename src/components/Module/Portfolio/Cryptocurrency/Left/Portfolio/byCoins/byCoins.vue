@@ -33,6 +33,26 @@
             <span><em>₫</em>123,456,78<i>K</i></span>
             <span class="rise">+10000<s>%</s></span>
           </p>
+          <button type="button" class="up" v-if="$windowWidth < 841">정렬</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl>
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+          <p>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span class="fall realTime">-10000<s>%</s></span>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span class="rise">+10000<s>%</s></span>
+          </p>
           <button type="button" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>

@@ -262,6 +262,9 @@ table {
                             background-repeat: no-repeat;
                             background-image: url(#{$img}/btn-chart-open.png);
                             background-size: 100% auto;
+                            &.up {
+                                transform: translateY(-50%) rotate(180deg);
+                            }
                         }
                     }
                 }
