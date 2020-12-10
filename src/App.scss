@@ -27,6 +27,7 @@
                     display: block;
                     background-color: #212531;
                     margin: 15px 0;
+                    font-style: normal;
                 }
             }
         }
@@ -34,14 +35,14 @@
             padding-left: 8px;
         }
     }
-    @media (min-width: 641px) and (max-width: 1199px) {
+    @media (min-width: 640px) and (max-width: 1199px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: #1b1e25;
         }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 639px) {
         overflow-x: hidden;
         >header {
             background-color: #1b1e25;
@@ -56,6 +57,7 @@
             z-index: 1;
         }
         >footer {
+            transition: all 0.3s ease-in-out;
             position: fixed;
             left: 0;
             width: 100%;

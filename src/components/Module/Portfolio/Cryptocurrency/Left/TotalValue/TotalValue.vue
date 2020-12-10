@@ -8,7 +8,7 @@
                 <span>₿0.00000000.72</span>
             </p>
         </div>
-        <article :class="{'on': isMore}">
+        <article>
             <button type="button" :class="{'on': isMore}" @click="btnMore">More</button>
             <dl>
                 <dt>Buy Value</dt>
@@ -27,12 +27,12 @@
                 </dd>
             </dl>
             <dl>
-                <dt>%Profit </dt>
+                <dt><em>%</em>Profit </dt>
                 <dd>
                     <strong class="fall">-10000<em>%</em></strong>
                 </dd>
             </dl>
-            <dl>
+            <dl v-if="isMore">
                 <dt>Buy Value</dt>
                 <dd>
                     <em>₫</em>
@@ -40,7 +40,7 @@
                     <span>K</span>
                 </dd>
             </dl>
-            <dl>
+            <dl v-if="isMore">
                 <dt>Profit & Loss</dt>
                 <dd>
                     <em>₫</em>
@@ -48,7 +48,7 @@
                     <span>K</span>
                 </dd>
             </dl>
-            <dl>
+            <dl v-if="isMore">
                 <dt>%Profit </dt>
                 <dd>
                     <strong class="fall">-10000<em>%</em></strong>

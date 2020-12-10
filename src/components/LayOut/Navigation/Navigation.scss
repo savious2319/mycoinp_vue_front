@@ -4,8 +4,14 @@
     >div {
         >a {
             color: #67686f;
+            >span {
+                color: #67686f;
+            }
             &.router-link-exact-active {
                 color: #fff;
+                >span {
+                    color: #fff;
+                }
                 &::after {
                     content: '';
                     background-color: #68bb42;
@@ -45,10 +51,10 @@
             }
         }
     }
-    @media (min-width: 641px) and (max-width: 1199px) {
+    @media (min-width: 640px) and (max-width: 1199px) {
         @include navigation('tab');
     }
-    @media (max-width: 640px) {
+    @media (max-width: 639px) {
         @include navigation('mobile');
     }
 }

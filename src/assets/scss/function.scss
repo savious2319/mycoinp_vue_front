@@ -415,7 +415,7 @@ $moAside: 270px;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    @media (max-width: 640px) {
+    @media (max-width: 639px) {
         background-color: #000;
         opacity: 0.5;
     }
@@ -458,7 +458,6 @@ $moAside: 270px;
             }
             &:last-of-type {
                 background-color: #6bbd46;
-                color: #fff;
                 font-weight: 500;
                 font-size: 16px;
             }
@@ -471,41 +470,51 @@ $moAside: 270px;
     @media (min-width: 1200px) {
         padding: 0 50px;
     }
-    @media (min-width: 641px) {
+    @media (min-width: 640px) {
         @include displayGrid(50% 50%, auto, 3px);
-        .ps {
+    }
+    .ps {
+        @media (min-width: 1200px) {
             height: calc(100vh - 42px) !important;
+        }
+        @media (min-width: 891px) and (max-width: 1199px) {
+            height: calc(100vh - 135px) !important;
         }
     }
 }
 
-@mixin table {}
-
 @mixin realTime ($name, $color) {
     @keyframes #{$name} {
-        0% {
+        from {
             color: #fff;
         }
-        100% {
-            color: $color !important;
+        to {
+            color: $color;
         }
     }
-    animation-name: $name;
+    animation-name: #{$name};
     animation-duration: 0.5s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 }
 
-.rise {
-    color: #0fc14b !important;
-    &.realTime {
+.rise,
+.rise>* {
+    color: #0fc14b;
+    &.realTime,
+    &.realTime>* {
         @include realTime(rise, #0fc14b);
     }
 }
 
-.fall {
-    color: #e4b677 !important;
-    &.realTime {
+.fall,
+.fall>* {
+    color: #e4b677;
+    >* {
+        color: #e4b677;
+    }
+    &.realTime,
+    &.realTime>* {
         @include realTime(fall, #e4b677);
     }
 }

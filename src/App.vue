@@ -2,8 +2,8 @@
   <div id="mycoinp">
       <header>
         <Header/>
-        <Navigation v-if="$windowWidth > 641"/>
-        <div class="btnSet" v-if="$windowWidth > 1199">
+        <Navigation v-if="$windowWidth > 640"/>
+        <div class="btnSet" v-if="$windowWidth > 1200">
           <HeaderLanguage/>
           <i/>
           <HeaderBackUp/>
@@ -11,7 +11,7 @@
       </header>
       <div class="container">
         <router-view />
-        <Footer v-if="$windowWidth > 641"/>
+        <Footer v-if="$windowWidth > 640"/>
       </div>
       <footer v-if="$windowWidth < 640" :class="{'hide': !showNavbar}">
         <Navigation/>

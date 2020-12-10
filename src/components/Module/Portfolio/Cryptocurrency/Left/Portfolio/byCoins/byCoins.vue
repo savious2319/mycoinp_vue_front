@@ -2,30 +2,39 @@
   <table>
     <thead>
       <tr>
-        <th>Date</th>
-        <th><button type="button">All</button></th>
-        <th>Coin</th>
-        <th>Exchange</th>
-        <th>Price</th>
-        <th>Amount</th>
+        <th>
+          <span><input type="text" placeholder="Search..."></span>
+        </th>
+        <th>
+          <p>
+            <span>Price</span>
+            <button type="button" class="up"><em>%</em>Chg</button>
+            <button type="button" class="down">Est.Value</button>
+            <button type="button"><em>%</em>Profit</button>
+          </p>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>2020-07-20</td>
-        <td>Sell</td>
-        <td>GUSD</td>
-        <td>Upbit</td>
-        <td><em>₫</em>123,456,78<span>K</span></td>
-        <td>123,456,78<span>K</span></td>
-      </tr>
-      <tr>
-        <td>2020-07-20</td>
-        <td>Sell</td>
-        <td>GUSD</td>
-        <td>Upbit</td>
-        <td><em>₫</em>123,456,78<span>K</span></td>
-        <td>123,456,78<span>K</span></td>
+        <td>
+          <dl>
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+          <p>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span class="fall realTime">-10000<s>%</s></span>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span class="rise">+10000<s>%</s></span>
+          </p>
+          <button type="button" v-if="$windowWidth < 841">정렬</button>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -6,7 +6,12 @@
           <span>Date</span>
         </th>
         <th>
-          <button type="button" class="active">All</button>
+          <button type="button" :class="{'active': isAll}" @click="isAll = !isAll">All</button>
+          <div v-if="isAll">
+            <button type="button">All</button>
+            <button type="button">Buy</button>
+            <button type="button">Sell</button>
+          </div>
         </th>
         <th>
           <p>
@@ -30,8 +35,8 @@
           <p>
             <span>GUSD</span>
             <span>Upbit</span>
-            <span><em>₫</em>123,456,78<abbr>K</abbr></span>
-            <span>123,456,78<abbr>K</abbr></span>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span>123,456,78<i>K</i></span>
           </p>
         </td>
       </tr>
@@ -46,8 +51,8 @@
           <p>
             <span>GUSD</span>
             <span>Upbit</span>
-            <span><em>₫</em>123,456,78<abbr>K</abbr></span>
-            <span>123,456,78<abbr>K</abbr></span>
+            <span><em>₫</em>123,456,78<i>K</i></span>
+            <span>123,456,78<i>K</i></span>
           </p>
         </td>
       </tr>
@@ -57,6 +62,11 @@
 
 <script lang="ts">
 export default {
+  data () {
+    return {
+      isAll: false
+    }
+  }
 }
 </script>
 

@@ -7,7 +7,7 @@
 			<router-link class-active="active" to="/finance">Finance <span>[41]</span></router-link>
 			<router-link class-active="active" to="/plus">++Plus</router-link>
 		</div>
-		<NavigationGasPrice v-if="$windowWidth > 641"/>
+		<NavigationGasPrice v-if="$windowWidth > 640"/>
 	</div>
 </template>
 
