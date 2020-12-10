@@ -56,6 +56,9 @@
           <button type="button" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
+      <tr>
+        <td colspan="2" class="not">Add Your Portfolio ...</td>
+      </tr>
     </tbody>
   </table>
 </template>

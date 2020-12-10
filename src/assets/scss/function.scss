@@ -480,6 +480,9 @@ $moAside: 270px;
         @media (min-width: 891px) and (max-width: 1199px) {
             height: calc(100vh - 135px) !important;
         }
+        @media (min-width: 767px) and (max-width: 890px) {
+            height: calc(100vh - 157px) !important;
+        }
     }
 }
 
