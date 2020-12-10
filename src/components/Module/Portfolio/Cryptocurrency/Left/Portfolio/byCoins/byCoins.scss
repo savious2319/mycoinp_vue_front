@@ -41,7 +41,7 @@
             height: 30px;
             background-color: transparent;
             @media (min-width: 841px) {
-                left: 110px;
+                left: calc(32% - 10px);
             }
             @media (max-width: 840px) {
                 left: calc(60% - 10px);
