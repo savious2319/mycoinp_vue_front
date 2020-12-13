@@ -1,7 +1,9 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+  <CryptocurrencyRightAdvertisement/>
+  <CryptocurrencyRightPortfolioDetail/>
+  <CryptocurrencyRightTradingView/>
+  <CryptocurrencyRightOfficialMessages/>
+  <CryptocurrencyRightBuySell/>
 </template>
 
 <script lang="ts">

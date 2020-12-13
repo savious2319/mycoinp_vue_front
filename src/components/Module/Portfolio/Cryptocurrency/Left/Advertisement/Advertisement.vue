@@ -1,6 +1,6 @@
 <template>
     <div class="advertisement">
-        Google Banner
+        <img src="@/assets/img/banner.jpg" alt="">
     </div>
 </template>
 

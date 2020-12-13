@@ -56,6 +56,9 @@
           </p>
         </td>
       </tr>
+      <tr>
+        <td colspan="3" class="not">Add Your Portfolio ...</td>
+      </tr>
     </tbody>
   </table>
 </template>

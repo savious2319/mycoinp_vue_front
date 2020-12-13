@@ -131,6 +131,13 @@ table {
                         font-style: normal;
                     }
                 }
+                &.not {
+                    text-align: center;
+                    color: #454753;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 200px 0;
+                }
             }
         }
     }

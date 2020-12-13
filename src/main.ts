@@ -59,10 +59,10 @@ app.component('CryptocurrencyLeftPortfoliobyDates', CryptocurrencyLeftPortfoliob
 
 app.component('CryptocurrencyRight', CryptocurrencyRight)
 app.component('CryptocurrencyRightAdvertisement', CryptocurrencyRightAdvertisement)
-app.component('CryptocurrencyRightBuySell', CryptocurrencyRightBuySell)
-app.component('CryptocurrencyRightOfficialMessages', CryptocurrencyRightOfficialMessages)
 app.component('CryptocurrencyRightPortfolioDetail', CryptocurrencyRightPortfolioDetail)
 app.component('CryptocurrencyRightTradingView', CryptocurrencyRightTradingView)
+app.component('CryptocurrencyRightOfficialMessages', CryptocurrencyRightOfficialMessages)
+app.component('CryptocurrencyRightBuySell', CryptocurrencyRightBuySell)
 /** Portfolio Cryptocurrency End */
 
 /** Portfolio LegalTender Start */

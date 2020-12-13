@@ -1,6 +1,15 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
+  <div class="PortfolioDetail">
+    <div class="coinName">
+      <dl>
+        <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+        <dd>XZC</dd>
+        <dt>4</dt>
+        <dd>ZCoin</dd>
+      </dl>
+      <button type="button" class="btn_memo">Memo</button>
+      <button type="button" class="btn_delete">Delete</button>
+    </div>
   </div>
 </template>
 

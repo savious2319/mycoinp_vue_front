@@ -1,8 +1,27 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import "@/assets/scss/function.scss";
+.PortfolioDetail {
+    padding: 15px;
+    background-color: #0b0c0f;
+    >.coinName {
+        @include displayflex(row, center, flex-start, unset);
+        >dl {
+            @include coinName;
+            margin-right: auto;
+        }
+        >button {
+            width: 20px;
+            height: 20px;
+            font-size: 0;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100% auto;
+            &.btn_memo {
+                background-image: url(#{$img}/ico-memo-off.png);
+            }
+            &.btn_delete {
+                background-image: url(#{$img}/ico-delete.png);
+                margin-left: 19px;
+            }
+        }
+    }
 }
