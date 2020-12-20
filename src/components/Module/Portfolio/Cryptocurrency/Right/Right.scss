@@ -1,8 +1,24 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import "@/assets/scss/function.scss";
+.tabContents {
+    padding: 15px;
+    background-color: #13131f;
+    >.tabs {
+        border-radius: 5px;
+        overflow: hidden;
+        height: 33px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        >button {
+            font-size: 14px;
+            font-weight: 500;
+            &:not(.active) {
+                background-color: #1c1e2a;
+                color: #67686f;
+            }
+            &.active {
+                background-color: #242936;
+                color: #68bb42;
+            }
+        }
+    }
 }

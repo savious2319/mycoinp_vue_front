@@ -1,8 +1,38 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import "@/assets/scss/function.scss";
+button {
+    font-size: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    @media (min-width: 640px) {
+        position: sticky;
+    }
+    @media (max-width: 639px) {
+        position: fixed;
+    }
+    &.btnReg {
+        width: 75px;
+        height: 75px;
+        background-image: url(#{$img}/btn_rg.png);
+        @media (min-width: 640px) {
+            left: 0;
+            bottom: 0;
+        }
+        @media (max-width: 639px) {
+            left: 0;
+            bottom: 40px;
+        }
+    }
+    &.btnTop {
+        width: 35px;
+        height: 35px;
+        background-image: url(#{$img}/top-btn-2.png);
+        @media (min-width: 640px) {
+            left: calc(100% - 55px);
+            bottom: 23px;
+        }
+        @media (max-width: 639px) {
+            right: 15px;
+            bottom: 70px;
+        }
+    }
 }

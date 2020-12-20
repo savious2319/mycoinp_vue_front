@@ -474,6 +474,7 @@ $moAside: 270px;
         @include displayGrid(50% 50%, auto, 3px);
     }
     .ps {
+        position: relative;
         background-color: #13131f;
         @media (min-width: 1200px) {
             height: calc(100vh - 42px) !important;

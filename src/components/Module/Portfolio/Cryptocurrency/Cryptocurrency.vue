@@ -3,7 +3,7 @@
         <perfect-scrollbar>
             <CryptocurrencyLeft/>
         </perfect-scrollbar>
-        <perfect-scrollbar>
+        <perfect-scrollbar v-if="$windowWidth > 640">
 			<CryptocurrencyRight/>
         </perfect-scrollbar>
     </section>
