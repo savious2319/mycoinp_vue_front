@@ -23,7 +23,6 @@
                 width: 100%;
                 height: 2px;
                 background-color: #fff;
-                transition: all 0.3s ease-in-out;
             }
             &.active {
                 &::before {
@@ -73,5 +72,24 @@
             margin-right: 15px;
             margin-left: auto;
         }
+    }
+    @media (max-width: 639px) {
+        .header {
+            >button {
+                &.btn_menu {
+                    &::before,
+                    &::after,
+                    >span {
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .mask {
+        @include mask;
     }
 }

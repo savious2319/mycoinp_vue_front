@@ -1,29 +1,30 @@
 <template>
 <div class="header">
     <h1>MyCoinP</h1>
-    <button type="button" class="btn_menu" :class="{'active': aside}" @click="btnAside"><span>gnb</span></button>
-    <Aside :class="{'hide': !aside}"/>
+    <button type="button" class="btn_menu" :class="{'active': isAside}" @click="btnAside"><span>gnb</span></button>
+    <Aside :class="{'hide': !isAside}"/>
 
     <div v-if="$windowWidth < 1200">
         <HeaderLanguage/>
         <HeaderBackUp/>
     </div>
 </div>
+<div class="mask" v-if="$windowWidth > 640 && isAside" @click="btnAside"></div>
 </template>
 
 <script>
 export default {
     data () {
         return {
-            aside: false,
+            isAside: false,
         }
     },
     methods: {
         btnAside: function(){
-            if(this.aside == false){
-                this.aside = true;
+            if(this.isAside == false){
+                this.isAside = true;
             } else{
-                this.aside = false;
+                this.isAside = false;
             }
         }
     }

@@ -29,10 +29,10 @@
 export default {
     methods: {
         btnAside: function(){
-            if(this.$parent.aside == false){
-                this.$parent.aside = true;
+            if(this.$parent.isAside == false){
+                this.$parent.isAside = true;
             } else{
-                this.$parent.aside = false;
+                this.$parent.isAside = false;
             }
         }
     }
