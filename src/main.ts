@@ -4,13 +4,16 @@ import router from './router';
 import PerfectScrollbar from 'vue3-perfect-scrollbar';
 import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
 import { VueWindowSizePlugin } from 'vue-window-size/option-api';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 const app = createApp(App);
 
 app.use(router);
 app.use(PerfectScrollbar);
 app.use(VueWindowSizePlugin);
-
+library.add(faUserSecret)
 /** LayOut Start */
 import Header from '@/components/LayOut/Header/Header.vue';
 import HeaderLanguage from '@/components/LayOut/Header/Header-Language/Header-Language.vue';
@@ -27,6 +30,7 @@ app.component('Navigation', Navigation)
 app.component('NavigationGasPrice', NavigationGasPrice)
 app.component('Aside', Aside)
 app.component('Footer', Footer)
+app.component('font-awesome-icon', FontAwesomeIcon)
 /** LayOut End */
 
 /** Portfolio Cryptocurrency Start */
