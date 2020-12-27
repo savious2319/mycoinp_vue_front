@@ -2,6 +2,7 @@
 .PortfolioDetail {
     padding: 15px;
     background-color: #0b0c0f;
+    position: relative;
     >.coinName {
         @include displayflex(row, center, flex-start, unset);
         >dl {
@@ -9,21 +10,29 @@
             margin-right: auto;
         }
         >button {
-            &.btn_memo {
-                width: 20px;
-                height: 20px;
+            >span {
                 font-size: 0;
+            }
+            >svg {
+                vertical-align: top;
+            }
+            &:first-of-type {
+                width: 16px;
+                height: 16px;
                 background-image: url(#{$img}/ico-memo-off.png);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-size: 100% auto;
             }
-            &.btn_delete {
-                font-size: 20px;
+            &:last-of-type {
+                font-size: 16px;
                 color: #67686f;
-                margin-left: 20px;
+                margin-left: 10px;
                 line-height: 1;
             }
+        }
+        >.mask {
+            @include mask;
         }
     }
     >p {

@@ -1,6 +1,6 @@
 @import "@/assets/scss/function.scss";
-.btn_language {
-    >button {
+button {
+    &.btn {
         @include language;
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
@@ -16,125 +16,126 @@
             font-size: 14px;
         }
     }
-    >.mask {
-        @include mask;
+}
+
+.mask {
+    @include mask;
+}
+
+.layerPopup {
+    @include layer(350px);
+    >.tab_btn {
+        @include displayflex(row, flex-start, flex-start, unset);
+        >button {
+            @include displayflex(row, center, center, unset);
+            width: (100%/3);
+            height: 40px;
+            color: #bfbfbf;
+            font-size: 13px;
+            font-weight: 500;
+            border-bottom: 1px solid #e8e8e8;
+            &.on {
+                color: #68bb42;
+                border-bottom-color: #68bb42;
+            }
+        }
     }
-    >.layer_lang {
-        @include layer(350px);
-        >.tab_btn {
+    >article {
+        padding: 6px 20px;
+        >.scarch {
             @include displayflex(row, flex-start, flex-start, unset);
-            >button {
-                @include displayflex(row, center, center, unset);
-                width: (100%/3);
-                height: 40px;
-                color: #bfbfbf;
+            background-color: #f8f8f8;
+            margin-bottom: 10px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 30px;
+                background-image: url(#{$img}/btn-search-2.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 11px auto;
+            }
+            >input[type=text] {
+                width: calc(100% - 30px);
+                height: 30px;
+                line-height: 30px;
+                border: 0;
+                box-shadow: none;
+                padding: 0;
+                color: #444;
                 font-size: 13px;
                 font-weight: 500;
-                border-bottom: 1px solid #e8e8e8;
-                &.on {
-                    color: #68bb42;
-                    border-bottom-color: #68bb42;
+                background-color: transparent;
+                &::placeholder {
+                    color: #bfbfbf;
                 }
             }
+            >button {
+                font-size: 0;
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                border: 0;
+                background-image: url(#{$img}/ico-clear-2.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 11px auto;
+            }
         }
-        >article {
-            padding: 6px 20px;
-            >.scarch {
-                @include displayflex(row, flex-start, flex-start, unset);
-                background-color: #f8f8f8;
-                margin-bottom: 10px;
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 25px;
-                    height: 30px;
-                    background-image: url(#{$img}/btn-search-2.png);
-                    background-repeat: no-repeat;
-                    background-position: 50% 50%;
-                    background-size: 11px auto;
-                }
-                >input[type=text] {
-                    width: calc(100% - 30px);
-                    height: 30px;
-                    line-height: 30px;
-                    border: 0;
-                    box-shadow: none;
-                    padding: 0;
-                    color: #444;
-                    font-size: 13px;
-                    font-weight: 500;
-                    background-color: transparent;
-                    &::placeholder {
-                        color: #bfbfbf;
-                    }
-                }
+        >.ps {
+            height: 200px !important;
+            .currency {
+                @include displayflex(row, flex-start, flex-start, wrap);
+                padding: 10px 0;
                 >button {
-                    font-size: 0;
-                    width: 30px;
-                    height: 30px;
-                    background-color: transparent;
-                    border: 0;
-                    background-image: url(#{$img}/ico-clear-2.png);
-                    background-repeat: no-repeat;
-                    background-position: 50% 50%;
-                    background-size: 11px auto;
-                }
-            }
-            >.ps {
-                height: 200px !important;
-                .currency {
-                    @include displayflex(row, flex-start, flex-start, wrap);
-                    padding: 10px 0;
-                    >button {
-                        @include displayflex(row, center, flex-start, unset);
-                        @include language;
-                        width: (100%/4);
-                        font-weight: 500;
-                        font-size: 13px;
-                        color: #444;
-                        &:not(:nth-of-type(-n+4)) {
-                            margin-top: 20px;
-                        }
-                    }
-                }
-            }
-            >.dateFormat {
-                @include displayflex(column, flex-start, flex-start, wrap);
-                >label {
-                    @include displayflex(row, center, flex-start, wrap);
-                    width: 100%;
-                    font-size: 13px;
+                    @include displayflex(row, center, flex-start, unset);
+                    @include language;
+                    width: (100%/4);
                     font-weight: 500;
-                    height: 32px;
+                    font-size: 13px;
                     color: #444;
-                    >input[type=radio] {
-                        width: 15px;
-                        height: 15px;
-                        appearance: none;
-                        background-image: url(#{$img}/radio-trad-off.png);
-                        background-repeat: no-repeat;
-                        background-size: 100% auto;
-                        margin-right: 10px;
-                        &:checked {
-                            background-image: url(#{$img}/radio-trad-on.png);
-                        }
+                    &:not(:nth-of-type(-n+4)) {
+                        margin-top: 20px;
                     }
                 }
             }
         }
-        @media (min-width: 1200px) {
-            bottom: 53px;
-            left: 170px;
+        >.dateFormat {
+            @include displayflex(column, flex-start, flex-start, wrap);
+            >label {
+                @include displayflex(row, center, flex-start, wrap);
+                width: 100%;
+                font-size: 13px;
+                font-weight: 500;
+                height: 32px;
+                color: #444;
+                >input[type=radio] {
+                    width: 15px;
+                    height: 15px;
+                    appearance: none;
+                    background-image: url(#{$img}/radio-trad-off.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    margin-right: 10px;
+                    &:checked {
+                        background-image: url(#{$img}/radio-trad-on.png);
+                    }
+                }
+            }
         }
-        @media (min-width: 640px) and (max-width: 1199px) {
-            top: 45px;
-            right: 15px;
-        }
-        @media (max-width: 639px) {
-            top: 55px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 320px;
-        }
+    }
+    @media (min-width: 1200px) {
+        bottom: 53px;
+        left: 170px;
+    }
+    @media (min-width: 640px) and (max-width: 1199px) {
+        top: 45px;
+        right: 15px;
+    }
+    @media (max-width: 639px) {
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

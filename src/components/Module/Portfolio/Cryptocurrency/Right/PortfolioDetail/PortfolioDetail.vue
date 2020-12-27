@@ -7,8 +7,10 @@
         <dt>4</dt>
         <dd>ZCoin</dd>
       </dl>
-      <button type="button"><span>Memo</span></button>
+      <button type="button" @click="btnLayerPopup"><span>Memo</span></button>
       <button type="button"><i class="fas fa-trash-alt"/><span>Delete</span></button>
+        <popupMemo v-if="isLayerPopup"/>
+        <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
     </div>
     <p>1 USD = <em>₩</em>1,150</p>
     <article>
@@ -65,6 +67,7 @@
 export default {
     data () {
 		return {
+            isLayerPopup: false,
             isMore: false
         }
     },
@@ -76,7 +79,13 @@ export default {
                 this.isMore = false;
             }
         },
-
+        btnLayerPopup: function(){
+            if(this.isLayerPopup == false){
+                this.isLayerPopup = true;
+            } else{
+                this.isLayerPopup = false;
+            }
+        },
     }
 }
 </script>

@@ -1,28 +1,26 @@
 <template>
-<span class="btn_backup">
-    <button type="button" @click="btnLayerBackup">Backup</button>
-    <div class="layer_backup" v-if="isLayerBackup">
-		<div class="tab_btn">
-			<button type="button" :class="{'on': article.isMyCom}" @click="btnMyCom">Import</button>
-			<button type="button" :class="{'on': article.isGoogle}" @click="btnGoogle">Backup</button>
-		</div>
-		<article v-if="article.isMyCom">
-            <p>Choose the location of the portfolio file data.</p>
-            <div>
-                <button type="button">Current device</button>
-                <button type="button">Current device</button>
-            </div>
-		</article>
-		<article v-if="article.isGoogle">
-            <p>Choose the location <span>to send</span><br>the portfolio file data.</p>
-            <div>
-                <button type="button">Current device</button>
-                <button type="button">Current device</button>
-            </div>
-		</article>
-	</div>
-    <div class="mask" v-if="isLayerBackup" @click="btnLayerBackup"></div>
-</span>
+<button type="button" class="btn" @click="btnLayerBackup">Backup</button>
+<div class="layerPopup" v-if="isLayerBackup">
+    <div class="tab_btn">
+        <button type="button" :class="{'on': article.isMyCom}" @click="btnMyCom">Import</button>
+        <button type="button" :class="{'on': article.isGoogle}" @click="btnGoogle">Backup</button>
+    </div>
+    <article v-if="article.isMyCom">
+        <p>Choose the location of the portfolio file data.</p>
+        <div>
+            <button type="button">Current device</button>
+            <button type="button">Current device</button>
+        </div>
+    </article>
+    <article v-if="article.isGoogle">
+        <p>Choose the location <span>to send</span><br>the portfolio file data.</p>
+        <div>
+            <button type="button">Current device</button>
+            <button type="button">Current device</button>
+        </div>
+    </article>
+</div>
+<div class="mask" v-if="isLayerBackup" @click="btnLayerBackup"></div>
 </template>
 
 <script>

@@ -1,45 +1,43 @@
 <template>
-<span class="btn_language">
-	<button type="button" class="krw" @click="btnLayerLang">KRW</button>
-	<div class="layer_lang" v-if="isLayerLang">
-		<div class="tab_btn">
-			<button type="button" :class="{'on': article.isCurrency}" @click="btnCurrency">Currency</button>
-			<button type="button" :class="{'on': article.isLanguage}" @click="btnLanguage">Language</button>
-			<button type="button" :class="{'on': article.isDataFormat}" @click="btnDataFormat">Data format</button>
-		</div>
-		<article v-if="article.isCurrency">
-			<div class="scarch">
-				<input type="text" placeholder="Search..."> 
-				<button type="button">삭제</button>
-			</div>
-			<perfect-scrollbar>
-				<div class="currency">
-					<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
-				</div>
-			</perfect-scrollbar>
-		</article>
-
-		<article v-if="article.isLanguage">
-			<perfect-scrollbar>
-				<div class="currency">
-					<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
-				</div>
-			</perfect-scrollbar>
-		</article>
-
-		<article v-if="article.isDataFormat">
-			<div class="dateFormat">
-				<label>
-					<input type="radio"> Type A (π = 3.14)
-				</label>
-				<label>
-					<input type="radio"> Type B (π = 3,14)
-				</label>
-			</div>
-		</article>
+<button type="button" class="btn krw" @click="btnLayerLang">KRW</button>
+<div class="layerPopup" v-if="isLayerLang">
+	<div class="tab_btn">
+		<button type="button" :class="{'on': article.isCurrency}" @click="btnCurrency">Currency</button>
+		<button type="button" :class="{'on': article.isLanguage}" @click="btnLanguage">Language</button>
+		<button type="button" :class="{'on': article.isDataFormat}" @click="btnDataFormat">Data format</button>
 	</div>
-	<div class="mask" v-if="isLayerLang" @click="btnLayerLang"></div>
-</span>
+	<article v-if="article.isCurrency">
+		<div class="scarch">
+			<input type="text" placeholder="Search..."> 
+			<button type="button">삭제</button>
+		</div>
+		<perfect-scrollbar>
+			<div class="currency">
+				<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
+			</div>
+		</perfect-scrollbar>
+	</article>
+
+	<article v-if="article.isLanguage">
+		<perfect-scrollbar>
+			<div class="currency">
+				<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
+			</div>
+		</perfect-scrollbar>
+	</article>
+
+	<article v-if="article.isDataFormat">
+		<div class="dateFormat">
+			<label>
+				<input type="radio"> Type A (π = 3.14)
+			</label>
+			<label>
+				<input type="radio"> Type B (π = 3,14)
+			</label>
+		</div>
+	</article>
+</div>
+<div class="mask" v-if="isLayerLang" @click="btnLayerLang"></div>
 </template>
 
 <script>

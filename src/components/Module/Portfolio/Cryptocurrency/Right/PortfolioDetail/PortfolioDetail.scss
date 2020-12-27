@@ -2,6 +2,7 @@
 .PortfolioDetail {
     padding: 15px;
     background-color: #0b0c0f;
+    position: relative;
     >.coinName {
         @include displayflex(row, center, flex-start, unset);
         >dl {
@@ -29,6 +30,9 @@
                 margin-left: 10px;
                 line-height: 1;
             }
+        }
+        >.mask {
+            @include mask;
         }
     }
     >p {

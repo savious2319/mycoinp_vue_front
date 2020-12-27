@@ -33,6 +33,15 @@ app.component('Aside', Aside)
 app.component('Footer', Footer)
 /** LayOut End */
 
+/** Popup Start */
+import popupTradingView from '@/components/Module/Shared/Popup/popupTradingView/popupTradingView.vue';
+import popupMemo from '@/components/Module/Shared/Popup/popupMemo/popupMemo.vue';
+
+app.component('popupTradingView', popupTradingView)
+app.component('popupMemo', popupMemo)
+/** Popup End */
+
+
 /** Portfolio Cryptocurrency Start */
 import Cryptocurrency from '@/components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue';
 

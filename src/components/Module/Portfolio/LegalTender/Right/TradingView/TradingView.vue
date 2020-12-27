@@ -11,16 +11,34 @@
       <span>by TradingView</span>
       <button class="fullscrean" type="button">fullscrean</button>
     </div>
-    <div class="chart">
+    <div class="chart" @click="btnLayerPopup">
       Chart
     </div>
+    <popupTradingView v-if="isLayerPopup"/>
+    <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+  data () {
+  return {
+      isLayerPopup: false,
+    }
+  },
+  methods: {
+    btnLayerPopup: function(){
+        if(this.isLayerPopup == false){
+            this.isLayerPopup = true;
+        } else{
+            this.isLayerPopup = false;
+        }
+    },
+  }
+
 }
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">

@@ -1,0 +1,49 @@
+@import "@/assets/scss/function.scss";
+.layerPopup {
+    @include layer(350px);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    >.tit {
+        >img {
+            width: 17px;
+            margin-right: 3px;
+        }
+        >strong {
+            line-height: 1;
+        }
+        >span {
+            @include displayflex(row, center, flex-start, unset);
+            font-size: 11px;
+            color: #999;
+            position: relative;
+            margin-left: 8px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 10px;
+                margin-right: 8px;
+                background-color: #e8e8e8;
+            }
+        }
+    }
+    >article {
+        padding: 0 20px 20px 20px;
+        >div {
+            @include displayflex(column, center, center, unset);
+            background-color: #f8f8f8;
+            height: 220px;
+            >svg {
+                font-size: 37px;
+                color: #bfbfbf;
+            }
+            >p {
+                color: #bfbfbf;
+                font-size: 12px;
+                font-weight: 500;
+                margin-top: 11px;
+            }
+        }
+    }
+}
