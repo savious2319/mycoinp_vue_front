@@ -23,7 +23,7 @@ button {
 }
 
 .layerPopup {
-    @include layer(350px);
+    @include layer(350px, absolute);
     >.tab_btn {
         @include displayflex(row, flex-start, flex-start, unset);
         >button {
@@ -41,20 +41,17 @@ button {
         }
     }
     >article {
-        padding: 6px 20px;
+        padding: 6px 0;
+        margin-bottom: 0;
         >.scarch {
-            @include displayflex(row, flex-start, flex-start, unset);
+            @include displayflex(row, center, flex-start, unset);
             background-color: #f8f8f8;
             margin-bottom: 10px;
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 25px;
-                height: 30px;
-                background-image: url(#{$img}/btn-search-2.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: 11px auto;
+            padding-left: 10px;
+            >svg {
+                font-size: 15px;
+                color: #bfbfbf;
+                margin-right: 10px;
             }
             >input[type=text] {
                 width: calc(100% - 30px);

@@ -27,11 +27,9 @@
     }
     >.mask {
         @include mask;
-        background-color: #000;
-        opacity: 0.5;
     }
     >.layer_gas {
-        @include layer(500px);
+        @include layer(500px, absolute);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

@@ -1,9 +1,9 @@
 @import "@/assets/scss/function.scss";
 .layerPopup {
-    @include layer(500px, absolute);
-    top: 0;
+    @include layer(500px, fixed);
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     >.tit {
         >img {
             width: 17px;
@@ -29,18 +29,21 @@
         }
     }
     >article {
-        @include displayflex(column, center, center, unset);
-        background-color: #f8f8f8;
-        height: 220px;
-        >svg {
-            font-size: 37px;
-            color: #bfbfbf;
-        }
-        >p {
-            color: #bfbfbf;
-            font-size: 12px;
-            font-weight: 500;
-            margin-top: 11px;
+        padding: 0 20px 20px 20px;
+        >div {
+            @include displayflex(column, center, center, unset);
+            background-color: #f8f8f8;
+            height: 220px;
+            >svg {
+                font-size: 37px;
+                color: #bfbfbf;
+            }
+            >p {
+                color: #bfbfbf;
+                font-size: 12px;
+                font-weight: 500;
+                margin-top: 11px;
+            }
         }
     }
 }

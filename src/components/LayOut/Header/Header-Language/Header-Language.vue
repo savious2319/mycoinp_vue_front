@@ -8,6 +8,7 @@
 	</div>
 	<article v-if="article.isCurrency">
 		<div class="scarch">
+			<i class="fas fa-search"/>
 			<input type="text" placeholder="Search..."> 
 			<button type="button">삭제</button>
 		</div>

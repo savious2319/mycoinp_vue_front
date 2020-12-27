@@ -31,8 +31,8 @@
 				<a href="#"><span>Ac</span>cumulation/Distribution</a>
 			</div>
 		</perfect-scrollbar>
+		<button type="button">Cancel</button>
 	</article>
-	<button type="button">Cancel</button>
 </div>
 </template>
 
@@ -42,5 +42,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-	@import "popupTradingView.scss";
+	@import "popupSelectCoinWallet.scss";
 </style>

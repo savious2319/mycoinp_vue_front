@@ -4,6 +4,7 @@
   <CryptocurrencyLeftPortfolio/>
   <button type="button" class="btnReg">Registration</button>
   <button type="button" class="btnTop">Top</button>
+  <!-- <popupPortFolio/> -->
 </template>
 
 <script>

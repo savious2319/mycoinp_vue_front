@@ -421,36 +421,37 @@ $moAside: 270px;
     }
 }
 
-@mixin layer($width) {
+@mixin layer($width, $position) {
     z-index: 2;
-    position: absolute;
+    position: $position;
     background-color: #fff;
     overflow: hidden;
     border-radius: 10px;
-    width: 100%;
+    width: calc(100% - 30px);
+    min-width: 320px;
     max-width: $width;
+    padding-bottom: 20px;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
         border-bottom: 1px solid #e8e8e8;
         line-height: 1;
         font-weight: 500;
         color: #222222;
-        padding: 15px 20px;
         margin-bottom: 20px;
-        @media (min-width: 640px) {
-            font-size: 17px;
-        }
-        @media (max-width: 639px) {
-            font-size: 13px;
-        }
+        font-size: 17px;
+        padding: 15px 20px;
+    }
+    >article {
+        margin: 0 auto 12px auto;
+        width: calc(100% - 40px);
     }
     >.btnSet {
         @include displayflex(row, center, flex-start, unset);
         border-radius: 2px;
         overflow: hidden;
         height: 45px;
-        width: calc(100% - 60px);
-        margin: 0 auto 40px auto;
+        margin: 0 auto;
+        width: calc(100% - 40px);
         >button {
             width: 50%;
             height: 45px;
@@ -468,6 +469,17 @@ $moAside: 270px;
                 color: #fff;
             }
         }
+    }
+    >button {
+        display: inherit;
+        margin-top: 15px;
+        border-radius: 2px;
+        background-color: #dddddd;
+        height: 45px;
+        color: #999999;
+        font-size: 14px;
+        margin: 0 auto;
+        width: calc(100% - 40px);
     }
 }
 
