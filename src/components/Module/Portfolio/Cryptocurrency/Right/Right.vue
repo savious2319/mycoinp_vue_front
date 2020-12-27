@@ -7,9 +7,10 @@
       <button>Official Messages</button>
       <button class="active">Buy & Sell</button>
     </div>
-    <CryptocurrencyRightOfficialMessages/>
+    <!-- <CryptocurrencyRightOfficialMessages/> -->
     <CryptocurrencyRightBuySell/>
   </div>
+  <button type="button" class="btnTop">Top</button>
 </template>
 
 <script lang="ts">

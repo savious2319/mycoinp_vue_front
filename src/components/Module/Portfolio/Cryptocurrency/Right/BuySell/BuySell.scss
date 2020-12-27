@@ -41,105 +41,144 @@
 }
 
 .buySell {
-    >table {
-        >thead {
-            >tr {
-                >th {
-                    @include textAlign;
-                    position: relative;
-                    padding: 15px 0;
-                    font-size: 14px;
+    >.tabs {
+        @include displayflex(row, center, space-between, unset);
+        margin-top: 14px;
+        margin-bottom: 20px;
+        padding: 0 39px;
+        >li {
+            @include displayflex(row, center, center, unset);
+            >button {
+                &:not(.icoReg) {
                     color: #67686f;
+                    font-size: 13px;
                     font-weight: 500;
+                    position: relative;
                     line-height: 1;
-                    text-align: center;
-                    >span,
-                    >p>span {
-                        color: #67686f;
-                        display: inline-block;
-                        letter-spacing: -0.3px;
-                    }
-                    >button {
-                        @include displayflex(row, center, center, unset);
-                        background-color: transparent;
-                        font-size: 14px;
-                        color: #67686f;
-                        line-height: 1;
+                    &.active {
+                        color: #fff;
                         &::after {
                             content: '';
-                            display: inline-block;
-                            width: 11px;
-                            height: 7.5px;
-                            background-repeat: no-repeat;
-                            background-image: url(#{$img}/select-arrow.png);
-                            background-size: 100% auto;
-                            margin-left: 2.5px;
-                            transform: rotate(180deg);
-                        }
-                        &.active::after {
-                            transform: rotate(0);
-                        }
-                    }
-                    >div {
-                        position: absolute;
-                        top: 40px;
-                        right: 0;
-                        background-color: #242936;
-                        width: 50px;
-                        >button {
-                            display: block;
+                            position: absolute;
+                            left: 0;
+                            bottom: -5px;
                             width: 100%;
-                            line-height: 1;
-                            text-align: center;
-                            padding: 8px 0;
-                            color: #62636b;
-                            font-size: 14px;
+                            height: 1px;
+                            background-color: #68bb42;
                         }
                     }
+                }
+                &.icoReg {
+                    font-size: 0;
+                    width: 16px;
+                    height: 16px;
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    background-image: url(#{$img}/buy-add-btn.png);
+                    margin-left: 10px
                 }
             }
         }
-        >tbody {
-            >tr {
-                &:not(:last-of-type) {
-                    >td {
-                        border-bottom: 1px solid #1c1e2a;
-                    }
+    }
+    >div {
+        @include displayflex(row, center, flex-start, unset);
+        padding-bottom: 18px;
+        >span {
+            font-size: 14px;
+            &:first-of-type {
+                margin-right: 23px;
+            }
+            &:last-of-type {
+                margin-right: auto;
+            }
+        }
+        >button {
+            font-size: 15px;
+            color: #67686f;
+            line-height: 1;
+            >span {
+                font-size: 0;
+            }
+            &:last-of-type {
+                margin-left: 10px;
+            }
+        }
+    }
+    >article {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 17px;
+        margin-top: 16px;
+        padding-right: 22px;
+        position: relative;
+        >dl {
+            >dt {
+                line-height: 1;
+                color: #67686f;
+                font-size: 15px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-align: right;
+                >em {
+                    display: inline-block;
+                    font-style: normal;
+                    vertical-align: top;
+                    font-weight: normal;
+                    font-size: 11px;
+                    margin-top: 2px;
+                    color: #67686f;
                 }
-                >td {
-                    @include textAlign;
-                    padding: 15px 0;
-                    >span,
-                    >p>span {
-                        line-height: 1;
-                        letter-spacing: -0.3px;
-                        font-size: 15px;
-                        font-weight: 200;
+            }
+            >dd {
+                @include displayflex(row, flex-start, flex-end, unset);
+                text-align: right;
+                line-height: 1;
+                >* {
+                    line-height: 1;
+                }
+                >strong {
+                    font-weight: 500;
+                    font-weight: normal;
+                    @media (min-width: 640px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 639px) {
+                        font-size: 14px;
+                    }
+                    >em {
                         display: inline-block;
-                        &:nth-of-type(3),
-                        &:nth-of-type(4) {
-                            color: #fff0d0;
-                            font-size: 14px;
-                        }
-                        >em {
-                            font-style: normal;
-                            font-size: 11px;
-                            color: #67686f;
-                            vertical-align: top;
-                        }
-                        >i {
-                            color: #ffe640;
-                            font-style: normal;
-                        }
-                    }
-                    &.not {
-                        text-align: center;
-                        color: #454753;
-                        font-size: 15px;
-                        font-weight: 500;
-                        padding: 200px 0;
+                        font-style: normal;
+                        vertical-align: top;
+                        font-weight: normal;
+                        font-size: 11px;
+                        margin-top: 2px;
                     }
                 }
+                >span {
+                    color: #ffe640;
+                    @media (min-width: 640px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 639px) {
+                        font-size: 14px;
+                    }
+                }
+                >em {
+                    font-size: 11px;
+                    font-style: normal;
+                    vertical-align: top;
+                    color: #67686f;
+                }
+            }
+        }
+        >span {
+            @include displayflex(row, center, flex-end, unset);
+            >button {
+                color: #fff;
+                padding: 6px 8px;
+                border-radius: 5px;
+                background-color: #ec9b2a;
+                font-weight: 500;
             }
         }
     }

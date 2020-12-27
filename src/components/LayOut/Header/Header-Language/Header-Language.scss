@@ -5,6 +5,7 @@
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         line-height: 1;
+        color: #fff;
         &::before {
             margin-top: 2px;
         }

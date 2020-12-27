@@ -1,11 +1,31 @@
 <template>
 	<div class="navigation">
 		<div>
-			<router-link class-active="active" to="/">Portfolio <span>[25]</span></router-link>
-			<router-link class-active="active" to="/allcoin">All Coin <span>[3122]</span></router-link>
-			<router-link class-active="active" to="/exchange">Exchange <span>[41]</span></router-link>
-			<router-link class-active="active" to="/finance">Finance <span>[41]</span></router-link>
-			<router-link class-active="active" to="/plus">++Plus</router-link>
+			<router-link class-active="active" to="/">
+				<i class="fas fa-user-friends" v-if="$windowWidth > 640"/>
+				<span>Portfolio</span>
+				<span>[25]</span>
+			</router-link>
+			<router-link class-active="active" to="/allcoin">
+				<i class="fas fa-coins" v-if="$windowWidth > 640"/>
+				<span>All Coin</span>
+				<span>[3122]</span>
+			</router-link>
+			<router-link class-active="active" to="/exchange">
+				<i class="fas fa-exchange-alt" v-if="$windowWidth > 640"/>
+				<span>Exchange</span>
+				<span>[41]</span>
+			</router-link>
+			<router-link class-active="active" to="/finance">
+				<i class="fas fa-landmark" v-if="$windowWidth > 640"/>
+				<span>Finance</span>
+				<span>[41]</span>
+			</router-link>
+			<router-link class-active="active" to="/plus">
+				<i class="fas fa-ellipsis-h" v-if="$windowWidth > 640"/>
+				<span>++Plus</span>
+				<i class="fas fa-angle-down" v-if="$windowWidth > 640"/>
+			</router-link>
 		</div>
 		<NavigationGasPrice v-if="$windowWidth > 640"/>
 	</div>

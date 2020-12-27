@@ -1,0 +1,261 @@
+@import "@/assets/scss/function.scss";
+@mixin textAlign {
+    &:nth-of-type(1) {
+        >span {
+            position: relative;
+            &::after {
+                content: '';
+                background-repeat: no-repeat;
+                background-image: url(#{$img}/btn-search.png);
+                background-size: 100% auto;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: calc(50% + 2px);
+                left: 10px;
+                transform: translateY(-50%);
+            }
+            >input[type=text] {
+                width: 100%;
+                height: 28px;
+                line-height: 28px;
+                border-radius: 6px;
+                background-color: #1c1e2a;
+                padding-left: 25px;
+                padding-right: 10px;
+                border: 0;
+                &::placeholder {
+                    color: #454753;
+                }
+            }
+        }
+    }
+    &:nth-of-type(2) {
+        position: relative;
+        mark {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background-color: transparent;
+            @media (min-width: 841px) {
+                left: calc(32% - 10px);
+            }
+            @media (max-width: 840px) {
+                left: calc(60% - 10px);
+            }
+            >i {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 10px;
+                background-color: #6bbd46;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 1px;
+                height: 100%;
+                background-color: #6bbd46;
+            }
+        }
+        >p {
+            display: grid;
+        }
+    }
+    @media (min-width: 841px) {
+        $widths: 1 24% left, 2 76% right;
+        @each $name,
+        $width,
+        $align in $widths {
+            &:nth-of-type(#{$name}) {
+                width: $width;
+                text-align: $align;
+                * {
+                    text-align: $align;
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            >p {
+                grid-template-columns: 32% 19% 26% auto;
+            }
+        }
+    }
+    @media (max-width: 840px) {
+        $widths: 1 29% left, 2 71% right;
+        @each $name,
+        $width,
+        $align in $widths {
+            &:nth-of-type(#{$name}) {
+                width: $width;
+                text-align: $align;
+                * {
+                    text-align: $align;
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            >p {
+                grid-template-columns: 60% 40%;
+                grid-row-gap: 8px;
+            }
+        }
+    }
+}
+
+table {
+    >thead {
+        >tr {
+            >th {
+                @include textAlign;
+                position: relative;
+                padding: 15px 0;
+                text-align: center;
+                >p {
+                    >span {
+                        font-size: 14px;
+                        color: #67686f;
+                        font-weight: 500;
+                        line-height: 1;
+                        display: inline-block;
+                        letter-spacing: -0.3px;
+                        @media (max-width: 840px) {
+                            padding-right: 14px;
+                        }
+                    }
+                    >button {
+                        @include displayflex(row, center, flex-end, unset);
+                        font-size: 14px;
+                        color: #67686f;
+                        font-weight: 500;
+                        line-height: 1;
+                        letter-spacing: -0.3px;
+                        >em {
+                            font-style: normal;
+                            font-size: 11px;
+                            color: #67686f;
+                            vertical-align: top;
+                        }
+                        &:after {
+                            content: '';
+                            width: 9px;
+                            height: 12px;
+                            background-repeat: no-repeat;
+                            background-image: url(#{$img}/arrow-default-2.png);
+                            background-size: 100% auto;
+                            margin-left: 5px;
+                        }
+                        &.up::after {
+                            background-image: url(#{$img}/arrow-up.png);
+                        }
+                        &.down::after {
+                            background-image: url(#{$img}/arrow-down.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >tbody {
+        >tr {
+            &:not(:last-of-type) {
+                >td {
+                    border-bottom: 1px solid #1c1e2a;
+                }
+            }
+            >td {
+                @include textAlign;
+                padding: 10px 0;
+                vertical-align: top;
+                &:first-of-type {
+                    >dl {
+                        @include coinName;
+                    }
+                }
+                &:last-of-type {
+                    >p {
+                        >span {
+                            position: relative;
+                            line-height: 1;
+                            letter-spacing: -0.3px;
+                            font-size: 15px;
+                            font-weight: 200;
+                            &:nth-of-type(3) {
+                                color: #fff0d0;
+                                @media (max-width: 639px) {
+                                    font-size: 14px;
+                                }
+                            }
+                            &:nth-of-type(4) {
+                                @media (max-width: 639px) {
+                                    font-size: 14px;
+                                }
+                            }
+                            >em {
+                                font-style: normal;
+                                font-size: 11px;
+                                color: #67686f;
+                                vertical-align: top;
+                            }
+                            >i {
+                                color: #ffe640;
+                                font-style: normal;
+                            }
+                            >s {
+                                font-style: normal;
+                                font-size: 11px;
+                                vertical-align: top;
+                                text-decoration: none;
+                            }
+                            @media (min-width: 841px) {
+                                @include displayflex(row, center, flex-end, unset);
+                                height: 36px;
+                                &:nth-of-type(1) {
+                                    padding-right: 20px;
+                                }
+                            }
+                            @media (max-width: 840px) {
+                                &:nth-of-type(1),
+                                &:nth-of-type(2),
+                                &:nth-of-type(3),
+                                &:nth-of-type(4) {
+                                    padding-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                    @media (max-width: 840px) {
+                        >button {
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 8px;
+                            font-size: 0;
+                            background-repeat: no-repeat;
+                            background-image: url(#{$img}/btn-chart-open.png);
+                            background-size: 100% auto;
+                            &.up {
+                                transform: translateY(-50%) rotate(180deg);
+                            }
+                        }
+                    }
+                }
+                &.not {
+                    text-align: center;
+                    color: #454753;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 200px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,9 @@
 <template>
 <div class="header">
     <h1>MyCoinP</h1>
-    <button type="button" class="btn_menu" :class="{'active': isAside}" @click="btnAside"><span>gnb</span></button>
+    <button type="button" class="btn_menu" @click="btnAside">
+        <i class="fas fa-align-justify"/>
+    </button>
     <Aside :class="{'hide': !isAside}"/>
 
     <div v-if="$windowWidth < 1200">

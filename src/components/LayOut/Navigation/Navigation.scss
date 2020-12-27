@@ -33,13 +33,16 @@
                 line-height: 1;
                 font-size: 17px;
                 margin-bottom: 40px;
-                &::before {
-                    content: '';
-                    width: 18px;
-                    height: 16px;
-                    background-image: url(#{$img}/ico_navi.png);
-                    background-repeat: no-repeat;
-                    margin-right: 7px;
+                >svg {
+                    fill: #67686f;
+                    &:not(.fa-angle-down) {
+                        margin-right: 7px;
+                        width: 17px;
+                    }
+                    &.fa-angle-down {
+                        margin-left: auto;
+                        margin-right: 19px;
+                    }
                 }
                 &.router-link-exact-active {
                     &::after {

@@ -1,7 +1,7 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+    <div class="advertisement">
+        <img src="@/assets/img/banner.jpg" alt="">
+    </div>
 </template>
 
 <script lang="ts">

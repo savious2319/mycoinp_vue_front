@@ -1,10 +1,12 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+  <CryptocurrencyLeftAdvertisement/>
+  <CryptocurrencyLeftTotalValue/>
+  <CryptocurrencyLeftPortfolio/>
+  <button type="button" class="btnReg">Registration</button>
+  <button type="button" class="btnTop">Top</button>
 </template>
 
-<script lang="ts">
+<script>
 export default {
 }
 </script>

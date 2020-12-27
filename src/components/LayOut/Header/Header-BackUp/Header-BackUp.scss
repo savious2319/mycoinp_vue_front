@@ -1,6 +1,7 @@
 @import "@/assets/scss/function.scss";
 .btn_backup {
     >button {
+        color: #fff;
         &::before {
             content: '';
             display: inline-block;

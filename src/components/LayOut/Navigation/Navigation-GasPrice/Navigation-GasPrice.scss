@@ -4,18 +4,12 @@
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         line-height: 1;
+        color: #fff;
         >span {
             color: #0fc14b;
         }
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 13px;
-            height: 13px;
-            background-image: url(#{$img}/ico_setting.png);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: 100% auto;
+        >svg {
+            font-size: 13px;
             margin-left: 10px;
         }
         @media (min-width: 1200px) {

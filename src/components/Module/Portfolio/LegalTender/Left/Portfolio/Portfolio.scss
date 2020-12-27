@@ -1,8 +1,25 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import "@/assets/scss/function.scss";
+.Portfolio {
+    padding: 15px;
+    >.tab {
+        @include displayflex(row, flex-start, flex-start, unset);
+        height: 33px;
+        border-radius: 5px;
+        background-color: #1c1e2a;
+        overflow: hidden;
+        margin-bottom: 10px;
+        >button {
+            background-color: transparent;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #67686f;
+            width: (100%/3);
+            height: 100%;
+            &.active {
+                background-color: #242936;
+                color: #68bb42;
+            }
+        }
+    }
 }

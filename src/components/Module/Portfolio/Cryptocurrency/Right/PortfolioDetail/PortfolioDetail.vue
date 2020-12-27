@@ -7,8 +7,8 @@
         <dt>4</dt>
         <dd>ZCoin</dd>
       </dl>
-      <button type="button" class="btn_memo">Memo</button>
-      <button type="button" class="btn_delete">Delete</button>
+      <button type="button"><span>Memo</span></button>
+      <button type="button"><i class="fas fa-trash-alt"/><span>Delete</span></button>
     </div>
     <p>1 USD = <em>₩</em>1,150</p>
     <article>

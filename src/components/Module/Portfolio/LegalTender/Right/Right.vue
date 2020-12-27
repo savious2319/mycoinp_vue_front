@@ -1,6 +1,14 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
+  <CryptocurrencyRightAdvertisement/>
+  <CryptocurrencyRightPortfolioDetail/>
+  <CryptocurrencyRightTradingView/>
+  <div class="tabContents">
+    <div class="tabs">
+      <button>Official Messages</button>
+      <button class="active">Buy & Sell</button>
+    </div>
+    <!-- <CryptocurrencyRightOfficialMessages/> -->
+    <CryptocurrencyRightBuySell/>
   </div>
 </template>
 

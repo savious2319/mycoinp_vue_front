@@ -9,18 +9,25 @@
             margin-right: auto;
         }
         >button {
-            width: 20px;
-            height: 20px;
-            font-size: 0;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: 100% auto;
-            &.btn_memo {
-                background-image: url(#{$img}/ico-memo-off.png);
+            >span {
+                font-size: 0;
             }
-            &.btn_delete {
-                background-image: url(#{$img}/ico-delete.png);
-                margin-left: 19px;
+            >svg {
+                vertical-align: top;
+            }
+            &:first-of-type {
+                width: 16px;
+                height: 16px;
+                background-image: url(#{$img}/ico-memo-off.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 100% auto;
+            }
+            &:last-of-type {
+                font-size: 16px;
+                color: #67686f;
+                margin-left: 10px;
+                line-height: 1;
             }
         }
     }
