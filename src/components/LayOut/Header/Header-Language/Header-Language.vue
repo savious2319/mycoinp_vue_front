@@ -8,9 +8,12 @@
 	</div>
 	<article v-if="article.isCurrency">
 		<div class="scarch">
-			<i class="fas fa-search"/>
+			<button type="button" class="btnSearch">
+				<i class="fas fa-search"/>
+				<span>Search</span>
+			</button>
 			<input type="text" placeholder="Search..."> 
-			<button type="button">삭제</button>
+			<button type="button" class="btnDel">삭제</button>
 		</div>
 		<perfect-scrollbar>
 			<div class="currency">

@@ -3,7 +3,13 @@
     <thead>
       <tr>
         <th>
-          <span><input type="text" placeholder="Search..."></span>
+          <span>
+            <button type="button" class="btnSearch">
+              <i class="fas fa-search"/>
+              <span>Search</span>
+            </button>
+            <input type="text" placeholder="Search...">
+          </span>
         </th>
         <th>
           <p>

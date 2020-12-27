@@ -10,6 +10,7 @@
     <!-- <CryptocurrencyRightOfficialMessages/> -->
     <CryptocurrencyRightBuySell/>
   </div>
+  <button type="button" class="btnTop">Top</button>
 </template>
 
 <script lang="ts">

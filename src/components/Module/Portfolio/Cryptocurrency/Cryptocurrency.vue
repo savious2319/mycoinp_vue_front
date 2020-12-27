@@ -19,7 +19,7 @@
 export default {
     data () {
 		return {
-			isDetailView: true,
+			isDetailView: false,
 			ops:{
 				scrollPanel: {
 					scrollingX: false,

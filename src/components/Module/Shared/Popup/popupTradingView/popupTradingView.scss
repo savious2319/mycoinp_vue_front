@@ -10,11 +10,6 @@
             background-color: #f8f8f8;
             margin-bottom: 10px;
             padding-left: 10px;
-            >svg {
-                font-size: 15px;
-                color: #bfbfbf;
-                margin-right: 10px;
-            }
             >input[type=text] {
                 width: calc(100% - 30px);
                 height: 30px;
@@ -31,15 +26,27 @@
                 }
             }
             >button {
-                font-size: 0;
-                width: 30px;
-                height: 30px;
-                background-color: transparent;
-                border: 0;
-                background-image: url(#{$img}/ico-clear-2.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: 11px auto;
+                &.btnDel {
+                    font-size: 0;
+                    width: 30px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 0;
+                    background-image: url(#{$img}/ico-clear-2.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: 11px auto;
+                }
+                &.btnSearch {
+                    margin-right: 10px;
+                    >svg {
+                        font-size: 15px;
+                        color: #bfbfbf;
+                    }
+                    >span {
+                        font-size: 0;
+                    }
+                }
             }
         }
         >.ps {

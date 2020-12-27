@@ -3,6 +3,7 @@
     padding: 15px;
     background-color: #13131f;
     >.tabs {
+        background-color: #1c1e2a;
         border-radius: 5px;
         overflow: hidden;
         height: 33px;
@@ -12,11 +13,11 @@
             font-size: 14px;
             font-weight: 500;
             &:not(.active) {
-                background-color: #1c1e2a;
                 color: #67686f;
             }
             &.active {
                 background-color: #242936;
+                border-radius: 5px;
                 color: #68bb42;
             }
         }

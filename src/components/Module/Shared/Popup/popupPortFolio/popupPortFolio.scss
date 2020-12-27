@@ -4,45 +4,147 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    >.tit {
-        >img {
-            width: 17px;
-            margin-right: 3px;
-        }
-        >strong {
-            line-height: 1;
-        }
-        >span {
-            @include displayflex(row, center, flex-start, unset);
-            font-size: 11px;
-            color: #999;
-            position: relative;
-            margin-left: 8px;
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 1px;
-                height: 10px;
-                margin-right: 8px;
+    >.tabs {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        overflow: hidden;
+        width: calc(100% - 40px);
+        height: 33px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        >button {
+            font-size: 14px;
+            font-weight: 500;
+            &:not(.active) {
+                color: #bfbfbf;
+            }
+            &.active {
                 background-color: #e8e8e8;
+                border-radius: 5px;
+                color: #444444;
             }
         }
     }
     >article {
-        padding: 0 20px 20px 20px;
-        >div {
-            @include displayflex(column, center, center, unset);
-            background-color: #f8f8f8;
-            height: 220px;
-            >svg {
-                font-size: 37px;
-                color: #bfbfbf;
+        margin-top: 20px;
+        >dl {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-row-gap: 5px;
+            &:not(:last-of-type) {
+                >dt {
+                    color: #444444;
+                    font-size: 13px;
+                    font-weight: 500;
+                    height: 30px;
+                }
+                >dd {
+                    position: relative;
+                    height: 30px;
+                    em {
+                        font-style: normal;
+                        line-height: 1;
+                    }
+                    >input[type=date],
+                    >input[type=text] {
+                        border: 0;
+                        padding: 0 10px;
+                        height: 100%;
+                        font-size: 13px;
+                        color: #444;
+                        &::placeholder {
+                            color: #bfbfbf;
+                        }
+                    }
+                    >em {
+                        @include displayflex(row, center, center, unset);
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        font-size: 13px;
+                        color: #444;
+                        padding-right: 10px;
+                        height: 100%;
+                        background-color: #f8f8f8;
+                    }
+                    &:not(.full) {
+                        @include displayflex(row, center, flex-start, unset);
+                        >span {
+                            @include displayflex(row, center, flex-start, unset);
+                            width: 50px;
+                            height: 100%;
+                            font-size: 13px;
+                            color: #444444;
+                            >em {
+                                color: #6bbd46;
+                            }
+                        }
+                        >input[type=text] {
+                            background-color: #f8f8f8;
+                            width: calc(100% - 50px);
+                        }
+                    }
+                    &.full {
+                        background-color: #f8f8f8;
+                        >button {
+                            @include displayflex(row, center, center, unset);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 30px;
+                            height: 30px;
+                            >svg {
+                                font-size: 10px;
+                                color: #bfbfbf;
+                            }
+                            >span {
+                                font-size: 0;
+                                display: none;
+                            }
+                        }
+                        >input[type=date] {
+                            width: 100%;
+                            background-color: transparent;
+                            &::-webkit-calendar-picker-indicator {
+                                outline: 0;
+                            }
+                        }
+                        >input[type=text] {
+                            width: 100%;
+                            background-color: transparent;
+                        }
+                    }
+                }
             }
-            >p {
-                color: #bfbfbf;
-                font-size: 12px;
-                font-weight: 500;
-                margin-top: 11px;
+            &:last-of-type {
+                border-top: 1px solid #e8e8e8;
+                margin-top: 15px;
+                padding-top: 20px;
+                >dt {
+                    color: #6bbd46;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+                >dd {
+                    @include displayflex(row, center, flex-end, unset);
+                    line-height: 1;
+                    >em {
+                        line-height: 1;
+                        font-style: normal;
+                        color: #67686f;
+                        font-size: 11px;
+                        vertical-align: top;
+                    }
+                    >span {
+                        line-height: 1;
+                        color: #6bbd46;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
             }
         }
     }
