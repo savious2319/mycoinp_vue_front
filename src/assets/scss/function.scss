@@ -467,11 +467,15 @@ $moAside: 270px;
 
 @mixin section {
     width: 100%;
+    position: relative;
     @media (min-width: 1200px) {
         padding: 0 50px;
     }
     @media (min-width: 640px) {
         @include displayGrid(50% 50%, auto, 3px);
+    }
+    @media (max-width: 639px) {
+        background-color: #13131f;
     }
     .ps {
         position: relative;

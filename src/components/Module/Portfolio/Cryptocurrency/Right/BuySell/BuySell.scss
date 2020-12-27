@@ -83,6 +83,16 @@
     >div {
         @include displayflex(row, center, flex-start, unset);
         padding-bottom: 18px;
+        position: relative;
+        &::after {
+            content: '';
+            width: calc(100% + 30px);
+            height: 1px;
+            background-color: #1c1e2a;
+            position: absolute;
+            bottom: 0;
+            left: -15px;
+        }
         >span {
             font-size: 14px;
             &:first-of-type {

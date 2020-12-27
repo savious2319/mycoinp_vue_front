@@ -1,12 +1,18 @@
 <template>
 <div class="header">
-    <h1>MyCoinP</h1>
-    <button type="button" class="btn_menu" @click="btnAside">
+    <h1>
+        <a href="/" v-if="!isDetailView">MyCoinP</a>
+        <span v-if="isDetailView">Portfolio Detail</span>
+    </h1>
+    <button type="button" v-if="!isDetailView" @click="btnAside">
         <i class="fas fa-align-justify"/>
     </button>
-    <Aside :class="{'hide': !isAside}"/>
+    <button type="button" v-if="isDetailView">
+        <i class="fas fa-arrow-left"/>
+    </button>
+    <Aside v-if="!isDetailView" :class="{'hide': !isAside}"/>
 
-    <div v-if="$windowWidth < 1200">
+    <div v-if="$windowWidth < 1200 && !isDetailView">
         <HeaderLanguage/>
         <HeaderBackUp/>
     </div>
@@ -18,6 +24,7 @@
 export default {
     data () {
         return {
+			isDetailView: false,
             isAside: false,
         }
     },

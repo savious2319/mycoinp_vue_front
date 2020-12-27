@@ -1,11 +1,17 @@
 <template>
-    <section>
+    <section v-if="$windowWidth > 640">
         <perfect-scrollbar>
             <CryptocurrencyLeft/>
         </perfect-scrollbar>
-        <perfect-scrollbar v-if="$windowWidth > 640">
+		<perfect-scrollbar>
 			<CryptocurrencyRight/>
         </perfect-scrollbar>
+    </section>
+
+	<!-- Mobile Only -->
+    <section v-if="$windowWidth < 640">
+		<CryptocurrencyLeft v-if="!isDetailView"/>
+		<CryptocurrencyRight v-if="isDetailView"/>
     </section>
 </template>
 
@@ -13,6 +19,7 @@
 export default {
     data () {
 		return {
+			isDetailView: true,
 			ops:{
 				scrollPanel: {
 					scrollingX: false,
@@ -34,7 +41,6 @@ export default {
 			},
 		}
 	},
-
 }
 </script>
 
