@@ -2,12 +2,29 @@
   <CryptocurrencyLeftAdvertisement/>
   <CryptocurrencyLeftTotalValue/>
   <CryptocurrencyLeftPortfolio/>
-  <button type="button" class="btnReg">Registration</button>
+  <button type="button" class="btnReg" @click="btnLayerPopup">Registration</button>
   <button type="button" class="btnTop">Top</button>
+  <popupPortFolio v-if="isLayerPopup"/>
+  <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
 </template>
 
 <script>
 export default {
+  data () {
+  return {
+      isLayerPopup: false,
+    }
+  },
+  methods: {
+    btnLayerPopup: function(){
+        if(this.isLayerPopup == false){
+            this.isLayerPopup = true;
+        } else{
+            this.isLayerPopup = false;
+        }
+    },
+  }
+
 }
 </script>
 

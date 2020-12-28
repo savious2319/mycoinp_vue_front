@@ -3,17 +3,20 @@
     &:nth-of-type(1) {
         >span {
             position: relative;
-            &::after {
-                content: '';
-                background-repeat: no-repeat;
-                background-image: url(#{$img}/btn-search.png);
-                background-size: 100% auto;
-                width: 10px;
-                height: 10px;
+            >button {
+                @include displayflex(row, center, center, unset);
                 position: absolute;
                 top: calc(50% + 2px);
                 left: 10px;
                 transform: translateY(-50%);
+                line-height: 1;
+                >svg {
+                    font-size: 10px;
+                    color: #454753;
+                }
+                >span {
+                    font-size: 0;
+                }
             }
             >input[type=text] {
                 width: 100%;
