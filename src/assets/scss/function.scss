@@ -447,7 +447,7 @@ $moAside: 270px;
     }
     >.btnSet {
         @include displayflex(row, center, flex-start, unset);
-        border-radius: 2px;
+        border-radius: 2.5px;
         overflow: hidden;
         height: 45px;
         margin: 0 auto;

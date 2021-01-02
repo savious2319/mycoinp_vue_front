@@ -4,6 +4,37 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 639px) {
+        @include displayflex(column, flex-start, flex-start, unset);
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-bottom: 25px;
+        >button {
+            @include displayflex(row, center, center, unset);
+            width: 44px;
+            height: 44px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            >span {
+                font-size: 0;
+            }
+            >svg {
+                font-size: 15px;
+                color: #000;
+            }
+        }
+        >.tit {
+            justify-content: center;
+            width: 100%;
+            height: 45px;
+        }
+        >.btnSet {
+            margin-top: auto;
+        }
+    }
     >.tabs {
         background-color: #f8f8f8;
         border-radius: 5px;
