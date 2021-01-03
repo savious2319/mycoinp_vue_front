@@ -34,7 +34,7 @@ button {
     @include mask;
 }
 
-.layerPopup {
+[data-layerPopup] {
     @include layer(350px, absolute);
     >.tab_btn {
         @include displayflex(row, flex-start, flex-start, unset);

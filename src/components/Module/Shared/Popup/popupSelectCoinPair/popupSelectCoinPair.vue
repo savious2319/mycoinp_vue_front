@@ -1,6 +1,6 @@
 <template>
-<div class="layerPopup">
-	<p class="tit">Indicators</p>
+<div data-layerPopup="popupSelectCoinPair">
+	<p class="tit">Select the coin name</p>
 	<article>
 		<div class="scarch">
 			<i class="fas fa-search"/>
@@ -9,26 +9,33 @@
 		</div>
 		<perfect-scrollbar>
 			<div class="list">
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
-				<a href="#"><span>Ac</span>cumulation/Distribution</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
+				<a href="#"><img src="@/assets/img/ico_coin.png" alt=""><span>Z</span>coin</a>
 			</div>
 		</perfect-scrollbar>
 		<button type="button">Cancel</button>

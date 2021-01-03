@@ -1,6 +1,6 @@
 <template>
 <button type="button" class="btn" @click="btnLayerBackup">Backup</button>
-<div class="layerPopup" v-if="isLayerBackup">
+<div data-layerPopup="headerBackup" v-if="isLayerBackup">
     <div class="tab_btn">
         <button type="button" :class="{'on': article.isMyCom}" @click="btnMyCom">Import</button>
         <button type="button" :class="{'on': article.isGoogle}" @click="btnGoogle">Backup</button>

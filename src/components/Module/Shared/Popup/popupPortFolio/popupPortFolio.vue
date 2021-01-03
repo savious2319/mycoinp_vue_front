@@ -1,20 +1,20 @@
 <template>
-<div class="layerPopup">
+<div data-layerPopup="popupPortFolio">
 	<button type="button" v-if="$windowWidth < 640">
 		<span>Back</span>
 		<i class="fas fa-arrow-left"/>
 		</button>
 	<p class="tit">Add Buy</p>
 	<div class="tabs">
-		<button type="button" :class="{'active': tabs.isCoin}" @click="btnCoin()">Coin Buy</button>
-		<button type="button" :class="{'active': tabs.isFiat}" @click="btnFiat()">Fiat Deposit</button>
+		<button type="button" :class="{'active': tabs.isCoin}" @click="btnCoin">Coin Buy</button>
+		<button type="button" :class="{'active': tabs.isFiat}" @click="btnFiat">Fiat Deposit</button>
 	</div>
 	<article v-if="tabs.isCoin">
 		<dl>
 			<dt>Coin</dt>
 			<dd class="full">
 				<input type="text">
-				<button type="button">
+				<button type="button" @click="btnSelectCoinPair">
 					<i class="fas fa-search"/>
 					<span>Search</span>
 				</button>
@@ -106,6 +106,12 @@
 		<button type="button">Buy</button>
 	</div>
 </div>
+
+<popupSelectCoinPair v-if="popups.isSelectCoinPair"/>
+<div class="mask" v-if="popups.isSelectCoinPair" @click="btnSelectCoinPair"></div>
+
+<popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet"/>
+<div class="mask" v-if="popups.isSelectCoinWhereWallet"></div>
 </template>
 
 <script>
@@ -116,7 +122,10 @@ export default {
 				isCoin: true,
 				isFiat: false,
 			},
-
+			popups:{
+				isSelectCoinPair: false,
+				isSelectCoinWhereWallet: true,
+			},
         }
     },
 	methods: {
@@ -128,6 +137,14 @@ export default {
 			this.tabs.isCoin = false;
 			this.tabs.isFiat = true;
 		},
+		btnSelectCoinPair: function(){
+			if(this.popups.isSelectCoinPair == false){
+				this.popups.isSelectCoinPair = true;
+			} else{
+				this.popups.isSelectCoinPair = false;
+			}
+		},
+
 	}
 }
 </script>

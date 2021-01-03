@@ -1,6 +1,6 @@
 <template>
 <button type="button" class="btn krw" @click="btnLayerLang">KRW</button>
-<div class="layerPopup" v-if="isLayerLang">
+<div data-layerPopup="headerLanguage" v-if="isLayerLang">
 	<div class="tab_btn">
 		<button type="button" :class="{'on': article.isCurrency}" @click="btnCurrency">Currency</button>
 		<button type="button" :class="{'on': article.isLanguage}" @click="btnLanguage">Language</button>

@@ -39,16 +39,14 @@ import popupMemo from '@/components/Module/Shared/Popup/popupMemo/popupMemo.vue'
 import popupFiatType from '@/components/Module/Shared/Popup/popupFiatType/popupFiatType.vue';
 import popupPortFolio from '@/components/Module/Shared/Popup/popupPortFolio/popupPortFolio.vue';
 import popupSelectCoinPair from '@/components/Module/Shared/Popup/popupSelectCoinPair/popupSelectCoinPair.vue';
-import popupSelectCoinWallet from '@/components/Module/Shared/Popup/popupSelectCoinWallet/popupSelectCoinWallet.vue';
-import popupSelectCoinWhere from '@/components/Module/Shared/Popup/popupSelectCoinWhere/popupSelectCoinWhere.vue';
+import popupSelectCoinWhereWallet from '@/components/Module/Shared/Popup/popupSelectCoinWhereWallet/popupSelectCoinWhereWallet.vue';
 
 app.component('popupTradingView', popupTradingView)
 app.component('popupMemo', popupMemo)
 app.component('popupFiatType', popupFiatType)
 app.component('popupPortFolio', popupPortFolio)
 app.component('popupSelectCoinPair', popupSelectCoinPair)
-app.component('popupSelectCoinWallet', popupSelectCoinWallet)
-app.component('popupSelectCoinWhere', popupSelectCoinWhere)
+app.component('popupSelectCoinWhereWallet', popupSelectCoinWhereWallet)
 /** Popup End */
 
 

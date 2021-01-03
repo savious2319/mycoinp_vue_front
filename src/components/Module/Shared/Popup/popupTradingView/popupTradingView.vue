@@ -1,5 +1,5 @@
 <template>
-<div class="layerPopup">
+<div data-layerPopup="popupTradingView">
 	<p class="tit">Indicators</p>
 	<article>
 		<div class="scarch">

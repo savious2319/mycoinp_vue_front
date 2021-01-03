@@ -1,5 +1,5 @@
 <template>
-<div class="layerPopup">
+<div data-layerPopup="popupMemo">
 	<p class="tit">
 		<img src="@/assets/img/ico_coin.png" alt="">
 		<strong>XZC</strong>

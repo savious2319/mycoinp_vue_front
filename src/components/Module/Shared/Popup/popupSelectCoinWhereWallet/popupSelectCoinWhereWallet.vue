@@ -1,5 +1,5 @@
 <template>
-<div class="layerPopup">
+<div data-layerPopup="popupSelectCoinWhereWallet">
 	<p class="tit">Indicators</p>
 	<article>
 		<div class="scarch">
@@ -42,5 +42,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-	@import "popupSelectCoinWallet.scss";
+	@import "popupSelectCoinWhereWallet.scss";
 </style>
