@@ -40,6 +40,10 @@
     }
 }
 
+.mask {
+    @include mask;
+}
+
 .buySell {
     >.tabs {
         @include displayflex(row, center, space-between, unset);

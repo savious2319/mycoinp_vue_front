@@ -1,0 +1,165 @@
+@import "@/assets/scss/function.scss";
+[data-layerPopup^="popupPortFolio"] {
+    @include layer(500px, fixed);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 639px) {
+        @include displayflex(column, flex-start, flex-start, unset);
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-bottom: 25px;
+        >button {
+            @include displayflex(row, center, center, unset);
+            width: 44px;
+            height: 44px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            >span {
+                font-size: 0;
+            }
+            >svg {
+                font-size: 15px;
+                color: #000;
+            }
+        }
+        >.tit {
+            justify-content: center;
+            width: 100%;
+            height: 45px;
+        }
+        >.btnSet {
+            margin-top: auto;
+        }
+    }
+    >article {
+        margin-top: 20px;
+        >dl {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-row-gap: 5px;
+            &:not(:last-of-type) {
+                >dt {
+                    color: #444444;
+                    font-size: 13px;
+                    font-weight: 500;
+                    height: 30px;
+                }
+                >dd {
+                    position: relative;
+                    height: 30px;
+                    em {
+                        font-style: normal;
+                        line-height: 1;
+                    }
+                    >input[type=date],
+                    >input[type=text] {
+                        border: 0;
+                        padding: 0 10px;
+                        height: 100%;
+                        font-size: 13px;
+                        color: #444;
+                        &::placeholder {
+                            color: #bfbfbf;
+                        }
+                    }
+                    >em {
+                        @include displayflex(row, center, center, unset);
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        font-size: 13px;
+                        color: #444;
+                        padding-right: 10px;
+                        height: 100%;
+                        background-color: #f8f8f8;
+                    }
+                    &:not(.full) {
+                        @include displayflex(row, center, flex-start, unset);
+                        >span {
+                            @include displayflex(row, center, flex-start, unset);
+                            width: 50px;
+                            height: 100%;
+                            font-size: 13px;
+                            color: #444444;
+                            >em {
+                                color: #6bbd46;
+                            }
+                        }
+                        >input[type=text] {
+                            background-color: #f8f8f8;
+                            width: calc(100% - 50px);
+                        }
+                    }
+                    &.full {
+                        background-color: #f8f8f8;
+                        >button {
+                            @include displayflex(row, center, center, unset);
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 30px;
+                            height: 30px;
+                            >svg {
+                                font-size: 10px;
+                                color: #bfbfbf;
+                            }
+                            >span {
+                                font-size: 0;
+                                display: none;
+                            }
+                        }
+                        >input[type=date] {
+                            width: 100%;
+                            background-color: transparent;
+                            &::-webkit-calendar-picker-indicator {
+                                outline: 0;
+                            }
+                        }
+                        >input[type=text] {
+                            width: 100%;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            &:last-of-type {
+                border-top: 1px solid #e8e8e8;
+                margin-top: 15px;
+                padding-top: 20px;
+                >dt {
+                    color: #6bbd46;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+                >dd {
+                    @include displayflex(row, center, flex-end, unset);
+                    line-height: 1;
+                    >em {
+                        line-height: 1;
+                        font-style: normal;
+                        color: #67686f;
+                        font-size: 11px;
+                        vertical-align: top;
+                    }
+                    >span {
+                        line-height: 1;
+                        color: #6bbd46;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mask {
+    @include mask;
+    z-index: 3;
+}

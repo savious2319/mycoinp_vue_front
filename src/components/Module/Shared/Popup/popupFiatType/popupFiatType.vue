@@ -1,25 +1,69 @@
 <template>
 <div data-layerPopup="popupFiatType">
-	<p class="tit">
-		<img src="@/assets/img/ico_coin.png" alt="">
-		<strong>XZC</strong>
-		<span>ZCoin</span>
-	</p>
 	<article>
-		<div>
-			<i class="fas fa-edit"/>
-			<p>Please take note if necessary.</p>
+		<div class="scarch">
+			<button type="button" class="btnSearch">
+				<i class="fas fa-search"/>
+				<span>Search</span>
+			</button>
+			<input type="text" placeholder="Search..."> 
+			<button type="button" class="btnDel">삭제</button>
 		</div>
+		<perfect-scrollbar>
+			<div class="currency">
+				<button type="button" v-for="(lang, idx) in langs" :key="idx" :class="lang.symbol">{{lang.symbol}}</button>
+			</div>
+		</perfect-scrollbar>
 	</article>
-	<div class="btnSet">
-		<button type="button">Cancel</button>
-		<button type="button">Save</button>
-	</div>
+	<button type="button">Cancel</button>
 </div>
 </template>
 
 <script>
 export default {
+	data () {
+		return {
+			langs:[
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+				{symbol: "usd", coin_cd: "100001", mark: "$"},
+			]
+		}
+	},
+
 }
 </script>
 

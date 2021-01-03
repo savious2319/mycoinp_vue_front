@@ -3,13 +3,9 @@
 	<button type="button" v-if="$windowWidth < 640">
 		<span>Back</span>
 		<i class="fas fa-arrow-left"/>
-		</button>
+	</button>
 	<p class="tit">Add Buy</p>
-	<div class="tabs">
-		<button type="button" :class="{'active': tabs.isCoin}" @click="btnCoin">Coin Buy</button>
-		<button type="button" :class="{'active': tabs.isFiat}" @click="btnFiat">Fiat Deposit</button>
-	</div>
-	<article v-if="tabs.isCoin">
+	<article>
 		<dl>
 			<dt>Coin</dt>
 			<dd class="full">
@@ -66,41 +62,6 @@
 		</dl>
 	</article>
 
-	<article v-if="tabs.isFiat">
-		<dl>
-			<dt>Type</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnFiatType">
-					<i class="fas fa-search"/>
-					<span>Search</span>
-				</button>
-			</dd>
-			<dt>When</dt>
-			<dd class="full"><input type="date"></dd>
-			<dt>Where</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnSelectCoinWhereWallet">
-					<i class="fas fa-search"/>
-					<span>Search</span>
-				</button>
-			</dd>
-			<dt>How much</dt>
-			<dd class="full">
-				<input type="text" placeholder="1,000">
-				<em>KRW</em>
-			</dd>
-		</dl>
-		<dl>
-			<dt>Total Buy Value</dt>
-			<dd>
-				<em>$</em>
-				<span>2,399,000</span>
-			</dd>
-		</dl>
-	</article>
-
 	<div class="btnSet">
 		<button type="button">Cancel</button>
 		<button type="button">Buy</button>
@@ -113,22 +74,15 @@
 <popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet"/>
 <div class="mask" v-if="popups.isSelectCoinWhereWallet" @click="btnSelectCoinWhereWallet"></div>
 
-<popupFiatType v-if="popups.isFiatType"/>
-<div class="mask" v-if="popups.isFiatType" @click="btnFiatType"></div>
 </template>
 
 <script>
 export default {
 	data () {
         return {
-			tabs:{
-				isCoin: true,
-				isFiat: false,
-			},
 			popups:{
 				isSelectCoinPair: false,
 				isSelectCoinWhereWallet: false,
-				isFiatType: false,
 			},
         }
     },
@@ -155,17 +109,10 @@ export default {
 				this.popups.isSelectCoinWhereWallet = false;
 			}
 		},
-		btnFiatType: function(){
-			if(this.popups.isFiatType == false){
-				this.popups.isFiatType = true;
-			} else{
-				this.popups.isFiatType = false;
-			}
-		},
 	}
 }
 </script>
 
 <style scoped lang="scss">
-	@import "popupPortFolio.scss";
+	@import "popupPortfolioCoin.scss";
 </style>

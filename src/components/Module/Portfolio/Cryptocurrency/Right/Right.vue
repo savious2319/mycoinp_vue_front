@@ -4,8 +4,8 @@
   <CryptocurrencyRightTradingView/>
   <div class="tabContents">
     <div class="tabs">
-      <button>Official Messages</button>
-      <button class="active">Buy & Sell</button>
+      <button type="button">Official Messages</button>
+      <button type="button" class="active">Buy & Sell</button>
     </div>
     <!-- <CryptocurrencyRightOfficialMessages/> -->
     <CryptocurrencyRightBuySell/>

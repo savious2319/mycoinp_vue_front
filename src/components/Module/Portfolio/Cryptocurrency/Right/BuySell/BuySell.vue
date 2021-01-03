@@ -3,7 +3,7 @@
     <ul class="tabs">
       <li>
         <button type="button" class="active">Buy [ 3/15 ]</button>
-        <button type="button" class="icoReg">Registration</button>
+        <button type="button" class="icoReg" @click="btnpopupPortfolio">Registration</button>
       </li>
       <li>
         <button type="button">Sell [ 3 ]</button>
@@ -80,19 +80,47 @@
           </dd>
       </dl>
       <span>
-        <button type="button">Sell [ 0 ] +</button>
+        <button type="button" @click="btnpopupPortfolioSell">Sell [ 0 ] +</button>
       </span>
     </article>
   </div>
+  <!--
+  <popupPortfolioFiat v-if="ispopupPortfolio"/>
+  <popupPortfolioFiatSell v-if="ispopupPortfolio"/>
+  -->
+  <popupPortfolioCoin v-if="ispopupPortfolio"/>
+  <div class="mask" v-if="ispopupPortfolio" @click="btnpopupPortfolio"></div>
+
+  <popupPortfolioCoinSell v-if="ispopupPortfolioSell"/>
+  <div class="mask" v-if="ispopupPortfolioSell" @click="btnpopupPortfolioSell"></div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data () {
     return {
+      ispopupPortfolio: false,
+      ispopupPortfolioSell: false,
       isAll: false
     }
+  },
+  methods: {
+    btnpopupPortfolio: function(){
+      if(this.ispopupPortfolio == false){
+          this.ispopupPortfolio = true;
+      } else{
+          this.ispopupPortfolio = false;
+      }
+    },
+    btnpopupPortfolioSell: function(){
+      if(this.ispopupPortfolioSell == false){
+          this.ispopupPortfolioSell = true;
+      } else{
+          this.ispopupPortfolioSell = false;
+      }
+    },
   }
+
 }
 </script>
 
