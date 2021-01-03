@@ -1,11 +1,46 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+  <section v-if="$windowWidth > 640">
+    <perfect-scrollbar>
+      <AllCoinLeft/>
+    </perfect-scrollbar>
+		<perfect-scrollbar>
+      <AllCoinRight/>
+    </perfect-scrollbar>
+  </section>
+
+	<!-- Mobile Only -->
+    <section v-if="$windowWidth < 640">
+      <AllCoinLeft v-if="!isDetailView"/>
+      <AllCoinRight v-if="isDetailView"/>
+    </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    data () {
+		return {
+			isDetailView: false,
+			ops:{
+				scrollPanel: {
+					scrollingX: false,
+					scrollingY: true,
+				},
+				rail: {
+					opacity: 1,
+					background: '#13131f',
+					size: '4px',
+
+				},
+				bar: {
+					background: '#282d3a',
+					keepShow: true,
+					opacity: 1,
+					hover: false,
+					size: '4px',
+				}
+			},
+		}
+	},
 }
 </script>
 

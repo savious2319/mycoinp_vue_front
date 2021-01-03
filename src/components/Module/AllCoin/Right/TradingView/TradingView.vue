@@ -1,13 +1,44 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
+  <div class="tradingview">
+    <div class="btnSet">
+      <strong>XZC/</strong>
+      <label for=""><input type="radio">USD</label>
+      <label for=""><input type="radio">BTC</label>
+      <button class="active" type="button">D</button>
+      <button type="button">W</button>
+      <button type="button">M</button>
+      <button class="add" type="button">add</button>
+      <span>by TradingView</span>
+      <button class="fullscrean" type="button">fullscrean</button>
+    </div>
+    <div class="chart" @click="btnLayerPopup">
+      Chart
+    </div>
+    <popupTradingView v-if="isLayerPopup"/>
+    <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+  data () {
+  return {
+      isLayerPopup: false,
+    }
+  },
+  methods: {
+    btnLayerPopup: function(){
+        if(this.isLayerPopup == false){
+            this.isLayerPopup = true;
+        } else{
+            this.isLayerPopup = false;
+        }
+    },
+  }
+
 }
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">

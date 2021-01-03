@@ -1,8 +1,130 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+@import "@/assets/scss/function.scss";
+.PortfolioDetail {
+    padding: 15px;
+    background-color: #0b0c0f;
+    position: relative;
+    >.coinName {
+        @include displayflex(row, center, flex-start, unset);
+        >dl {
+            @include coinName;
+            margin-right: auto;
+        }
+        >button {
+            >span {
+                font-size: 0;
+            }
+            >svg {
+                vertical-align: top;
+            }
+            &:first-of-type {
+                width: 16px;
+                height: 16px;
+                background-image: url(#{$img}/ico-memo-off.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 100% auto;
+            }
+            &:last-of-type {
+                font-size: 16px;
+                color: #67686f;
+                margin-left: 10px;
+                line-height: 1;
+            }
+        }
+        >.mask {
+            @include mask;
+        }
+    }
+    >p {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        >em {
+            font-size: 11px;
+            font-style: normal;
+            color: #808080;
+            vertical-align: top;
+        }
+    }
+    >article {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 17px;
+        margin-top: 16px;
+        padding-right: 22px;
+        position: relative;
+        >button {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            font-size: 0;
+            width: 12px;
+            height: 8px;
+            background-image: url(#{$img}/btn-add-show-down.png);
+            background-repeat: no-repeat;
+            background-size: 12px auto;
+            &.on {
+                transform: rotate(180deg);
+            }
+        }
+        >dl {
+            >dt {
+                line-height: 1;
+                color: #fff0d0;
+                font-size: 15px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-align: right;
+                >em {
+                    display: inline-block;
+                    font-style: normal;
+                    vertical-align: top;
+                    font-weight: normal;
+                    font-size: 11px;
+                    margin-top: 2px;
+                    color: #fff0d0;
+                }
+            }
+            >dd {
+                @include displayflex(row, flex-start, flex-end, unset);
+                text-align: right;
+                line-height: 1;
+                >* {
+                    line-height: 1;
+                }
+                >strong {
+                    font-weight: 500;
+                    @media (min-width: 640px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 639px) {
+                        font-size: 14px;
+                    }
+                    >em {
+                        display: inline-block;
+                        font-style: normal;
+                        vertical-align: top;
+                        font-weight: normal;
+                        font-size: 11px;
+                        margin-top: 2px;
+                    }
+                }
+                >span {
+                    color: #ffe640;
+                    @media (min-width: 640px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 639px) {
+                        font-size: 14px;
+                    }
+                }
+                >em {
+                    font-size: 11px;
+                    font-style: normal;
+                    vertical-align: top;
+                    color: #67686f;
+                }
+            }
+        }
+    }
 }

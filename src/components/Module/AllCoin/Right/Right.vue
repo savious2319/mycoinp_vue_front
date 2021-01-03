@@ -1,7 +1,16 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
+  <CryptocurrencyRightAdvertisement/>
+  <AllCoinRightCoinDetail/>
+  <AllCoinRightTradingView/>
+  <div class="tabContents">
+    <div class="tabs">
+      <button type="button">Official Messages</button>
+      <button type="button" class="active">by Exchange</button>
+    </div>
+    <!-- <AllCoinRightOfficialMessages/> -->
+    <AllCoinRightBuyExchange/>
   </div>
+  <button type="button" class="btnTop">Top</button>
 </template>
 
 <script lang="ts">

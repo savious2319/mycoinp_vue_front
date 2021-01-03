@@ -126,17 +126,23 @@ app.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
 
 /** AllCoin Start */
 import AllCoin from '@/components/Module/AllCoin/AllCoin.vue';
+import AllCoinLeft from '@/components/Module/AllCoin/Left/Left.vue';
 import AllCoinLeftAllCoinList from '@/components/Module/AllCoin/Left/AllCoinList/AllCoinList.vue';
 
 import AllCoinRight from '@/components/Module/AllCoin/Right/Right.vue';
 import AllCoinRightCoinDetail from '@/components/Module/AllCoin/Right/CoinDetail/CoinDetail.vue';
 import AllCoinRightTradingView from '@/components/Module/AllCoin/Right/TradingView/TradingView.vue';
+import AllCoinRightBuyExchange from '@/components/Module/AllCoin/Right/BuyExchange/BuyExchange.vue';
+import AllCoinRightOfficialMessages from '@/components/Module/AllCoin/Right/OfficialMessages/OfficialMessages.vue';
 
 app.component('AllCoin', AllCoin)
+app.component('AllCoinLeft', AllCoinLeft)
 app.component('AllCoinLeftAllCoinList', AllCoinLeftAllCoinList)
 app.component('AllCoinRight', AllCoinRight)
 app.component('AllCoinRightCoinDetail', AllCoinRightCoinDetail)
 app.component('AllCoinRightTradingView', AllCoinRightTradingView)
+app.component('AllCoinRightBuyExchange', AllCoinRightBuyExchange)
+app.component('AllCoinRightOfficialMessages', AllCoinRightOfficialMessages)
 /** AllCoin End */
 
 /** Exchanges Start */
