@@ -6,8 +6,53 @@
     >.coinName {
         @include displayflex(row, center, flex-start, unset);
         >dl {
-            @include coinName;
             margin-right: auto;
+            display: grid;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-template-areas: "dt ddFirst" "dt ddLast";
+            >dt {
+                @include displayflex(row, center, center, unset);
+                color: #fff0d0;
+                font-size: 12px;
+                line-height: 1;
+                grid-area: dt;
+                >img {
+                    width: 20px;
+                }
+                >button {
+                    margin-right: 10px;
+                    &.btnBookmark {
+                        >svg {
+                            font-size: 20px;
+                            color: #67686f;
+                        }
+                        >span {
+                            font-size: 0
+                        }
+                        &.active {
+                            >svg {
+                                color: #ffe640;
+                            }
+                        }
+                    }
+                }
+            }
+            >dd {
+                line-height: 1;
+                &:first-of-type {
+                    @include displayflex(row, flex-start, flex-start, unset);
+                    font-size: 15px;
+                    grid-area: ddFirst;
+                }
+                &:last-of-type {
+                    @include displayflex(row, center, flex-start, unset);
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: #fff0d0;
+                    grid-area: ddLast;
+                }
+            }
         }
         >button {
             >span {
@@ -35,94 +80,65 @@
             @include mask;
         }
     }
-    >p {
-        text-align: center;
-        font-size: 17px;
-        font-weight: 500;
-        >em {
-            font-size: 11px;
-            font-style: normal;
-            color: #808080;
-            vertical-align: top;
-        }
-    }
-    >article {
+    >ul {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-row-gap: 17px;
-        margin-top: 16px;
-        padding-right: 22px;
-        position: relative;
-        >button {
-            position: absolute;
-            top: 30px;
-            right: 0;
-            font-size: 0;
-            width: 12px;
-            height: 8px;
-            background-image: url(#{$img}/btn-add-show-down.png);
-            background-repeat: no-repeat;
-            background-size: 12px auto;
-            &.on {
-                transform: rotate(180deg);
-            }
-        }
-        >dl {
-            >dt {
+        grid-template-columns: (100%/3) (100%/3) (100%/3);
+        margin-top: 10px;
+        >li {
+            &:first-of-type {
+                @include displayflex(row, center, flex-start, unset);
+                font-size: 13px;
                 line-height: 1;
                 color: #fff0d0;
-                font-size: 15px;
                 font-weight: 300;
-                margin-bottom: 10px;
-                text-align: right;
-                >em {
+            }
+            &:nth-of-type(2) {
+                @include displayflex(row, center, center, unset);
+                color: #6bbd46;
+                >span {
+                    font-size: 17px;
+                    font-weight: 500;
+                    >em {
+                        font-style: normal;
+                        font-size: 11px;
+                        color: #67686f;
+                        vertical-align: top;
+                    }
+                }
+                >mark {
                     display: inline-block;
-                    font-style: normal;
-                    vertical-align: top;
-                    font-weight: normal;
-                    font-size: 11px;
-                    margin-top: 2px;
-                    color: #fff0d0;
+                    width: 10px;
+                    height: 30px;
+                    background-color: transparent;
+                    position: relative;
+                    margin-left: 10px;
+                    >i {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 10px;
+                        background-color: #6bbd46;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 1px;
+                        height: 100%;
+                        background-color: #6bbd46;
+                    }
                 }
             }
-            >dd {
-                @include displayflex(row, flex-start, flex-end, unset);
-                text-align: right;
-                line-height: 1;
-                >* {
-                    line-height: 1;
-                }
-                >strong {
-                    font-weight: 500;
-                    @media (min-width: 640px) {
-                        font-size: 17px;
-                    }
-                    @media (max-width: 639px) {
-                        font-size: 14px;
-                    }
-                    >em {
-                        display: inline-block;
-                        font-style: normal;
-                        vertical-align: top;
-                        font-weight: normal;
-                        font-size: 11px;
-                        margin-top: 2px;
-                    }
-                }
-                >span {
-                    color: #ffe640;
-                    @media (min-width: 640px) {
-                        font-size: 17px;
-                    }
-                    @media (max-width: 639px) {
-                        font-size: 14px;
-                    }
-                }
+            &:last-of-type {
+                @include displayflex(row, center, flex-end, unset);
+                color: #6bbd46;
                 >em {
-                    font-size: 11px;
                     font-style: normal;
+                    font-size: 11px;
                     vertical-align: top;
-                    color: #67686f;
+                    text-decoration: none;
                 }
             }
         }

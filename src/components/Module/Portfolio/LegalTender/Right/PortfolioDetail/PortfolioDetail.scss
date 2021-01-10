@@ -6,8 +6,36 @@
     >.coinName {
         @include displayflex(row, center, flex-start, unset);
         >dl {
-            @include coinName;
             margin-right: auto;
+            display: grid;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-template-areas: "dt ddFirst" "dt ddLast";
+            >dt {
+                @include displayflex(row, center, center, unset);
+                color: #fff0d0;
+                font-size: 12px;
+                line-height: 1;
+                grid-area: dt;
+                >img {
+                    width: 20px;
+                }
+            }
+            >dd {
+                line-height: 1;
+                &:first-of-type {
+                    @include displayflex(row, flex-start, flex-start, unset);
+                    font-size: 15px;
+                    grid-area: ddFirst;
+                }
+                &:last-of-type {
+                    @include displayflex(row, center, flex-start, unset);
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: #fff0d0;
+                    grid-area: ddLast;
+                }
+            }
         }
         >button {
             >span {

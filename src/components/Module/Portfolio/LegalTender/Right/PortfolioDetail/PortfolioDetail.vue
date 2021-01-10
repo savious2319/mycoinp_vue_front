@@ -4,7 +4,6 @@
       <dl>
         <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
         <dd>XZC</dd>
-        <dt>4</dt>
         <dd>ZCoin</dd>
       </dl>
       <button type="button" @click="btnLayerPopup"><span>Memo</span></button>

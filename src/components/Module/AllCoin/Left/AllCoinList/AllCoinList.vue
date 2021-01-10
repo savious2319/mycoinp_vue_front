@@ -4,7 +4,10 @@
     <tr>
       <th>
         <span>
-          <i class="fas fa-star"></i>
+          <button type="button" class="btnBookmark active">
+            <i class="fas fa-star"></i>
+            <span>bookmark</span>
+          </button>
           <button type="button" class="btnSearch">
             <i class="fas fa-search"/>
             <span>Search</span>
@@ -26,7 +29,12 @@
     <tr class="active">
       <td>
         <dl>
-          <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+          <dt>
+            <button type="button" class="btnBookmark active">
+              <i class="fas fa-star"></i>
+              <span>bookmark</span>
+            </button>
+          </dt>
           <dd>XZC</dd>
           <dt>4</dt>
           <dd>ZCoin</dd>

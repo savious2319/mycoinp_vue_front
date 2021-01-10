@@ -1,198 +1,182 @@
 @import "@/assets/scss/function.scss";
 @mixin textAlign {
-    &:nth-of-type(3) {
-        >p {
-            display: grid;
-        }
-    }
-    @media (min-width: 841px) {
-        $widths: 1 17% left, 2 9% center, 3 74% right;
-        @each $name,
-        $width,
-        $align in $widths {
-            &:nth-of-type(#{$name}) {
-                width: $width;
+    $widths: (1 30% left, 2 30% right, 3 40% right);
+    @each $name,
+    $width,
+    $align in $widths {
+        &:nth-of-type(#{$name}) {
+            width: $width;
+            text-align: $align;
+            * {
                 text-align: $align;
-            }
-        }
-        &:nth-of-type(3) {
-            >p {
-                grid-template-columns: 17% 25% 29% 29%;
-            }
-        }
-    }
-    @media (max-width: 840px) {
-        $widths: 1 29% left, 2 15% center, 3 56% right;
-        @each $name,
-        $width,
-        $align in $widths {
-            &:nth-of-type(#{$name}) {
-                width: $width;
-                text-align: $align;
-            }
-        }
-        &:nth-of-type(3) {
-            >p {
-                grid-template-columns: 50% 50%;
-                grid-row-gap: 8px;
             }
         }
     }
 }
 
-.mask {
-    @include mask;
-}
-
-.buySell {
-    >.tabs {
-        @include displayflex(row, center, space-between, unset);
-        margin-top: 14px;
-        margin-bottom: 20px;
-        padding: 0 39px;
-        >li {
-            @include displayflex(row, center, center, unset);
-            >button {
-                &:not(.icoReg) {
+table {
+    >thead {
+        >tr {
+            >th {
+                @include textAlign;
+                position: relative;
+                padding: 15px 0;
+                text-align: center;
+                font-weight: normal;
+                >span {
+                    @include displayflex(row, center, center, unset);
+                    width: fit-content;
+                    line-height: 1;
                     color: #67686f;
                     font-size: 13px;
-                    font-weight: 500;
-                    position: relative;
-                    line-height: 1;
-                    &.active {
-                        color: #fff;
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: -5px;
-                            width: 100%;
-                            height: 1px;
-                            background-color: #68bb42;
+                    >em {
+                        font-size: 11px;
+                        font-style: normal;
+                        color: #67686f;
+                        vertical-align: top;
+                    }
+                }
+                &:first-of-type {
+                    padding-left: 15px;
+                    >span {
+                        margin-right: auto;
+                        >button {
+                            &.btnBookmark {
+                                margin-right: 6px;
+                                >svg {
+                                    font-size: 17px;
+                                    color: #67686f;
+                                }
+                                >span {
+                                    font-size: 0
+                                }
+                                &.active {
+                                    >svg {
+                                        color: #ffe640;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-                &.icoReg {
-                    font-size: 0;
-                    width: 16px;
-                    height: 16px;
-                    background-repeat: no-repeat;
-                    background-size: 100% auto;
-                    background-image: url(#{$img}/buy-add-btn.png);
-                    margin-left: 10px
+                &:not(:first-of-type) {
+                    >span {
+                        margin-left: auto;
+                    }
+                }
+                &:last-of-type {
+                    padding-right: 15px;
                 }
             }
         }
     }
-    >div {
-        @include displayflex(row, center, flex-start, unset);
-        padding-bottom: 18px;
-        position: relative;
-        &::after {
-            content: '';
-            width: calc(100% + 30px);
-            height: 1px;
-            background-color: #1c1e2a;
-            position: absolute;
-            bottom: 0;
-            left: -15px;
-        }
-        >span {
-            font-size: 14px;
-            &:first-of-type {
-                margin-right: 23px;
-            }
-            &:last-of-type {
-                margin-right: auto;
-            }
-        }
-        >button {
-            font-size: 15px;
-            color: #67686f;
-            line-height: 1;
-            >span {
-                font-size: 0;
-            }
-            &:last-of-type {
-                margin-left: 10px;
-            }
-        }
-    }
-    >article {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-row-gap: 17px;
-        margin-top: 16px;
-        padding-right: 22px;
-        position: relative;
-        >dl {
-            >dt {
-                line-height: 1;
-                color: #67686f;
-                font-size: 15px;
-                font-weight: 300;
-                margin-bottom: 10px;
-                text-align: right;
-                >em {
-                    display: inline-block;
-                    font-style: normal;
-                    vertical-align: top;
-                    font-weight: normal;
-                    font-size: 11px;
-                    margin-top: 2px;
-                    color: #67686f;
+    >tbody {
+        >tr {
+            &:not(:last-of-type) {
+                >td {
+                    border-bottom: 1px solid #1c1e2a;
                 }
             }
-            >dd {
-                @include displayflex(row, flex-start, flex-end, unset);
-                text-align: right;
-                line-height: 1;
-                >* {
-                    line-height: 1;
+            &.active {
+                >td:first-of-type {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 5px;
+                        height: 100%;
+                        background-color: #ffe640;
+                    }
                 }
-                >strong {
-                    font-weight: 500;
-                    font-weight: normal;
-                    @media (min-width: 640px) {
-                        font-size: 17px;
-                    }
-                    @media (max-width: 639px) {
-                        font-size: 14px;
-                    }
-                    >em {
-                        display: inline-block;
-                        font-style: normal;
+            }
+            >td {
+                @include textAlign;
+                padding: 10px 0;
+                vertical-align: top;
+                &:first-of-type {
+                    padding-left: 15px;
+                    >img {
+                        width: 18px;
                         vertical-align: top;
-                        font-weight: normal;
+                    }
+                    >strong {
+                        font-weight: 500;
+                        line-height: 1;
+                        font-size: 15px;
+                        margin-left: 2px;
+                        vertical-align: top;
+                    }
+                }
+                span {
+                    position: relative;
+                    line-height: 1;
+                    letter-spacing: -0.3px;
+                    font-size: 15px;
+                    font-weight: 200;
+                    >em {
+                        font-style: normal;
                         font-size: 11px;
-                        margin-top: 2px;
+                        color: #67686f;
+                        vertical-align: top;
+                    }
+                    >i {
+                        color: #ffe640;
+                        font-style: normal;
+                    }
+                    >s {
+                        font-style: normal;
+                        font-size: 11px;
+                        vertical-align: top;
+                        text-decoration: none;
+                    }
+                    &:first-of-type {
+                        grid-area: item1;
+                    }
+                    &:nth-of-type(2) {
+                        grid-area: item2;
+                    }
+                    &:last-of-type {
+                        @include displayflex(row, center, flex-end, unset);
+                        grid-area: item3;
+                        >button {
+                            width: 12px;
+                            height: 8px;
+                            font-size: 0;
+                            background-repeat: no-repeat;
+                            background-image: url(#{$img}/btn-chart-open.png);
+                            background-size: 100% auto;
+                            &.up {
+                                transform: rotate(180deg);
+                            }
+                        }
                     }
                 }
-                >span {
-                    color: #ffe640;
-                    @media (min-width: 640px) {
-                        font-size: 17px;
-                    }
-                    @media (max-width: 639px) {
-                        font-size: 14px;
+                &:last-of-type {
+                    padding-right: 15px;
+                    position: relative;
+                    position: relative;
+                    >p {
+                        display: grid;
+                        @media (min-width: 841px) {
+                            grid-template-columns: auto 30% 20px;
+                            grid-template-areas: "item1 item2 item3";
+                        }
+                        @media (max-width: 840px) {
+                            grid-template-columns: auto 20px;
+                            grid-template-areas: "item1 item3" "item2 item3";
+                            grid-row-gap: 8px;
+                        }
                     }
                 }
-                >em {
-                    font-size: 11px;
-                    font-style: normal;
-                    vertical-align: top;
-                    color: #67686f;
+                &.not {
+                    text-align: center;
+                    color: #454753;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 200px 0;
                 }
-            }
-        }
-        >span {
-            @include displayflex(row, center, flex-end, unset);
-            >button {
-                color: #fff;
-                padding: 6px 8px;
-                border-radius: 5px;
-                background-color: #ec9b2a;
-                font-weight: 500;
             }
         }
     }

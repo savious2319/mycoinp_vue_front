@@ -187,12 +187,10 @@ table {
                 padding: 10px 0;
                 vertical-align: top;
                 &:first-of-type {
+                    padding-left: 15px;
                     >dl {
                         @include coinName;
                     }
-                }
-                &:first-of-type {
-                    padding-left: 15px;
                 }
                 &:last-of-type {
                     padding-right: 15px;

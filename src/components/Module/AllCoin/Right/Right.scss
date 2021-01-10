@@ -1,12 +1,15 @@
 @import "@/assets/scss/function.scss";
 .tabContents {
-    padding: 15px;
+    padding: 15px 0;
     background-color: #13131f;
     >.tabs {
         background-color: #1c1e2a;
         border-radius: 5px;
         overflow: hidden;
+        width: calc(100% - 30px);
         height: 33px;
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
         grid-template-columns: 50% 50%;
         >button {

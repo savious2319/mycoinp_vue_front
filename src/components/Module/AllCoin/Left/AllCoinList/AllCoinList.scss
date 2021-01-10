@@ -4,24 +4,36 @@
         >span {
             @include displayflex(row, center, center, unset);
             position: relative;
-            >svg {
-                font-size: 15px;
-                color: #67686f;
-                margin-right: 15px;
-            }
             >button {
-                @include displayflex(row, center, center, unset);
-                position: absolute;
-                top: 50%;
-                left: 40px;
-                transform: translateY(-50%);
-                line-height: 1;
-                >svg {
-                    font-size: 10px;
-                    color: #454753;
+                &.btnBookmark {
+                    margin-right: 13px;
+                    >svg {
+                        font-size: 17px;
+                        color: #67686f;
+                    }
+                    >span {
+                        font-size: 0
+                    }
+                    &.active {
+                        >svg {
+                            color: #ffe640;
+                        }
+                    }
                 }
-                >span {
-                    font-size: 0;
+                &.btnSearch {
+                    @include displayflex(row, center, center, unset);
+                    position: absolute;
+                    top: 50%;
+                    left: 40px;
+                    transform: translateY(-50%);
+                    line-height: 1;
+                    >svg {
+                        font-size: 10px;
+                        color: #454753;
+                    }
+                    >span {
+                        font-size: 0;
+                    }
                 }
             }
             >input[type=text] {
@@ -192,12 +204,28 @@ table {
                 padding: 10px 0;
                 vertical-align: top;
                 &:first-of-type {
+                    padding-left: 15px;
                     >dl {
                         @include coinName;
+                        >dt {
+                            >button {
+                                &.btnBookmark {
+                                    >svg {
+                                        font-size: 17px;
+                                        color: #67686f;
+                                    }
+                                    >span {
+                                        font-size: 0
+                                    }
+                                    &.active {
+                                        >svg {
+                                            color: #ffe640;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                }
-                &:first-of-type {
-                    padding-left: 15px;
                 }
                 &:last-of-type {
                     padding-right: 15px;
