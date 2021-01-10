@@ -84,7 +84,7 @@
             }
         }
     }
-    >div {
+    >p {
         @include displayflex(row, center, flex-start, unset);
         padding-bottom: 18px;
         position: relative;
@@ -193,6 +193,110 @@
                 border-radius: 5px;
                 background-color: #ec9b2a;
                 font-weight: 500;
+            }
+        }
+    }
+    >div {
+        >table {
+            >thead {
+                >tr {
+                    >th {
+                        @include textAlign;
+                        position: relative;
+                        padding: 15px 0;
+                        font-size: 14px;
+                        color: #67686f;
+                        font-weight: 500;
+                        line-height: 1;
+                        text-align: center;
+                        >span,
+                        >p>span {
+                            color: #67686f;
+                            display: inline-block;
+                            letter-spacing: -0.3px;
+                        }
+                        >button {
+                            @include displayflex(row, center, center, unset);
+                            background-color: transparent;
+                            font-size: 14px;
+                            color: #67686f;
+                            line-height: 1;
+                            &::after {
+                                content: '';
+                                display: inline-block;
+                                width: 11px;
+                                height: 7.5px;
+                                background-repeat: no-repeat;
+                                background-image: url(#{$img}/select-arrow.png);
+                                background-size: 100% auto;
+                                margin-left: 2.5px;
+                                transform: rotate(180deg);
+                            }
+                            &.active::after {
+                                transform: rotate(0);
+                            }
+                        }
+                        >div {
+                            position: absolute;
+                            top: 40px;
+                            right: 0;
+                            background-color: #242936;
+                            width: 50px;
+                            >button {
+                                display: block;
+                                width: 100%;
+                                line-height: 1;
+                                text-align: center;
+                                padding: 8px 0;
+                                color: #62636b;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            >tbody {
+                >tr {
+                    &:not(:last-of-type) {
+                        >td {
+                            border-bottom: 1px solid #1c1e2a;
+                        }
+                    }
+                    >td {
+                        @include textAlign;
+                        padding: 15px 0;
+                        >span,
+                        >p>span {
+                            line-height: 1;
+                            letter-spacing: -0.3px;
+                            font-size: 15px;
+                            font-weight: 200;
+                            display: inline-block;
+                            &:nth-of-type(3),
+                            &:nth-of-type(4) {
+                                color: #fff0d0;
+                                font-size: 14px;
+                            }
+                            >em {
+                                font-style: normal;
+                                font-size: 11px;
+                                color: #67686f;
+                                vertical-align: top;
+                            }
+                            >i {
+                                color: #ffe640;
+                                font-style: normal;
+                            }
+                        }
+                        &.not {
+                            text-align: center;
+                            color: #454753;
+                            font-size: 15px;
+                            font-weight: 500;
+                            padding: 200px 0;
+                        }
+                    }
+                }
             }
         }
     }

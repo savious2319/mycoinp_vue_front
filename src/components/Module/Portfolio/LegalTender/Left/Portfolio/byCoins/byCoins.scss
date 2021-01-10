@@ -2,11 +2,12 @@
 @mixin textAlign {
     &:nth-of-type(1) {
         >span {
+            @include displayflex(row, center, center, unset);
             position: relative;
             >button {
                 @include displayflex(row, center, center, unset);
                 position: absolute;
-                top: calc(50% + 2px);
+                top: 50%;
                 left: 10px;
                 transform: translateY(-50%);
                 line-height: 1;
@@ -118,7 +119,7 @@ table {
             >th {
                 @include textAlign;
                 position: relative;
-                padding: 15px 0;
+                padding: 10px 0 15px;
                 text-align: center;
                 >p {
                     >span {
@@ -162,6 +163,12 @@ table {
                         }
                     }
                 }
+                &:first-of-type {
+                    padding-left: 15px;
+                }
+                &:last-of-type {
+                    padding-right: 15px;
+                }
             }
         }
     }
@@ -172,6 +179,9 @@ table {
                     border-bottom: 1px solid #1c1e2a;
                 }
             }
+            &.active {
+                background-color: #242936;
+            }
             >td {
                 @include textAlign;
                 padding: 10px 0;
@@ -181,7 +191,11 @@ table {
                         @include coinName;
                     }
                 }
+                &:first-of-type {
+                    padding-left: 15px;
+                }
                 &:last-of-type {
+                    padding-right: 15px;
                     >p {
                         >span {
                             position: relative;
@@ -237,7 +251,7 @@ table {
                         >button {
                             position: absolute;
                             top: 50%;
-                            right: 0;
+                            right: 15px;
                             transform: translateY(-50%);
                             width: 12px;
                             height: 8px;

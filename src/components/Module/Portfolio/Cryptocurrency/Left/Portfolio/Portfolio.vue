@@ -1,9 +1,9 @@
 <template>
   <div class="Portfolio">
     <div class="tab">
-      <button type="button" :class="{'active': portfolio.isbyCoins}" @click="btnbyCoins">by Coins</button>
-      <button type="button" :class="{'active': portfolio.isbyWallets}" @click="btnbyWallets">by Wallets</button>
-      <button type="button" :class="{'active': portfolio.isbyDates}" @click="btnbyDates">by Dates</button>
+      <button type="button" :class="{'active': portfolio.isbyCoins}" @click="btnBy('isbyCoins')">by Coins</button>
+      <button type="button" :class="{'active': portfolio.isbyWallets}" @click="btnBy('isbyWallets')">by Wallets</button>
+      <button type="button" :class="{'active': portfolio.isbyDates}" @click="btnBy('isbyDates')">by Dates</button>
     </div>
     <CryptocurrencyLeftPortfoliobyCoins v-if="portfolio.isbyCoins"/>
     <CryptocurrencyLeftPortfoliobyWallets v-if="portfolio.isbyWallets"/>
@@ -23,22 +23,15 @@ export default {
     }
   },
   methods: {
-    btnbyCoins: function(){
-			this.portfolio.isbyCoins = true;
-			this.portfolio.isbyWallets = false;
-			this.portfolio.isbyDates = false;
+    btnBy: function(arg){
+      Object.keys(this.portfolio).forEach(key => {
+        if(key == arg){
+          this.portfolio[key] = true;
+        } else{
+          this.portfolio[key] = false;
+        }
+      });
     },
-    btnbyWallets: function(){
-			this.portfolio.isbyCoins = false;
-			this.portfolio.isbyWallets = true;
-			this.portfolio.isbyDates = false;
-    },
-    btnbyDates: function(){
-			this.portfolio.isbyCoins = false;
-			this.portfolio.isbyWallets = false;
-			this.portfolio.isbyDates = true;
-    }
-    
   }
 }
 </script>
