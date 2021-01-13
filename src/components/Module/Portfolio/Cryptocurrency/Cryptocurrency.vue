@@ -10,8 +10,8 @@
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-		<CryptocurrencyLeft v-if="!isDetailView"/>
-		<CryptocurrencyRight v-if="isDetailView"/>
+		<CryptocurrencyLeft/>
+		<CryptocurrencyRight/>
     </section>
 </template>
 
@@ -19,7 +19,6 @@
 export default {
     data () {
 		return {
-			isDetailView: false,
 			ops:{
 				scrollPanel: {
 					scrollingX: false,

@@ -13,7 +13,7 @@
         <router-view />
         <Footer v-if="$windowWidth > 640"/>
       </div>
-      <footer v-if="$windowWidth < 640 && isDetailView" :class="{'hide': !showNavbar}">
+      <footer v-if="$windowWidth < 640" :class="{'hide': !showNavbar}">
         <Navigation/>
       </footer>
   </div>
@@ -24,7 +24,6 @@ export default {
     name: 'App',
     data () {
         return {
-            isDetailView: true,
             floor: false,
             showNavbar: true,
             lastScrollPosition: 0,
