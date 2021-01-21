@@ -1,7 +1,7 @@
 @import "@/assets/scss/function.scss";
 aside {
     z-index: 9;
-    @media (min-width: 640px) {
+    @media (min-width: 737px) {
         position: absolute;
         top: 45px;
         left: 15px;
@@ -27,7 +27,7 @@ aside {
             }
         }
     }
-    @media (max-width: 639px) {
+    @media (max-width: 736px) {
         transition: all 0.3s ease-in-out;
         position: fixed;
         top: 0;

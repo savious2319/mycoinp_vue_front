@@ -112,10 +112,10 @@
                 >strong {
                     font-weight: 500;
                     font-weight: normal;
-                    @media (min-width: 640px) {
+                    @media (min-width: 737px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 639px) {
+                    @media (max-width: 736px) {
                         font-size: 14px;
                     }
                     >em {
@@ -129,10 +129,10 @@
                 }
                 >span {
                     color: #ffe640;
-                    @media (min-width: 640px) {
+                    @media (min-width: 737px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 639px) {
+                    @media (max-width: 736px) {
                         font-size: 14px;
                     }
                 }

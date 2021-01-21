@@ -32,14 +32,14 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1199px) {
+    @media (min-width: 737px) and (max-width: 1199px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: #1b1e25;
         }
     }
-    @media (max-width: 639px) {
+    @media (max-width: 736px) {
         overflow-x: hidden;
         >header {
             background-color: #1b1e25;

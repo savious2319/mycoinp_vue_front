@@ -13,12 +13,12 @@
 			</router-link>
 			<router-link class-active="active" to="/exchanges">
 				<i class="fas fa-exchange-alt" v-if="$windowWidth > 640"/>
-				<span>Exchange</span>
+				<span>Exchanges</span>
 				<span>[41]</span>
 			</router-link>
-			<router-link class-active="active" to="/finance">
+			<router-link class-active="active" to="/defi">
 				<i class="fas fa-landmark" v-if="$windowWidth > 640"/>
-				<span>Finance</span>
+				<span>Defi</span>
 				<span>[41]</span>
 			</router-link>
 			<router-link class-active="active" to="/plus">

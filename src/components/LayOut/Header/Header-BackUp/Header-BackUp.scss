@@ -126,11 +126,11 @@ button {
         bottom: 53px;
         left: 170px;
     }
-    @media (min-width: 640px) and (max-width: 1199px) {
+    @media (min-width: 737px) and (max-width: 1199px) {
         top: 45px;
         right: 15px;
     }
-    @media (max-width: 639px) {
+    @media (max-width: 736px) {
         top: 55px;
         left: 50%;
         transform: translateX(-50%);
