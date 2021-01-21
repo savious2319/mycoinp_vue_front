@@ -3,6 +3,11 @@
     padding: 15px;
     background-color: #0b0c0f;
     border-bottom: 5px solid #1b1e25;
+    // @media (max-width: 639px) {
+    //     position: sticky;
+    //     top: 0;
+    //     z-index: 2;
+    // }
     >div {
         @include displayflex(row, flex-start, flex-start, unset);
         >h2 {
@@ -86,10 +91,10 @@
                 }
                 >strong {
                     font-weight: 500;
-                    @media (min-width: 737px) {
+                    @media (min-width: 640px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 736px) {
+                    @media (max-width: 639px) {
                         font-size: 14px;
                     }
                     >em {
@@ -103,10 +108,10 @@
                 }
                 >span {
                     color: #ffe640;
-                    @media (min-width: 737px) {
+                    @media (min-width: 640px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 736px) {
+                    @media (max-width: 639px) {
                         font-size: 14px;
                     }
                 }

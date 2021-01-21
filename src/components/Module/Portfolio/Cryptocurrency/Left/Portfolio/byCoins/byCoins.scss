@@ -3,7 +3,7 @@ $interval: (1 24% left, 2 25% right, 3 15% right, 4 20% right, 5 16% right);
 $grid-template-columns:30% 40% 30%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item4 item5');
 table {
-    @include list($interval, $grid-template-columns, $grid-template-areas);
+    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
     >tbody {
         >tr {
             >td {

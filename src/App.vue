@@ -9,7 +9,7 @@
           <HeaderBackUp/>
         </div>
       </header>
-      <div class="container">
+      <div class="container" v-on:scroll.passive="handleScroll">
         <router-view />
         <Footer v-if="$windowWidth > 640"/>
       </div>
@@ -30,28 +30,17 @@ export default {
             scrollValue: 0,
         }
     },
-    mounted () {
-        this.lastScrollPosition = window.pageYOffset
-        window.addEventListener('scroll', this.onScroll)
-        const viewportMeta = document.createElement('meta')
-        viewportMeta.name = 'viewport'
-        viewportMeta.content = 'width=device-width, initial-scale=1'
-        document.head.appendChild(viewportMeta)
-    },
-    beforeMount () {
-        window.removeEventListener('scroll', this.onScroll)
-    },
     methods: {
-        onScroll () {
-            if (window.pageYOffset < 0) {
+        handleScroll: function(e) {
+            if (e.target.scrollTop < 0) {
                 return
             }
-            if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+            if (Math.abs(e.target.scrollTop - this.lastScrollPosition) < OFFSET) {
                 return
             }
-            this.showNavbar = window.pageYOffset < this.lastScrollPosition
-            this.lastScrollPosition = window.pageYOffset
-        }
+            this.showNavbar = e.target.scrollTop < this.lastScrollPosition
+            this.lastScrollPosition = e.target.scrollTop
+        },
     }
 }
 </script>

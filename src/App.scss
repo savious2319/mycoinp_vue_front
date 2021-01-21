@@ -32,26 +32,23 @@
             }
         }
     }
-    @media (min-width: 737px) and (max-width: 1199px) {
+    @media (min-width: 640px) and (max-width: 1199px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: #1b1e25;
         }
     }
-    @media (max-width: 736px) {
+    @media (max-width: 639px) {
         overflow-x: hidden;
         >header {
             background-color: #1b1e25;
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            z-index: 2;
         }
         >.container {
-            padding-top: 46px;
-            z-index: 1;
+            position: relative;
+            height: calc(100vh - 46px);
+            overflow-y: auto;
         }
         >footer {
             transition: all 0.3s ease-in-out;

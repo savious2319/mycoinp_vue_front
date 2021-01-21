@@ -112,10 +112,10 @@
                 >strong {
                     font-weight: 500;
                     font-weight: normal;
-                    @media (min-width: 737px) {
+                    @media (min-width: 640px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 736px) {
+                    @media (max-width: 639px) {
                         font-size: 14px;
                     }
                     >em {
@@ -129,10 +129,10 @@
                 }
                 >span {
                     color: #ffe640;
-                    @media (min-width: 737px) {
+                    @media (min-width: 640px) {
                         font-size: 17px;
                     }
-                    @media (max-width: 736px) {
+                    @media (max-width: 639px) {
                         font-size: 14px;
                     }
                 }
@@ -160,7 +160,7 @@
         $grid-template-columns: 29% 15% 28% auto;
         $grid-template-areas: ( 'item1 item2 item3 item4' 'item1 item2 item5 item6');
         >table {
-            @include list($interval, $grid-template-columns, $grid-template-areas);
+            @include list(0, $interval, $grid-template-columns, $grid-template-areas);
             >tbody {
                 >tr {
                     >td {

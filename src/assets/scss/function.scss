@@ -417,7 +417,7 @@ $moAside: 270px;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    @media (max-width: 736px) {
+    @media (max-width: 639px) {
         background-color: #000;
         opacity: 0.5;
     }
@@ -485,7 +485,13 @@ $moAside: 270px;
     }
 }
 
-@mixin list($list, $grid-template-columns, $grid-template-areas) {
+@mixin sticky($top) {
+    position: sticky;
+    top: $top;
+    z-index: 2;
+}
+
+@mixin list($top, $list, $grid-template-columns, $grid-template-areas) {
     em {
         font-style: normal;
         font-size: 11px;
@@ -620,6 +626,12 @@ $moAside: 270px;
                     }
                 }
             }
+        }
+    }
+    @media (max-width: 639px) {
+        >thead {
+            @include sticky($top);
+            background-color: #13131f;
         }
     }
     >thead {
@@ -825,10 +837,10 @@ $moAside: 270px;
     @media (min-width: 1200px) {
         padding: 0 50px;
     }
-    @media (min-width: 737px) {
+    @media (min-width: 640px) {
         @include displayGrid(50% 50%, auto, 3px);
     }
-    @media (max-width: 736px) {
+    @media (max-width: 639px) {
         background-color: #13131f;
     }
     .ps {
