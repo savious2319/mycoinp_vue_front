@@ -3,7 +3,7 @@
     <thead>
       <tr>
         <th>
-          <span>
+          <span class="thSearch">
             <button type="button" class="btnSearch">
               <i class="fas fa-search"/>
               <span>Search</span>
@@ -11,14 +11,10 @@
             <input type="text" placeholder="Search...">
           </span>
         </th>
-        <th>
-          <p>
-            <span>Price</span>
-            <button type="button" class="up"><em>%</em>Chg</button>
-            <button type="button" class="down">Est.Value</button>
-            <button type="button"><em>%</em>Profit</button>
-          </p>
-        </th>
+        <th>Price</th>
+        <th><button type="button" class="thSort up"><em>%</em>Chg</button></th>
+        <th><button type="button" class="thSort down">Est.Value</button></th>
+        <th><button type="button" class="thSort"><em>%</em>Profit</button></th>
       </tr>
     </thead>
     <tbody>
@@ -32,14 +28,14 @@
           </dl>
         </td>
         <td>
+          <em>₫</em>123,456,78<i>K</i>
           <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
-          <p>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span class="fall realTime">-10000<s>%</s></span>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span class="rise">+10000<s>%</s></span>
-          </p>
-          <button type="button" class="up" v-if="$windowWidth < 841">정렬</button>
+        </td>
+        <td class="fall realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="rise">
+          +10000<s>%</s>
+          <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
       <tr>
@@ -52,18 +48,18 @@
           </dl>
         </td>
         <td>
+          <em>₫</em>123,456,78<i>K</i>
           <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
-          <p>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span class="fall realTime">-10000<s>%</s></span>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span class="rise">+10000<s>%</s></span>
-          </p>
-          <button type="button" v-if="$windowWidth < 841">정렬</button>
+        </td>
+        <td class="fall realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="rise">
+          +10000<s>%</s>
+          <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
       <tr>
-        <td colspan="2" class="not">Add Your Portfolio ...</td>
+        <td colspan="5" class="not">Add Your Portfolio ...</td>
       </tr>
     </tbody>
   </table>

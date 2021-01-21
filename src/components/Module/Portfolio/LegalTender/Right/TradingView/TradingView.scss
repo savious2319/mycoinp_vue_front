@@ -60,4 +60,7 @@
     >.chart {
         height: 240px;
     }
+    >.mask {
+        @include mask;
+    }
 }

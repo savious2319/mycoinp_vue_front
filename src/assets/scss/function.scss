@@ -5,7 +5,9 @@ $moAside: 270px;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
-    flex-wrap: $wrap;
+    @if($wrap==wrap) {
+        flex-wrap: $wrap;
+    }
 }
 
 @mixin displayGrid($columns, $rows, $gap) {
@@ -483,6 +485,340 @@ $moAside: 270px;
     }
 }
 
+@mixin list($list, $grid-template-columns, $grid-template-areas) {
+    em {
+        font-style: normal;
+        font-size: 11px;
+        color: #67686f;
+        position: relative;
+        @media (min-width: 841px) {
+            top: -3px;
+        }
+        @media (max-width: 840px) {
+            top: 0;
+        }
+    }
+    .btnBookmark {
+        >svg {
+            font-size: 17px;
+            color: #67686f;
+        }
+        >span {
+            font-size: 0
+        }
+        &.active {
+            >svg {
+                color: #ffe640;
+            }
+        }
+    }
+    @media (min-width: 841px) {
+        >thead,
+        >tbody {
+            >tr {
+                &.bookmark {
+                    >td:first-of-type {
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 5px;
+                            height: 100%;
+                            background-color: #ffe640;
+                        }
+                    }
+                }
+                &:not(:last-of-type) {
+                    >td {
+                        border-bottom: 1px solid #1c1e2a;
+                    }
+                }
+                >th {
+                    padding: 10px 0 15px;
+                }
+                >td {
+                    padding: 10px 0;
+                }
+                >th,
+                >td {
+                    position: relative;
+                    &:first-of-type {
+                        padding-left: 15px;
+                    }
+                    &:last-of-type {
+                        padding-right: 15px;
+                    }
+                    >mark {
+                        position: relative;
+                        margin-left: 10px;
+                    }
+                    >.tdSort {
+                        margin-left: 5px;
+                    }
+                    @each $number,
+                    $size,
+                    $align in $list {
+                        &:nth-of-type(#{$number}) {
+                            width: $size;
+                            text-align: $align;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 840px) {
+        display: block;
+        >tbody>tr {
+            border-top: 1px solid #1c1e2a;
+            &.bookmark {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 100%;
+                    background-color: #ffe640;
+                }
+            }
+        }
+        >thead,
+        >tbody {
+            display: block;
+            >tr {
+                position: relative;
+                padding: 10px 15px;
+                display: grid;
+                grid-row-gap: 7px;
+                grid-template-columns: $grid-template-columns;
+                grid-template-areas: $grid-template-areas;
+                >th,
+                >td {
+                    align-self: center;
+                    &:not(:first-of-type) {
+                        text-align: right;
+                    }
+                    >.tdSort {
+                        position: absolute;
+                        top: 50%;
+                        right: 15px;
+                    }
+                    >mark {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    @each $number,
+                    $size,
+                    $align in $list {
+                        &:nth-of-type(#{$number}) {
+                            grid-area: item#{$number};
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >thead {
+        >tr {
+            th {
+                font-size: 14px;
+                color: #67686f;
+                font-weight: 500;
+                line-height: 1;
+                letter-spacing: -0.3px;
+                >.thSearch {
+                    @include displayflex(row, center, center, unset);
+                    position: relative;
+                    >button {
+                        &:not(.btnBookmark) {
+                            @include displayflex(row, center, center, unset);
+                            position: absolute;
+                            top: 50%;
+                            left: 10px;
+                            transform: translateY(-50%);
+                            line-height: 1;
+                            >svg {
+                                font-size: 10px;
+                                color: #454753;
+                            }
+                            >span {
+                                font-size: 0;
+                            }
+                        }
+                        &.btnBookmark {
+                            margin-right: 13px;
+                            &+.btnSearch {
+                                left: 40px;
+                                &+input[type=text] {
+                                    width: calc(100% - 30px);
+                                }
+                            }
+                        }
+                    }
+                    >input[type=text] {
+                        width: 100%;
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 6px;
+                        background-color: #1c1e2a;
+                        padding-left: 25px;
+                        padding-right: 10px;
+                        border: 0;
+                        &::placeholder {
+                            color: #454753;
+                        }
+                    }
+                }
+                >.thSort {
+                    @include displayflex(row, center, flex-end, unset);
+                    width: 100%;
+                    font-size: 14px;
+                    color: #67686f;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: -0.3px;
+                    &:after {
+                        content: '';
+                        width: 9px;
+                        height: 12px;
+                        background-repeat: no-repeat;
+                        background-image: url(#{$img}/arrow-default-2.png);
+                        background-size: 100% auto;
+                        margin-left: 5px;
+                    }
+                    &.up::after {
+                        background-image: url(#{$img}/arrow-up.png);
+                    }
+                    &.down::after {
+                        background-image: url(#{$img}/arrow-down.png);
+                    }
+                }
+                >.btnAll {
+                    @include displayflex(row, center, flex-end, unset);
+                    width: 100%;
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: #67686f;
+                    line-height: 1;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 11px;
+                        height: 7.5px;
+                        background-repeat: no-repeat;
+                        background-image: url(#{$img}/select-arrow.png);
+                        background-size: 100% auto;
+                        margin-left: 2.5px;
+                        transform: rotate(180deg);
+                    }
+                    &.active::after {
+                        transform: rotate(0);
+                    }
+                    &+div {
+                        position: absolute;
+                        top: 30px;
+                        background-color: #242936;
+                        width: 50px;
+                        z-index: 2;
+                        @media (min-width: 841px) {
+                            right: 0;
+                        }
+                        @media (max-width: 840px) {
+                            left: 34%;
+                        }
+                        >button {
+                            display: block;
+                            width: 100%;
+                            line-height: 1;
+                            text-align: center;
+                            padding: 8px 0;
+                            color: #62636b;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >tbody {
+        >tr {
+            &.active {
+                background-color: #242936;
+            }
+            >td {
+                line-height: 1;
+                letter-spacing: -0.3px;
+                font-size: 15px;
+                font-weight: 200;
+                >dl {
+                    @include coinName;
+                }
+                >.tdSort {
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 8px;
+                    font-size: 0;
+                    background-repeat: no-repeat;
+                    background-image: url(#{$img}/btn-chart-open.png);
+                    background-size: 100% auto;
+                    &.up {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+                >mark {
+                    width: 10px;
+                    height: 30px;
+                    background-color: transparent;
+                    >i {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 10px;
+                        background-color: #6bbd46;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 1px;
+                        height: 100%;
+                        background-color: #6bbd46;
+                    }
+                }
+                >i {
+                    color: #ffe640;
+                    font-style: normal;
+                }
+                >s {
+                    font-style: normal;
+                    font-size: 11px;
+                    text-decoration: none;
+                    position: relative;
+                    @media (min-width: 841px) {
+                        top: -3px;
+                    }
+                    @media (max-width: 840px) {
+                        top: 0;
+                    }
+                }
+                &.not {
+                    text-align: center;
+                    color: #454753;
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 200px 0;
+                }
+            }
+        }
+    }
+}
+
 @mixin section {
     width: 100%;
     position: relative;
@@ -528,8 +864,8 @@ $moAside: 270px;
 @mixin coinName {
     display: grid;
     grid-template-columns: 18px auto;
-    grid-template-rows: 18px 18px;
-    grid-column-gap: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
     >dt {
         @include displayflex(row, center, center, unset);
         color: #fff0d0;
@@ -544,12 +880,31 @@ $moAside: 270px;
         &:first-of-type {
             @include displayflex(row, flex-start, flex-start, unset);
             font-size: 15px;
+            grid-area: ddFirst;
         }
         &:last-of-type {
             @include displayflex(row, center, flex-start, unset);
             font-size: 12px;
             color: #fff0d0;
+            grid-area: ddLast;
         }
+    }
+    &:not(.col3) {
+        grid-template-areas: "dtFirst ddFirst" "dtLast ddLast";
+        >dt {
+            &:first-of-type {
+                grid-area: dtFirst;
+            }
+            &:last-of-type {
+                grid-area: dtLast;
+            }
+        }
+    }
+    &.col3 {
+        >dt {
+            grid-area: dt;
+        }
+        grid-template-areas: "dt ddFirst" "dt ddLast";
     }
 }
 

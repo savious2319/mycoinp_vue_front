@@ -12,47 +12,32 @@
           Exchange
         </span>
       </th>
-      <th><span>Price</span></th>
-      <th>
-        <span><em>%</em>Share</span>
-      </th>
+      <th>Price</th>
+      <th><em>$</em>Vol</th>
+      <th><em>%</em>Share</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="active">
+    <tr class="bookmark">
       <td>
         <img src="@/assets/img/ico_coin.png" alt="">
         <strong>Huobi Global</strong>
       </td>
-      <td><span><em>₫</em>123,456,78<i>K</i></span></td>
-      <td>
-        <p>
-          <span><em>₫</em>1.23<i>K</i></span>
-          <span class="fall realTime">-100<s>%</s></span>
-          <span>
-            <button type="button" class="up">정렬</button>
-          </span>
-        </p>
-      </td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr>
       <td>
         <img src="@/assets/img/ico_coin.png" alt="">
         <strong>Huobi Global</strong>
       </td>
-      <td><span><em>₫</em>123,456,78<i>K</i></span></td>
-      <td>
-        <p>
-          <span><em>₫</em>1.23<i>K</i></span>
-          <span class="fall realTime">-100<s>%</s></span>
-          <span>
-            <button type="button" class="up">정렬</button>
-          </span>
-        </p>
-      </td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr>
-      <td colspan="2" class="not">Add Your Portfolio ...</td>
+      <td colspan="4" class="not">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>

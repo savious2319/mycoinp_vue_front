@@ -147,12 +147,19 @@ app.component('AllCoinRightOfficialMessages', AllCoinRightOfficialMessages)
 
 /** Exchanges Start */
 import Exchanges from '@/components/Module/Exchanges/Exchanges.vue';
+import ExchangesLeft from '@/components/Module/Exchanges/Left/Left.vue';
 import ExchangesLeftExchangeList from '@/components/Module/Exchanges/Left/ExchangeList/ExchangeList.vue';
+
+import ExchangesRight from '@/components/Module/Exchanges/Right/Right.vue';
+import ExchangesRightCoinDetail from '@/components/Module/Exchanges/Right/CoinDetail/CoinDetail.vue';
 import ExchangesRightExchangeCoinList from '@/components/Module/Exchanges/Right/ExchangeCoinList/ExchangeCoinList.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 app.component('Exchanges', Exchanges)
+app.component('ExchangesLeft', ExchangesLeft)
 app.component('ExchangesLeftExchangeList', ExchangesLeftExchangeList)
+app.component('ExchangesRight', ExchangesRight)
+app.component('ExchangesRightCoinDetail', ExchangesRightCoinDetail)
 app.component('ExchangesRightExchangeCoinList', ExchangesRightExchangeCoinList)
 /** Exchanges End */
 

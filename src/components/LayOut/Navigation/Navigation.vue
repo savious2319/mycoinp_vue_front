@@ -1,7 +1,7 @@
 <template>
 	<div class="navigation">
 		<div>
-			<router-link class-active="active" to="/">
+			<router-link class-active="active" to="/portfolio/legaltender">
 				<i class="fas fa-user-friends" v-if="$windowWidth > 640"/>
 				<span>Portfolio</span>
 				<span>[25]</span>
@@ -11,7 +11,7 @@
 				<span>All Coin</span>
 				<span>[3122]</span>
 			</router-link>
-			<router-link class-active="active" to="/exchange">
+			<router-link class-active="active" to="/exchanges">
 				<i class="fas fa-exchange-alt" v-if="$windowWidth > 640"/>
 				<span>Exchange</span>
 				<span>[41]</span>

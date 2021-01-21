@@ -1,11 +1,45 @@
 <template>
-  <div class="Portfolio">
-    Portfolio
-  </div>
+  <section v-if="$windowWidth > 640">
+    <perfect-scrollbar>
+      <ExchangesLeft/>
+    </perfect-scrollbar>
+		<perfect-scrollbar>
+      <ExchangesRight/>
+    </perfect-scrollbar>
+  </section>
+
+	<!-- Mobile Only -->
+    <section v-if="$windowWidth < 640">
+      <ExchangesLeft/>
+      <ExchangesRight/>
+    </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    data () {
+		return {
+			ops:{
+				scrollPanel: {
+					scrollingX: false,
+					scrollingY: true,
+				},
+				rail: {
+					opacity: 1,
+					background: '#13131f',
+					size: '4px',
+
+				},
+				bar: {
+					background: '#282d3a',
+					keepShow: true,
+					opacity: 1,
+					hover: false,
+					size: '4px',
+				}
+			},
+		}
+	},
 }
 </script>
 

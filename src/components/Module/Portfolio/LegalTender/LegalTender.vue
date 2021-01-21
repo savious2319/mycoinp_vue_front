@@ -1,17 +1,45 @@
 <template>
-    <section>
-        <div class="left" v-if="$windowWidth > 640">
-            <span style="color:#fff">left</span>
-        </div>
-        <div class="right" v-if="$windowWidth > 640">
-            <span style="color:#fff">right</span>
+    <section v-if="$windowWidth > 640">
+        <perfect-scrollbar>
+            <CryptocurrencyLeft/>
+        </perfect-scrollbar>
+		<perfect-scrollbar>
+			<CryptocurrencyRight/>
+        </perfect-scrollbar>
+    </section>
 
-        </div>
+	<!-- Mobile Only -->
+    <section v-if="$windowWidth < 640">
+		<CryptocurrencyLeft/>
+		<CryptocurrencyRight/>
     </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    data () {
+		return {
+			ops:{
+				scrollPanel: {
+					scrollingX: false,
+					scrollingY: true,
+				},
+				rail: {
+					opacity: 1,
+					background: '#13131f',
+					size: '4px',
+
+				},
+				bar: {
+					background: '#282d3a',
+					keepShow: true,
+					opacity: 1,
+					hover: false,
+					size: '4px',
+				}
+			},
+		}
+	},
 }
 </script>
 

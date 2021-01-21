@@ -13,14 +13,10 @@
             <button type="button">Sell</button>
           </div>
         </th>
-        <th>
-          <p>
-            <span>Coin</span>
-            <span>Exchange</span>
-            <span>Price</span>
-            <span>Amount</span>
-          </p>
-        </th>
+        <th>Coin</th>
+        <th>Exchange</th>
+        <th>Price</th>
+        <th>Amount</th>
       </tr>
     </thead>
     <tbody>
@@ -31,14 +27,10 @@
         <td>
           <span class="rise">Sell</span>
         </td>
-        <td>
-          <p>
-            <span>GUSD</span>
-            <span>Upbit</span>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span>123,456,78<i>K</i></span>
-          </p>
-        </td>
+        <td>GUSD</td>
+        <td>Upbit</td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td>123,456,78<i>K</i></td>
       </tr>
       <tr>
         <td>
@@ -47,14 +39,10 @@
         <td>
           <span class="fall">Buy</span>
         </td>
-        <td>
-          <p>
-            <span>GUSD</span>
-            <span>Upbit</span>
-            <span><em>₫</em>123,456,78<i>K</i></span>
-            <span>123,456,78<i>K</i></span>
-          </p>
-        </td>
+        <td>GUSD</td>
+        <td>Upbit</td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td>123,456,78<i>K</i></td>
       </tr>
       <tr>
         <td colspan="3" class="not">Add Your Portfolio ...</td>
@@ -75,5 +63,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "@/assets/scss/byWallets.scss";
+  @import "byWallets.scss";
 </style>
