@@ -7,12 +7,17 @@ import { VueWindowSizePlugin } from 'vue-window-size/option-api';
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import VueSmoothScroll from 'vue3-smooth-scroll'
 
 const app = createApp(App);
 
 app.use(router);
 app.use(PerfectScrollbar);
 app.use(VueWindowSizePlugin);
+app.use(VueSmoothScroll, {
+    duration: 500, 
+    offset: -50,
+})
 library.add(fas);
 
 /** LayOut Start */
@@ -23,6 +28,8 @@ import Navigation from '@/components/LayOut/Navigation/Navigation.vue';
 import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPrice/Navigation-GasPrice.vue';
 import Aside from '@/components/LayOut/Aside/Aside.vue';
 import Footer from '@/components/LayOut/Footer/Footer.vue';
+import BtnTopLeft from '@/components/LayOut/BtnTopLeft/BtnTopLeft.vue';
+import BtnTopRight from '@/components/LayOut/BtnTopRight/BtnTopRight.vue';
 
 app.component('Header', Header)
 app.component('HeaderLanguage', HeaderLanguage)
@@ -31,7 +38,10 @@ app.component('Navigation', Navigation)
 app.component('NavigationGasPrice', NavigationGasPrice)
 app.component('Aside', Aside)
 app.component('Footer', Footer)
-/** LayOut End */
+app.component('BtnTopLeft', BtnTopLeft)
+app.component('BtnTopRight', BtnTopRight)
+
+/** Btn Start */
 
 /** Popup Start */
 import popupTradingView from '@/components/Module/Shared/Popup/popupTradingView/popupTradingView.vue';

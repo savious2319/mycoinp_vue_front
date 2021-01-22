@@ -9,11 +9,11 @@
           <HeaderBackUp/>
         </div>
       </header>
-      <div class="container" v-on:scroll.passive="handleScroll">
-        <router-view v-bind:containerScroll="containerScroll" />
+      <div id="container" v-on:scroll.passive="handleScroll">
+        <router-view v-bind:container="container" />
         <Footer v-if="$windowWidth > 640"/>
       </div>
-      <footer v-if="$windowWidth < 640" :class="{'hide': !containerScroll.scrollDown}">
+      <footer v-if="$windowWidth < 640" :class="{'hide': !container.scrollDown}">
         <Navigation/>
       </footer>
   </div>
@@ -24,8 +24,7 @@ export default {
     name: 'App',
     data () {
         return {
-            containerScroll : {
-                scrollTop: 100,
+            container : {
                 scrollDown: true,
                 lastScrollPosition: 0,
             },
@@ -33,18 +32,14 @@ export default {
     },
     methods: {
         handleScroll: function(e) {
-            // console.log(`scrollTop : ${e.target.scrollTop}`);
-            // if (e.target.scrollTop > 5120) {
-            //     e.target.scrollTop = 0;
-            // }
             if (e.target.scrollTop < 0) {
                 return
             }
-            if (Math.abs(e.target.scrollTop - this.containerScroll.lastScrollPosition) < OFFSET) {
+            if (Math.abs(e.target.scrollTop - this.container.lastScrollPosition) < OFFSET) {
                 return
             }
-            this.containerScroll.scrollDown = e.target.scrollTop < this.containerScroll.lastScrollPosition
-            this.containerScroll.lastScrollPosition = e.target.scrollTop
+            this.container.scrollDown = e.target.scrollTop < this.container.lastScrollPosition
+            this.container.lastScrollPosition = e.target.scrollTop
         },
     }
 }

@@ -3,23 +3,20 @@
   <CryptocurrencyLeftTotalValue/>
   <CryptocurrencyLeftPortfolio/>
   <button type="button" class="btnReg" @click="btnLayerPopup">Registration</button>
-  <button type="button" class="btnTop" :class="{'show': !containerScroll.scrollDown}" @click="btnTop">Top</button>
+  <BtnTopLeft v-if="!container.scrollDown"/>
   <popupPortFolio v-if="isLayerPopup"/>
   <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
 </template>
 
 <script>
 export default {
-  props : ['containerScroll'],
+  props : ['container'],
   data () {
     return {
       isLayerPopup: false,
     }
   },
   methods: {
-    btnTop: function(){
-        this.$emit.containerScroll.scrollTop = 0;
-    },
     btnLayerPopup: function(){
         if(this.isLayerPopup == false){
             this.isLayerPopup = true;

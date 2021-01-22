@@ -10,11 +10,12 @@
     <!-- <AllCoinRightOfficialMessages/> -->
     <AllCoinRightBuyExchange/>
   </div>
-  <button type="button" class="btnTop">Top</button>
+  <BtnTopRight v-if="!container.scrollDown"/>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+    props : ['container'],
 }
 </script>
 

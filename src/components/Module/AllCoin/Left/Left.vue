@@ -1,18 +1,12 @@
 <template>
   <CryptocurrencyLeftAdvertisement/>
   <AllCoinLeftAllCoinList/>
-  <button type="button" class="btnTop" :class="{'show': !containerScroll.scrollDown}" @click="btnTop">Top</button>
+  <BtnTopLeft v-if="!container.scrollDown"/>
 </template>
 
 <script>
 export default {
-  props : ['containerScroll'],
-  methods: {
-    btnTop: function(){
-        this.$emit.containerScroll.scrollTop = 0;
-    },
-  }
-
+  props : ['container'],
 }
 </script>
 

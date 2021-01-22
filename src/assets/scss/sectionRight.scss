@@ -23,31 +23,3 @@
         }
     }
 }
-
-button {
-    &.btnTop {
-        font-size: 0;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        position: fixed;
-        width: 35px;
-        height: 35px;
-        background-image: url(#{$img}/top-btn-2.png);
-        @media (min-width: 1200px) {
-            left: calc(100vw - 100px);
-            bottom: 65px;
-        }
-        @media (min-width: 890px) and (max-width: 1199px) {
-            left: calc(100vw - 50px);
-            bottom: 65px;
-        }
-        @media (min-width: 640px) and (max-width: 889px) {
-            left: calc(100vw - 50px);
-            bottom: 87px;
-        }
-        @media (max-width: 639px) {
-            right: 15px;
-            bottom: 70px;
-        }
-    }
-}

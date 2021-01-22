@@ -1,23 +1,24 @@
 <template>
-  <section v-if="$windowWidth > 640">
-    <perfect-scrollbar>
-      <ExchangesLeft/>
-    </perfect-scrollbar>
-		<perfect-scrollbar>
-      <ExchangesRight/>
-    </perfect-scrollbar>
-  </section>
+	<section v-if="$windowWidth > 640">
+        <perfect-scrollbar id="sectionLeft" v-on:scroll.passive="handleScrollLeft">
+			<ExchangesLeft v-bind:container="sectionLeft"/>
+		</perfect-scrollbar>
+		<perfect-scrollbar id="sectionRight" v-on:scroll.passive="handleScrollRight">
+			<ExchangesRight v-bind:container="sectionRight"/>
+		</perfect-scrollbar>
+	</section>
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-      <ExchangesLeft v-bind:containerScroll="containerScroll"/>
+      <ExchangesLeft v-bind:container="container"/>
       <!-- <ExchangesRight/> -->
     </section>
 </template>
 
 <script>
+const OFFSET = 60;
 export default {
-	props : ['containerScroll'],
+	props : ['container'],
     data () {
 		return {
 			ops:{
@@ -39,8 +40,38 @@ export default {
 					size: '4px',
 				}
 			},
+            sectionLeft : {
+                scrollDown: true,
+                lastScrollPosition: 0,
+            },
+            sectionRight : {
+                scrollDown: true,
+                lastScrollPosition: 0,
+            },			
 		}
 	},
+    methods: {
+        handleScrollLeft: function(e) {
+            if (e.target.scrollTop < 0) {
+                return
+            }
+            if (Math.abs(e.target.scrollTop - this.sectionLeft.lastScrollPosition) < OFFSET) {
+                return
+            }
+            this.sectionLeft.scrollDown = e.target.scrollTop < this.sectionLeft.lastScrollPosition
+            this.sectionLeft.lastScrollPosition = e.target.scrollTop
+        },
+        handleScrollRight: function(e) {
+            if (e.target.scrollTop < 0) {
+                return
+            }
+            if (Math.abs(e.target.scrollTop - this.sectionRight.lastScrollPosition) < OFFSET) {
+                return
+            }
+            this.sectionRight.scrollDown = e.target.scrollTop < this.sectionRight.lastScrollPosition
+            this.sectionRight.lastScrollPosition = e.target.scrollTop
+        },
+    }
 }
 </script>
 

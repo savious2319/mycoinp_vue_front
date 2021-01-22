@@ -10,19 +10,10 @@ button {
         height: 75px;
         background-image: url(#{$img}/btn_rg.png);
     }
-    &.btnTop {
-        width: 35px;
-        height: 35px;
-        background-image: url(#{$img}/top-btn-2.png);
-    }
     @media (min-width: 1200px) {
         &.btnReg {
             left: 250px;
             bottom: 42px;
-        }
-        &.btnTop {
-            left: calc(50vw + 50px);
-            bottom: 65px;
         }
     }
     @media (min-width: 890px) and (max-width: 1199px) {
@@ -30,32 +21,17 @@ button {
             left: 0;
             bottom: 42px;
         }
-        &.btnTop {
-            left: calc(50vw - 50px);
-            bottom: 65px;
-        }
     }
     @media (min-width: 640px) and (max-width: 889px) {
         &.btnReg {
             left: 0;
             bottom: 64px;
         }
-        &.btnTop {
-            left: calc(50vw - 50px);
-            bottom: 87px;
-        }
     }
     @media (max-width: 639px) {
         &.btnReg {
             left: 0;
             bottom: 40px;
-        }
-        &.btnTop {
-            right: 15px;
-            bottom: 70px;
-            &:not(.show) {
-                display: none;
-            }
         }
     }
 }

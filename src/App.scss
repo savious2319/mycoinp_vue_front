@@ -4,7 +4,7 @@
 #mycoinp {
     width: 100%;
     min-height: 100vh;
-    >.container {
+    >#container {
         @include displayflex(column, flex-start, flex-start, unset);
     }
     @media (min-width: 1200px) {
@@ -45,7 +45,7 @@
             background-color: #1b1e25;
             width: 100%;
         }
-        >.container {
+        >#container {
             position: relative;
             height: calc(100vh - 46px);
             overflow-y: auto;
