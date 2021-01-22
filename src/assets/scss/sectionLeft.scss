@@ -4,6 +4,7 @@ button {
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: fixed;
+    transition: all 0.3s ease-in-out;
     &.btnReg {
         width: 75px;
         height: 75px;
@@ -52,6 +53,9 @@ button {
         &.btnTop {
             right: 15px;
             bottom: 70px;
+            &:not(.show) {
+                display: none;
+            }
         }
     }
 }

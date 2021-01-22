@@ -10,13 +10,14 @@
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-      <ExchangesLeft/>
-      <ExchangesRight/>
+      <ExchangesLeft v-bind:containerScroll="containerScroll"/>
+      <!-- <ExchangesRight/> -->
     </section>
 </template>
 
 <script>
 export default {
+	props : ['containerScroll'],
     data () {
 		return {
 			ops:{
@@ -45,5 +46,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "Exchanges.scss";
+  @import "@/assets/scss/section.scss";
 </style>

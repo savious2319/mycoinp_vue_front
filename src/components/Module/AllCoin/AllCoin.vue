@@ -10,13 +10,14 @@
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-      <AllCoinLeft/>
-      <AllCoinRight/>
+      <AllCoinLeft v-bind:containerScroll="containerScroll"/>
+      <!-- <AllCoinRight/> -->
     </section>
 </template>
 
 <script>
 export default {
+	props : ['containerScroll'],
     data () {
 		return {
 			ops:{
@@ -45,5 +46,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "AllCoin.scss";
+  @import "@/assets/scss/section.scss";
 </style>

@@ -10,13 +10,14 @@
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-		<CryptocurrencyLeft/>
-		<CryptocurrencyRight/>
+		<CryptocurrencyLeft v-bind:containerScroll="containerScroll"/>
+		<!-- <CryptocurrencyRight/> -->
     </section>
 </template>
 
 <script>
 export default {
+	props : ['containerScroll'],
     data () {
 		return {
 			ops:{
@@ -45,5 +46,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "LegalTender.scss";
+  @import "@/assets/scss/section.scss";
 </style>

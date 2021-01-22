@@ -20,5 +20,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "Right.scss";
+  @import "@/assets/scss/sectionRight.scss";
 </style>
