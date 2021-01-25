@@ -10,8 +10,7 @@
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-		<CryptocurrencyLeft v-bind:container="container"/>
-		<!-- <CryptocurrencyRight/> -->
+		<CryptocurrencyLeft v-if="!isMobileDetail" v-bind:container="container"/>
     </section>
 </template>
 

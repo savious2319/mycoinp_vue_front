@@ -1,37 +1,27 @@
 @import "@/assets/scss/function.scss";
-a {
+.btnTop {
     font-size: 0;
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: fixed;
     transition: all 0.3s ease-in-out;
-    &.btnTop {
-        width: 35px;
-        height: 35px;
-        background-image: url(#{$img}/top-btn-2.png);
-    }
+    width: 35px;
+    height: 35px;
+    background-image: url(#{$img}/top-btn-2.png);
     @media (min-width: 1200px) {
-        &.btnTop {
-            left: calc(50vw + 50px);
-            bottom: 65px;
-        }
+        left: calc(50vw + 50px);
+        bottom: 65px;
     }
     @media (min-width: 890px) and (max-width: 1199px) {
-        &.btnTop {
-            left: calc(50vw - 50px);
-            bottom: 65px;
-        }
+        left: calc(50vw - 50px);
+        bottom: 65px;
     }
     @media (min-width: 640px) and (max-width: 889px) {
-        &.btnTop {
-            left: calc(50vw - 50px);
-            bottom: 87px;
-        }
+        left: calc(50vw - 50px);
+        bottom: 87px;
     }
     @media (max-width: 639px) {
-        &.btnTop {
-            right: 15px;
-            bottom: 70px;
-        }
+        right: 15px;
+        bottom: 70px;
     }
 }

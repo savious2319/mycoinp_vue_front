@@ -2,14 +2,10 @@
 <div class="header">
     <h1>
         <a href="/">MyCoinP</a>
-        <!-- <span>Portfolio Detail</span> -->
     </h1>
     <button type="button" @click="btnAside">
         <i class="fas fa-align-justify"/>
     </button>
-    <!-- <button type="button">
-        <i class="fas fa-arrow-left"/>
-    </button> -->
     <Aside :class="{'hide': !isAside}"/>
 
     <div v-if="$windowWidth < 1200">

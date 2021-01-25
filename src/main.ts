@@ -25,6 +25,7 @@ library.add(fas);
 import Header from '@/components/LayOut/Header/Header.vue';
 import HeaderLanguage from '@/components/LayOut/Header/Header-Language/Header-Language.vue';
 import HeaderBackUp from '@/components/LayOut/Header/Header-BackUp/Header-BackUp.vue';
+import SubHeader from '@/components/LayOut/SubHeader/SubHeader.vue';
 import Navigation from '@/components/LayOut/Navigation/Navigation.vue';
 import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPrice/Navigation-GasPrice.vue';
 import Aside from '@/components/LayOut/Aside/Aside.vue';
@@ -35,6 +36,7 @@ import BtnTopRight from '@/components/LayOut/BtnTopRight/BtnTopRight.vue';
 app.component('Header', Header)
 app.component('HeaderLanguage', HeaderLanguage)
 app.component('HeaderBackUp', HeaderBackUp)
+app.component('SubHeader', SubHeader)
 app.component('Navigation', Navigation)
 app.component('NavigationGasPrice', NavigationGasPrice)
 app.component('Aside', Aside)
@@ -194,18 +196,22 @@ app.component('ExchangesRightExchangeCoinList', ExchangesRightExchangeCoinList)
 /** Defi Start */
 import Defi from '@/components/Module/Defi/Defi.vue';
 import DefiLeft from '@/components/Module/Defi/Left/Left.vue';
-import DefiLeftDefiList from '@/components/Module/Defi/Left/DefiList/DefiList.vue';
+import DefiLeftSingleAssets from '@/components/Module/Defi/Left/SingleAssets/SingleAssets.vue';
+import DefiLeftMultiAssets from '@/components/Module/Defi/Left/MultiAssets/MultiAssets.vue';
 
 import DefiRight from '@/components/Module/Defi/Right/Right.vue';
 import DefiRightCoinDetail from '@/components/Module/Defi/Right/CoinDetail/CoinDetail.vue';
-import DefiRightDefiCoinList from '@/components/Module/Defi/Right/DefiCoinList/DefiCoinList.vue';
+import DefiRightSingleAssets from '@/components/Module/Defi/Right/SingleAssets/SingleAssets.vue';
+import DefiRightMultiAssets from '@/components/Module/Defi/Right/MultiAssets/MultiAssets.vue';
 
 app.component('Defi', Defi)
 app.component('DefiLeft', DefiLeft)
-app.component('DefiLeftDefiList', DefiLeftDefiList)
+app.component('DefiLeftSingleAssets', DefiLeftSingleAssets)
+app.component('DefiLeftMultiAssets', DefiLeftMultiAssets)
 app.component('DefiRight', DefiRight)
 app.component('DefiRightCoinDetail', DefiRightCoinDetail)
-app.component('DefiRightDefiCoinList', DefiRightDefiCoinList)
+app.component('DefiRightSingleAssets', DefiRightSingleAssets)
+app.component('DefiRightMultiAssets', DefiRightMultiAssets)
 /** Defi End */
 
 

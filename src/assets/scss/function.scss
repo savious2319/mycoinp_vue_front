@@ -595,52 +595,60 @@ $moAside: 270px;
         >tbody {
             display: block;
             >tr {
-                position: relative;
-                padding: 10px 15px;
-                display: grid;
-                grid-row-gap: 7px;
-                grid-template-columns: $grid-template-columns;
-                grid-template-areas: $grid-template-areas;
-                >th,
-                >td {
-                    align-self: center;
-                    &:not(:first-of-type) {
-                        text-align: right;
+                &.not {
+                    width: 100%;
+                    display: block;
+                    >td {
+                        width: 100%;
+                        display: block;
                     }
-                    >.tdSort {
-                        position: absolute;
-                        top: 50%;
-                        right: 15px;
-                    }
-                    >mark {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                    @each $number,
-                    $size,
-                    $align in $list {
-                        &:nth-of-type(#{$number}) {
-                            grid-area: item#{$number};
+                }
+                &:not(.not) {
+                    position: relative;
+                    padding: 10px 15px;
+                    display: grid;
+                    grid-row-gap: 7px;
+                    grid-template-columns: $grid-template-columns;
+                    grid-template-areas: $grid-template-areas;
+                    >th,
+                    >td {
+                        align-self: center;
+                        &:not(:first-of-type) {
+                            text-align: right;
+                        }
+                        >.tdSort {
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                        }
+                        >mark {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        @each $number,
+                        $size,
+                        $align in $list {
+                            &:nth-of-type(#{$number}) {
+                                grid-area: item#{$number};
+                            }
                         }
                     }
                 }
             }
         }
     }
-    @media (min-width: 640px) {
-        >thead>tr>th {
-            @include sticky($stickyTop);
-            background-color: #13131f;
-        }
-    }
-    @media (max-width: 639px) {
-        >thead {
-            @include sticky($stickyTop);
-            background-color: #13131f;
-        }
-    }
     >thead {
+        @media (min-width: 640px) {
+            >tr>th {
+                @include sticky($stickyTop);
+                background-color: #13131f;
+            }
+        }
+        @media (max-width: 639px) {
+            @include sticky($stickyTop);
+            background-color: #13131f;
+        }
         >tr {
             th {
                 font-size: 14px;
@@ -768,98 +776,76 @@ $moAside: 270px;
             &.active {
                 background-color: #242936;
             }
-            >td {
-                line-height: 1;
-                letter-spacing: -0.3px;
-                font-size: 15px;
-                >dl {
-                    @include coinName;
-                }
-                >.tdSort {
-                    transform: translateY(-50%);
-                    width: 12px;
-                    height: 8px;
-                    font-size: 0;
-                    background-repeat: no-repeat;
-                    background-image: url(#{$img}/btn-chart-open.png);
-                    background-size: 100% auto;
-                    &.up {
-                        transform: translateY(-50%) rotate(180deg);
-                    }
-                }
-                >mark {
-                    width: 10px;
-                    height: 30px;
-                    background-color: transparent;
-                    >i {
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 10px;
-                        background-color: #6bbd46;
-                    }
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 1px;
-                        height: 100%;
-                        background-color: #6bbd46;
-                    }
-                }
-                i {
-                    color: #ffe640;
-                    font-style: normal;
-                }
-                s {
-                    font-style: normal;
-                    font-size: 11px;
-                    text-decoration: none;
-                    position: relative;
-                    @media (min-width: 841px) {
-                        top: -3px;
-                    }
-                    @media (max-width: 840px) {
-                        top: 0;
-                    }
-                }
-                &.not {
+            &.not {
+                >td {
                     text-align: center;
                     color: #454753;
                     font-size: 15px;
                     font-weight: 500;
                     padding: 200px 0;
+                    width: 100%;
                 }
             }
-        }
-    }
-}
-
-@mixin section {
-    width: 100%;
-    position: relative;
-    @media (min-width: 1200px) {
-        padding: 0 50px;
-    }
-    @media (min-width: 640px) {
-        @include displayGrid(50% 50%, auto, 3px);
-    }
-    @media (max-width: 639px) {
-        background-color: #13131f;
-    }
-    .ps {
-        position: relative;
-        background-color: #13131f;
-        @media (min-width: 1200px) {
-            height: calc(100vh - 42px) !important;
-        }
-        @media (min-width: 891px) and (max-width: 1199px) {
-            height: calc(100vh - 135px) !important;
-        }
-        @media (min-width: 767px) and (max-width: 890px) {
-            height: calc(100vh - 157px) !important;
+            &:not(.not) {
+                >td {
+                    line-height: 1;
+                    letter-spacing: -0.3px;
+                    font-size: 15px;
+                    >dl {
+                        @include coinName;
+                    }
+                    >.tdSort {
+                        transform: translateY(-50%);
+                        width: 12px;
+                        height: 8px;
+                        font-size: 0;
+                        background-repeat: no-repeat;
+                        background-image: url(#{$img}/btn-chart-open.png);
+                        background-size: 100% auto;
+                        &.up {
+                            transform: translateY(-50%) rotate(180deg);
+                        }
+                    }
+                    >mark {
+                        width: 10px;
+                        height: 30px;
+                        background-color: transparent;
+                        >i {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 10px;
+                            background-color: #6bbd46;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 1px;
+                            height: 100%;
+                            background-color: #6bbd46;
+                        }
+                    }
+                    i {
+                        color: #ffe640;
+                        font-style: normal;
+                    }
+                    s {
+                        font-style: normal;
+                        font-size: 11px;
+                        text-decoration: none;
+                        position: relative;
+                        @media (min-width: 841px) {
+                            top: -3px;
+                        }
+                        @media (max-width: 840px) {
+                            top: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -984,4 +970,18 @@ $moAside: 270px;
 
 .pointer {
     cursor: pointer;
+}
+
+.mobileDetail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: #13131f;
+    #contents {
+        height: calc(100vh - 46px);
+        overflow-y: auto;
+    }
 }

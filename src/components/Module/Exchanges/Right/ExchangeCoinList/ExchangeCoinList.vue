@@ -41,8 +41,8 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
-    <tr>
-      <td colspan="4" class="not">Add Your Portfolio ...</td>
+    <tr class="not">
+      <td colspan="4">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>

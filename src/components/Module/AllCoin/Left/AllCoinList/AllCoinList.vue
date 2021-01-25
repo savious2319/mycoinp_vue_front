@@ -22,7 +22,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -61,7 +61,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -100,7 +100,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -139,7 +139,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -178,7 +178,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -217,7 +217,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -256,7 +256,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -295,7 +295,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -334,7 +334,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -373,7 +373,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -412,7 +412,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -451,7 +451,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -490,7 +490,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -529,7 +529,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -568,7 +568,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -607,7 +607,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -646,7 +646,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -685,7 +685,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -724,7 +724,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -763,7 +763,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -802,7 +802,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -841,7 +841,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -880,7 +880,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -919,7 +919,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -958,7 +958,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -997,7 +997,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1036,7 +1036,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1075,7 +1075,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1114,7 +1114,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1153,7 +1153,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1192,7 +1192,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1231,7 +1231,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1270,7 +1270,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1309,7 +1309,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1348,7 +1348,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1387,7 +1387,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1426,7 +1426,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1465,7 +1465,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1504,7 +1504,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1543,7 +1543,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1582,7 +1582,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1621,7 +1621,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1660,7 +1660,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1699,7 +1699,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1738,7 +1738,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1777,7 +1777,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1816,7 +1816,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1855,7 +1855,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1894,7 +1894,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1933,7 +1933,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -1972,7 +1972,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2011,7 +2011,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2050,7 +2050,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2089,7 +2089,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2128,7 +2128,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2167,7 +2167,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2206,7 +2206,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2245,7 +2245,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2284,7 +2284,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2323,7 +2323,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2362,7 +2362,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2401,7 +2401,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2440,7 +2440,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2479,7 +2479,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2518,7 +2518,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2557,7 +2557,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2596,7 +2596,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
+    <tr @click="MobileDetailShow">
       <td>
         <dl>
           <dt>
@@ -2635,15 +2635,56 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="rise">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr>
-      <td colspan="5" class="not">Add Your Portfolio ...</td>
+    <tr class="not">
+      <td colspan="5">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>
+
+  <!-- 모바일 상세 페이지 Start -->
+  <div class="mobileDetail" v-if="isMobile.wrap">
+      <SubHeader title="AllCoin Detail" @MobileDetailHide="MobileDetailHide"/>
+      <div id="contents" v-on:scroll.passive="handleScrollMobile">
+          <AllCoinRight v-bind:container="isMobile"/>
+      </div>
+  </div>
+  <!-- 모바일 상세 페이지 End -->
+
 </template>
 
-<script lang="ts">
+<script>
+const OFFSET = 60;
 export default {
+  data () {
+		return {
+      isMobile : {
+          wrap: false,
+          scrollDown: true,
+          lastScrollPosition: 0,
+      },
+		}
+	},
+  methods: {
+    MobileDetailShow: function(){
+      if(this.$windowWidth < 640){
+        this.isMobile.wrap = !this.isMobile.wrap;
+      }
+    },
+    MobileDetailHide: function() {
+        this.isMobile.wrap = !this.isMobile.wrap;
+    },
+    handleScrollMobile: function(e) {
+        if (e.target.scrollTop < 0) {
+            return
+        }
+        if (Math.abs(e.target.scrollTop - this.isMobile.lastScrollPosition) < OFFSET) {
+            return
+        }
+        this.isMobile.scrollDown = e.target.scrollTop < this.isMobile.lastScrollPosition
+        this.isMobile.lastScrollPosition = e.target.scrollTop
+    },
+  }
+  
 }
 </script>
 

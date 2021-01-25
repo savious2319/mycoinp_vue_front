@@ -1,38 +1,32 @@
 @import "@/assets/scss/function.scss";
-button {
+.tabs {
+    @include tabs(2);
+}
+
+.btnReg {
     font-size: 0;
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: fixed;
     transition: all 0.3s ease-in-out;
-    &.btnReg {
-        width: 75px;
-        height: 75px;
-        background-image: url(#{$img}/btn_rg.png);
-    }
+    width: 75px;
+    height: 75px;
+    background-image: url(#{$img}/btn_rg.png);
     @media (min-width: 1200px) {
-        &.btnReg {
-            left: 250px;
-            bottom: 42px;
-        }
+        left: 250px;
+        bottom: 42px;
     }
     @media (min-width: 890px) and (max-width: 1199px) {
-        &.btnReg {
-            left: 0;
-            bottom: 42px;
-        }
+        left: 0;
+        bottom: 42px;
     }
     @media (min-width: 640px) and (max-width: 889px) {
-        &.btnReg {
-            left: 0;
-            bottom: 64px;
-        }
+        left: 0;
+        bottom: 64px;
     }
     @media (max-width: 639px) {
-        &.btnReg {
-            left: 0;
-            bottom: 40px;
-        }
+        left: 0;
+        bottom: 40px;
     }
 }
 

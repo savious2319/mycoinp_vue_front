@@ -34,8 +34,8 @@
         <td><em>₫</em>123,456,78<i>K</i></td>
         <td>123,456,78<i>K</i></td>
       </tr>
-      <tr>
-        <td colspan="3" class="not">Add Your Portfolio ...</td>
+      <tr class="not">
+        <td colspan="3">Add Your Portfolio ...</td>
       </tr>
     </tbody>
   </table>

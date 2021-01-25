@@ -3,7 +3,6 @@
   <LegalTenderLeftTotalValue/>
   <LegalTenderLeftPortfolio/>
   <button type="button" class="btnReg" @click="btnLayerPopup">Registration</button>
-  <!-- <BtnTopLeft v-if="!container.scrollDown"/> -->
   <BtnTopLeft v-if="!container.scrollDown"/>
   <popupPortFolio v-if="isLayerPopup"/>
   <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>

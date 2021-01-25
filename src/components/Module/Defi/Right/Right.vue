@@ -1,7 +1,7 @@
 <template>
   <CryptocurrencyRightAdvertisement/>
   <DefiRightCoinDetail/>
-  <DefiRightDefiCoinList/>
+  <DefiRightSingleAssets/>
   <BtnTopRight v-if="!container.scrollDown"/>
 </template>
 

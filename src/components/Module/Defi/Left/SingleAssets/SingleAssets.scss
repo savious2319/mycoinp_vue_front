@@ -1,0 +1,27 @@
+@import "@/assets/scss/function.scss";
+$interval: (1 (100%/3) left, 2 (100%/3) right, 3 (100%/3) right);
+$grid-template-columns:auto 33% 33%;
+$grid-template-areas:( 'item1 item2 item3');
+table {
+    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    >tbody {
+        >tr {
+            >td {
+                >div {
+                    text-align: right;
+                    line-height: 1;
+                    &:last-of-type {
+                        font-size: 13px;
+                        color: #fff0d0;
+                        margin-top: 10px;
+                    }
+                    >img {
+                        width: 13px;
+                        vertical-align: bottom;
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}
