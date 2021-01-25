@@ -12,11 +12,11 @@
     width: 75px;
     height: 75px;
     background-image: url(#{$img}/btn_rg.png);
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         left: 250px;
         bottom: 42px;
     }
-    @media (min-width: 890px) and (max-width: 1199px) {
+    @media (min-width: 890px) and (max-width: 1239px) {
         left: 0;
         bottom: 42px;
     }

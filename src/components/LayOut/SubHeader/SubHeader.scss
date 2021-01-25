@@ -12,7 +12,7 @@
         font-size: 16px;
         color: #fff;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         margin-bottom: 63px;
         padding-top: 68px;
         >h1 {
@@ -28,7 +28,7 @@
             left: 16px;
         }
     }
-    @media (max-width: 1199px) {
+    @media (max-width: 1239px) {
         @include displayflex(row, center, center, unset);
         height: 46px;
         border-bottom: 1px solid #242936;

@@ -3,7 +3,7 @@
       <header>
         <Header/>
         <Navigation v-if="$windowWidth > 640"/>
-        <div class="btnSet" v-if="$windowWidth > 1200">
+        <div class="btnSet" v-if="$windowWidth > 1240">
           <HeaderLanguage/>
           <i/>
           <HeaderBackUp/>

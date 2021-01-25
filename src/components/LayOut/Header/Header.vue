@@ -8,7 +8,7 @@
     </button>
     <Aside :class="{'hide': !isAside}"/>
 
-    <div v-if="$windowWidth < 1200">
+    <div v-if="$windowWidth < 1240">
         <HeaderLanguage/>
         <HeaderBackUp/>
     </div>

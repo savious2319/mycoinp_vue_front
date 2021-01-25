@@ -7,7 +7,7 @@
     >#container {
         @include displayflex(column, flex-start, flex-start, unset);
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         $header: 200px;
         display: grid;
         grid-template-columns: 200px auto;
@@ -32,7 +32,7 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1199px) {
+    @media (min-width: 640px) and (max-width: 1239px) {
         display: grid;
         grid-template-rows: 93px auto;
         >header {

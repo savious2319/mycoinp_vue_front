@@ -19,7 +19,7 @@
             }
         }
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         @include displayflex(column, center, flex-start, unset);
         padding-left: 5px;
         >div {
@@ -33,16 +33,19 @@
                 line-height: 1;
                 font-size: 17px;
                 margin-bottom: 40px;
-                >svg {
-                    fill: #67686f;
-                    &:not(.fa-angle-down) {
+                >span {
+                    &:first-of-type {
                         margin-right: 7px;
-                        width: 17px;
+                        >svg {
+                            fill: #67686f;
+                            width: 17px;
+                        }
                     }
-                    &.fa-angle-down {
-                        margin-left: auto;
-                        margin-right: 19px;
-                    }
+                }
+                .fa-angle-down {
+                    fill: #67686f;
+                    margin-left: auto;
+                    margin-right: 19px;
                 }
                 &.router-link-exact-active {
                     &::after {
@@ -54,7 +57,7 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1199px) {
+    @media (min-width: 640px) and (max-width: 1239px) {
         @include navigation('tab');
     }
     @media (max-width: 639px) {

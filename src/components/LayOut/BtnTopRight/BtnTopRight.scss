@@ -7,11 +7,11 @@
     width: 35px;
     height: 35px;
     background-image: url(#{$img}/top-btn-2.png);
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         left: calc(100vw - 100px);
         bottom: 65px;
     }
-    @media (min-width: 890px) and (max-width: 1199px) {
+    @media (min-width: 890px) and (max-width: 1239px) {
         left: calc(100vw - 50px);
         bottom: 65px;
     }

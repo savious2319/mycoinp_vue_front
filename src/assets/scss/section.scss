@@ -2,7 +2,7 @@
 section {
     width: 100%;
     position: relative;
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
         padding: 0 50px;
     }
     @media (min-width: 640px) {
@@ -14,10 +14,10 @@ section {
     .ps {
         position: relative;
         background-color: #13131f;
-        @media (min-width: 1200px) {
+        @media (min-width: 1240px) {
             height: calc(100vh - 42px) !important;
         }
-        @media (min-width: 891px) and (max-width: 1199px) {
+        @media (min-width: 891px) and (max-width: 1239px) {
             height: calc(100vh - 135px) !important;
         }
         @media (min-width: 767px) and (max-width: 890px) {
