@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Cryptocurrency from '../components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue'
-import LegalTender from '../components/Module/Portfolio/LegalTender/LegalTender.vue'
-import AllCoin from '../components/Module/AllCoin/AllCoin.vue'
-import Exchanges from '../components/Module/Exchanges/Exchanges.vue'
+import Cryptocurrency from '@/components/Module/Portfolio/Cryptocurrency/Cryptocurrency.vue'
+import LegalTender from '@/components/Module/Portfolio/LegalTender/LegalTender.vue'
+import AllCoin from '@/components/Module/AllCoin/AllCoin.vue'
+import Exchanges from '@/components/Module/Exchanges/Exchanges.vue'
+import Defi from '@/components/Module/Defi/Defi.vue';
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
     path: '/exchanges',
     name: 'Exchanges',
     component: Exchanges
+  },
+  {
+    path: '/defi',
+    name: 'Defi',
+    component: Defi
   },
 ]
 

@@ -8,6 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import VueSmoothScroll from 'vue3-smooth-scroll'
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 const app = createApp(App);
 
@@ -181,7 +182,6 @@ import ExchangesLeftExchangeList from '@/components/Module/Exchanges/Left/Exchan
 import ExchangesRight from '@/components/Module/Exchanges/Right/Right.vue';
 import ExchangesRightCoinDetail from '@/components/Module/Exchanges/Right/CoinDetail/CoinDetail.vue';
 import ExchangesRightExchangeCoinList from '@/components/Module/Exchanges/Right/ExchangeCoinList/ExchangeCoinList.vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
 
 app.component('Exchanges', Exchanges)
 app.component('ExchangesLeft', ExchangesLeft)
@@ -190,6 +190,23 @@ app.component('ExchangesRight', ExchangesRight)
 app.component('ExchangesRightCoinDetail', ExchangesRightCoinDetail)
 app.component('ExchangesRightExchangeCoinList', ExchangesRightExchangeCoinList)
 /** Exchanges End */
+
+/** Defi Start */
+import Defi from '@/components/Module/Defi/Defi.vue';
+import DefiLeft from '@/components/Module/Defi/Left/Left.vue';
+import DefiLeftDefiList from '@/components/Module/Defi/Left/DefiList/DefiList.vue';
+
+import DefiRight from '@/components/Module/Defi/Right/Right.vue';
+import DefiRightCoinDetail from '@/components/Module/Defi/Right/CoinDetail/CoinDetail.vue';
+import DefiRightDefiCoinList from '@/components/Module/Defi/Right/DefiCoinList/DefiCoinList.vue';
+
+app.component('Defi', Defi)
+app.component('DefiLeft', DefiLeft)
+app.component('DefiLeftDefiList', DefiLeftDefiList)
+app.component('DefiRight', DefiRight)
+app.component('DefiRightCoinDetail', DefiRightCoinDetail)
+app.component('DefiRightDefiCoinList', DefiRightDefiCoinList)
+/** Defi End */
 
 
 app.mount('#app')
