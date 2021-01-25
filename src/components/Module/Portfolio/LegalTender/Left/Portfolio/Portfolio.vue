@@ -5,9 +5,9 @@
       <button type="button" :class="{'active': portfolio.isbyWallets}" @click="btnBy('isbyWallets')">by Wallets</button>
       <button type="button" :class="{'active': portfolio.isbyDates}" @click="btnBy('isbyDates')">by Dates</button>
     </div>
-    <CryptocurrencyLeftPortfoliobyCoins v-if="portfolio.isbyCoins"/>
-    <CryptocurrencyLeftPortfoliobyWallets v-if="portfolio.isbyWallets"/>
-    <CryptocurrencyLeftPortfoliobyDates v-if="portfolio.isbyDates"/>
+    <LegalTenderLeftPortfoliobyCoins v-if="portfolio.isbyCoins"/>
+    <LegalTenderLeftPortfoliobyWallets v-if="portfolio.isbyWallets"/>
+    <LegalTenderLeftPortfoliobyDates v-if="portfolio.isbyDates"/>
   </div>
 </template>
 

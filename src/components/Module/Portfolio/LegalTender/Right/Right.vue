@@ -1,14 +1,14 @@
 <template>
-  <CryptocurrencyRightAdvertisement/>
-  <CryptocurrencyRightPortfolioDetail/>
-  <CryptocurrencyRightTradingView/>
+  <LegalTenderRightAdvertisement/>
+  <LegalTenderRightPortfolioDetail/>
+  <LegalTenderRightTradingView/>
   <div class="tabContents">
     <div class="tabs">
       <button type="button">Official Messages</button>
       <button type="button" class="active">Buy & Sell</button>
     </div>
-    <!-- <CryptocurrencyRightOfficialMessages/> -->
-    <CryptocurrencyRightBuySell/>
+    <!-- <LegalTenderRightOfficialMessages/> -->
+    <LegalTenderRightBuySell/>
   </div>
   <BtnTopRight v-if="!container.scrollDown"/>
 </template>

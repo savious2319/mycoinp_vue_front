@@ -1,17 +1,17 @@
 <template>
     <section v-if="$windowWidth > 640">
         <perfect-scrollbar id="sectionLeft" v-on:scroll.passive="handleScrollLeft">
-            <CryptocurrencyLeft v-bind:container="sectionLeft"/>
+            <LegalTenderLeft v-bind:container="sectionLeft"/>
         </perfect-scrollbar>
 		<perfect-scrollbar id="sectionRight" v-on:scroll.passive="handleScrollRight">
-			<CryptocurrencyRight v-bind:container="sectionRight"/>
+			<LegalTenderRight v-bind:container="sectionRight"/>
         </perfect-scrollbar>
     </section>
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-		<CryptocurrencyLeft v-bind:container="container"/>
-		<!-- <CryptocurrencyRight/> -->
+		<LegalTenderLeft v-bind:container="container"/>
+		<!-- <LegalTenderRight/> -->
     </section>
 </template>
 

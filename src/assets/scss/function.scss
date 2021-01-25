@@ -424,7 +424,7 @@ $moAside: 270px;
 }
 
 @mixin layer($width, $position) {
-    z-index: 2;
+    z-index: 4;
     position: $position;
     background-color: #fff;
     overflow: hidden;
@@ -491,7 +491,7 @@ $moAside: 270px;
     z-index: 2;
 }
 
-@mixin list($top, $list, $grid-template-columns, $grid-template-areas) {
+@mixin list($stickyTop, $list, $grid-template-columns, $grid-template-areas) {
     em {
         font-style: normal;
         font-size: 11px;
@@ -628,9 +628,15 @@ $moAside: 270px;
             }
         }
     }
+    @media (min-width: 640px) {
+        >thead>tr>th {
+            @include sticky($stickyTop);
+            background-color: #13131f;
+        }
+    }
     @media (max-width: 639px) {
         >thead {
-            @include sticky($top);
+            @include sticky($stickyTop);
             background-color: #13131f;
         }
     }
@@ -917,6 +923,41 @@ $moAside: 270px;
             grid-area: dt;
         }
         grid-template-areas: "dt ddFirst" "dt ddLast";
+    }
+}
+
+@mixin tabs ($length) {
+    @include displayflex(row, flex-start, flex-start, unset);
+    @include sticky(0);
+    padding: 15px;
+    width: 100%;
+    background-color: #13131f;
+    overflow: hidden;
+    &::before {
+        content: '';
+        width: calc(100% - 30px);
+        height: 33px;
+        background-color: #1c1e2a;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    >button {
+        z-index: 3;
+        background-color: transparent;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #67686f;
+        width: (100%/$length);
+        height: 33px;
+        &.active {
+            background-color: #242936;
+            color: #68bb42;
+        }
     }
 }
 

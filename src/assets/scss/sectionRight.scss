@@ -1,25 +1,7 @@
 @import "@/assets/scss/function.scss";
 .tabContents {
-    padding: 15px;
     background-color: #13131f;
     >.tabs {
-        background-color: #1c1e2a;
-        border-radius: 5px;
-        overflow: hidden;
-        height: 33px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        >button {
-            font-size: 14px;
-            font-weight: 500;
-            &:not(.active) {
-                color: #67686f;
-            }
-            &.active {
-                background-color: #242936;
-                border-radius: 5px;
-                color: #68bb42;
-            }
-        }
+        @include tabs(2);
     }
 }

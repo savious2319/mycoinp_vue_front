@@ -1,5 +1,5 @@
 <template>
-    <div class="advertisement">
+    <div id="adRight" class="advertisement">
         <img src="@/assets/img/banner.jpg" alt="">
     </div>
 </template>

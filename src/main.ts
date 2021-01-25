@@ -82,6 +82,9 @@ import CryptocurrencyLeftPortfoliobyDates from '@/components/Module/Portfolio/Cr
 import CryptocurrencyRight from '@/components/Module/Portfolio/Cryptocurrency/Right/Right.vue';
 import CryptocurrencyRightAdvertisement from '@/components/Module/Portfolio/Cryptocurrency/Right/Advertisement/Advertisement.vue';
 import CryptocurrencyRightBuySell from '@/components/Module/Portfolio/Cryptocurrency/Right/BuySell/BuySell.vue';
+import CryptocurrencyRightBuySellBuy from '@/components/Module/Portfolio/Cryptocurrency/Right/BuySell/Buy/Buy.vue';
+import CryptocurrencyRightBuySellSell from '@/components/Module/Portfolio/Cryptocurrency/Right/BuySell/Sell/Sell.vue';
+import CryptocurrencyRightBuySellHistory from '@/components/Module/Portfolio/Cryptocurrency/Right/BuySell/History/History.vue';
 import CryptocurrencyRightOfficialMessages from '@/components/Module/Portfolio/Cryptocurrency/Right/OfficialMessages/OfficialMessages.vue';
 import CryptocurrencyRightPortfolioDetail from '@/components/Module/Portfolio/Cryptocurrency/Right/PortfolioDetail/PortfolioDetail.vue';
 import CryptocurrencyRightTradingView from '@/components/Module/Portfolio/Cryptocurrency/Right/TradingView/TradingView.vue';
@@ -102,6 +105,9 @@ app.component('CryptocurrencyRightPortfolioDetail', CryptocurrencyRightPortfolio
 app.component('CryptocurrencyRightTradingView', CryptocurrencyRightTradingView)
 app.component('CryptocurrencyRightOfficialMessages', CryptocurrencyRightOfficialMessages)
 app.component('CryptocurrencyRightBuySell', CryptocurrencyRightBuySell)
+app.component('CryptocurrencyRightBuySellBuy', CryptocurrencyRightBuySellBuy)
+app.component('CryptocurrencyRightBuySellSell', CryptocurrencyRightBuySellSell)
+app.component('CryptocurrencyRightBuySellHistory', CryptocurrencyRightBuySellHistory)
 /** Portfolio Cryptocurrency End */
 
 /** Portfolio LegalTender Start */
@@ -111,10 +117,16 @@ import LegalTenderLeft from '@/components/Module/Portfolio/LegalTender/Left/Left
 import LegalTenderLeftAdvertisement from '@/components/Module/Portfolio/LegalTender/Left/Advertisement/Advertisement.vue';
 import LegalTenderLeftTotalValue from '@/components/Module/Portfolio/LegalTender/Left/TotalValue/TotalValue.vue';
 import LegalTenderLeftPortfolio from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/Portfolio.vue';
+import LegalTenderLeftPortfoliobyCoins from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/byCoins/byCoins.vue';
+import LegalTenderLeftPortfoliobyWallets from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/byWallets/byWallets.vue';
+import LegalTenderLeftPortfoliobyDates from '@/components/Module/Portfolio/LegalTender/Left/Portfolio/byDates/byDates.vue';
 
 import LegalTenderRight from '@/components/Module/Portfolio/LegalTender/Right/Right.vue';
 import LegalTenderRightAdvertisement from '@/components/Module/Portfolio/LegalTender/Right/Advertisement/Advertisement.vue';
 import LegalTenderRightBuySell from '@/components/Module/Portfolio/LegalTender/Right/BuySell/BuySell.vue';
+import LegalTenderRightBuySellBuy from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Buy/Buy.vue';
+import LegalTenderRightBuySellSell from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Sell/Sell.vue';
+import LegalTenderRightBuySellHistory from '@/components/Module/Portfolio/LegalTender/Right/BuySell/History/History.vue';
 import LegalTenderRightOfficialMessages from '@/components/Module/Portfolio/LegalTender/Right/OfficialMessages/OfficialMessages.vue';
 import LegalTenderRightPortfolioDetail from '@/components/Module/Portfolio/LegalTender/Right/PortfolioDetail/PortfolioDetail.vue';
 import LegalTenderRightTradingView from '@/components/Module/Portfolio/LegalTender/Right/TradingView/TradingView.vue';
@@ -123,15 +135,21 @@ app.component('LegalTender', LegalTender)
 
 app.component('LegalTenderLeft', LegalTenderLeft)
 app.component('LegalTenderLeftAdvertisement', LegalTenderLeftAdvertisement)
-app.component('LegalTenderLeftPortfolio', LegalTenderLeftPortfolio)
 app.component('LegalTenderLeftTotalValue', LegalTenderLeftTotalValue)
+app.component('LegalTenderLeftPortfolio', LegalTenderLeftPortfolio)
+app.component('LegalTenderLeftPortfoliobyCoins', LegalTenderLeftPortfoliobyCoins)
+app.component('LegalTenderLeftPortfoliobyWallets', LegalTenderLeftPortfoliobyWallets)
+app.component('LegalTenderLeftPortfoliobyDates', LegalTenderLeftPortfoliobyDates)
 
 app.component('LegalTenderRight', LegalTenderRight)
 app.component('LegalTenderRightAdvertisement', LegalTenderRightAdvertisement)
-app.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
-app.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
 app.component('LegalTenderRightPortfolioDetail', LegalTenderRightPortfolioDetail)
 app.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
+app.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
+app.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
+app.component('LegalTenderRightBuySellBuy', LegalTenderRightBuySellBuy)
+app.component('LegalTenderRightBuySellSell', LegalTenderRightBuySellSell)
+app.component('LegalTenderRightBuySellHistory', LegalTenderRightBuySellHistory)
 /** Portfolio LegalTender End */
 
 /** AllCoin Start */

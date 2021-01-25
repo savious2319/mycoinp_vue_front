@@ -1,0 +1,27 @@
+@import "@/assets/scss/function.scss";
+article {
+    $interval: (1 17% left, 2 9% right, 3 12% right, 4 19% right, 5 22% right, 6 21% right);
+    $grid-template-columns: 29% 15% 28% auto;
+    $grid-template-areas: ( 'item1 item2 item3 item4' 'item1 item2 item5 item6');
+    >table {
+        @include list(99px, $interval, $grid-template-columns, $grid-template-areas);
+        >tbody {
+            >tr {
+                >td {
+                    &:nth-of-type(5) {
+                        color: #fff0d0;
+                    }
+                    @media (max-width: 840px) {
+                        >mark {
+                            right: calc(30% + 5px);
+                        }
+                        &:nth-of-type(5),
+                        &:nth-of-type(6) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

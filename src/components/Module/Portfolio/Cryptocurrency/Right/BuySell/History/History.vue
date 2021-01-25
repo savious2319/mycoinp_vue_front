@@ -1,0 +1,833 @@
+<template>
+  <article>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>
+            <button type="button" class="btnAll" :class="{'active': isAll}" @click="isAll = !isAll">All</button>
+            <div v-if="isAll">
+              <button type="button">All</button>
+              <button type="button">Buy</button>
+              <button type="button">Sell</button>
+            </div>
+          </th>
+          <th>Coin</th>
+          <th>Exchange</th>
+          <th>Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="rise">Sell</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td>2020-07-20</td>
+          <td class="fall">Buy</td>
+          <td>GUSD</td>
+          <td>Upbit</td>
+          <td><em>₫</em>123,456,78<i>K</i></td>
+          <td>123,456,78<i>K</i></td>
+        </tr>
+        <tr>
+          <td colspan="6" class="not">Add Your Portfolio ...</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+</template>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+  @import "History.scss";
+</style>

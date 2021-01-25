@@ -1,0 +1,79 @@
+@import "@/assets/scss/function.scss";
+article {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 17px;
+    margin-top: 16px;
+    padding: 0 15px;
+    position: relative;
+    >dl {
+        >dt {
+            line-height: 1;
+            color: #67686f;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-align: right;
+            >em {
+                display: inline-block;
+                font-style: normal;
+                vertical-align: top;
+                font-weight: normal;
+                font-size: 11px;
+                margin-top: 2px;
+                color: #67686f;
+            }
+        }
+        >dd {
+            @include displayflex(row, flex-start, flex-end, unset);
+            text-align: right;
+            line-height: 1;
+            >* {
+                line-height: 1;
+            }
+            >strong {
+                font-weight: 500;
+                font-weight: normal;
+                @media (min-width: 640px) {
+                    font-size: 17px;
+                }
+                @media (max-width: 639px) {
+                    font-size: 14px;
+                }
+                >em {
+                    display: inline-block;
+                    font-style: normal;
+                    vertical-align: top;
+                    font-weight: normal;
+                    font-size: 11px;
+                    margin-top: 2px;
+                }
+            }
+            >span {
+                color: #ffe640;
+                @media (min-width: 640px) {
+                    font-size: 17px;
+                }
+                @media (max-width: 639px) {
+                    font-size: 14px;
+                }
+            }
+            >em {
+                font-size: 11px;
+                font-style: normal;
+                vertical-align: top;
+                color: #67686f;
+            }
+        }
+    }
+    >span {
+        @include displayflex(row, center, flex-end, unset);
+        >button {
+            color: #fff;
+            padding: 6px 8px;
+            border-radius: 5px;
+            background-color: #ec9b2a;
+            font-weight: 500;
+        }
+    }
+}

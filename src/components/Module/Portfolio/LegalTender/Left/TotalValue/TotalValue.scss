@@ -3,6 +3,11 @@
     padding: 15px;
     background-color: #0b0c0f;
     border-bottom: 5px solid #1b1e25;
+    // @media (max-width: 639px) {
+    //     position: sticky;
+    //     top: 0;
+    //     z-index: 2;
+    // }
     >div {
         @include displayflex(row, flex-start, flex-start, unset);
         >h2 {
