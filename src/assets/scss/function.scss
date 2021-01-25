@@ -772,7 +772,6 @@ $moAside: 270px;
                 line-height: 1;
                 letter-spacing: -0.3px;
                 font-size: 15px;
-                font-weight: 200;
                 >dl {
                     @include coinName;
                 }
@@ -810,11 +809,11 @@ $moAside: 270px;
                         background-color: #6bbd46;
                     }
                 }
-                >i {
+                i {
                     color: #ffe640;
                     font-style: normal;
                 }
-                >s {
+                s {
                     font-style: normal;
                     font-size: 11px;
                     text-decoration: none;
@@ -981,4 +980,8 @@ $moAside: 270px;
     &.realTime>* {
         @include realTime(fall, #e4b677);
     }
+}
+
+.pointer {
+    cursor: pointer;
 }
