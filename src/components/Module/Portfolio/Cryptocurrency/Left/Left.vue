@@ -4,7 +4,7 @@
   <CryptocurrencyLeftPortfolio/>
   <button type="button" class="btnReg" @click="btnLayerPopup">Registration</button>
   <BtnTopLeft v-if="!container.scrollDown"/>
-  <popupPortFolio v-if="isLayerPopup"/>
+  <popupPortFolio v-if="isLayerPopup" @cancel="btnLayerPopup"/>
   <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
 </template>
 
@@ -18,11 +18,7 @@ export default {
   },
   methods: {
     btnLayerPopup: function(){
-        if(this.isLayerPopup == false){
-            this.isLayerPopup = true;
-        } else{
-            this.isLayerPopup = false;
-        }
+      this.isLayerPopup = !this.isLayerPopup;
     },
   }
 

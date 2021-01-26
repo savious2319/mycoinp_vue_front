@@ -10,7 +10,7 @@
 		<p>Please take note if necessary.</p>
 	</article>
 	<div class="btnSet">
-		<button type="button">Cancel</button>
+		<button type="button" @click="cancel">Cancel</button>
 		<button type="button">Save</button>
 	</div>
 </div>
@@ -18,6 +18,12 @@
 
 <script>
 export default {
+	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
+	}
+
 }
 </script>
 

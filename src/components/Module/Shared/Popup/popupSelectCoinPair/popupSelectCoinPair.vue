@@ -42,12 +42,17 @@
 			</div>
 		</perfect-scrollbar>
 	</article>
-	<button type="button">Cancel</button>
+	<button type="button" @click="cancel">Cancel</button>
 </div>
 </template>
 
 <script>
 export default {
+	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
+	}
 }
 </script>
 

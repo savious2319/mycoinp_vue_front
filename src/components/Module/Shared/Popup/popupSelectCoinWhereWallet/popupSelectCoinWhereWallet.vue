@@ -22,7 +22,7 @@
 			</div>
 		</perfect-scrollbar> -->
 	</article>
-	<button v-if="tabs.isSearchExchange" type="button">Cancel</button>
+	<button v-if="tabs.isSearchExchange" type="button" @click="cancel">Cancel</button>
 
 	<article v-if="tabs.isAddExchange">
 		<div class="scarch">
@@ -38,7 +38,7 @@
 		</perfect-scrollbar> -->
 	</article>
 	<div class="btnSet" v-if="tabs.isAddExchange">
-		<button type="button">Cancel</button>
+		<button type="button" @click="cancel">Cancel</button>
 		<button type="button">Save</button>
 	</div>
 </div>
@@ -55,6 +55,9 @@ export default {
         }
     },
 	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
 		btnSearchExchange: function(){
 			this.tabs.isSearchExchange = true;
 			this.tabs.isAddExchange = false;

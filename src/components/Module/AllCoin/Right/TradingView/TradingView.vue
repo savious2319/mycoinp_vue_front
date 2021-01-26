@@ -14,7 +14,7 @@
     <div class="chart" @click="btnLayerPopup">
       Chart
     </div>
-    <popupTradingView v-if="isLayerPopup"/>
+    <popupTradingView v-if="isLayerPopup" @cancel="btnLayerPopup"/>
     <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
   </div>
 </template>
@@ -28,11 +28,7 @@ export default {
   },
   methods: {
     btnLayerPopup: function(){
-        if(this.isLayerPopup == false){
-            this.isLayerPopup = true;
-        } else{
-            this.isLayerPopup = false;
-        }
+      this.isLayerPopup = !this.isLayerPopup;
     },
   }
 

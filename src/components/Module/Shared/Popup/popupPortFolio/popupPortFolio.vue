@@ -102,18 +102,18 @@
 	</article>
 
 	<div class="btnSet">
-		<button type="button">Cancel</button>
+		<button type="button" @click="cancel">Cancel</button>
 		<button type="button">Buy</button>
 	</div>
 </div>
 
-<popupSelectCoinPair v-if="popups.isSelectCoinPair"/>
+<popupSelectCoinPair v-if="popups.isSelectCoinPair" @cancel="btnSelectCoinPair"/>
 <div class="mask" v-if="popups.isSelectCoinPair" @click="btnSelectCoinPair"></div>
 
-<popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet"/>
+<popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet" @cancel="btnSelectCoinWhereWallet"/>
 <div class="mask" v-if="popups.isSelectCoinWhereWallet" @click="btnSelectCoinWhereWallet"></div>
 
-<popupFiatType v-if="popups.isFiatType"/>
+<popupFiatType v-if="popups.isFiatType" @cancel="btnFiatType"/>
 <div class="mask" v-if="popups.isFiatType" @click="btnFiatType"></div>
 </template>
 
@@ -133,6 +133,9 @@ export default {
         }
     },
 	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
 		btnCoin: function(){
 			this.tabs.isCoin = true;
 			this.tabs.isFiat = false;
@@ -142,25 +145,13 @@ export default {
 			this.tabs.isFiat = true;
 		},
 		btnSelectCoinPair: function(){
-			if(this.popups.isSelectCoinPair == false){
-				this.popups.isSelectCoinPair = true;
-			} else{
-				this.popups.isSelectCoinPair = false;
-			}
+			this.popups.isSelectCoinPair = !this.popups.isSelectCoinPair;
 		},
 		btnSelectCoinWhereWallet: function(){
-			if(this.popups.isSelectCoinWhereWallet == false){
-				this.popups.isSelectCoinWhereWallet = true;
-			} else{
-				this.popups.isSelectCoinWhereWallet = false;
-			}
+			this.popups.isSelectCoinWhereWallet = !this.popups.isSelectCoinWhereWallet;
 		},
 		btnFiatType: function(){
-			if(this.popups.isFiatType == false){
-				this.popups.isFiatType = true;
-			} else{
-				this.popups.isFiatType = false;
-			}
+			this.popups.isFiatType = !this.popups.isFiatType;
 		},
 	}
 }

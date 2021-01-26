@@ -8,7 +8,7 @@
       </dl>
       <button type="button" @click="btnLayerPopup"><span>Memo</span></button>
       <button type="button"><i class="fas fa-trash-alt"/><span>Delete</span></button>
-        <popupMemo v-if="isLayerPopup"/>
+        <popupMemo v-if="isLayerPopup" @cancel="btnLayerPopup"/>
         <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
     </div>
     <p>1 USD = <em>₩</em>1,150</p>
@@ -72,18 +72,10 @@ export default {
     },
     methods: {
 		btnMore: function(){
-            if(this.isMore == false){
-                this.isMore = true;
-            } else{
-                this.isMore = false;
-            }
+            this.isMore = !this.isMore;
         },
         btnLayerPopup: function(){
-            if(this.isLayerPopup == false){
-                this.isLayerPopup = true;
-            } else{
-                this.isLayerPopup = false;
-            }
+            this.isLayerPopup = !this.isLayerPopup;
         },
     }
 }
