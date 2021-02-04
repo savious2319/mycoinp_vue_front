@@ -21,17 +21,24 @@
 				<span>Defi</span>
 				<span>[41]</span>
 			</router-link>
-			<router-link class-active="active" to="/plus">
+			<a href="#">
 				<span v-if="$windowWidth > 1240"><i class="fas fa-ellipsis-h"/></span>
 				<span>++Plus</span>
 				<i class="fas fa-angle-down"/>
-			</router-link>
+			</a>
+			<ul>
+				<li><router-link class-active="active" to="/defi">Hi-Lo</router-link></li>
+				<li><router-link class-active="active" to="/defi">Abnormal Price</router-link></li>
+				<li><router-link class-active="active" to="/defi">World Map</router-link></li>
+				<li><router-link class-active="active" to="/defi">Expert</router-link></li>
+				<li><router-link class-active="active" to="/defi">Promotion</router-link></li>
+			</ul>
 		</div>
 		<NavigationGasPrice v-if="$windowWidth > 640"/>
 	</div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
 }
 </script>

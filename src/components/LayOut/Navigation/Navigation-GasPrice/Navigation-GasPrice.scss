@@ -1,5 +1,8 @@
 @import "@/assets/scss/function.scss";
 .btn_gasprice {
+    @media (max-width: 1239px) {
+        margin-left: auto;
+    }
     >button {
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
