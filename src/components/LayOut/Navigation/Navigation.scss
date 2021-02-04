@@ -41,14 +41,17 @@
                         margin-right: 7px;
                         >svg {
                             fill: #67686f;
-                            width: 17px;
+                            font-size: 17px;
                         }
                     }
-                }
-                .fa-angle-down {
-                    fill: #67686f;
-                    margin-left: auto;
-                    margin-right: 19px;
+                    &:last-of-type {
+                        margin-left: auto;
+                        margin-right: 19px;
+                        >svg {
+                            fill: #67686f;
+                            font-size: 17px;
+                        }
+                    }
                 }
                 &.router-link-exact-active {
                     &::after {
@@ -56,28 +59,58 @@
                         height: 20px;
                         margin-left: auto;
                     }
+                    &:last-of-type {
+                        &::after {
+                            margin-left: 0;
+                        }
+                        >span:last-of-type>svg {
+                            transform: rotate(180deg)
+                        }
+                    }
                 }
             }
-            >ul {
+            >div {
+                @include displayflex(column, flex-start, flex-start, unset);
                 margin-top: 38px;
                 margin-left: 23px;
-                >li {
+                >a {
+                    @include displayflex(row, center, flex-start, unset);
+                    line-height: 1;
                     &:not(:last-of-type) {
                         margin-bottom: 23px;
                     }
-                    >a {
+                    &:first-of-type {
+                        >svg {
+                            transform: rotate(90deg);
+                        }
+                    }
+                    &:last-of-type ::before {
+                        @include icon(14px, 14px, 'ico-promotion-off.png');
+                        content: '';
+                        margin-right: 8px;
+                    }
+                    &.router-link-exact-active {
+                        >* {
+                            color: #fff;
+                        }
+                        &:last-of-type ::before {
+                            background-image: url(#{$img}/ico-promotion-on.png);
+                        }
+                    }
+                    >svg {
+                        color: #67686f;
+                        font-size: 15px;
+                        margin-right: 8px;
+                    }
+                    >span {
                         font-size: 15px;
                         color: #67686f;
-                        line-height: 1;
                     }
                 }
             }
         }
     }
-    @media (min-width: 1025px) and (max-width: 1239px) {
-        @include navigation('tab');
-    }
-    @media (min-width: 640px) and (max-width: 1024px) {
+    @media (min-width: 640px) and (max-width: 1239px) {
         @include navigation('tab');
     }
     @media (max-width: 639px) {
