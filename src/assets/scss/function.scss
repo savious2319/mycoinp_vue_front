@@ -108,7 +108,7 @@ $moAside: 270px;
                     content: '';
                     margin-right: 8px;
                 }
-                &.router-link-exact-active {
+                &:active {
                     background-color: #e8e8e8;
                 }
                 >svg {

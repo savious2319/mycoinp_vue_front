@@ -214,5 +214,25 @@ app.component('DefiRightSingleAssets', DefiRightSingleAssets)
 app.component('DefiRightMultiAssets', DefiRightMultiAssets)
 /** Defi End */
 
+/** PlusHi Start */
+import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
+import PlusHiLeft from '@/components/Module/PlusHi/Left/Left.vue';
+import PlusHiLeftHigh from '@/components/Module/PlusHi/Left/High/High.vue';
+import PlusHiLeftLow from '@/components/Module/PlusHi/Left/Low/Low.vue';
+
+import PlusHiRight from '@/components/Module/PlusHi/Right/Right.vue';
+import PlusHiRightCoinDetail from '@/components/Module/PlusHi/Right/CoinDetail/CoinDetail.vue';
+import PlusHiRightSingleAssets from '@/components/Module/PlusHi/Right/SingleAssets/SingleAssets.vue';
+import PlusHiRightMultiAssets from '@/components/Module/PlusHi/Right/MultiAssets/MultiAssets.vue';
+
+app.component('PlusHi', PlusHi)
+app.component('PlusHiLeft', PlusHiLeft)
+app.component('PlusHiLeftHigh', PlusHiLeftHigh)
+app.component('PlusHiLeftLow', PlusHiLeftLow)
+app.component('PlusHiRight', PlusHiRight)
+app.component('PlusHiRightCoinDetail', PlusHiRightCoinDetail)
+app.component('PlusHiRightSingleAssets', PlusHiRightSingleAssets)
+app.component('PlusHiRightMultiAssets', PlusHiRightMultiAssets)
+/** PlusHi End */
 
 app.mount('#app')

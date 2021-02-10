@@ -1,0 +1,48 @@
+@import "@/assets/scss/function.scss";
+.PortfolioDetail {
+    padding: 15px;
+    background-color: #0b0c0f;
+    position: relative;
+    >.coinName {
+        >dl {
+            @include displayflex(row, center, flex-start, unset);
+            width: 100%;
+            >dt {
+                @include displayflex(row, center, center, unset);
+                color: #fff0d0;
+                font-size: 12px;
+                line-height: 1;
+                >img {
+                    width: 20px;
+                }
+                >button {
+                    margin-right: 10px;
+                    &.btnBookmark {
+                        >svg {
+                            font-size: 20px;
+                            color: #67686f;
+                        }
+                        >span {
+                            font-size: 0
+                        }
+                        &.active {
+                            >svg {
+                                color: #ffe640;
+                            }
+                        }
+                    }
+                }
+            }
+            >dd {
+                margin-left: 10px;
+                line-height: 1;
+                font-size: 15px;
+            }
+        }
+    }
+    >p {
+        margin-top: 13px;
+        font-size: 13px;
+        color: #fff0d0;
+    }
+}

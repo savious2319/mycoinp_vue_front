@@ -4,6 +4,7 @@ import LegalTender from '@/components/Module/Portfolio/LegalTender/LegalTender.v
 import AllCoin from '@/components/Module/AllCoin/AllCoin.vue'
 import Exchanges from '@/components/Module/Exchanges/Exchanges.vue'
 import Defi from '@/components/Module/Defi/Defi.vue';
+import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: '/defi',
     name: 'Defi',
     component: Defi
+  },
+  {
+    path: '/PlusHi',
+    name: 'PlusHi',
+    component: PlusHi
   },
 ]
 

@@ -28,7 +28,7 @@
 				<span v-if="$windowWidth > 1240"><i class="fas fa-angle-down"/></span>
 			</a>
 			<div v-if="isPlus">
-				<router-link to="/Hi-Lo">
+				<router-link to="/PlusHi">
 					<i class="fas fa-exchange-alt"/>
 					<span>Hi-Lo</span>
 				</router-link>
