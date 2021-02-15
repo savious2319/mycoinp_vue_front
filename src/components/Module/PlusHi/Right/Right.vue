@@ -1,7 +1,15 @@
 <template>
   <CryptocurrencyRightAdvertisement/>
   <PlusHiRightCoinDetail/>
-  <PlusHiRightSingleAssets/>
+  <PlusHiRightTradingView/>
+  <div class="tabContents">
+    <div class="tabs">
+      <button type="button">Official Messages</button>
+      <button type="button" class="active">by Exchange</button>
+    </div>
+    <!-- <PlusHiRightOfficialMessages/> -->
+    <PlusHiRightBuyExchange/>
+  </div>
   <BtnTopRight v-if="!container.scrollDown"/>
 </template>
 

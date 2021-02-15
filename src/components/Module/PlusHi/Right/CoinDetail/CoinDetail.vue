@@ -1,7 +1,7 @@
 <template>
     <div class="PortfolioDetail">
         <div class="coinName">
-            <dl>
+            <dl class="col3">
                 <dt>
                     <button type="button" class="btnBookmark">
                         <i class="fas fa-star"></i>
@@ -10,9 +10,20 @@
                     <img src="@/assets/img/ico_coin.png" alt="">
                 </dt>
                 <dd>XZC</dd>
+                <dd>ZCoin</dd>
             </dl>
         </div>
-        <p>https://bitcoin.org</p>
+        <ul>
+            <li>https://bitcoin.org</li>
+            <li>
+                <span><em>₫</em>123,456,78</span>
+                <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+            </li>
+            <li>
+                <span>+0.12</span>
+                <em>%</em>
+            </li>
+        </ul>
     </div>
 </template>
 

@@ -1,8 +1,9 @@
 <template>
   <CryptocurrencyLeftAdvertisement/>
-  <div class="tabs">
+  <div class="tabs btnSet">
     <button type="button" :class="{'active': left.isbyHigh}" @click="btnBy('isbyHigh')">High [118]</button>
     <button type="button" :class="{'active': left.isbyLow}" @click="btnBy('isbyLow')">Low</button>
+    <a href="#none"><i class="fas fa-cog"></i><span>Set</span></a>
   </div>
   <PlusHiLeftHigh v-if="left.isbyHigh"/>
   <PlusHiLeftLow v-if="left.isbyLow"/>

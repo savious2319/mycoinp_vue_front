@@ -15,47 +15,38 @@
           <input type="text" placeholder="Search...">
         </span>
       </th>
-      <th><button type="button" class="thSort up"><em>%</em>Net</button></th>
-      <th>+ APY</th>
-      <th><button type="button" class="thSort up"><em>%</em>APR</button></th>
+      <th>High</th>
+      <th>Exchange</th>
+      <th>Price</th>
+      <th><em>%</em>Premium</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark">
+    <tr class="bookmark" @click="MobileDetailShow">
       <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
+        <dl class="col3">
+          <dt><i class="fas fa-star"></i></dt>
+          <dd>XZC</dd>
+          <dd>ZCoin</dd>
+        </dl>
       </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
+      <td class="rise">6,789<i>K</i></td>
+      <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
+      <td>6,789<i>K</i></td>
+      <td class="rise">+661<s>%</s></td>
     </tr>
     <tr @click="MobileDetailShow">
       <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
+        <dl class="col3">
+          <dt><i class="fas fa-star"></i></dt>
+          <dd>XZC</dd>
+          <dd>ZCoin</dd>
+        </dl>
       </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
-    </tr>
-    <tr class="bookmark">
-      <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
-      </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
-    </tr>
-    <tr class="bookmark">
-      <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
-      </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
+      <td class="rise">6,789<i>K</i></td>
+      <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
+      <td>6,789<i>K</i></td>
+      <td class="rise">+661<s>%</s></td>
     </tr>
     <tr class="not">
       <td colspan="4">Add Your Portfolio ...</td>

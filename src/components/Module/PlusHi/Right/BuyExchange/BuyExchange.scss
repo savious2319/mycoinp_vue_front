@@ -1,0 +1,112 @@
+@import "@/assets/scss/function.scss";
+$interval: (1 28% left, 2 28% right, 3 28% right, 4 auto right);
+$grid-template-columns:30% 35% 35%;
+$grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
+table {
+    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    >tbody {
+        >tr {
+            >td {
+                .fa-star {
+                    font-size: 8px;
+                    vertical-align: middle;
+                    &.y {
+                        color: #ffe640;
+                    }
+                    &.g {
+                        color: #67686f;
+                    }
+                }
+                .marketcap {
+                    width: 200px;
+                    text-align: left;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 10px;
+                    position: absolute;
+                    top: 40px;
+                    right: 0;
+                    z-index: 4;
+                    line-height: 1.21;
+                    &::after {
+                        border-top: 0px solid transparent;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid #fff;
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        right: 20px;
+                    }
+                    >dl {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        >* {
+                            font-size: 15px;
+                            color: #444444;
+                        }
+                        >dd {
+                            text-align: right;
+                        }
+                    }
+                    >p {
+                        margin-top: 20px;
+                        >span {
+                            color: #999999;
+                            font-size: 13px;
+                            display: block;
+                        }
+                        >a {
+                            font-size: 14px;
+                            color: #3b33df;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &:first-of-type {
+                    >img {
+                        width: 18px;
+                        vertical-align: top;
+                    }
+                    >strong {
+                        font-weight: 500;
+                        line-height: 1;
+                        font-size: 15px;
+                        margin-left: 2px;
+                        vertical-align: top;
+                        &.rise,
+                        &.fall {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                @media (max-width: 840px) {
+                    &:nth-of-type(3),
+                    &:nth-of-type(4) {
+                        padding-right: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ul {
+    padding: 15px;
+    width: 100%;
+    >li {
+        font-size: 13px;
+        color: #67686f;
+        line-height: 1.23;
+        >svg {
+            font-size: 8px;
+            vertical-align: middle;
+        }
+        &:first-of-type>svg {
+            color: #67686f;
+        }
+        &:nth-of-type(2)>svg {
+            color: #ffe640;
+        }
+    }
+}

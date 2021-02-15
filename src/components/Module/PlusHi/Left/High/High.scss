@@ -1,12 +1,35 @@
 @import "@/assets/scss/function.scss";
-$interval: (1 30% left, 2 30% right, 3 10% center, 4 30 right);
-$grid-template-columns:auto 30% 10% 30%;
-$grid-template-areas:( 'item1 item2 item3 item4');
+$interval: (1 30% left, 2 15% right, 3 25% right, 4 15% right, 5 15% right);
+$grid-template-columns:auto 40% 40%;
+$grid-template-areas:( 'item1 item2 item3' 'item1 item4 item5');
 table {
     @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
     >tbody {
         >tr {
+            &.bookmark>td>.col3>dt>svg {
+                color: #ffe640;
+            }
             >td {
+                $fontSize: (1 15px, 2 15px, 3 13px, 4 13px);
+                @each $i,
+                $size in $fontSize {
+                    &:nth-of-type(#{$i}) {
+                        font-size: $size;
+                    }
+                }
+                &:nth-of-type(4) {
+                    color: #fff0d0;
+                }
+                >strong {
+                    color: #fff;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+                >.col3>dt>svg {
+                    font-size: 17px;
+                    font-weight: normal;
+                    color: #67686f;
+                }
                 >img {
                     width: 18px;
                     vertical-align: middle;

@@ -1,6 +1,25 @@
 @import "@/assets/scss/function.scss";
 .tabs {
     @include tabs(2);
+    &.btnSet {
+        padding-right: 50px;
+        &::before {
+            width: calc(100% - 65px);
+        }
+        >a {
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            >span {
+                font-size: 0;
+            }
+            >svg {
+                color: #67686f;
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 .btnReg {

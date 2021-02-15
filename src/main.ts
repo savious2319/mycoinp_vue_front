@@ -222,8 +222,9 @@ import PlusHiLeftLow from '@/components/Module/PlusHi/Left/Low/Low.vue';
 
 import PlusHiRight from '@/components/Module/PlusHi/Right/Right.vue';
 import PlusHiRightCoinDetail from '@/components/Module/PlusHi/Right/CoinDetail/CoinDetail.vue';
-import PlusHiRightSingleAssets from '@/components/Module/PlusHi/Right/SingleAssets/SingleAssets.vue';
-import PlusHiRightMultiAssets from '@/components/Module/PlusHi/Right/MultiAssets/MultiAssets.vue';
+import PlusHiRightTradingView from '@/components/Module/PlusHi/Right/TradingView/TradingView.vue';
+import PlusHiRightBuyExchange from '@/components/Module/PlusHi/Right/BuyExchange/BuyExchange.vue';
+import PlusHiRightOfficialMessages from '@/components/Module/PlusHi/Right/OfficialMessages/OfficialMessages.vue';
 
 app.component('PlusHi', PlusHi)
 app.component('PlusHiLeft', PlusHiLeft)
@@ -231,8 +232,9 @@ app.component('PlusHiLeftHigh', PlusHiLeftHigh)
 app.component('PlusHiLeftLow', PlusHiLeftLow)
 app.component('PlusHiRight', PlusHiRight)
 app.component('PlusHiRightCoinDetail', PlusHiRightCoinDetail)
-app.component('PlusHiRightSingleAssets', PlusHiRightSingleAssets)
-app.component('PlusHiRightMultiAssets', PlusHiRightMultiAssets)
+app.component('PlusHiRightTradingView', PlusHiRightTradingView)
+app.component('PlusHiRightBuyExchange', PlusHiRightBuyExchange)
+app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
 /** PlusHi End */
 
 app.mount('#app')
