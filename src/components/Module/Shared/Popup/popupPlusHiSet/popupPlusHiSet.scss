@@ -1,0 +1,51 @@
+@import "@/assets/scss/function.scss";
+[data-layerPopup] {
+    @include layer(350px, fixed);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    >.alert {
+        @include displayflex(row, center, flex-start, unset);
+        font-size: 13px;
+        color: #6bbd46;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        &::before {
+            content: '';
+            width: 15px;
+            height: 12px;
+            display: inline-block;
+            background-image: url(#{$img}/plus-info-or.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            margin-right: 5px;
+        }
+        &:not(:first-of-type) {
+            margin-top: 20px;
+        }
+    }
+    >article {
+        @include displayflex(row, center, space-between, unset);
+        margin-top: 16px;
+        >button {
+            position: relative;
+            padding: 0 14px;
+            height: 35px;
+            border-radius: 3px;
+            background-color: #a5a9b4;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: -0.3px;
+            line-height: 1;
+            &.active {
+                background-color: #4b4f5e;
+            }
+            >span {
+                font-size: 12px;
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+}

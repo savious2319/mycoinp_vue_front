@@ -4,63 +4,27 @@ $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
     @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    >thead {
+        >tr {
+            >th {
+                &:nth-of-type(2),
+                &:nth-of-type(3) {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
     >tbody {
         >tr {
             >td {
-                .fa-star {
+                .fa-asterisk {
                     font-size: 8px;
                     vertical-align: middle;
-                    &.y {
-                        color: #ffe640;
-                    }
-                    &.g {
+                    &.off {
                         color: #67686f;
                     }
-                }
-                .marketcap {
-                    width: 200px;
-                    text-align: left;
-                    background-color: #fff;
-                    border-radius: 5px;
-                    padding: 10px;
-                    position: absolute;
-                    top: 40px;
-                    right: 0;
-                    z-index: 4;
-                    line-height: 1.21;
-                    &::after {
-                        border-top: 0px solid transparent;
-                        border-left: 5px solid transparent;
-                        border-right: 5px solid transparent;
-                        border-bottom: 5px solid #fff;
-                        content: "";
-                        position: absolute;
-                        top: -5px;
-                        right: 20px;
-                    }
-                    >dl {
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        >* {
-                            font-size: 15px;
-                            color: #444444;
-                        }
-                        >dd {
-                            text-align: right;
-                        }
-                    }
-                    >p {
-                        margin-top: 20px;
-                        >span {
-                            color: #999999;
-                            font-size: 13px;
-                            display: block;
-                        }
-                        >a {
-                            font-size: 14px;
-                            color: #3b33df;
-                            text-decoration: underline;
-                        }
+                    &.on {
+                        color: #fff;
                     }
                 }
                 &:first-of-type {
@@ -80,6 +44,15 @@ table {
                         }
                     }
                 }
+                &:nth-of-type(2),
+                &:nth-of-type(3) {
+                    padding-right: 20px;
+                    >span {
+                        position: absolute;
+                        top: 8px;
+                        right: 0;
+                    }
+                }
                 @media (max-width: 840px) {
                     &:nth-of-type(3),
                     &:nth-of-type(4) {
@@ -95,18 +68,28 @@ ul {
     padding: 15px;
     width: 100%;
     >li {
+        position: relative;
         font-size: 13px;
         color: #67686f;
         line-height: 1.23;
+        padding-left: 12px;
+        &:not(:first-of-type) {
+            margin-top: 8px;
+        }
+        >img,
         >svg {
+            width: 8px;
             font-size: 8px;
             vertical-align: middle;
-        }
-        &:first-of-type>svg {
-            color: #67686f;
-        }
-        &:nth-of-type(2)>svg {
-            color: #ffe640;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            &.off {
+                color: #67686f;
+            }
+            &.on {
+                color: #fff;
+            }
         }
     }
 }

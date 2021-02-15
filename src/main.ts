@@ -57,6 +57,7 @@ import popupPortfolioCoinSell from '@/components/Module/Shared/Popup/popupPortfo
 import popupPortfolioFiatSell from '@/components/Module/Shared/Popup/popupPortfolioFiatSell/popupPortfolioFiatSell.vue';
 import popupSelectCoinPair from '@/components/Module/Shared/Popup/popupSelectCoinPair/popupSelectCoinPair.vue';
 import popupSelectCoinWhereWallet from '@/components/Module/Shared/Popup/popupSelectCoinWhereWallet/popupSelectCoinWhereWallet.vue';
+import popupPlusHiSet from '@/components/Module/Shared/Popup/popupPlusHiSet/popupPlusHiSet.vue';
 
 app.component('popupTradingView', popupTradingView)
 app.component('popupMemo', popupMemo)
@@ -68,6 +69,7 @@ app.component('popupPortfolioCoinSell', popupPortfolioCoinSell)
 app.component('popupPortfolioFiatSell', popupPortfolioFiatSell)
 app.component('popupSelectCoinPair', popupSelectCoinPair)
 app.component('popupSelectCoinWhereWallet', popupSelectCoinWhereWallet)
+app.component('popupPlusHiSet', popupPlusHiSet)
 /** Popup End */
 
 

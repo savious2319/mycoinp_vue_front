@@ -3,8 +3,10 @@
   <div class="tabs btnSet">
     <button type="button" :class="{'active': left.isbyHigh}" @click="btnBy('isbyHigh')">High [118]</button>
     <button type="button" :class="{'active': left.isbyLow}" @click="btnBy('isbyLow')">Low</button>
-    <a href="#none"><i class="fas fa-cog"></i><span>Set</span></a>
+    <a href="#none" @click="btnLayerPopup"><i class="fas fa-cog"></i><span>Set</span></a>
   </div>
+  <popupPlusHiSet v-if="isLayerPopup" @cancel="btnLayerPopup"/>
+  <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
   <PlusHiLeftHigh v-if="left.isbyHigh"/>
   <PlusHiLeftLow v-if="left.isbyLow"/>
   <BtnTopLeft v-if="!container.scrollDown"/>
@@ -15,6 +17,7 @@ export default {
   props : ['container'],
   data () {
 		return {
+      isLayerPopup: false,
       left:{
 				isbyHigh: true,
 				isbyLow: false,
@@ -31,6 +34,10 @@ export default {
         }
       });
     },
+    btnLayerPopup: function(){
+      this.isLayerPopup = !this.isLayerPopup;
+    },
+
   }
 
 }
