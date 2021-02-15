@@ -56,9 +56,9 @@
 
   <!-- 모바일 상세 페이지 Start -->
   <div class="mobileDetail" v-if="isMobile.wrap">
-      <SubHeader title="Defi Detail" @MobileDetailHide="MobileDetailHide"/>
+      <SubHeader title="Hi-Lo" @MobileDetailHide="MobileDetailHide"/>
       <div id="contents" v-on:scroll.passive="handleScrollMobile">
-          <DefiRightMultiAssets v-bind:container="isMobile"/>
+        <PlusHiRight v-bind:container="isMobile"/>
       </div>
   </div>
   <!-- 모바일 상세 페이지 End -->
