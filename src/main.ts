@@ -32,6 +32,7 @@ import Aside from '@/components/LayOut/Aside/Aside.vue';
 import Footer from '@/components/LayOut/Footer/Footer.vue';
 import BtnTopLeft from '@/components/LayOut/BtnTopLeft/BtnTopLeft.vue';
 import BtnTopRight from '@/components/LayOut/BtnTopRight/BtnTopRight.vue';
+import Pagenation from '@/components/Module/Shared/Pagenation/Pagenation.vue';
 
 app.component('Header', Header)
 app.component('HeaderLanguage', HeaderLanguage)
@@ -43,6 +44,7 @@ app.component('Aside', Aside)
 app.component('Footer', Footer)
 app.component('BtnTopLeft', BtnTopLeft)
 app.component('BtnTopRight', BtnTopRight)
+app.component('Pagenation', Pagenation)
 
 /** Btn Start */
 
@@ -238,5 +240,11 @@ app.component('PlusHiRightTradingView', PlusHiRightTradingView)
 app.component('PlusHiRightBuyExchange', PlusHiRightBuyExchange)
 app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
 /** PlusHi End */
+
+/** Notice Start */
+import NoticeList from '@/components/Module/Notice/List/List.vue';
+
+app.component('NoticeList', NoticeList)
+/** Notice End */
 
 app.mount('#app')

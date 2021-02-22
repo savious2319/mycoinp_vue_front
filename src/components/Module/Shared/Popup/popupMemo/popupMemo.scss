@@ -30,7 +30,7 @@
     }
     >article {
         @include displayflex(column, center, center, unset);
-        background-color: $BgColorNotFullMo;
+        background-color: $BgColorNotFullDiv;
         height: 220px;
         >svg {
             font-size: 37px;

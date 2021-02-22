@@ -5,6 +5,7 @@ import AllCoin from '@/components/Module/AllCoin/AllCoin.vue'
 import Exchanges from '@/components/Module/Exchanges/Exchanges.vue'
 import Defi from '@/components/Module/Defi/Defi.vue';
 import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
+import NoticeList from '@/components/Module/Notice/List/List.vue';
 
 const routes = [
   {
@@ -41,6 +42,11 @@ const routes = [
     path: '/PlusHi',
     name: 'PlusHi',
     component: PlusHi
+  },
+  {
+    path: '/notice/list',
+    name: 'NoticeList',
+    component: NoticeList
   },
 ]
 

@@ -4,7 +4,7 @@
             <button type="button" @click="btnAside">닫기</button>
         </div>
         <div class="body">
-            <router-link class="new" to="/">Notice</router-link>
+            <router-link class="new" to="/notice/list">Notice</router-link>
             <router-link to="/">About Us</router-link>
             <router-link to="/">Terms of Use</router-link>
             <router-link to="/">Privacy Policy</router-link>

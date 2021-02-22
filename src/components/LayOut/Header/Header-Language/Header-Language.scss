@@ -45,7 +45,7 @@ button {
         margin-bottom: 0;
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
-            background-color: $BgColorNotFullMo;
+            background-color: $BgColorNotFullDiv;
             margin-bottom: 10px;
             padding-left: 10px;
             >input[type=text] {

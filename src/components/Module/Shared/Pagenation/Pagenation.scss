@@ -1,0 +1,27 @@
+@import "@/assets/scss/function.scss";
+.pagenation {
+    @include displayflex(row, center, center, unset);
+    margin-top: 65px;
+    >* {
+        @include displayflex(row, center, center, unset);
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 12px;
+        line-height: 1;
+        &:not(:first-child) {
+            margin-left: 4px;
+        }
+    }
+    >span {
+        background-color: #68bb42;
+        color: $BgColorWhite;
+    }
+    >a {
+        color: $FontColorReturn;
+        &:active,
+        &:hover {
+            background-color: #e5e5e5;
+        }
+    }
+}

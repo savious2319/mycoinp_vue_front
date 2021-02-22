@@ -76,7 +76,7 @@
                         color: $FontColorContent;
                         padding-right: 10px;
                         height: 100%;
-                        background-color: $BgColorNotFullMo;
+                        background-color: $BgColorNotFullDiv;
                     }
                     &:not(.full) {
                         @include displayflex(row, center, flex-start, unset);
@@ -91,12 +91,12 @@
                             }
                         }
                         >input[type=text] {
-                            background-color: $BgColorNotFullMo;
+                            background-color: $BgColorNotFullDiv;
                             width: calc(100% - 50px);
                         }
                     }
                     &.full {
-                        background-color: $BgColorNotFullMo;
+                        background-color: $BgColorNotFullDiv;
                         >button {
                             @include displayflex(row, center, center, unset);
                             position: absolute;

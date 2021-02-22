@@ -33,7 +33,7 @@
     >article {
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
-            background-color: $BgColorNotFullMo;
+            background-color: $BgColorNotFullDiv;
             margin-bottom: 10px;
             padding-left: 10px;
             >input[type=text] {
@@ -91,7 +91,7 @@
                     color: $FontColorContent;
                     font-size: 13px;
                     line-height: 1;
-                    border-bottom: 1px solid $BgColorNotFullMo;
+                    border-bottom: 1px solid $BgColorNotFullDiv;
                     >img {
                         width: 13px;
                         margin-right: 5px;
