@@ -14,12 +14,12 @@ table {
                     }
                 }
                 &:nth-of-type(5) {
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                 }
                 @media (max-width: 840px) {
                     &:nth-of-type(5) {
                         font-size: 13px;
-                        color: #fff0d0;
+                        color: $FontColorIvory;
                     }
                     &:nth-of-type(4),
                     &:nth-of-type(5) {
@@ -35,5 +35,5 @@ p {
     padding: 0 15px;
     margin-top: 20px;
     font-size: 13px;
-    color: #67686f;
+    color: $FontColorGray;
 }

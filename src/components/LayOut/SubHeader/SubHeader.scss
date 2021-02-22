@@ -10,7 +10,7 @@
     >button {
         @include displayflex(column, center, space-between, unset);
         font-size: 16px;
-        color: #fff;
+        color: $BgColorWhite;
     }
     @media (min-width: 1240px) {
         margin-bottom: 63px;

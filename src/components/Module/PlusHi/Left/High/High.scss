@@ -7,7 +7,7 @@ table {
     >tbody {
         >tr {
             &.bookmark>td>.col3>dt>svg {
-                color: #ffe640;
+                color: $FontColorAmountUnit;
             }
             >td {
                 $fontSize: (1 15px, 2 15px, 3 13px, 4 13px);
@@ -18,17 +18,17 @@ table {
                     }
                 }
                 &:nth-of-type(4) {
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                 }
                 >strong {
-                    color: #fff;
+                    color: $BgColorWhite;
                     line-height: 1;
                     vertical-align: middle;
                 }
                 >.col3>dt>svg {
                     font-size: 17px;
                     font-weight: normal;
-                    color: #67686f;
+                    color: $FontColorGray;
                 }
                 >img {
                     width: 18px;
@@ -36,7 +36,7 @@ table {
                     margin-right: 5px;
                 }
                 &:nth-of-type(3) {
-                    color: #67686f;
+                    color: $FontColorGray;
                 }
             }
         }

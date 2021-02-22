@@ -21,10 +21,10 @@ table {
                     font-size: 8px;
                     vertical-align: middle;
                     &.off {
-                        color: #67686f;
+                        color: $FontColorGray;
                     }
                     &.on {
-                        color: #fff;
+                        color: $BgColorWhite;
                     }
                 }
                 &:first-of-type {
@@ -70,7 +70,7 @@ ul {
     >li {
         position: relative;
         font-size: 13px;
-        color: #67686f;
+        color: $FontColorGray;
         line-height: 1.23;
         padding-left: 12px;
         &:not(:first-of-type) {
@@ -85,10 +85,10 @@ ul {
             top: 4px;
             left: 0;
             &.off {
-                color: #67686f;
+                color: $FontColorGray;
             }
             &.on {
-                color: #fff;
+                color: $BgColorWhite;
             }
         }
     }

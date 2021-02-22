@@ -14,7 +14,7 @@
         >header {
             @include displayflex(column, flex-start, flex-start, unset);
             min-height: 100vh;
-            background-color: #13131f;
+            background-color: $BgColorTable;
             >.btnSet {
                 @include displayflex(column, center, center, unset);
                 margin-top: auto;
@@ -36,13 +36,13 @@
         display: grid;
         grid-template-rows: 93px auto;
         >header {
-            background-color: #1b1e25;
+            background-color: $BgColorHeaderFooter;
         }
     }
     @media (max-width: 639px) {
         overflow-x: hidden;
         >header {
-            background-color: #1b1e25;
+            background-color: $BgColorHeaderFooter;
             width: 100%;
         }
         >#container {

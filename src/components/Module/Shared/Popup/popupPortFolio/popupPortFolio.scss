@@ -14,7 +14,7 @@
             @include displayflex(row, center, center, unset);
             width: 44px;
             height: 44px;
-            background-color: #fff;
+            background-color: $BgColorWhite;
             position: absolute;
             top: 0;
             left: 0;
@@ -23,7 +23,7 @@
             }
             >svg {
                 font-size: 15px;
-                color: #000;
+                color: $BgColorMask;
             }
         }
         >.tit {
@@ -36,7 +36,7 @@
         }
     }
     >.tabs {
-        background-color: #f8f8f8;
+        background-color: $BgColorNotFullMo;
         border-radius: 5px;
         overflow: hidden;
         width: calc(100% - 40px);
@@ -48,12 +48,12 @@
             font-size: 14px;
             font-weight: 500;
             &:not(.active) {
-                color: #bfbfbf;
+                color: $FontColorInactive;
             }
             &.active {
                 background-color: #e8e8e8;
                 border-radius: 5px;
-                color: #444444;
+                color: $FontColorContent;
             }
         }
     }
@@ -65,7 +65,7 @@
             grid-row-gap: 5px;
             &:not(:last-of-type) {
                 >dt {
-                    color: #444444;
+                    color: $FontColorContent;
                     font-size: 13px;
                     font-weight: 500;
                     height: 30px;
@@ -83,9 +83,9 @@
                         padding: 0 10px;
                         height: 100%;
                         font-size: 13px;
-                        color: #444;
+                        color: $FontColorContent;
                         &::placeholder {
-                            color: #bfbfbf;
+                            color: $FontColorInactive;
                         }
                     }
                     >em {
@@ -95,10 +95,10 @@
                         right: 0;
                         transform: translateY(-50%);
                         font-size: 13px;
-                        color: #444;
+                        color: $FontColorContent;
                         padding-right: 10px;
                         height: 100%;
-                        background-color: #f8f8f8;
+                        background-color: $BgColorNotFullMo;
                     }
                     &:not(.full) {
                         @include displayflex(row, center, flex-start, unset);
@@ -107,18 +107,18 @@
                             width: 50px;
                             height: 100%;
                             font-size: 13px;
-                            color: #444444;
+                            color: $FontColorContent;
                             >em {
-                                color: #6bbd46;
+                                color: $FontColorGreen;
                             }
                         }
                         >input[type=text] {
-                            background-color: #f8f8f8;
+                            background-color: $BgColorNotFullMo;
                             width: calc(100% - 50px);
                         }
                     }
                     &.full {
-                        background-color: #f8f8f8;
+                        background-color: $BgColorNotFullMo;
                         >button {
                             @include displayflex(row, center, center, unset);
                             position: absolute;
@@ -128,7 +128,7 @@
                             height: 30px;
                             >svg {
                                 font-size: 10px;
-                                color: #bfbfbf;
+                                color: $FontColorInactive;
                             }
                             >span {
                                 font-size: 0;
@@ -154,7 +154,7 @@
                 margin-top: 15px;
                 padding-top: 20px;
                 >dt {
-                    color: #6bbd46;
+                    color: $FontColorGreen;
                     font-size: 15px;
                     font-weight: 500;
                     line-height: 1;
@@ -165,13 +165,13 @@
                     >em {
                         line-height: 1;
                         font-style: normal;
-                        color: #67686f;
+                        color: $FontColorGray;
                         font-size: 11px;
                         vertical-align: top;
                     }
                     >span {
                         line-height: 1;
-                        color: #6bbd46;
+                        color: $FontColorGreen;
                         font-size: 15px;
                         font-weight: 500;
                     }

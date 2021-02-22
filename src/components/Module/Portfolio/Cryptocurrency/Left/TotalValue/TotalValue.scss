@@ -1,8 +1,8 @@
 @import "@/assets/scss/function.scss";
 .TotalValue {
     padding: 15px;
-    background-color: #0b0c0f;
-    border-bottom: 5px solid #1b1e25;
+    background-color: $BgColorTotalValue;
+    border-bottom: 5px solid $BgColorHeaderFooter;
     // @media (max-width: 639px) {
     //     position: sticky;
     //     top: 0;
@@ -23,7 +23,7 @@
                 font-style: normal;
                 font-size: 11px;
                 line-height: 1;
-                color: #67686f;
+                color: $FontColorGray;
                 vertical-align: top;
                 margin-right: 3px;
             }
@@ -37,7 +37,7 @@
                 line-height: 1;
                 font-size: 13px;
                 font-weight: 500;
-                color: #67686f;
+                color: $FontColorGray;
                 text-align: right;
                 margin-top: 10px;
             }
@@ -67,7 +67,7 @@
         >dl {
             >dt {
                 line-height: 1;
-                color: #fff0d0;
+                color: $FontColorIvory;
                 font-size: 15px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -79,7 +79,7 @@
                     font-weight: normal;
                     font-size: 11px;
                     margin-top: 2px;
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                 }
             }
             >dd {
@@ -107,7 +107,7 @@
                     }
                 }
                 >span {
-                    color: #ffe640;
+                    color: $FontColorAmountUnit;
                     @media (min-width: 640px) {
                         font-size: 17px;
                     }
@@ -119,7 +119,7 @@
                     font-size: 11px;
                     font-style: normal;
                     vertical-align: top;
-                    color: #67686f;
+                    color: $FontColorGray;
                 }
             }
         }

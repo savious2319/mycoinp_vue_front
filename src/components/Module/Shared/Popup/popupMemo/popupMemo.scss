@@ -15,7 +15,7 @@
         >span {
             @include displayflex(row, center, flex-start, unset);
             font-size: 11px;
-            color: #999;
+            color: $FontColorFaq;
             position: relative;
             margin-left: 8px;
             &::before {
@@ -30,14 +30,14 @@
     }
     >article {
         @include displayflex(column, center, center, unset);
-        background-color: #f8f8f8;
+        background-color: $BgColorNotFullMo;
         height: 220px;
         >svg {
             font-size: 37px;
-            color: #bfbfbf;
+            color: $FontColorInactive;
         }
         >p {
-            color: #bfbfbf;
+            color: $FontColorInactive;
             font-size: 12px;
             font-weight: 500;
             margin-top: 11px;

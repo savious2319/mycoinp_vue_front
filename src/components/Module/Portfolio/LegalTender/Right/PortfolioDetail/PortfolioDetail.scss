@@ -1,7 +1,7 @@
 @import "@/assets/scss/function.scss";
 .PortfolioDetail {
     padding: 15px;
-    background-color: #0b0c0f;
+    background-color: $BgColorTotalValue;
     position: relative;
     >.coinName {
         @include displayflex(row, center, flex-start, unset);
@@ -13,7 +13,7 @@
             grid-template-areas: "dt ddFirst" "dt ddLast";
             >dt {
                 @include displayflex(row, center, center, unset);
-                color: #fff0d0;
+                color: $FontColorIvory;
                 font-size: 12px;
                 line-height: 1;
                 grid-area: dt;
@@ -32,7 +32,7 @@
                     @include displayflex(row, center, flex-start, unset);
                     font-size: 12px;
                     font-weight: 300;
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                     grid-area: ddLast;
                 }
             }
@@ -54,7 +54,7 @@
             }
             &:last-of-type {
                 font-size: 16px;
-                color: #67686f;
+                color: $FontColorGray;
                 margin-left: 10px;
                 line-height: 1;
             }
@@ -98,7 +98,7 @@
         >dl {
             >dt {
                 line-height: 1;
-                color: #fff0d0;
+                color: $FontColorIvory;
                 font-size: 15px;
                 font-weight: 300;
                 margin-bottom: 10px;
@@ -110,7 +110,7 @@
                     font-weight: normal;
                     font-size: 11px;
                     margin-top: 2px;
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                 }
             }
             >dd {
@@ -138,7 +138,7 @@
                     }
                 }
                 >span {
-                    color: #ffe640;
+                    color: $FontColorAmountUnit;
                     @media (min-width: 640px) {
                         font-size: 17px;
                     }
@@ -150,7 +150,7 @@
                     font-size: 11px;
                     font-style: normal;
                     vertical-align: top;
-                    color: #67686f;
+                    color: $FontColorGray;
                 }
             }
         }

@@ -11,7 +11,7 @@
         border-radius: 2px;
         background-color: #dddddd;
         height: 45px;
-        color: #999999;
+        color: $FontColorFaq;
         font-size: 14px;
     }
     >.tabs {
@@ -21,20 +21,20 @@
             @include displayflex(row, center, center, unset);
             width: (100%/2);
             height: 40px;
-            color: #bfbfbf;
+            color: $FontColorInactive;
             font-size: 13px;
             font-weight: 500;
             border-bottom: 1px solid #e8e8e8;
             &.on {
-                color: #68bb42;
-                border-bottom-color: #68bb42;
+                color: $FontColorGreen;
+                border-bottom-color: $FontColorGreen;
             }
         }
     }
     >article {
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
-            background-color: #f8f8f8;
+            background-color: $BgColorNotFullMo;
             margin-bottom: 10px;
             padding-left: 10px;
             >input[type=text] {
@@ -44,12 +44,12 @@
                 border: 0;
                 box-shadow: none;
                 padding: 0;
-                color: #444;
+                color: $FontColorContent;
                 font-size: 13px;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
-                    color: #bfbfbf;
+                    color: $FontColorInactive;
                 }
             }
             >button {
@@ -68,7 +68,7 @@
                     margin-right: 10px;
                     >svg {
                         font-size: 15px;
-                        color: #bfbfbf;
+                        color: $FontColorInactive;
                     }
                     >span {
                         font-size: 0;
@@ -80,7 +80,7 @@
             text-align: center;
             padding: 90px 0;
             font-size: 14px;
-            color: #bfbfbf;
+            color: $FontColorInactive;
         }
         >.ps {
             height: 200px !important;
@@ -89,12 +89,12 @@
                 >a {
                     display: block;
                     padding: 13px 0;
-                    color: #444;
+                    color: $FontColorContent;
                     font-size: 13px;
                     line-height: 1;
-                    border-bottom: 1px solid #f8f8f8;
+                    border-bottom: 1px solid $BgColorNotFullMo;
                     >span {
-                        color: #6bbd46;
+                        color: $FontColorGreen;
                     }
                 }
             }

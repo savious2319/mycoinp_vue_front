@@ -8,7 +8,7 @@ table {
         >tr {
             >td {
                 &:nth-of-type(5) {
-                    color: #fff0d0;
+                    color: $FontColorIvory;
                 }
                 @media (max-width: 840px) {
                     >mark {

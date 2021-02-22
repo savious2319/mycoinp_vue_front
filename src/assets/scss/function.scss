@@ -1,5 +1,29 @@
 $img: "~@/assets/img";
 $moAside: 270px;
+// Colors Start
+$BgColorMask: #000;
+$BgColorTable: #13131f;
+$BgColorFullBackground: #1c1e2a;
+$BgColorHeaderFooter: #1b1e25;
+$BgColorTotalValue :#0b0c0f;
+$BgColorChart: #1c202a;
+$BgColorWhite: #fff;
+$BgColorNotFullMo: #f8f8f8;
+$BgColorNotFullPc: #e1e1e7;
+$FontColorRise: #0fc14b;
+$FontColorOrange: #eb9a2c;
+$FontColorGreen: #6bbd46;
+$FontColorAmountUnit: #ffe640;
+$FontColorGray: #67686f;
+$FontColorIvory: #fff0d0;
+$FontColorPortfolioList: #e4b677;
+$FontColorAllSelect: #62636b;
+$FontColorTitle:#222;
+$FontColorContent: #444;
+$FontColorFaq: #888;
+$FontColorInactive:#bfbfbf;
+$FontColorReturn:#666;
+// Colors End
 @mixin displayflex($direction, $align, $justify, $wrap) {
     display: flex;
     flex-direction: $direction;
@@ -38,7 +62,7 @@ $moAside: 270px;
     >div {
         @if $size=='mobile' {
             width: 100%;
-            background-color: #1b1e25;
+            background-color: $BgColorHeaderFooter;
         }
         @include displayflex(row, center, center, unset);
         height: 100%;
@@ -86,7 +110,7 @@ $moAside: 270px;
                 bottom: 47px;
                 right: 8px;
             }
-            background-color: #fff;
+            background-color: $BgColorWhite;
             border-radius: 5px;
             z-index: 3;
             width: 150px;
@@ -112,13 +136,13 @@ $moAside: 270px;
                     background-color: #e8e8e8;
                 }
                 >svg {
-                    color: #444444;
+                    color: $FontColorContent;
                     font-size: 13px;
                     margin-right: 8px;
                 }
                 >span {
                     font-size: 13px;
-                    color: #444444;
+                    color: $FontColorContent;
                 }
             }
         }
@@ -467,10 +491,10 @@ $moAside: 270px;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    background-color: #000;
+    background-color: $BgColorMask;
     opacity: 0.5;
     // @media (max-width: 639px) {
-    //     background-color: #000;
+    //     background-color: $BgColorMask;
     //     opacity: 0.5;
     // }
 }
@@ -478,7 +502,7 @@ $moAside: 270px;
 @mixin layer($width, $position) {
     z-index: 4;
     position: $position;
-    background-color: #fff;
+    background-color: $BgColorWhite;
     overflow: hidden;
     border-radius: 10px;
     width: calc(100% - 30px);
@@ -490,7 +514,7 @@ $moAside: 270px;
         border-bottom: 1px solid #e8e8e8;
         line-height: 1;
         font-weight: 500;
-        color: #222222;
+        color: $FontColorTitle;
         margin-bottom: 20px;
         font-size: 17px;
         padding: 15px 20px;
@@ -512,15 +536,15 @@ $moAside: 270px;
             line-height: 1;
             &:first-of-type {
                 background-color: #dddddd;
-                color: #999;
+                color: $FontColorFaq;
                 font-weight: 500;
                 font-size: 16px;
             }
             &:last-of-type {
-                background-color: #6bbd46;
+                background-color: $FontColorGreen;
                 font-weight: 500;
                 font-size: 16px;
-                color: #fff;
+                color: $BgColorWhite;
             }
         }
     }
@@ -530,7 +554,7 @@ $moAside: 270px;
         border-radius: 2px;
         background-color: #dddddd;
         height: 45px;
-        color: #999999;
+        color: $FontColorFaq;
         font-size: 14px;
         margin: 0 auto;
         width: calc(100% - 40px);
@@ -543,11 +567,11 @@ $moAside: 270px;
     z-index: 2;
 }
 
-@mixin list($stickyTop, $list, $grid-template-columns, $grid-template-areas) {
+@mixin list($stickyTop, $BgColorTable, $grid-template-columns, $grid-template-areas) {
     em {
         font-style: normal;
         font-size: 11px;
-        color: #67686f;
+        color: $FontColorGray;
         position: relative;
         @media (min-width: 841px) {
             top: -3px;
@@ -559,14 +583,14 @@ $moAside: 270px;
     .btnBookmark {
         >svg {
             font-size: 17px;
-            color: #67686f;
+            color: $FontColorGray;
         }
         >span {
             font-size: 0
         }
         &.active {
             >svg {
-                color: #ffe640;
+                color: $FontColorAmountUnit;
             }
         }
     }
@@ -584,13 +608,13 @@ $moAside: 270px;
                             left: 0;
                             width: 5px;
                             height: 100%;
-                            background-color: #ffe640;
+                            background-color: $FontColorAmountUnit;
                         }
                     }
                 }
                 &:not(:last-of-type) {
                     >td {
-                        border-bottom: 1px solid #1c1e2a;
+                        border-bottom: 1px solid $BgColorFullBackground;
                     }
                 }
                 >th {
@@ -617,7 +641,7 @@ $moAside: 270px;
                     }
                     @each $number,
                     $size,
-                    $align in $list {
+                    $align in $BgColorTable {
                         &:nth-of-type(#{$number}) {
                             width: $size;
                             text-align: $align;
@@ -630,7 +654,7 @@ $moAside: 270px;
     @media (max-width: 840px) {
         display: block;
         >tbody>tr {
-            border-top: 1px solid #1c1e2a;
+            border-top: 1px solid $BgColorFullBackground;
             &.bookmark {
                 &::before {
                     content: '';
@@ -639,7 +663,7 @@ $moAside: 270px;
                     left: 0;
                     width: 5px;
                     height: 100%;
-                    background-color: #ffe640;
+                    background-color: $FontColorAmountUnit;
                 }
             }
         }
@@ -680,7 +704,7 @@ $moAside: 270px;
                         }
                         @each $number,
                         $size,
-                        $align in $list {
+                        $align in $BgColorTable {
                             &:nth-of-type(#{$number}) {
                                 grid-area: item#{$number};
                             }
@@ -691,20 +715,21 @@ $moAside: 270px;
         }
     }
     >thead {
+        >tr>th {
+            background-color: #13131f;
+        }
         @media (min-width: 640px) {
             >tr>th {
                 @include sticky($stickyTop);
-                background-color: #13131f;
             }
         }
         @media (max-width: 639px) {
             @include sticky($stickyTop);
-            background-color: #13131f;
         }
         >tr {
             th {
                 font-size: 14px;
-                color: #67686f;
+                color: $FontColorGray;
                 font-weight: 500;
                 line-height: 1;
                 letter-spacing: -0.3px;
@@ -742,11 +767,11 @@ $moAside: 270px;
                         height: 28px;
                         line-height: 28px;
                         border-radius: 6px;
-                        background-color: #1c1e2a;
+                        background-color: $BgColorFullBackground;
                         padding-left: 25px;
                         padding-right: 10px;
                         border: 0;
-                        color: #fff;
+                        color: $BgColorWhite;
                         &::placeholder {
                             color: #454753;
                         }
@@ -756,7 +781,7 @@ $moAside: 270px;
                     @include displayflex(row, center, flex-end, unset);
                     width: 100%;
                     font-size: 14px;
-                    color: #67686f;
+                    color: $FontColorGray;
                     font-weight: 500;
                     line-height: 1;
                     letter-spacing: -0.3px;
@@ -781,7 +806,7 @@ $moAside: 270px;
                     width: 100%;
                     background-color: transparent;
                     font-size: 14px;
-                    color: #67686f;
+                    color: $FontColorGray;
                     line-height: 1;
                     &::after {
                         content: '';
@@ -815,7 +840,7 @@ $moAside: 270px;
                             line-height: 1;
                             text-align: center;
                             padding: 8px 0;
-                            color: #62636b;
+                            color: $FontColorAllSelect;
                             font-size: 14px;
                         }
                     }
@@ -867,7 +892,7 @@ $moAside: 270px;
                             left: 50%;
                             transform: translateX(-50%);
                             width: 10px;
-                            background-color: #6bbd46;
+                            background-color: $FontColorGreen;
                         }
                         &::before {
                             content: '';
@@ -877,11 +902,11 @@ $moAside: 270px;
                             transform: translateX(-50%);
                             width: 1px;
                             height: 100%;
-                            background-color: #6bbd46;
+                            background-color: $FontColorGreen;
                         }
                     }
                     i {
-                        color: #ffe640;
+                        color: $FontColorAmountUnit;
                         font-style: normal;
                     }
                     s {
@@ -905,7 +930,7 @@ $moAside: 270px;
 @mixin realTime ($name, $color) {
     @keyframes #{$name} {
         from {
-            color: #fff;
+            color: $BgColorWhite;
         }
         to {
             color: $color;
@@ -924,7 +949,7 @@ $moAside: 270px;
     grid-row-gap: 5px;
     >dt {
         @include displayflex(row, center, center, unset);
-        color: #fff0d0;
+        color: $FontColorIvory;
         font-size: 12px;
         line-height: 1;
         >img {
@@ -941,7 +966,7 @@ $moAside: 270px;
         &:last-of-type {
             @include displayflex(row, center, flex-start, unset);
             font-size: 12px;
-            color: #fff0d0;
+            color: $FontColorIvory;
             grid-area: ddLast;
         }
     }
@@ -969,13 +994,13 @@ $moAside: 270px;
     @include sticky(0);
     padding: 15px;
     width: 100%;
-    background-color: #13131f;
+    background-color: $BgColorTable;
     overflow: hidden;
     &::before {
         content: '';
         width: calc(100% - 30px);
         height: 33px;
-        background-color: #1c1e2a;
+        background-color: $BgColorFullBackground;
         border-radius: 5px;
         position: absolute;
         top: 50%;
@@ -989,34 +1014,34 @@ $moAside: 270px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 500;
-        color: #67686f;
+        color: $FontColorGray;
         width: (100%/$length);
         height: 33px;
         &.active {
             background-color: #242936;
-            color: #68bb42;
+            color: $FontColorGreen;
         }
     }
 }
 
 .rise,
 .rise>* {
-    color: #0fc14b;
+    color: $FontColorRise;
     &.realTime,
     &.realTime>* {
-        @include realTime(rise, #0fc14b);
+        @include realTime(rise, $FontColorRise);
     }
 }
 
 .fall,
 .fall>* {
-    color: #e4b677;
+    color: $FontColorOrange;
     >* {
-        color: #e4b677;
+        color: $FontColorOrange;
     }
     &.realTime,
     &.realTime>* {
-        @include realTime(fall, #e4b677);
+        @include realTime(fall, $FontColorOrange);
     }
 }
 
@@ -1031,7 +1056,7 @@ $moAside: 270px;
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    background-color: #13131f;
+    background-color: $BgColorTable;
     #contents {
         height: calc(100vh - 46px);
         overflow-y: auto;

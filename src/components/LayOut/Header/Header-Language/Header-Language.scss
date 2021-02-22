@@ -5,7 +5,7 @@ button {
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         line-height: 1;
-        color: #fff;
+        color: $BgColorWhite;
         &::before {
             margin-top: 2px;
         }
@@ -30,13 +30,13 @@ button {
             @include displayflex(row, center, center, unset);
             width: (100%/3);
             height: 40px;
-            color: #bfbfbf;
+            color: $FontColorInactive;
             font-size: 13px;
             font-weight: 500;
             border-bottom: 1px solid #e8e8e8;
             &.on {
-                color: #68bb42;
-                border-bottom-color: #68bb42;
+                color: $FontColorGreen;
+                border-bottom-color: $FontColorGreen;
             }
         }
     }
@@ -45,7 +45,7 @@ button {
         margin-bottom: 0;
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
-            background-color: #f8f8f8;
+            background-color: $BgColorNotFullMo;
             margin-bottom: 10px;
             padding-left: 10px;
             >input[type=text] {
@@ -55,12 +55,12 @@ button {
                 border: 0;
                 box-shadow: none;
                 padding: 0;
-                color: #444;
+                color: $FontColorContent;
                 font-size: 13px;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
-                    color: #bfbfbf;
+                    color: $FontColorInactive;
                 }
             }
             >button {
@@ -79,7 +79,7 @@ button {
                     margin-right: 10px;
                     >svg {
                         font-size: 15px;
-                        color: #bfbfbf;
+                        color: $FontColorInactive;
                     }
                     >span {
                         font-size: 0;
@@ -98,7 +98,7 @@ button {
                     width: (100%/4);
                     font-weight: 500;
                     font-size: 13px;
-                    color: #444;
+                    color: $FontColorContent;
                     &:not(:nth-of-type(-n+4)) {
                         margin-top: 20px;
                     }
@@ -113,7 +113,7 @@ button {
                 font-size: 13px;
                 font-weight: 500;
                 height: 32px;
-                color: #444;
+                color: $FontColorContent;
                 >input[type=radio] {
                     width: 15px;
                     height: 15px;

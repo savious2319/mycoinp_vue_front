@@ -9,11 +9,11 @@ section {
         @include displayGrid(50% 50%, auto, 3px);
     }
     @media (max-width: 639px) {
-        background-color: #13131f;
+        background-color: $BgColorTable;
     }
     .ps {
         position: relative;
-        background-color: #13131f;
+        background-color: $BgColorTable;
         @media (min-width: 1240px) {
             height: calc(100vh - 42px) !important;
         }

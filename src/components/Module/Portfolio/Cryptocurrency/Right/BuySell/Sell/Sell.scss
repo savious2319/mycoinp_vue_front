@@ -9,7 +9,7 @@ article {
     >dl {
         >dt {
             line-height: 1;
-            color: #67686f;
+            color: $FontColorGray;
             font-size: 15px;
             font-weight: 300;
             margin-bottom: 10px;
@@ -21,7 +21,7 @@ article {
                 font-weight: normal;
                 font-size: 11px;
                 margin-top: 2px;
-                color: #67686f;
+                color: $FontColorGray;
             }
         }
         >dd {
@@ -50,7 +50,7 @@ article {
                 }
             }
             >span {
-                color: #ffe640;
+                color: $FontColorAmountUnit;
                 @media (min-width: 640px) {
                     font-size: 17px;
                 }
@@ -62,17 +62,17 @@ article {
                 font-size: 11px;
                 font-style: normal;
                 vertical-align: top;
-                color: #67686f;
+                color: $FontColorGray;
             }
         }
     }
     >span {
         @include displayflex(row, center, flex-end, unset);
         >button {
-            color: #fff;
+            color: $BgColorWhite;
             padding: 6px 8px;
             border-radius: 5px;
-            background-color: #ec9b2a;
+            background-color: $FontColorOrange;
             font-weight: 500;
         }
     }

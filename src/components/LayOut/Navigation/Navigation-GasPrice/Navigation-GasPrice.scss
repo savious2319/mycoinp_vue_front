@@ -7,9 +7,9 @@
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         line-height: 1;
-        color: #fff;
+        color: $BgColorWhite;
         >span {
-            color: #0fc14b;
+            color: $FontColorRise;
         }
         >svg {
             font-size: 13px;
@@ -25,7 +25,7 @@
             border-radius: 2px;
             padding: 0 15px;
             height: 30px;
-            background-color: #13131f;
+            background-color: $BgColorTable;
         }
     }
     >.mask {
@@ -39,7 +39,7 @@
         >.alert {
             @include displayflex(row, center, flex-start, unset);
             font-size: 13px;
-            color: #6bbd46;
+            color: $FontColorGreen;
             padding-left: 30px;
             margin-bottom: 15px;
             &::before {
@@ -67,7 +67,7 @@
                 >strong {
                     font-size: 15px;
                     font-weight: 500;
-                    color: #444;
+                    color: $FontColorContent;
                     width: 150px;
                 }
                 >p {
@@ -76,12 +76,12 @@
                     >strong {
                         font-size: 15px;
                         font-weight: 500;
-                        color: #6bbd46;
+                        color: $FontColorGreen;
                         margin-right: 5px;
                     }
                     >span {
                         font-size: 15px;
-                        color: #444;
+                        color: $FontColorContent;
                     }
                 }
                 >div {
@@ -93,7 +93,7 @@
                         }
                         >span {
                             font-size: 15px;
-                            color: #444;
+                            color: $FontColorContent;
                             >em {
                                 font-style: normal;
                                 font-size: 10px;
@@ -103,17 +103,17 @@
                             }
                         }
                         >input[type=text] {
-                            background-color: #f8f8f8;
+                            background-color: $BgColorNotFullMo;
                             border: 0;
                             width: 180px;
                             height: 36px;
                             line-height: 36px;
                             padding: 0 10px;
-                            color: #444;
+                            color: $FontColorContent;
                             font-size: 15px;
                             margin: 0 5px;
                             &::placeholder {
-                                color: #bfbfbf;
+                                color: $FontColorInactive;
                             }
                         }
                     }

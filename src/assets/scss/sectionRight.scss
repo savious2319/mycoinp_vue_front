@@ -1,6 +1,6 @@
 @import "@/assets/scss/function.scss";
 .tabContents {
-    background-color: #13131f;
+    background-color: $BgColorTable;
     >.tabs {
         @include tabs(2);
     }

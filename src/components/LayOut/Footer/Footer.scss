@@ -3,7 +3,7 @@ footer {
     @include displayflex(row, center, flex-start, wrap);
     width: 100%;
     margin-top: auto;
-    background-color: #1b1e25;
+    background-color: $BgColorHeaderFooter;
     @media (min-width: 640px) {
         padding: 15px 55px;
     }
@@ -24,11 +24,11 @@ footer {
             &:not(:first-of-type) {
                 margin-left: 23px;
             }
-            color: #67686f;
+            color: $FontColorGray;
             font-size: 12px;
             line-height: 1;
             &:hover {
-                color: #fff;
+                color: $BgColorWhite;
             }
         }
     }
@@ -44,7 +44,7 @@ footer {
         }
         margin-left: auto;
         font-size: 12px;
-        color: #67686f;
+        color: $FontColorGray;
         line-height: 1;
     }
 }

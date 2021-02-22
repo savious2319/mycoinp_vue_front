@@ -12,13 +12,13 @@
         border-radius: 2px;
         background-color: #dddddd;
         height: 45px;
-        color: #999999;
+        color: $FontColorFaq;
         font-size: 14px;
     }
     >article {
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
-            background-color: #f8f8f8;
+            background-color: $BgColorNotFullMo;
             margin-bottom: 10px;
             padding-left: 10px;
             >input[type=text] {
@@ -28,12 +28,12 @@
                 border: 0;
                 box-shadow: none;
                 padding: 0;
-                color: #444;
+                color: $FontColorContent;
                 font-size: 13px;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
-                    color: #bfbfbf;
+                    color: $FontColorInactive;
                 }
             }
             >button {
@@ -52,7 +52,7 @@
                     margin-right: 10px;
                     >svg {
                         font-size: 15px;
-                        color: #bfbfbf;
+                        color: $FontColorInactive;
                     }
                     >span {
                         font-size: 0;
@@ -71,7 +71,7 @@
                     width: (100%/4);
                     font-weight: 500;
                     font-size: 13px;
-                    color: #444;
+                    color: $FontColorContent;
                     &:not(:nth-of-type(-n+4)) {
                         margin-top: 20px;
                     }

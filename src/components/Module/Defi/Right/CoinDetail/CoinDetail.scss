@@ -1,7 +1,7 @@
 @import "@/assets/scss/function.scss";
 .PortfolioDetail {
     padding: 15px;
-    background-color: #0b0c0f;
+    background-color: $BgColorTotalValue;
     position: relative;
     >.coinName {
         >dl {
@@ -9,7 +9,7 @@
             width: 100%;
             >dt {
                 @include displayflex(row, center, center, unset);
-                color: #fff0d0;
+                color: $FontColorIvory;
                 font-size: 12px;
                 line-height: 1;
                 >img {
@@ -20,14 +20,14 @@
                     &.btnBookmark {
                         >svg {
                             font-size: 20px;
-                            color: #67686f;
+                            color: $FontColorGray;
                         }
                         >span {
                             font-size: 0
                         }
                         &.active {
                             >svg {
-                                color: #ffe640;
+                                color: $FontColorAmountUnit;
                             }
                         }
                     }
@@ -43,6 +43,6 @@
     >p {
         margin-top: 13px;
         font-size: 13px;
-        color: #fff0d0;
+        color: $FontColorIvory;
     }
 }
