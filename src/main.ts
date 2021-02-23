@@ -249,9 +249,13 @@ app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
 /** Notice Start */
 import NoticeList from '@/components/Module/Notice/List/List.vue';
 import NoticeListSection from '@/components/Module/Notice/List/Section/Section.vue';
+import NoticeDetails from '@/components/Module/Notice/Details/Details.vue';
+import NoticeDetailsSection from '@/components/Module/Notice/Details/Section/Section.vue';
 
 app.component('NoticeList', NoticeList)
 app.component('NoticeListSection', NoticeListSection)
+app.component('NoticeDetails', NoticeDetails)
+app.component('NoticeDetailsSection', NoticeDetailsSection)
 /** Notice End */
 
 app.mount('#app')

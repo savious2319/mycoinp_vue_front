@@ -4,7 +4,7 @@
       <li>MyCoinP</li>
       <li>Notice</li>
     </ul>
-    <div class="titSet">
+    <div class="searchSet">
       <h2>Notice</h2>
       <span>
         <button type="button" class="btnSearch" title="Search">Search</button>
@@ -15,130 +15,130 @@
 
     <ol class="list">
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p><strong>Announcement</strong> on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement  how to Conduct Mainnet DOT to Hotbit by Using Math Wallet</p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p><i>New</i> Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#none">
+        <router-link to="/notice/details">
           <p>Announcement on new listing coins </p>
           <span>2021-01-12 15:44 (UTC)</span>
-        </a>
+        </router-link>
       </li>
     </ol>
 

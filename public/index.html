@@ -62,29 +62,20 @@
             text-decoration: none;
         }
         
-        [data-layerPopup] .ps .ps__rail-y,
-        [data-layerPopup] .ps .ps__rail-y:hover,
-        [data-layerPopup] .ps .ps__rail-y:focus,
-        [data-layerPopup] .ps .ps__rail-y.ps--clicking {
-            opacity: 1 !important;
-            background-color: #f0f0f0;
-            width: 8px;
-        }
-        
         [data-layerPopup] .ps__rail-y>.ps__thumb-y,
         [data-layerPopup] .ps__rail-y:hover>.ps__thumb-y,
         [data-layerPopup] .ps__rail-y:focus>.ps__thumb-y,
         [data-layerPopup] .ps__rail-y.ps--clicking .ps__thumb-y {
-            width: 8px;
+            width: 4px;
             background-color: #cbcbcb;
-            border-radius: 0;
+            border-radius: 2px;
             right: 0;
         }
         
-        section .ps .ps__rail-y,
-        section .ps .ps__rail-y:hover,
-        section .ps .ps__rail-y:focus,
-        section .ps .ps__rail-y.ps--clicking {
+        .ps .ps__rail-y,
+        .ps .ps__rail-y:hover,
+        .ps .ps__rail-y:focus,
+        .ps .ps__rail-y.ps--clicking {
             opacity: 1 !important;
             background-color: transparent;
             width: 4px;
@@ -96,7 +87,17 @@
         section .ps__rail-y.ps--clicking .ps__thumb-y {
             width: 4px;
             background-color: #282d3a;
-            border-radius: 0;
+            border-radius: 2px;
+            right: 4px;
+        }
+        
+        #contentsSection .ps__rail-y>.ps__thumb-y,
+        #contentsSection .ps__rail-y:hover>.ps__thumb-y,
+        #contentsSection .ps__rail-y:focus>.ps__thumb-y,
+        #contentsSection .ps__rail-y.ps--clicking .ps__thumb-y {
+            width: 4px;
+            background-color: #bdbdcb;
+            border-radius: 2px;
             right: 4px;
         }
     </style>

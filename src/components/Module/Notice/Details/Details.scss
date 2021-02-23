@@ -1,0 +1,24 @@
+@import "@/assets/scss/function.scss";
+.ps {
+    @media (min-width: 1240px) {
+        width: 100%;
+        height: calc(100vh - 42px) !important;
+        background-color: $BgColorNotFullSection;
+        padding: 20px 50px;
+    }
+    @media (min-width: 891px) and (max-width: 1239px) {
+        width: 100vw;
+        height: calc(100vh - 135px) !important;
+        background-color: $BgColorNotFullDiv;
+    }
+    @media (min-width: 767px) and (max-width: 890px) {
+        width: 100vw;
+        height: calc(100vh - 157px) !important;
+        background-color: $BgColorNotFullDiv;
+    }
+}
+
+.contentsSection {
+    width: 100vw;
+    background-color: $BgColorNotFullDiv;
+}
