@@ -42,10 +42,10 @@ app.component('Footer', Footer)
 /** LayOut End */
 
 /** Shared Start */
-import BtnTopFull from '@/components/Module/Shared/BtnTopFull/BtnTopFull.vue';
-import BtnTopLeft from '@/components/Module/Shared/BtnTopLeft/BtnTopLeft.vue';
-import BtnTopRight from '@/components/Module/Shared/BtnTopRight/BtnTopRight.vue';
-import Pagenation from '@/components/Module/Shared/Pagenation/Pagenation.vue';
+import BtnTopFull from '@/components/Shared/BtnTopFull/BtnTopFull.vue';
+import BtnTopLeft from '@/components/Shared/BtnTopLeft/BtnTopLeft.vue';
+import BtnTopRight from '@/components/Shared/BtnTopRight/BtnTopRight.vue';
+import Pagenation from '@/components/Shared/Pagenation/Pagenation.vue';
 
 app.component('BtnTopFull', BtnTopFull)
 app.component('BtnTopLeft', BtnTopLeft)
@@ -54,17 +54,17 @@ app.component('Pagenation', Pagenation)
 /** Shared End */
 
 /** Popup Start */
-import popupTradingView from '@/components/Module/Shared/Popup/popupTradingView/popupTradingView.vue';
-import popupMemo from '@/components/Module/Shared/Popup/popupMemo/popupMemo.vue';
-import popupFiatType from '@/components/Module/Shared/Popup/popupFiatType/popupFiatType.vue';
-import popupPortFolio from '@/components/Module/Shared/Popup/popupPortFolio/popupPortFolio.vue';
-import popupPortfolioCoin from '@/components/Module/Shared/Popup/popupPortfolioCoin/popupPortfolioCoin.vue';
-import popupPortfolioFiat from '@/components/Module/Shared/Popup/popupPortfolioFiat/popupPortfolioFiat.vue';
-import popupPortfolioCoinSell from '@/components/Module/Shared/Popup/popupPortfolioCoinSell/popupPortfolioCoinSell.vue';
-import popupPortfolioFiatSell from '@/components/Module/Shared/Popup/popupPortfolioFiatSell/popupPortfolioFiatSell.vue';
-import popupSelectCoinPair from '@/components/Module/Shared/Popup/popupSelectCoinPair/popupSelectCoinPair.vue';
-import popupSelectCoinWhereWallet from '@/components/Module/Shared/Popup/popupSelectCoinWhereWallet/popupSelectCoinWhereWallet.vue';
-import popupPlusHiSet from '@/components/Module/Shared/Popup/popupPlusHiSet/popupPlusHiSet.vue';
+import popupTradingView from '@/components/Shared/Popup/popupTradingView/popupTradingView.vue';
+import popupMemo from '@/components/Shared/Popup/popupMemo/popupMemo.vue';
+import popupFiatType from '@/components/Shared/Popup/popupFiatType/popupFiatType.vue';
+import popupPortFolio from '@/components/Shared/Popup/popupPortFolio/popupPortFolio.vue';
+import popupPortfolioCoin from '@/components/Shared/Popup/popupPortfolioCoin/popupPortfolioCoin.vue';
+import popupPortfolioFiat from '@/components/Shared/Popup/popupPortfolioFiat/popupPortfolioFiat.vue';
+import popupPortfolioCoinSell from '@/components/Shared/Popup/popupPortfolioCoinSell/popupPortfolioCoinSell.vue';
+import popupPortfolioFiatSell from '@/components/Shared/Popup/popupPortfolioFiatSell/popupPortfolioFiatSell.vue';
+import popupSelectCoinPair from '@/components/Shared/Popup/popupSelectCoinPair/popupSelectCoinPair.vue';
+import popupSelectCoinWhereWallet from '@/components/Shared/Popup/popupSelectCoinWhereWallet/popupSelectCoinWhereWallet.vue';
+import popupPlusHiSet from '@/components/Shared/Popup/popupPlusHiSet/popupPlusHiSet.vue';
 
 app.component('popupTradingView', popupTradingView)
 app.component('popupMemo', popupMemo)
