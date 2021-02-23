@@ -16,7 +16,7 @@
             <router-link to="/">오류 수정 요청</router-link>
             <router-link to="/">API</router-link>
             <router-link to="/">Widget</router-link>
-            <router-link to="/">FAQ</router-link>
+            <router-link to="/faq">FAQ</router-link>
             <router-link to="/" v-if="$windowWidth < 640">PUSH_TEST</router-link>
         </div>
         <div class="footer" v-if="$windowWidth < 640">

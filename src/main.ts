@@ -251,11 +251,15 @@ import NoticeList from '@/components/Module/Notice/List/List.vue';
 import NoticeListSection from '@/components/Module/Notice/List/Section/Section.vue';
 import NoticeDetails from '@/components/Module/Notice/Details/Details.vue';
 import NoticeDetailsSection from '@/components/Module/Notice/Details/Section/Section.vue';
+import FaqList from '@/components/Module/Faq/List/List.vue';
+import FaqListSection from '@/components/Module/Faq/List/Section/Section.vue';
 
 app.component('NoticeList', NoticeList)
 app.component('NoticeListSection', NoticeListSection)
 app.component('NoticeDetails', NoticeDetails)
 app.component('NoticeDetailsSection', NoticeDetailsSection)
+app.component('FaqList', FaqList)
+app.component('FaqListSection', FaqListSection)
 /** Notice End */
 
 app.mount('#app')

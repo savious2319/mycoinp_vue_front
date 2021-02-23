@@ -7,6 +7,7 @@ import Defi from '@/components/Module/Defi/Defi.vue';
 import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
 import NoticeList from '@/components/Module/Notice/List/List.vue';
 import NoticeDetails from '@/components/Module/Notice/Details/Details.vue';
+import FaqList from '@/components/Module/Faq/List/List.vue';
 
 const routes = [
   {
@@ -53,6 +54,11 @@ const routes = [
     path: '/notice/details',
     name: 'NoticeDetails',
     component: NoticeDetails
+  },
+  {
+    path: '/faq',
+    name: 'FaqList',
+    component: FaqList
   },
 ]
 
