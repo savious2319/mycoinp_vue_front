@@ -1,0 +1,169 @@
+@import "@/assets/scss/function.scss";
+section {
+    background-color: $BgColorNotFullDiv;
+    width: 100%;
+    * {
+        color: #343434;
+    }
+    @media (min-width: 1240px) {
+        padding: 50px 50px 370px 50px;
+    }
+    @media (max-width: 1239px) {
+        padding: 50px 0;
+    }
+    >.location {
+        @include displayflex(row, center, flex-start, unset);
+        @media (min-width: 1240px) {
+            margin-bottom: 26px;
+            >li {
+                font-size: 13px;
+            }
+        }
+        @media (max-width: 1239px) {
+            width: calc(100vw - 32px);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            >li {
+                font-size: 12px
+            }
+        }
+        >li {
+            @include displayflex(row, center, flex-start, unset);
+            color: $FontColorFaq;
+            line-height: 1;
+            &:not(:first-of-type) {
+                margin-left: 10px;
+                &::before {
+                    @include icon(5px, 7px, 'ico_location_arow.png');
+                    content: '';
+                    margin-right: 10px;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+    >.titSet {
+        @include displayflex(row, center, flex-start, unset);
+        border-bottom: 2px solid $FontColorTitle;
+        padding-bottom: 20px;
+        @media (min-width: 1240px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 1239px) {
+            width: calc(100vw - 32px);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 35px;
+        }
+        >h2 {
+            font-size: 34px;
+            font-weight: bold;
+            letter-spacing: -0.34px;
+            color: $FontColorTitle;
+            line-height: 1
+        }
+        >span {
+            @include displayflex(row, center, flex-start, unset);
+            margin-left: auto;
+            position: relative;
+            height: 30px;
+            border-radius: 3px;
+            border: solid 1px #e5e5e5;
+            background-color: #ffffff;
+            @media (min-width: 1240px) {
+                width: 300px;
+            }
+            @media (max-width: 1239px) {
+                width: 150px;
+            }
+            >button {
+                font-size: 0;
+                &.btnSearch {
+                    @include icon(30px, 30px, 'ico_search-gray.png');
+                    background-size: 10px auto;
+                }
+                &.btnClear {
+                    @include icon(30px, 30px, 'ico_search_clear-2.png');
+                    background-size: 10px auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            >input[type=text] {
+                border: 0;
+                background-color: transparent;
+                width: calc(100% - 30px);
+                height: 30px;
+                font-size: 13px;
+                &::placeholder {
+                    color: #999ba4;
+                }
+            }
+        }
+    }
+    >.list {
+        >li {
+            &:not(:last-of-type) {
+                border-bottom: 2px solid #e5e5e5;
+            }
+            >a {
+                &:active,
+                &:hover {
+                    background-color: #e5e5e5;
+                }
+                >p {
+                    font-size: 16px;
+                    line-height: 1.67;
+                    letter-spacing: -0.16px;
+                    text-align: left;
+                    color: #343434;
+                    >i {
+                        display: inline-block;
+                        width: 45px;
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 13px;
+                        font-style: normal;
+                        letter-spacing: -0.13px;
+                        text-align: center;
+                        color: #ffffff;
+                        border-radius: 10px;
+                        background-color: #ff0000;
+                        margin-right: 7px;
+                    }
+                    >strong {
+                        font-weight: 300;
+                        color: $FontColorGreen;
+                    }
+                }
+                >span {
+                    font-size: 12px;
+                    line-height: 1;
+                    letter-spacing: -0.12px;
+                    text-align: left;
+                    color: $FontColorFaq;
+                }
+                @media (min-width: 1240px) {
+                    @include displayflex(row, center, flex-start, unset);
+                    height: 65px;
+                    padding: 0 20px;
+                    >span {
+                        margin-left: auto;
+                    }
+                }
+                @media (max-width: 1239px) {
+                    @include displayflex(column, flex-start, flex-start, unset);
+                    padding: 20px 16px;
+                    >p {
+                        width: calc(100% - 49px);
+                    }
+                    >span {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

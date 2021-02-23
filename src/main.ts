@@ -30,9 +30,6 @@ import Navigation from '@/components/LayOut/Navigation/Navigation.vue';
 import NavigationGasPrice from '@/components/LayOut/Navigation/Navigation-GasPrice/Navigation-GasPrice.vue';
 import Aside from '@/components/LayOut/Aside/Aside.vue';
 import Footer from '@/components/LayOut/Footer/Footer.vue';
-import BtnTopLeft from '@/components/LayOut/BtnTopLeft/BtnTopLeft.vue';
-import BtnTopRight from '@/components/LayOut/BtnTopRight/BtnTopRight.vue';
-import Pagenation from '@/components/Module/Shared/Pagenation/Pagenation.vue';
 
 app.component('Header', Header)
 app.component('HeaderLanguage', HeaderLanguage)
@@ -42,11 +39,19 @@ app.component('Navigation', Navigation)
 app.component('NavigationGasPrice', NavigationGasPrice)
 app.component('Aside', Aside)
 app.component('Footer', Footer)
+/** LayOut End */
+
+/** Shared Start */
+import BtnTopFull from '@/components/Module/Shared/BtnTopFull/BtnTopFull.vue';
+import BtnTopLeft from '@/components/Module/Shared/BtnTopLeft/BtnTopLeft.vue';
+import BtnTopRight from '@/components/Module/Shared/BtnTopRight/BtnTopRight.vue';
+import Pagenation from '@/components/Module/Shared/Pagenation/Pagenation.vue';
+
+app.component('BtnTopFull', BtnTopFull)
 app.component('BtnTopLeft', BtnTopLeft)
 app.component('BtnTopRight', BtnTopRight)
 app.component('Pagenation', Pagenation)
-
-/** Btn Start */
+/** Shared End */
 
 /** Popup Start */
 import popupTradingView from '@/components/Module/Shared/Popup/popupTradingView/popupTradingView.vue';
@@ -243,8 +248,10 @@ app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
 
 /** Notice Start */
 import NoticeList from '@/components/Module/Notice/List/List.vue';
+import NoticeListSection from '@/components/Module/Notice/List/Section/Section.vue';
 
 app.component('NoticeList', NoticeList)
+app.component('NoticeListSection', NoticeListSection)
 /** Notice End */
 
 app.mount('#app')
