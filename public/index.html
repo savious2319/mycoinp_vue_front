@@ -72,15 +72,6 @@
             right: 0;
         }
         
-        .ps .ps__rail-y,
-        .ps .ps__rail-y:hover,
-        .ps .ps__rail-y:focus,
-        .ps .ps__rail-y.ps--clicking {
-            opacity: 1 !important;
-            background-color: transparent;
-            width: 4px;
-        }
-        
         section .ps__rail-y>.ps__thumb-y,
         section .ps__rail-y:hover>.ps__thumb-y,
         section .ps__rail-y:focus>.ps__thumb-y,
@@ -99,6 +90,23 @@
             background-color: #bdbdcb;
             border-radius: 2px;
             right: 4px;
+        }
+        
+        #contentsSection .ps .ps__rail-y,
+        #contentsSection .ps .ps__rail-y:hover,
+        #contentsSection .ps .ps__rail-y:focus,
+        #contentsSection .ps .ps__rail-y.ps--clicking,
+        [data-layerPopup] .ps .ps__rail-y,
+        [data-layerPopup] .ps .ps__rail-y:hover,
+        [data-layerPopup] .ps .ps__rail-y:focus,
+        [data-layerPopup] .ps .ps__rail-y.ps--clicking,
+        section .ps .ps__rail-y,
+        section .ps .ps__rail-y:hover,
+        section .ps .ps__rail-y:focus,
+        section .ps .ps__rail-y.ps--clicking {
+            opacity: 1 !important;
+            background-color: transparent;
+            width: 4px;
         }
     </style>
 </head>
