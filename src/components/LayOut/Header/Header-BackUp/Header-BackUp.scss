@@ -5,8 +5,8 @@ button {
         &::before {
             content: '';
             display: inline-block;
-            width: 22px;
-            height: 16px;
+            width: 22rem;
+            height: 16rem;
             background-image: url(#{$img}/btn_upload.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
@@ -14,17 +14,17 @@ button {
         }
         @include media('>=desktop') {
             @include displayflex(row, center, flex-start, unset);
-            font-size: 16px;
+            font-size: 16rem;
             font-weight: 500;
             line-height: 1;
             &::before {
-                margin-right: 8px;
+                margin-right: 8rem;
             }
         }
         @include media('<desktop') {
-            margin-left: 15px;
-            width: 22px;
-            height: 16px;
+            margin-left: 15rem;
+            width: 22rem;
+            height: 16rem;
             font-size: 0;
         }
     }
@@ -35,25 +35,25 @@ button {
 }
 
 [data-layerPopup] {
-    @include layer(350px, absolute);
+    @include layer(350rem, absolute);
     >.tab_btn {
         @include displayflex(row, flex-start, flex-start, unset);
         >button {
             @include displayflex(row, center, center, unset);
             width: (100%/2);
-            height: 40px;
+            height: 40rem;
             color: $FontColorInactive;
-            font-size: 13px;
+            font-size: 13rem;
             font-weight: 500;
-            border-bottom: 1px solid #e8e8e8;
+            border-bottom: 1rem solid #e8e8e8;
             &::before {
                 content: '';
-                width: 15px;
-                height: 16px;
+                width: 15rem;
+                height: 16rem;
                 display: inline-block;
                 background-repeat: no-repeat;
                 background-size: 100% auto;
-                margin-right: 8px;
+                margin-right: 8rem;
             }
             &:first-of-type::before {
                 background-image: url(#{$img}/ico-down-off.png);
@@ -74,13 +74,13 @@ button {
         }
     }
     >article {
-        padding-top: 10px;
+        padding-top: 10rem;
         margin-bottom: 0;
         >p {
             background-color: $BgColorNotFullDiv;
-            padding: 10px;
+            padding: 10rem;
             color: $FontColorFaq;
-            font-size: 12px;
+            font-size: 12rem;
             text-align: center;
             >span {
                 color: #ff2828;
@@ -88,32 +88,32 @@ button {
         }
         >div {
             @include displayflex(row, flex-start, flex-start, unset);
-            margin-top: 10px;
+            margin-top: 10rem;
             >button {
                 @include displayflex(row, center, center, unset);
                 width: 50%;
-                height: 66px;
-                padding-top: 44px;
+                height: 66rem;
+                padding-top: 44rem;
                 text-align: center;
                 background-repeat: no-repeat;
-                background-size: 33px auto;
+                background-size: 33rem auto;
                 background-position: 50% 0;
-                font-size: 12px;
+                font-size: 12rem;
                 color: $FontColorContent;
                 &::before {
                     @include displayflex(row, center, center, unset);
                     content: 'From';
-                    width: 40px;
-                    height: 22px;
-                    border-radius: 2px;
+                    width: 40rem;
+                    height: 22rem;
+                    border-radius: 2rem;
                     background-color: $FontColorGreen;
                     color: $BgColorWhite;
-                    font-size: 10px;
+                    font-size: 10rem;
                     font-weight: 500;
-                    margin-right: 4px;
+                    margin-right: 4rem;
                 }
                 &:first-of-type {
-                    border-right: 1px solid #e8e8e8;
+                    border-right: 1rem solid #e8e8e8;
                     background-image: url(#{$img}/mycom.png);
                 }
                 &:last-of-type {
@@ -123,15 +123,15 @@ button {
         }
     }
     @include media('>=desktop') {
-        bottom: 53px;
-        left: 170px;
+        bottom: 53rem;
+        left: 170rem;
     }
     @include media('>=tablet', '<desktop') {
-        top: 45px;
-        right: 15px;
+        top: 45rem;
+        right: 15rem;
     }
     @include media('<tablet') {
-        top: 55px;
+        top: 55rem;
         left: 50%;
         transform: translateX(-50%);
     }

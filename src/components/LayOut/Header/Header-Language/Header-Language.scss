@@ -7,13 +7,13 @@ button {
         line-height: 1;
         color: $BgColorWhite;
         &::before {
-            margin-top: 2px;
+            margin-top: 2rem;
         }
         @include media('>=desktop') {
-            font-size: 16px;
+            font-size: 16rem;
         }
         @include media('<desktop') {
-            font-size: 14px;
+            font-size: 14rem;
         }
     }
 }
@@ -23,17 +23,17 @@ button {
 }
 
 [data-layerPopup] {
-    @include layer(350px, absolute);
+    @include layer(350rem, absolute);
     >.tab_btn {
         @include displayflex(row, flex-start, flex-start, unset);
         >button {
             @include displayflex(row, center, center, unset);
             width: (100%/3);
-            height: 40px;
+            height: 40rem;
             color: $FontColorInactive;
-            font-size: 13px;
+            font-size: 13rem;
             font-weight: 500;
-            border-bottom: 1px solid #e8e8e8;
+            border-bottom: 1rem solid #e8e8e8;
             &.on {
                 color: $FontColorGreen;
                 border-bottom-color: $FontColorGreen;
@@ -41,22 +41,22 @@ button {
         }
     }
     >article {
-        padding: 6px 0;
+        padding: 6rem 0;
         margin-bottom: 0;
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
             background-color: $BgColorNotFullDiv;
-            margin-bottom: 10px;
-            padding-left: 10px;
+            margin-bottom: 10rem;
+            padding-left: 10rem;
             >input[type=text] {
-                width: calc(100% - 30px);
-                height: 30px;
-                line-height: 30px;
+                width: calc(100% - 30rem);
+                height: 30rem;
+                line-height: 30rem;
                 border: 0;
                 box-shadow: none;
                 padding: 0;
                 color: $FontColorContent;
-                font-size: 13px;
+                font-size: 13rem;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
@@ -66,19 +66,19 @@ button {
             >button {
                 &.btnDel {
                     font-size: 0;
-                    width: 30px;
-                    height: 30px;
+                    width: 30rem;
+                    height: 30rem;
                     background-color: transparent;
                     border: 0;
                     background-image: url(#{$img}/ico-clear-2.png);
                     background-repeat: no-repeat;
                     background-position: 50% 50%;
-                    background-size: 11px auto;
+                    background-size: 11rem auto;
                 }
                 &.btnSearch {
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     >svg {
-                        font-size: 15px;
+                        font-size: 15rem;
                         color: $FontColorInactive;
                     }
                     >span {
@@ -88,19 +88,19 @@ button {
             }
         }
         >.ps {
-            height: 200px !important;
+            height: 200rem !important;
             .currency {
                 @include displayflex(row, flex-start, flex-start, wrap);
-                padding: 10px 0;
+                padding: 10rem 0;
                 >button {
                     @include displayflex(row, center, flex-start, unset);
                     @include language;
                     width: (100%/4);
                     font-weight: 500;
-                    font-size: 13px;
+                    font-size: 13rem;
                     color: $FontColorContent;
                     &:not(:nth-of-type(-n+4)) {
-                        margin-top: 20px;
+                        margin-top: 20rem;
                     }
                 }
             }
@@ -110,18 +110,18 @@ button {
             >label {
                 @include displayflex(row, center, flex-start, wrap);
                 width: 100%;
-                font-size: 13px;
+                font-size: 13rem;
                 font-weight: 500;
-                height: 32px;
+                height: 32rem;
                 color: $FontColorContent;
                 >input[type=radio] {
-                    width: 15px;
-                    height: 15px;
+                    width: 15rem;
+                    height: 15rem;
                     appearance: none;
                     background-image: url(#{$img}/radio-trad-off.png);
                     background-repeat: no-repeat;
                     background-size: 100% auto;
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     &:checked {
                         background-image: url(#{$img}/radio-trad-on.png);
                     }
@@ -130,15 +130,15 @@ button {
         }
     }
     @include media('>=desktop') {
-        bottom: 53px;
-        left: 170px;
+        bottom: 53rem;
+        left: 170rem;
     }
     @include media('>=tablet', '<desktop') {
-        top: 45px;
-        right: 15px;
+        top: 45rem;
+        right: 15rem;
     }
     @include media('<tablet') {
-        top: 55px;
+        top: 55rem;
         left: 50%;
         transform: translateX(-50%);
     }

@@ -1,6 +1,6 @@
 @import "@/assets/scss/function.scss";
 .PortfolioDetail {
-    padding: 15px;
+    padding: 15rem;
     background-color: $BgColorTotalValue;
     position: relative;
     >.coinName {
@@ -8,23 +8,23 @@
         >dl {
             margin-right: auto;
             display: grid;
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
+            grid-column-gap: 10rem;
+            grid-row-gap: 10rem;
             grid-template-areas: "dt ddFirst" "dt ddLast";
             >dt {
                 @include displayflex(row, center, center, unset);
                 color: $FontColorIvory;
-                font-size: 12px;
+                font-size: 12rem;
                 line-height: 1;
                 grid-area: dt;
                 >img {
-                    width: 20px;
+                    width: 20rem;
                 }
                 >button {
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     &.btnBookmark {
                         >svg {
-                            font-size: 20px;
+                            font-size: 20rem;
                             color: $FontColorGray;
                         }
                         >span {
@@ -42,12 +42,12 @@
                 line-height: 1;
                 &:first-of-type {
                     @include displayflex(row, flex-start, flex-start, unset);
-                    font-size: 15px;
+                    font-size: 15rem;
                     grid-area: ddFirst;
                 }
                 &:last-of-type {
                     @include displayflex(row, center, flex-start, unset);
-                    font-size: 12px;
+                    font-size: 12rem;
                     font-weight: 300;
                     color: $FontColorIvory;
                     grid-area: ddLast;
@@ -62,17 +62,17 @@
                 vertical-align: top;
             }
             &:first-of-type {
-                width: 16px;
-                height: 16px;
+                width: 16rem;
+                height: 16rem;
                 background-image: url(#{$img}/ico-memo-off.png);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-size: 100% auto;
             }
             &:last-of-type {
-                font-size: 16px;
+                font-size: 16rem;
                 color: $FontColorGray;
-                margin-left: 10px;
+                margin-left: 10rem;
                 line-height: 1;
             }
         }
@@ -83,11 +83,11 @@
     >ul {
         display: grid;
         grid-template-columns: (100%/3) (100%/3) (100%/3);
-        margin-top: 10px;
+        margin-top: 10rem;
         >li {
             &:first-of-type {
                 @include displayflex(row, center, flex-start, unset);
-                font-size: 13px;
+                font-size: 13rem;
                 line-height: 1;
                 color: $FontColorIvory;
                 font-weight: 300;
@@ -96,27 +96,27 @@
                 @include displayflex(row, center, center, unset);
                 color: $FontColorGreen;
                 >span {
-                    font-size: 17px;
+                    font-size: 17rem;
                     font-weight: 500;
                     >em {
                         font-style: normal;
-                        font-size: 11px;
+                        font-size: 11rem;
                         color: $FontColorGray;
                         vertical-align: top;
                     }
                 }
                 >mark {
                     display: inline-block;
-                    width: 10px;
-                    height: 30px;
+                    width: 10rem;
+                    height: 30rem;
                     background-color: transparent;
                     position: relative;
-                    margin-left: 10px;
+                    margin-left: 10rem;
                     >i {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
-                        width: 10px;
+                        width: 10rem;
                         background-color: $FontColorGreen;
                     }
                     &::before {
@@ -136,7 +136,7 @@
                 color: $FontColorGreen;
                 >em {
                     font-style: normal;
-                    font-size: 11px;
+                    font-size: 11rem;
                     vertical-align: top;
                     text-decoration: none;
                 }

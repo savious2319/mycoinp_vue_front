@@ -3,10 +3,10 @@ section {
     width: 100%;
     position: relative;
     @include media('>=desktop') {
-        padding: 0 50px;
+        padding: 0 50rem;
     }
     @include media('>=tablet') {
-        @include displayGrid(50% 50%, auto, 3px);
+        @include displayGrid(50% 50%, auto, 3rem);
     }
     @include media('<tablet') {
         background-color: $BgColorTable;
@@ -15,13 +15,13 @@ section {
         position: relative;
         background-color: $BgColorTable;
         @include media('>=desktop') {
-            height: calc(100vh - 42px) !important;
+            height: calc(100vh - 42rem) !important;
         }
-        @include media('>890px', '<desktop') {
-            height: calc(100vh - 135px) !important;
+        @include media('>890rem', '<desktop') {
+            height: calc(100vh - 135rem) !important;
         }
-        @include media('>=767px', '<890px') {
-            height: calc(100vh - 157px) !important;
+        @include media('>=767rem', '<890rem') {
+            height: calc(100vh - 157rem) !important;
         }
     }
 }

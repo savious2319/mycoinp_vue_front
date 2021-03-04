@@ -3,7 +3,7 @@ $interval: (1 (100%/3) left, 2 (100%/3) right, 3 (100%/3) right);
 $grid-template-columns:auto 33% 33%;
 $grid-template-areas:( 'item1 item2 item3');
 table {
-    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
     >tbody {
         >tr {
             >td {
@@ -11,14 +11,14 @@ table {
                     text-align: right;
                     line-height: 1;
                     &:last-of-type {
-                        font-size: 13px;
+                        font-size: 13rem;
                         color: $FontColorIvory;
-                        margin-top: 10px;
+                        margin-top: 10rem;
                     }
                     >img {
-                        width: 13px;
+                        width: 13rem;
                         vertical-align: bottom;
-                        margin: 0 2px;
+                        margin: 0 2rem;
                     }
                 }
             }

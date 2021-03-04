@@ -2,18 +2,18 @@
 .ps {
     @include media('>=desktop') {
         width: 100%;
-        height: calc(100vh - 42px) !important;
+        height: calc(100vh - 42rem) !important;
         background-color: $BgColorNotFullSection;
-        padding: 20px 50px;
+        padding: 20rem 50rem;
     }
-    @include media('>890px', '<desktop') {
+    @include media('>890rem', '<desktop') {
         width: 100vw;
-        height: calc(100vh - 135px) !important;
+        height: calc(100vh - 135rem) !important;
         background-color: $BgColorNotFullDiv;
     }
-    @include media('>=767px', '<890px') {
+    @include media('>=767rem', '<890rem') {
         width: 100vw;
-        height: calc(100vh - 157px) !important;
+        height: calc(100vh - 157rem) !important;
         background-color: $BgColorNotFullDiv;
     }
 }

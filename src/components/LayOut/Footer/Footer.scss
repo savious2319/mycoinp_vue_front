@@ -5,27 +5,27 @@ footer {
     margin-top: auto;
     background-color: $BgColorHeaderFooter;
     @include media('>=tablet') {
-        padding: 15px 55px;
+        padding: 15rem 55rem;
     }
     @include media('<tablet') {
         display: none;
     }
     >div {
-        @include media('>890px') {
+        @include media('>890rem') {
             @include displayflex(row, center, flex-start, unset);
             margin-right: auto;
             height: 100%;
         }
-        @include media('<=890px') {
+        @include media('<=890rem') {
             @include displayflex(row, center, center, unset);
             width: 100%;
         }
         >a {
             &:not(:first-of-type) {
-                margin-left: 23px;
+                margin-left: 23rem;
             }
             color: $FontColorGray;
-            font-size: 12px;
+            font-size: 12rem;
             line-height: 1;
             &:hover {
                 color: $BgColorWhite;
@@ -33,17 +33,17 @@ footer {
         }
     }
     >p {
-        @include media('>890px') {
+        @include media('>890rem') {
             @include displayflex(row, center, flex-start, unset);
             height: 100%;
         }
-        @include media('<=890px') {
+        @include media('<=890rem') {
             @include displayflex(row, center, center, unset);
             width: 100%;
-            margin-top: 10px;
+            margin-top: 10rem;
         }
         margin-left: auto;
-        font-size: 12px;
+        font-size: 12rem;
         color: $FontColorGray;
         line-height: 1;
     }

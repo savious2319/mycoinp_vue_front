@@ -1,6 +1,6 @@
 @import "include-media.scss";
 $img: "~@/assets/img";
-$moAside: 270px;
+$moAside: 270rem;
 // Colors Start
 $BgColorMask: #000;
 $BgColorTable: #13131f;
@@ -59,7 +59,7 @@ $FontColorReturn:#666;
 
 @mixin navigation ($size) {
     @include displayflex(row, center, flex-start, unset);
-    height: 47px;
+    height: 47rem;
     >div {
         @if $size=='mobile' {
             width: 100%;
@@ -71,31 +71,31 @@ $FontColorReturn:#666;
         >a {
             @if $size=='tab' {
                 @include displayflex(row, center, center, unset);
-                font-size: 15px;
-                padding: 0 20px;
+                font-size: 15rem;
+                padding: 0 20rem;
             }
             @else {
                 @include displayflex(column, center, center, unset);
-                font-size: 13px;
+                font-size: 13rem;
                 &:not(:last-of-type) {
-                    width: calc(25% - 10px);
+                    width: calc(25% - 10rem);
                 }
             }
             position: relative;
             height: 100%;
             &::after {
                 width: 100%;
-                height: 2px;
+                height: 2rem;
                 position: absolute;
                 left: 0;
                 bottom: 0;
             }
             &:last-of-type {
                 @if $size=='mobile' {
-                    width: 40px;
+                    width: 40rem;
                 }
                 >span>svg {
-                    font-size: 22px
+                    font-size: 22rem
                 }
             }
         }
@@ -103,46 +103,46 @@ $FontColorReturn:#666;
             @include displayflex(column, flex-start, flex-start, unset);
             @if $size=='tab' {
                 position: absolute;
-                top: 47px;
-                right: -45px;
+                top: 47rem;
+                right: -45rem;
             }
             @else {
                 position: fixed;
-                bottom: 47px;
-                right: 8px;
+                bottom: 47rem;
+                right: 8rem;
             }
             background-color: $BgColorWhite;
-            border-radius: 5px;
+            border-radius: 5rem;
             z-index: 3;
-            width: 150px;
+            width: 150rem;
             overflow: hidden;
             >a {
                 @include displayflex(row, center, flex-start, unset);
                 line-height: 1;
                 width: 100%;
-                height: 40px;
-                padding-left: 22px;
+                height: 40rem;
+                padding-left: 22rem;
                 &:first-of-type {
                     >svg {
                         transform: rotate(90deg);
                     }
                 }
                 &:last-of-type ::before {
-                    @include icon(13px, 13px, 'ico-promotion.png');
+                    @include icon(13rem, 13rem, 'ico-promotion.png');
                     background-size: 100% auto;
                     content: '';
-                    margin-right: 8px;
+                    margin-right: 8rem;
                 }
                 &:active {
                     background-color: #e8e8e8;
                 }
                 >svg {
                     color: $FontColorContent;
-                    font-size: 13px;
-                    margin-right: 8px;
+                    font-size: 13rem;
+                    margin-right: 8rem;
                 }
                 >span {
-                    font-size: 13px;
+                    font-size: 13rem;
                     color: $FontColorContent;
                 }
             }
@@ -154,333 +154,334 @@ $FontColorReturn:#666;
     &::before {
         content: '';
         display: inline-block;
-        width: 16px;
-        height: 11px;
-        margin-right: 5px;
+        width: 16rem;
+        height: 11rem;
+        margin-right: 5rem;
         vertical-align: middle;
         background-image: url(#{$img}/flags.png);
-        margin-right: 5px;
+        background-size: 272rem auto;
+        margin-right: 5rem;
     }
     &.usd:before {
-        background-position: 0 -154px;
+        background-position: 0 -154rem;
     }
     &.eur:before {
-        background-position: -256px -33px;
+        background-position: -256rem -33rem;
     }
     &.krw:before {
-        background-position: -80px -77px;
+        background-position: -80rem -77rem;
     }
     &.jpy:before {
-        background-position: -224px -66px;
+        background-position: -224rem -66rem;
     }
     &.cny:before {
-        background-position: -176px -22px;
+        background-position: -176rem -22rem;
     }
     &.aud:before {
-        background-position: -192px 0
+        background-position: -192rem 0
     }
     &.brl:before {
-        background-position: -176px -11px
+        background-position: -176rem -11rem
     }
     &.cad:before {
-        background-position: -16px -22px
+        background-position: -16rem -22rem
     }
     &.chf:before {
-        background-position: -96px -22px
+        background-position: -96rem -22rem
     }
     &.gbp:before {
-        background-position: -112px -44px
+        background-position: -112rem -44rem
     }
     &.hkd:before {
-        background-position: -144px -55px
+        background-position: -144rem -55rem
     }
     &.rub:before {
-        background-position: -96px -121px
+        background-position: -96rem -121rem
     }
     &.idr:before {
-        background-position: -256px -55px
+        background-position: -256rem -55rem
     }
     &.inr:before {
-        background-position: -64px -66px;
+        background-position: -64rem -66rem;
     }
     &.mxn:before {
-        background-position: -96px -99px;
+        background-position: -96rem -99rem;
     }
     &.nzd:before {
-        background-position: -48px -110px
+        background-position: -48rem -110rem
     }
     &.php:before {
-        background-position: -144px -110px;
+        background-position: -144rem -110rem;
     }
     &.sgd:before {
-        background-position: -224px -121px;
+        background-position: -224rem -121rem;
     }
     &.thb:before {
-        background-position: -16px -143px
+        background-position: -16rem -143rem
     }
     &.vnd:before {
-        background-position: -128px -154px
+        background-position: -128rem -154rem
     }
     &.try:before {
-        background-position: -144px -143px
+        background-position: -144rem -143rem
     }
     &.aed:before {
-        background-position: -16px 0
+        background-position: -16rem 0
     }
     &.all:before {
-        background-position: -80px 0
+        background-position: -80rem 0
     }
     &.ang:before {
-        background-position: -112px 0
+        background-position: -112rem 0
     }
     &.aoa:before {
-        background-position: -128px 0
+        background-position: -128rem 0
     }
     &.ars:before {
-        background-position: -144px 0;
+        background-position: -144rem 0;
     }
     &.awg:before {
-        background-position: -208px 0
+        background-position: -208rem 0
     }
     &.bbd:before {
-        background-position: 0 -11px;
+        background-position: 0 -11rem;
     }
     &.bdt:before {
-        background-position: -16px -11px;
+        background-position: -16rem -11rem;
     }
     &.bgn:before {
-        background-position: -64px -11px;
+        background-position: -64rem -11rem;
     }
     &.bhd:before {
-        background-position: -80px -11px;
+        background-position: -80rem -11rem;
     }
     &.bob:before {
-        background-position: -160px -11px;
+        background-position: -160rem -11rem;
     }
     &.bsd:before {
-        background-position: -192px -11px;
+        background-position: -192rem -11rem;
     }
     &.bwp:before {
-        background-position: -240px -11px;
+        background-position: -240rem -11rem;
     }
     &.byn:before {
-        background-position: -256px -11px;
+        background-position: -256rem -11rem;
     }
     &.clp:before {
-        background-position: -144px -22px;
+        background-position: -144rem -22rem;
     }
     &.cop:before {
-        background-position: -192px -22px;
+        background-position: -192rem -22rem;
     }
     &.crc:before {
-        background-position: -208px -22px;
+        background-position: -208rem -22rem;
     }
     &.czk:before {
-        background-position: -16px -33px
+        background-position: -16rem -33rem
     }
     &.dkk:before {
-        background-position: -64px -33px
+        background-position: -64rem -33rem
     }
     &.dop:before {
-        background-position: -96px -33px;
+        background-position: -96rem -33rem;
     }
     &.egp:before {
-        background-position: -160px -33px;
+        background-position: -160rem -33rem;
     }
     &.gel:before {
-        background-position: -144px -44px;
+        background-position: -144rem -44rem;
     }
     &.ghs:before {
-        background-position: -208px -44px;
+        background-position: -208rem -44rem;
     }
     &.gtq:before {
-        background-position: -80px -55px;
+        background-position: -80rem -55rem;
     }
     &.hnl:before {
-        background-position: -176px -55px
+        background-position: -176rem -55rem
     }
     &.hrk:before {
-        background-position: -192px -55px;
+        background-position: -192rem -55rem;
     }
     &.huf:before {
-        background-position: -224px -55px
+        background-position: -224rem -55rem
     }
     &.idr:before {
-        background-position: -256px -55px;
+        background-position: -256rem -55rem;
     }
     &.ils:before {
-        background-position: -16px -66px;
+        background-position: -16rem -66rem;
     }
     &.isk:before {
-        background-position: -128px -66px
+        background-position: -128rem -66rem
     }
     &.irr:before {
-        background-position: -112px -66px;
+        background-position: -112rem -66rem;
     }
     &.jmd:before {
-        background-position: -192px -66px;
+        background-position: -192rem -66rem;
     }
     &.jod:before {
-        background-position: -208px -66px;
+        background-position: -208rem -66rem;
     }
     &.kes:before {
-        background-position: -240px -66px;
+        background-position: -240rem -66rem;
     }
     &.khr:before {
-        background-position: 0 -77px;
+        background-position: 0 -77rem;
     }
     &.kwd:before {
-        background-position: -112px -77px;
+        background-position: -112rem -77rem;
     }
     &.kyd:before {
-        background-position: -128px -77px;
+        background-position: -128rem -77rem;
     }
     &.kzt:before {
-        background-position: -144px -77px;
+        background-position: -144rem -77rem;
     }
     &.lkr:before {
-        background-position: -224px -77px;
+        background-position: -224rem -77rem;
     }
     &.lsl:before {
-        background-position: -256px -77px;
+        background-position: -256rem -77rem;
     }
     &.ltc:before {
-        background-position: 0 -88px;
+        background-position: 0 -88rem;
     }
     &.mad:before {
-        background-position: -64px -88px;
+        background-position: -64rem -88rem;
     }
     &.mdl:before {
-        background-position: -96px -88px;
+        background-position: -96rem -88rem;
     }
     &.mur:before {
-        background-position: -48px -99px;
+        background-position: -48rem -99rem;
     }
     &.mvr:before {
-        background-position: -64px -99px;
+        background-position: -64rem -99rem;
     }
     &.mwk:before {
-        background-position: -80px -99px;
+        background-position: -80rem -99rem;
     }
     &.mxn:before {
-        background-position: -96px -99px;
+        background-position: -96rem -99rem;
     }
     &.myr:before {
-        background-position: -112px -99px;
+        background-position: -112rem -99rem;
     }
     &.mzn:before {
-        background-position: -128px -99px;
+        background-position: -128rem -99rem;
     }
     &.nad:before {
-        background-position: -144px -99px;
+        background-position: -144rem -99rem;
     }
     &.ngn:before {
-        background-position: -208px -99px;
+        background-position: -208rem -99rem;
     }
     &.nio:before {
-        background-position: -224px -99px;
+        background-position: -224rem -99rem;
     }
     &.nok:before {
-        background-position: -256px -99px;
+        background-position: -256rem -99rem;
     }
     &.nzd:before {
-        background-position: -48px -110px;
+        background-position: -48rem -110rem;
     }
     &.omr:before {
-        background-position: -64px -110px;
+        background-position: -64rem -110rem;
     }
     &.pab:before {
-        background-position: -80px -110px;
+        background-position: -80rem -110rem;
     }
     &.pen:before {
-        background-position: -96px -110px;
+        background-position: -96rem -110rem;
     }
     &.pgk:before {
-        background-position: -128px -110px;
+        background-position: -128rem -110rem;
     }
     &.php:before {
-        background-position: -144px -110px
+        background-position: -144rem -110rem
     }
     &.pkr:before {
-        background-position: -160px -110px
+        background-position: -160rem -110rem
     }
     &.pln:before {
-        background-position: -176px -110px
+        background-position: -176rem -110rem
     }
     &.pyg:before {
-        background-position: -16px -121px
+        background-position: -16rem -121rem
     }
     &.qar:before {
-        background-position: -32px -121px;
+        background-position: -32rem -121rem;
     }
     &.ron:before {
-        background-position: -160px -88px;
+        background-position: -160rem -88rem;
     }
     &.rsd:before {
-        background-position: -80px -121px;
+        background-position: -80rem -121rem;
     }
     &.rwf:before {
-        background-position: -112px -121px;
+        background-position: -112rem -121rem;
     }
     &.sar:before {
-        background-position: -128px -121px;
+        background-position: -128rem -121rem;
     }
     &.sdg:before {
-        background-position: -192px -121px
+        background-position: -192rem -121rem
     }
     &.sek:before {
-        background-position: -208px -121px;
+        background-position: -208rem -121rem;
     }
     &.srd:before {
-        background-position: -112px -132px;
+        background-position: -112rem -132rem;
     }
     &.szl:before {
-        background-position: -208px -132px
+        background-position: -208rem -132rem
     }
     &.thb:before {
-        background-position: -16px -143px;
+        background-position: -16rem -143rem;
     }
     &.ttd:before {
-        background-position: -160px -143px;
+        background-position: -160rem -143rem;
     }
     &.twd:before {
-        background-position: -192px -143px;
+        background-position: -192rem -143rem;
     }
     &.tzs:before {
-        background-position: -208px -143px
+        background-position: -208rem -143rem
     }
     &.uah:before {
-        background-position: -224px -143px
+        background-position: -224rem -143rem
     }
     &.ugx:before {
-        background-position: -240px -143px
+        background-position: -240rem -143rem
     }
     &.uyu:before {
-        background-position: -16px -154px;
+        background-position: -16rem -154rem;
     }
     &.uzs:before {
-        background-position: -32px -154px;
+        background-position: -32rem -154rem;
     }
     &.ves:before {
-        background-position: -80px -154px;
+        background-position: -80rem -154rem;
     }
     &.xaf:before {
-        background-position: -160px -22px
+        background-position: -160rem -22rem
     }
     &.xcd:before {
-        background-position: -48px 0
+        background-position: -48rem 0
     }
     &.xof:before {
-        background-position: -112px -22px
+        background-position: -112rem -22rem
     }
     &.yer:before {
-        background-position: -224px -154px;
+        background-position: -224rem -154rem;
     }
     &.zar:before {
-        background-position: -256px -154px;
+        background-position: -256rem -154rem;
     }
     &.zmw:before {
-        background-position: -16px -165px;
+        background-position: -16rem -165rem;
     }
 }
 
@@ -505,60 +506,60 @@ $FontColorReturn:#666;
     position: $position;
     background-color: $BgColorWhite;
     overflow: hidden;
-    border-radius: 10px;
-    width: calc(100% - 30px);
-    min-width: 320px;
+    border-radius: 10rem;
+    width: calc(100% - 30rem);
+    min-width: 320rem;
     max-width: $width;
-    padding-bottom: 20px;
+    padding-bottom: 20rem;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
-        border-bottom: 1px solid #e8e8e8;
+        border-bottom: 1rem solid #e8e8e8;
         line-height: 1;
         font-weight: 500;
         color: $FontColorTitle;
-        margin-bottom: 20px;
-        font-size: 17px;
-        padding: 15px 20px;
+        margin-bottom: 20rem;
+        font-size: 17rem;
+        padding: 15rem 20rem;
     }
     >article {
-        margin: 0 auto 30px auto;
-        width: calc(100% - 40px);
+        margin: 0 auto 30rem auto;
+        width: calc(100% - 40rem);
     }
     >.btnSet {
         @include displayflex(row, center, flex-start, unset);
-        border-radius: 2.5px;
+        border-radius: 2.5rem;
         overflow: hidden;
-        height: 45px;
+        height: 45rem;
         margin: 0 auto;
-        width: calc(100% - 40px);
+        width: calc(100% - 40rem);
         >button {
             width: 50%;
-            height: 45px;
+            height: 45rem;
             line-height: 1;
             &:first-of-type {
                 background-color: #dddddd;
                 color: $FontColorFaq;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 16rem;
             }
             &:last-of-type {
                 background-color: $FontColorGreen;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $BgColorWhite;
             }
         }
     }
     >button {
         display: inherit;
-        margin-top: 15px;
-        border-radius: 2px;
+        margin-top: 15rem;
+        border-radius: 2rem;
         background-color: #dddddd;
-        height: 45px;
+        height: 45rem;
         color: $FontColorFaq;
-        font-size: 14px;
+        font-size: 14rem;
         margin: 0 auto;
-        width: calc(100% - 40px);
+        width: calc(100% - 40rem);
     }
 }
 
@@ -571,19 +572,19 @@ $FontColorReturn:#666;
 @mixin list($stickyTop, $BgColorTable, $grid-template-columns, $grid-template-areas) {
     em {
         font-style: normal;
-        font-size: 11px;
+        font-size: 11rem;
         color: $FontColorGray;
         position: relative;
-        @include media('>840px') {
-            top: -3px;
+        @include media('>840rem') {
+            top: -3rem;
         }
-        @include media('<=840px') {
+        @include media('<=840rem') {
             top: 0;
         }
     }
     .btnBookmark {
         >svg {
-            font-size: 17px;
+            font-size: 17rem;
             color: $FontColorGray;
         }
         >span {
@@ -595,7 +596,7 @@ $FontColorReturn:#666;
             }
         }
     }
-    @include media('>840px') {
+    @include media('>840rem') {
         >thead,
         >tbody {
             >tr {
@@ -607,7 +608,7 @@ $FontColorReturn:#666;
                             position: absolute;
                             top: 0;
                             left: 0;
-                            width: 5px;
+                            width: 5rem;
                             height: 100%;
                             background-color: $FontColorAmountUnit;
                         }
@@ -615,30 +616,30 @@ $FontColorReturn:#666;
                 }
                 &:not(:last-of-type) {
                     >td {
-                        border-bottom: 1px solid $BgColorFullBackground;
+                        border-bottom: 1rem solid $BgColorFullBackground;
                     }
                 }
                 >th {
-                    padding: 10px 0 15px;
+                    padding: 10rem 0 15rem;
                 }
                 >td {
-                    padding: 10px 0;
+                    padding: 10rem 0;
                 }
                 >th,
                 >td {
                     position: relative;
                     &:first-of-type {
-                        padding-left: 15px;
+                        padding-left: 15rem;
                     }
                     &:last-of-type {
-                        padding-right: 15px;
+                        padding-right: 15rem;
                     }
                     >mark {
                         position: relative;
-                        margin-left: 10px;
+                        margin-left: 10rem;
                     }
                     >.tdSort {
-                        margin-left: 5px;
+                        margin-left: 5rem;
                     }
                     @each $number,
                     $size,
@@ -652,17 +653,17 @@ $FontColorReturn:#666;
             }
         }
     }
-    @include media('<=840px') {
+    @include media('<=840rem') {
         display: block;
         >tbody>tr {
-            border-top: 1px solid $BgColorFullBackground;
+            border-top: 1rem solid $BgColorFullBackground;
             &.bookmark {
                 &::before {
                     content: '';
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 5px;
+                    width: 5rem;
                     height: 100%;
                     background-color: $FontColorAmountUnit;
                 }
@@ -682,9 +683,9 @@ $FontColorReturn:#666;
                 }
                 &:not(.not) {
                     position: relative;
-                    padding: 10px 15px;
+                    padding: 10rem 15rem;
                     display: grid;
-                    grid-row-gap: 7px;
+                    grid-row-gap: 7rem;
                     grid-template-columns: $grid-template-columns;
                     grid-template-areas: $grid-template-areas;
                     >th,
@@ -696,7 +697,7 @@ $FontColorReturn:#666;
                         >.tdSort {
                             position: absolute;
                             top: 50%;
-                            right: 15px;
+                            right: 15rem;
                         }
                         >mark {
                             position: absolute;
@@ -729,11 +730,11 @@ $FontColorReturn:#666;
         }
         >tr {
             th {
-                font-size: 14px;
+                font-size: 14rem;
                 color: $FontColorGray;
                 font-weight: 500;
                 line-height: 1;
-                letter-spacing: -0.3px;
+                letter-spacing: -0.3rem;
                 >.thSearch {
                     @include displayflex(row, center, center, unset);
                     position: relative;
@@ -742,11 +743,11 @@ $FontColorReturn:#666;
                             @include displayflex(row, center, center, unset);
                             position: absolute;
                             top: 50%;
-                            left: 10px;
+                            left: 10rem;
                             transform: translateY(-50%);
                             line-height: 1;
                             >svg {
-                                font-size: 10px;
+                                font-size: 10rem;
                                 color: #454753;
                             }
                             >span {
@@ -754,23 +755,23 @@ $FontColorReturn:#666;
                             }
                         }
                         &.btnBookmark {
-                            margin-right: 13px;
+                            margin-right: 13rem;
                             &+.btnSearch {
-                                left: 40px;
+                                left: 40rem;
                                 &+input[type=text] {
-                                    width: calc(100% - 30px);
+                                    width: calc(100% - 30rem);
                                 }
                             }
                         }
                     }
                     >input[type=text] {
                         width: 100%;
-                        height: 28px;
-                        line-height: 28px;
-                        border-radius: 6px;
+                        height: 28rem;
+                        line-height: 28rem;
+                        border-radius: 6rem;
                         background-color: $BgColorFullBackground;
-                        padding-left: 25px;
-                        padding-right: 10px;
+                        padding-left: 25rem;
+                        padding-right: 10rem;
                         border: 0;
                         color: $BgColorWhite;
                         &::placeholder {
@@ -781,19 +782,19 @@ $FontColorReturn:#666;
                 >.thSort {
                     @include displayflex(row, center, flex-end, unset);
                     width: 100%;
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $FontColorGray;
                     font-weight: 500;
                     line-height: 1;
-                    letter-spacing: -0.3px;
+                    letter-spacing: -0.3rem;
                     &:after {
                         content: '';
-                        width: 9px;
-                        height: 12px;
+                        width: 9rem;
+                        height: 12rem;
                         background-repeat: no-repeat;
                         background-image: url(#{$img}/arrow-default-2.png);
                         background-size: 100% auto;
-                        margin-left: 5px;
+                        margin-left: 5rem;
                     }
                     &.up::after {
                         background-image: url(#{$img}/arrow-up.png);
@@ -806,18 +807,18 @@ $FontColorReturn:#666;
                     @include displayflex(row, center, flex-end, unset);
                     width: 100%;
                     background-color: transparent;
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $FontColorGray;
                     line-height: 1;
                     &::after {
                         content: '';
                         display: inline-block;
-                        width: 11px;
-                        height: 7.5px;
+                        width: 11rem;
+                        height: 7.5rem;
                         background-repeat: no-repeat;
                         background-image: url(#{$img}/select-arrow.png);
                         background-size: 100% auto;
-                        margin-left: 2.5px;
+                        margin-left: 2.5rem;
                         transform: rotate(180deg);
                     }
                     &.active::after {
@@ -825,14 +826,14 @@ $FontColorReturn:#666;
                     }
                     &+div {
                         position: absolute;
-                        top: 30px;
+                        top: 30rem;
                         background-color: #242936;
-                        width: 50px;
+                        width: 50rem;
                         z-index: 2;
-                        @include media('>840px') {
+                        @include media('>840rem') {
                             right: 0;
                         }
-                        @include media('<=840px') {
+                        @include media('<=840rem') {
                             left: 34%;
                         }
                         >button {
@@ -840,9 +841,9 @@ $FontColorReturn:#666;
                             width: 100%;
                             line-height: 1;
                             text-align: center;
-                            padding: 8px 0;
+                            padding: 8rem 0;
                             color: $FontColorAllSelect;
-                            font-size: 14px;
+                            font-size: 14rem;
                         }
                     }
                 }
@@ -858,24 +859,24 @@ $FontColorReturn:#666;
                 >td {
                     text-align: center;
                     color: #454753;
-                    font-size: 15px;
+                    font-size: 15rem;
                     font-weight: 500;
-                    padding: 200px 0;
+                    padding: 200rem 0;
                     width: 100%;
                 }
             }
             &:not(.not) {
                 >td {
                     line-height: 1;
-                    letter-spacing: -0.3px;
-                    font-size: 15px;
+                    letter-spacing: -0.3rem;
+                    font-size: 15rem;
                     >dl {
                         @include coinName;
                     }
                     >.tdSort {
                         transform: translateY(-50%);
-                        width: 12px;
-                        height: 8px;
+                        width: 12rem;
+                        height: 8rem;
                         font-size: 0;
                         background-repeat: no-repeat;
                         background-image: url(#{$img}/btn-chart-open.png);
@@ -885,14 +886,14 @@ $FontColorReturn:#666;
                         }
                     }
                     >mark {
-                        width: 10px;
-                        height: 30px;
+                        width: 10rem;
+                        height: 30rem;
                         background-color: transparent;
                         >i {
                             position: absolute;
                             left: 50%;
                             transform: translateX(-50%);
-                            width: 10px;
+                            width: 10rem;
                             background-color: $FontColorGreen;
                         }
                         &::before {
@@ -912,13 +913,13 @@ $FontColorReturn:#666;
                     }
                     s {
                         font-style: normal;
-                        font-size: 11px;
+                        font-size: 11rem;
                         text-decoration: none;
                         position: relative;
-                        @include media('>840px') {
-                            top: -3px;
+                        @include media('>840rem') {
+                            top: -3rem;
                         }
-                        @include media('<=840px') {
+                        @include media('<=840rem') {
                             top: 0;
                         }
                     }
@@ -945,28 +946,28 @@ $FontColorReturn:#666;
 
 @mixin coinName {
     display: grid;
-    grid-template-columns: 18px auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
+    grid-template-columns: 18rem auto;
+    grid-column-gap: 10rem;
+    grid-row-gap: 5rem;
     >dt {
         @include displayflex(row, center, center, unset);
         color: $FontColorIvory;
-        font-size: 12px;
+        font-size: 12rem;
         line-height: 1;
         >img {
-            width: 18px;
+            width: 18rem;
         }
     }
     >dd {
         line-height: 1;
         &:first-of-type {
             @include displayflex(row, flex-start, flex-start, unset);
-            font-size: 15px;
+            font-size: 15rem;
             grid-area: ddFirst;
         }
         &:last-of-type {
             @include displayflex(row, center, flex-start, unset);
-            font-size: 12px;
+            font-size: 12rem;
             color: $FontColorIvory;
             grid-area: ddLast;
         }
@@ -993,31 +994,31 @@ $FontColorReturn:#666;
 @mixin tabs ($length) {
     @include displayflex(row, flex-start, flex-start, unset);
     @include sticky(0);
-    padding: 15px;
+    padding: 15rem;
     width: 100%;
     background-color: $BgColorTable;
     overflow: hidden;
     &::before {
         content: '';
-        width: calc(100% - 30px);
-        height: 33px;
+        width: calc(100% - 30rem);
+        height: 33rem;
         background-color: $BgColorFullBackground;
-        border-radius: 5px;
+        border-radius: 5rem;
         position: absolute;
         top: 50%;
-        left: 15px;
+        left: 15rem;
         transform: translateY(-50%);
         z-index: -1;
     }
     >button {
         z-index: 3;
         background-color: transparent;
-        border-radius: 5px;
-        font-size: 14px;
+        border-radius: 5rem;
+        font-size: 14rem;
         font-weight: 500;
         color: $FontColorGray;
         width: (100%/$length);
-        height: 33px;
+        height: 33rem;
         &.active {
             background-color: #242936;
             color: $FontColorGreen;
@@ -1059,7 +1060,7 @@ $FontColorReturn:#666;
     z-index: 2;
     background-color: $BgColorTable;
     #contents {
-        height: calc(100vh - 46px);
+        height: calc(100vh - 46rem);
         overflow-y: auto;
     }
 }

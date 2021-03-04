@@ -6,26 +6,26 @@ section {
         color: #343434;
     }
     @include media('>=desktop') {
-        padding: 50px 50px 370px 50px;
+        padding: 50rem 50rem 370rem 50rem;
     }
     @include media('<desktop') {
-        padding: 50px 0;
+        padding: 50rem 0;
     }
     >.location {
         @include displayflex(row, center, flex-start, unset);
         @include media('>=desktop') {
-            margin-bottom: 26px;
+            margin-bottom: 26rem;
             >li {
-                font-size: 13px;
+                font-size: 13rem;
             }
         }
         @include media('<desktop') {
-            width: calc(100vw - 32px);
+            width: calc(100vw - 32rem);
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
+            margin-bottom: 20rem;
             >li {
-                font-size: 12px
+                font-size: 12rem
             }
         }
         >li {
@@ -33,11 +33,11 @@ section {
             color: $FontColorFaq;
             line-height: 1;
             &:not(:first-of-type) {
-                margin-left: 10px;
+                margin-left: 10rem;
                 &::before {
-                    @include icon(5px, 7px, 'ico_location_arow.png');
+                    @include icon(5rem, 7rem, 'ico_location_arow.png');
                     content: '';
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     background-size: 100% auto;
                 }
             }
@@ -45,21 +45,21 @@ section {
     }
     >.searchSet {
         @include displayflex(row, center, flex-start, unset);
-        border-bottom: 2px solid $FontColorTitle;
-        padding-bottom: 20px;
+        border-bottom: 2rem solid $FontColorTitle;
+        padding-bottom: 20rem;
         @include media('>=desktop') {
-            margin-bottom: 50px;
+            margin-bottom: 50rem;
         }
         @include media('<desktop') {
-            width: calc(100vw - 32px);
+            width: calc(100vw - 32rem);
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 35px;
+            margin-bottom: 35rem;
         }
         >h2 {
-            font-size: 34px;
+            font-size: 34rem;
             font-weight: bold;
-            letter-spacing: -0.34px;
+            letter-spacing: -0.34rem;
             color: $FontColorTitle;
             line-height: 1
         }
@@ -67,25 +67,25 @@ section {
             @include displayflex(row, center, flex-start, unset);
             margin-left: auto;
             position: relative;
-            height: 30px;
-            border-radius: 3px;
+            height: 30rem;
+            border-radius: 3rem;
             border: solid 1px #e5e5e5;
             background-color: #ffffff;
             @include media('>=desktop') {
-                width: 300px;
+                width: 300rem;
             }
             @include media('<desktop') {
-                width: 150px;
+                width: 150rem;
             }
             >button {
                 font-size: 0;
                 &.btnSearch {
-                    @include icon(30px, 30px, 'ico_search-gray.png');
-                    background-size: 10px auto;
+                    @include icon(30rem, 30rem, 'ico_search-gray.png');
+                    background-size: 10rem auto;
                 }
                 &.btnClear {
-                    @include icon(30px, 30px, 'ico_search_clear-2.png');
-                    background-size: 10px auto;
+                    @include icon(30rem, 30rem, 'ico_search_clear-2.png');
+                    background-size: 10rem auto;
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -94,9 +94,9 @@ section {
             >input[type=text] {
                 border: 0;
                 background-color: transparent;
-                width: calc(100% - 30px);
-                height: 30px;
-                font-size: 13px;
+                width: calc(100% - 30rem);
+                height: 30rem;
+                font-size: 13rem;
                 &::placeholder {
                     color: #999ba4;
                 }
@@ -106,7 +106,7 @@ section {
     >.list {
         >li {
             &:not(:last-of-type) {
-                border-bottom: 1px solid #e5e5e5;
+                border-bottom: 1rem solid #e5e5e5;
             }
             >a {
                 &:active,
@@ -114,24 +114,24 @@ section {
                     background-color: #e5e5e5;
                 }
                 >p {
-                    font-size: 16px;
+                    font-size: 16rem;
                     line-height: 1.67;
-                    letter-spacing: -0.16px;
+                    letter-spacing: -0.16rem;
                     text-align: left;
                     color: #343434;
                     >i {
                         display: inline-block;
-                        width: 45px;
-                        height: 20px;
-                        line-height: 20px;
-                        font-size: 13px;
+                        width: 45rem;
+                        height: 20rem;
+                        line-height: 20rem;
+                        font-size: 13rem;
                         font-style: normal;
-                        letter-spacing: -0.13px;
+                        letter-spacing: -0.13rem;
                         text-align: center;
                         color: #ffffff;
-                        border-radius: 10px;
+                        border-radius: 10rem;
                         background-color: #ff0000;
-                        margin-right: 7px;
+                        margin-right: 7rem;
                     }
                     >strong {
                         font-weight: 300;
@@ -139,28 +139,28 @@ section {
                     }
                 }
                 >span {
-                    font-size: 12px;
+                    font-size: 12rem;
                     line-height: 1;
-                    letter-spacing: -0.12px;
+                    letter-spacing: -0.12rem;
                     text-align: left;
                     color: $FontColorFaq;
                 }
                 @include media('>=desktop') {
                     @include displayflex(row, center, flex-start, unset);
-                    height: 65px;
-                    padding: 0 20px;
+                    height: 65rem;
+                    padding: 0 20rem;
                     >span {
                         margin-left: auto;
                     }
                 }
                 @include media('<desktop') {
                     @include displayflex(column, flex-start, flex-start, unset);
-                    padding: 20px 16px;
+                    padding: 20rem 16rem;
                     >p {
-                        width: calc(100% - 49px);
+                        width: calc(100% - 49rem);
                     }
                     >span {
-                        margin-top: 10px;
+                        margin-top: 10rem;
                     }
                 }
             }

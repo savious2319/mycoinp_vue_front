@@ -1,50 +1,50 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup] {
-    @include layer(350px, fixed);
+    @include layer(350rem, fixed);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 30px;
+    padding-top: 30rem;
     >.alert {
         @include displayflex(row, center, flex-start, unset);
-        font-size: 13px;
+        font-size: 13rem;
         color: $FontColorGreen;
-        padding-left: 30px;
-        margin-bottom: 15px;
+        padding-left: 30rem;
+        margin-bottom: 15rem;
         &::before {
             content: '';
-            width: 15px;
-            height: 12px;
+            width: 15rem;
+            height: 12rem;
             display: inline-block;
             background-image: url(#{$img}/plus-info-or.png);
             background-repeat: no-repeat;
             background-size: 100% auto;
-            margin-right: 5px;
+            margin-right: 5rem;
         }
         &:not(:first-of-type) {
-            margin-top: 20px;
+            margin-top: 20rem;
         }
     }
     >article {
         @include displayflex(row, center, space-between, unset);
-        margin-top: 16px;
+        margin-top: 16rem;
         >button {
             position: relative;
-            padding: 0 14px;
-            height: 35px;
-            border-radius: 3px;
+            padding: 0 14rem;
+            height: 35rem;
+            border-radius: 3rem;
             background-color: #a5a9b4;
             color: $BgColorWhite;
-            font-size: 15px;
-            letter-spacing: -0.3px;
+            font-size: 15rem;
+            letter-spacing: -0.3rem;
             line-height: 1;
             &.active {
                 background-color: #4b4f5e;
             }
             >span {
-                font-size: 12px;
+                font-size: 12rem;
                 position: relative;
-                top: -2px;
+                top: -2rem;
             }
         }
     }

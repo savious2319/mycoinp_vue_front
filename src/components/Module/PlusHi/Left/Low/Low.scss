@@ -3,14 +3,14 @@ $interval: (1 30% left, 2 15% right, 3 25% right, 4 15% right, 5 15% right);
 $grid-template-columns:auto 40% 40%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item4 item5');
 table {
-    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
     >tbody {
         >tr {
             &.bookmark>td>.col3>dt>svg {
                 color: $FontColorAmountUnit;
             }
             >td {
-                $fontSize: (1 15px, 2 15px, 3 13px, 4 13px);
+                $fontSize: (1 15rem, 2 15rem, 3 13rem, 4 13rem);
                 @each $i,
                 $size in $fontSize {
                     &:nth-of-type(#{$i}) {
@@ -26,14 +26,14 @@ table {
                     vertical-align: middle;
                 }
                 >.col3>dt>svg {
-                    font-size: 17px;
+                    font-size: 17rem;
                     font-weight: normal;
                     color: $FontColorGray;
                 }
                 >img {
-                    width: 18px;
+                    width: 18rem;
                     vertical-align: middle;
-                    margin-right: 5px;
+                    margin-right: 5rem;
                 }
                 &:nth-of-type(3) {
                     color: $FontColorGray;

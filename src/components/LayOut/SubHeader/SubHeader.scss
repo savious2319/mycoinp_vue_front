@@ -3,35 +3,35 @@
     width: 100%;
     position: relative;
     >h1 {
-        font-size: 16px;
+        font-size: 16rem;
         font-weight: 500;
         line-height: 1;
     }
     >button {
         @include displayflex(column, center, space-between, unset);
-        font-size: 16px;
+        font-size: 16rem;
         color: $BgColorWhite;
     }
     @include media('>=desktop') {
-        margin-bottom: 63px;
-        padding-top: 68px;
+        margin-bottom: 63rem;
+        padding-top: 68rem;
         >h1 {
-            margin-left: 40px;
+            margin-left: 40rem;
             >a {
-                width: 110px;
-                height: 32px;
+                width: 110rem;
+                height: 32rem;
             }
         }
         >button {
             position: absolute;
-            top: 10px;
-            left: 16px;
+            top: 10rem;
+            left: 16rem;
         }
     }
     @include media('<desktop') {
         @include displayflex(row, center, center, unset);
-        height: 46px;
-        border-bottom: 1px solid #242936;
+        height: 46rem;
+        border-bottom: 1rem solid #242936;
         >h1 {
             @include displayflex(row, center, center, unset);
             position: absolute;
@@ -41,11 +41,11 @@
         }
         >button {
             margin-right: auto;
-            margin-left: 15px;
+            margin-left: 15rem;
         }
         >div {
             @include displayflex(row, center, flex-start, unset);
-            margin-right: 15px;
+            margin-right: 15rem;
             margin-left: auto;
         }
     }

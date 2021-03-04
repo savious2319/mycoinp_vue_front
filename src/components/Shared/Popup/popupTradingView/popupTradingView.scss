@@ -1,13 +1,13 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup] {
     @include media('>=tablet') {
-        @include layer(500px, absolute);
+        @include layer(500rem, absolute);
         top: 0;
         left: 50%;
         transform: translateX(-50%);
     }
     @include media('<tablet') {
-        @include layer(500px, fixed);
+        @include layer(500rem, fixed);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -17,17 +17,17 @@
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
             background-color: $BgColorNotFullDiv;
-            margin-bottom: 10px;
-            padding-left: 10px;
+            margin-bottom: 10rem;
+            padding-left: 10rem;
             >input[type=text] {
-                width: calc(100% - 30px);
-                height: 30px;
-                line-height: 30px;
+                width: calc(100% - 30rem);
+                height: 30rem;
+                line-height: 30rem;
                 border: 0;
                 box-shadow: none;
                 padding: 0;
                 color: $FontColorContent;
-                font-size: 13px;
+                font-size: 13rem;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
@@ -37,19 +37,19 @@
             >button {
                 &.btnDel {
                     font-size: 0;
-                    width: 30px;
-                    height: 30px;
+                    width: 30rem;
+                    height: 30rem;
                     background-color: transparent;
                     border: 0;
                     background-image: url(#{$img}/ico-clear-2.png);
                     background-repeat: no-repeat;
                     background-position: 50% 50%;
-                    background-size: 11px auto;
+                    background-size: 11rem auto;
                 }
                 &.btnSearch {
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     >svg {
-                        font-size: 15px;
+                        font-size: 15rem;
                         color: $FontColorInactive;
                     }
                     >span {
@@ -59,16 +59,16 @@
             }
         }
         >.ps {
-            height: 400px !important;
+            height: 400rem !important;
             .list {
-                padding: 10px 0;
+                padding: 10rem 0;
                 >a {
                     display: block;
-                    padding: 13px 0;
+                    padding: 13rem 0;
                     color: $FontColorContent;
-                    font-size: 13px;
+                    font-size: 13rem;
                     line-height: 1;
-                    border-bottom: 1px solid $BgColorNotFullDiv;
+                    border-bottom: 1rem solid $BgColorNotFullDiv;
                     >span {
                         color: $FontColorGreen;
                     }

@@ -2,21 +2,21 @@
 .tabs {
     @include tabs(2);
     &.btnSet {
-        padding-right: 50px;
+        padding-right: 50rem;
         &::before {
-            width: calc(100% - 65px);
+            width: calc(100% - 65rem);
         }
         >a {
             position: absolute;
             top: 50%;
-            right: 17px;
+            right: 17rem;
             transform: translateY(-50%);
             >span {
                 font-size: 0;
             }
             >svg {
                 color: $FontColorGray;
-                font-size: 15px;
+                font-size: 15rem;
             }
         }
     }
@@ -28,24 +28,24 @@
     background-repeat: no-repeat;
     position: fixed;
     transition: all 0.3s ease-in-out;
-    width: 75px;
-    height: 75px;
+    width: 75rem;
+    height: 75rem;
     background-image: url(#{$img}/btn_rg.png);
     @include media('>=desktop') {
-        left: 250px;
-        bottom: 42px;
+        left: 250rem;
+        bottom: 42rem;
     }
-    @include media('>=890px', '<desktop') {
+    @include media('>=890rem', '<desktop') {
         left: 0;
-        bottom: 42px;
+        bottom: 42rem;
     }
-    @include media('>=tablet', '<890px') {
+    @include media('>=tablet', '<890rem') {
         left: 0;
-        bottom: 64px;
+        bottom: 64rem;
     }
     @include media('<tablet') {
         left: 0;
-        bottom: 40px;
+        bottom: 40rem;
     }
 }
 

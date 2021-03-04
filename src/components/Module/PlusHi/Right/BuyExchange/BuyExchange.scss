@@ -3,13 +3,13 @@ $interval: (1 28% left, 2 28% right, 3 28% right, 4 auto right);
 $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
-    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
     >thead {
         >tr {
             >th {
                 &:nth-of-type(2),
                 &:nth-of-type(3) {
-                    padding-right: 20px;
+                    padding-right: 20rem;
                 }
             }
         }
@@ -18,7 +18,7 @@ table {
         >tr {
             >td {
                 .fa-asterisk {
-                    font-size: 8px;
+                    font-size: 8rem;
                     vertical-align: middle;
                     &.off {
                         color: $FontColorGray;
@@ -29,34 +29,34 @@ table {
                 }
                 &:first-of-type {
                     >img {
-                        width: 18px;
+                        width: 18rem;
                         vertical-align: top;
                     }
                     >strong {
                         font-weight: 500;
                         line-height: 1;
-                        font-size: 15px;
-                        margin-left: 2px;
+                        font-size: 15rem;
+                        margin-left: 2rem;
                         vertical-align: top;
                         &.rise,
                         &.fall {
-                            margin-right: 5px;
+                            margin-right: 5rem;
                         }
                     }
                 }
                 &:nth-of-type(2),
                 &:nth-of-type(3) {
-                    padding-right: 20px;
+                    padding-right: 20rem;
                     >span {
                         position: absolute;
-                        top: 8px;
+                        top: 8rem;
                         right: 0;
                     }
                 }
-                @include media('<=840px') {
+                @include media('<=840rem') {
                     &:nth-of-type(3),
                     &:nth-of-type(4) {
-                        padding-right: 17px;
+                        padding-right: 17rem;
                     }
                 }
             }
@@ -65,24 +65,24 @@ table {
 }
 
 ul {
-    padding: 15px;
+    padding: 15rem;
     width: 100%;
     >li {
         position: relative;
-        font-size: 13px;
+        font-size: 13rem;
         color: $FontColorGray;
         line-height: 1.23;
-        padding-left: 12px;
+        padding-left: 12rem;
         &:not(:first-of-type) {
-            margin-top: 8px;
+            margin-top: 8rem;
         }
         >img,
         >svg {
-            width: 8px;
-            font-size: 8px;
+            width: 8rem;
+            font-size: 8rem;
             vertical-align: middle;
             position: absolute;
-            top: 4px;
+            top: 4rem;
             left: 0;
             &.off {
                 color: $FontColorGray;

@@ -1,50 +1,50 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup^="popupSelectCoinPair"] {
-    @include layer(500px, fixed);
+    @include layer(500rem, fixed);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
-    min-height: 510px;
+    min-height: 510rem;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
-        font-size: 13px;
+        font-size: 13rem;
         color: $FontColorGreen;
         &::before {
             content: '';
-            width: 15px;
-            height: 12px;
+            width: 15rem;
+            height: 12rem;
             display: inline-block;
             background-image: url(#{$img}/plus-info-or.png);
             background-repeat: no-repeat;
             background-size: 100% auto;
-            margin-right: 5px;
+            margin-right: 5rem;
         }
     }
     >button {
         margin: 0 auto;
-        width: calc(100% - 40px);
-        border-radius: 2px;
+        width: calc(100% - 40rem);
+        border-radius: 2rem;
         background-color: #dddddd;
-        height: 45px;
+        height: 45rem;
         color: $FontColorFaq;
-        font-size: 14px;
+        font-size: 14rem;
     }
     >article {
         >.scarch {
             @include displayflex(row, center, flex-start, unset);
             background-color: $BgColorNotFullDiv;
-            margin-bottom: 10px;
-            padding-left: 10px;
+            margin-bottom: 10rem;
+            padding-left: 10rem;
             >input[type=text] {
-                width: calc(100% - 30px);
-                height: 30px;
-                line-height: 30px;
+                width: calc(100% - 30rem);
+                height: 30rem;
+                line-height: 30rem;
                 border: 0;
                 box-shadow: none;
                 padding: 0;
                 color: $FontColorContent;
-                font-size: 13px;
+                font-size: 13rem;
                 font-weight: 500;
                 background-color: transparent;
                 &::placeholder {
@@ -54,19 +54,19 @@
             >button {
                 &.btnDel {
                     font-size: 0;
-                    width: 30px;
-                    height: 30px;
+                    width: 30rem;
+                    height: 30rem;
                     background-color: transparent;
                     border: 0;
                     background-image: url(#{$img}/ico-clear-2.png);
                     background-repeat: no-repeat;
                     background-position: 50% 50%;
-                    background-size: 11px auto;
+                    background-size: 11rem auto;
                 }
                 &.btnSearch {
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     >svg {
-                        font-size: 15px;
+                        font-size: 15rem;
                         color: $FontColorInactive;
                     }
                     >span {
@@ -77,24 +77,24 @@
         }
         >.noData {
             text-align: center;
-            padding: 90px 0;
-            font-size: 14px;
+            padding: 90rem 0;
+            font-size: 14rem;
             color: $FontColorInactive;
         }
         >.ps {
-            height: 300px !important;
+            height: 300rem !important;
             .list {
-                padding: 10px 0;
+                padding: 10rem 0;
                 >a {
                     @include displayflex(row, center, flex-start, unset);
-                    padding: 13px 0;
+                    padding: 13rem 0;
                     color: $FontColorContent;
-                    font-size: 13px;
+                    font-size: 13rem;
                     line-height: 1;
-                    border-bottom: 1px solid $BgColorNotFullDiv;
+                    border-bottom: 1rem solid $BgColorNotFullDiv;
                     >img {
-                        width: 13px;
-                        margin-right: 5px;
+                        width: 13rem;
+                        margin-right: 5rem;
                     }
                     >span {
                         color: $FontColorGreen;

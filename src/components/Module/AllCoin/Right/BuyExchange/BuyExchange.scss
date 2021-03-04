@@ -3,36 +3,36 @@ $interval: (1 28% left, 2 28% right, 3 28% right, 4 auto right);
 $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
-    @include list(63px, $interval, $grid-template-columns, $grid-template-areas);
+    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
     >tbody {
         >tr {
             >td {
                 .marketcap {
-                    width: 200px;
+                    width: 200rem;
                     text-align: left;
                     background-color: $BgColorWhite;
-                    border-radius: 5px;
-                    padding: 10px;
+                    border-radius: 5rem;
+                    padding: 10rem;
                     position: absolute;
-                    top: 40px;
+                    top: 40rem;
                     right: 0;
                     z-index: 4;
                     line-height: 1.21;
                     &::after {
-                        border-top: 0px solid transparent;
-                        border-left: 5px solid transparent;
-                        border-right: 5px solid transparent;
-                        border-bottom: 5px solid $BgColorWhite;
+                        border-top: 0rem solid transparent;
+                        border-left: 5rem solid transparent;
+                        border-right: 5rem solid transparent;
+                        border-bottom: 5rem solid $BgColorWhite;
                         content: "";
                         position: absolute;
-                        top: -5px;
-                        right: 20px;
+                        top: -5rem;
+                        right: 20rem;
                     }
                     >dl {
                         display: grid;
                         grid-template-columns: 50% 50%;
                         >* {
-                            font-size: 15px;
+                            font-size: 15rem;
                             color: $FontColorContent;
                         }
                         >dd {
@@ -40,14 +40,14 @@ table {
                         }
                     }
                     >p {
-                        margin-top: 20px;
+                        margin-top: 20rem;
                         >span {
                             color: $FontColorFaq;
-                            font-size: 13px;
+                            font-size: 13rem;
                             display: block;
                         }
                         >a {
-                            font-size: 14px;
+                            font-size: 14rem;
                             color: #3b33df;
                             text-decoration: underline;
                         }
@@ -55,21 +55,21 @@ table {
                 }
                 &:first-of-type {
                     >img {
-                        width: 18px;
+                        width: 18rem;
                         vertical-align: top;
                     }
                     >strong {
                         font-weight: 500;
                         line-height: 1;
-                        font-size: 15px;
-                        margin-left: 2px;
+                        font-size: 15rem;
+                        margin-left: 2rem;
                         vertical-align: top;
                     }
                 }
-                @include media('<=840px') {
+                @include media('<=840rem') {
                     &:nth-of-type(3),
                     &:nth-of-type(4) {
-                        padding-right: 17px;
+                        padding-right: 17rem;
                     }
                 }
             }

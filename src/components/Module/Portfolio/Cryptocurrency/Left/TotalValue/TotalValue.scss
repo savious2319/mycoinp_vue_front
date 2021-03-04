@@ -1,8 +1,8 @@
 @import "@/assets/scss/function.scss";
 .TotalValue {
-    padding: 15px;
+    padding: 15rem;
     background-color: $BgColorTotalValue;
-    border-bottom: 5px solid $BgColorHeaderFooter;
+    border-bottom: 5rem solid $BgColorHeaderFooter;
     // @include media('<tablet') {
     //     position: sticky;
     //     top: 0;
@@ -12,7 +12,7 @@
         @include displayflex(row, flex-start, flex-start, unset);
         >h2 {
             font-weight: 500;
-            font-size: 18px;
+            font-size: 18rem;
             line-height: 1;
         }
         >p {
@@ -21,45 +21,45 @@
             text-align: right;
             >em {
                 font-style: normal;
-                font-size: 11px;
+                font-size: 11rem;
                 line-height: 1;
                 color: $FontColorGray;
                 vertical-align: top;
-                margin-right: 3px;
+                margin-right: 3rem;
             }
             >strong {
                 line-height: 1;
-                font-size: 18px;
+                font-size: 18rem;
                 font-weight: 500;
             }
             >Span {
                 display: block;
                 line-height: 1;
-                font-size: 13px;
+                font-size: 13rem;
                 font-weight: 500;
                 color: $FontColorGray;
                 text-align: right;
-                margin-top: 10px;
+                margin-top: 10rem;
             }
         }
     }
     >article {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-row-gap: 17px;
-        margin-top: 16px;
-        padding-right: 22px;
+        grid-row-gap: 17rem;
+        margin-top: 16rem;
+        padding-right: 22rem;
         position: relative;
         >button {
             position: absolute;
-            top: 30px;
+            top: 30rem;
             right: 0;
             font-size: 0;
-            width: 12px;
-            height: 8px;
+            width: 12rem;
+            height: 8rem;
             background-image: url(#{$img}/btn-add-show-down.png);
             background-repeat: no-repeat;
-            background-size: 12px auto;
+            background-size: 12rem auto;
             &.on {
                 transform: rotate(180deg);
             }
@@ -68,17 +68,17 @@
             >dt {
                 line-height: 1;
                 color: $FontColorIvory;
-                font-size: 15px;
+                font-size: 15rem;
                 font-weight: 300;
-                margin-bottom: 10px;
+                margin-bottom: 10rem;
                 text-align: right;
                 >em {
                     display: inline-block;
                     font-style: normal;
                     vertical-align: top;
                     font-weight: normal;
-                    font-size: 11px;
-                    margin-top: 2px;
+                    font-size: 11rem;
+                    margin-top: 2rem;
                     color: $FontColorIvory;
                 }
             }
@@ -92,31 +92,31 @@
                 >strong {
                     font-weight: 500;
                     @include media('>=tablet') {
-                        font-size: 17px;
+                        font-size: 17rem;
                     }
                     @include media('<tablet') {
-                        font-size: 14px;
+                        font-size: 14rem;
                     }
                     >em {
                         display: inline-block;
                         font-style: normal;
                         vertical-align: top;
                         font-weight: normal;
-                        font-size: 11px;
-                        margin-top: 2px;
+                        font-size: 11rem;
+                        margin-top: 2rem;
                     }
                 }
                 >span {
                     color: $FontColorAmountUnit;
                     @include media('>=tablet') {
-                        font-size: 17px;
+                        font-size: 17rem;
                     }
                     @include media('<tablet') {
-                        font-size: 14px;
+                        font-size: 14rem;
                     }
                 }
                 >em {
-                    font-size: 11px;
+                    font-size: 11rem;
                     font-style: normal;
                     vertical-align: top;
                     color: $FontColorGray;

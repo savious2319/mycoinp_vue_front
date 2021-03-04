@@ -5,23 +5,23 @@
     background-repeat: no-repeat;
     position: fixed;
     transition: all 0.3s ease-in-out;
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
     background-image: url(#{$img}/top-btn-2.png);
     @include media('>=desktop') {
-        left: calc(50vw + 50px);
-        bottom: 65px;
+        left: calc(50vw + 50rem);
+        bottom: 65rem;
     }
-    @include media('>=890px', '<desktop') {
-        left: calc(50vw - 50px);
-        bottom: 65px;
+    @include media('>=890rem', '<desktop') {
+        left: calc(50vw - 50rem);
+        bottom: 65rem;
     }
-    @include media('>=tablet', '<890px') {
-        left: calc(50vw - 50px);
-        bottom: 87px;
+    @include media('>=tablet', '<890rem') {
+        left: calc(50vw - 50rem);
+        bottom: 87rem;
     }
     @include media('<tablet') {
-        right: 15px;
-        bottom: 70px;
+        right: 15rem;
+        bottom: 70rem;
     }
 }

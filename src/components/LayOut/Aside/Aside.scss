@@ -3,11 +3,11 @@ aside {
     z-index: 9;
     @include media('>=tablet') {
         position: absolute;
-        top: 45px;
-        left: 15px;
-        width: 200px;
+        top: 45rem;
+        left: 15rem;
+        width: 200rem;
         background-color: $BgColorWhite;
-        border-radius: 10px;
+        border-radius: 10rem;
         overflow: hidden;
         transform: scale(1);
         &.hide {
@@ -16,11 +16,11 @@ aside {
         >.body {
             >a {
                 @include displayflex(row, center, flex-start, unset);
-                font-size: 13px;
+                font-size: 13rem;
                 line-height: 1;
                 color: $FontColorContent;
-                padding-left: 45px;
-                height: 40px;
+                padding-left: 45rem;
+                height: 40rem;
                 &:hover {
                     background-color: #e8e8e8;
                 }
@@ -48,25 +48,25 @@ aside {
         >.header {
             @include displayflex(row, center, flex-start, unset);
             background-color: #242936;
-            height: 78px;
-            padding-left: 20px;
+            height: 78rem;
+            padding-left: 20rem;
             position: relative;
             &::before {
                 content: '';
                 display: inline-block;
-                width: 88.5px;
-                height: 36px;
+                width: 88.5rem;
+                height: 36rem;
                 background-image: url(#{$img}/aside_logo.png);
                 background-repeat: no-repeat;
                 background-size: 100% auto;
             }
             >button {
                 position: absolute;
-                top: 18px;
-                right: 23px;
+                top: 18rem;
+                right: 23rem;
                 font-size: 0;
-                width: 16px;
-                height: 16px;
+                width: 16rem;
+                height: 16rem;
                 background-image: url(#{$img}/ico_close.png);
                 background-size: 100% auto;
                 transform: rotate(720deg);
@@ -75,12 +75,12 @@ aside {
         }
         >.body {
             background-color: $BgColorNotFullDiv;
-            height: calc(100vh - 123px);
+            height: calc(100vh - 123rem);
             overflow-y: auto;
-            padding-left: 20px;
+            padding-left: 20rem;
             >a {
-                height: 45px;
-                font-size: 14px;
+                height: 45rem;
+                font-size: 14rem;
                 font-weight: 500;
                 color: $FontColorContent;
             }
@@ -88,8 +88,8 @@ aside {
         >.footer {
             @include displayflex(row, center, center, unset);
             background-color: #dddddd;
-            height: 45px;
-            font-size: 10px;
+            height: 45rem;
+            font-size: 10rem;
             color: $FontColorFaq;
         }
         &.hide {
@@ -111,12 +111,12 @@ aside {
             &.new {
                 &::after {
                     content: '';
-                    width: 15px;
-                    height: 15px;
+                    width: 15rem;
+                    height: 15rem;
                     background-repeat: no-repeat;
                     background-image: url(#{$img}/ico_new.png);
                     background-size: 100% auto;
-                    margin-left: 6px;
+                    margin-left: 6rem;
                 }
             }
         }

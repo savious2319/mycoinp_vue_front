@@ -6,26 +6,26 @@ section {
         color: #343434;
     }
     @include media('>=desktop') {
-        padding: 50px 50px 370px 50px;
+        padding: 50rem 50rem 370rem 50rem;
     }
     @include media('<desktop') {
-        padding: 50px 0;
+        padding: 50rem 0;
     }
     >.location {
         @include displayflex(row, center, flex-start, unset);
         @include media('>=desktop') {
-            margin-bottom: 26px;
+            margin-bottom: 26rem;
             >li {
-                font-size: 13px;
+                font-size: 13rem;
             }
         }
         @include media('<desktop') {
-            width: calc(100vw - 32px);
+            width: calc(100vw - 32rem);
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
+            margin-bottom: 20rem;
             >li {
-                font-size: 12px
+                font-size: 12rem
             }
         }
         >li {
@@ -33,11 +33,11 @@ section {
             color: $FontColorFaq;
             line-height: 1;
             &:not(:first-of-type) {
-                margin-left: 10px;
+                margin-left: 10rem;
                 &::before {
-                    @include icon(5px, 7px, 'ico_location_arow.png');
+                    @include icon(5rem, 7rem, 'ico_location_arow.png');
                     content: '';
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     background-size: 100% auto;
                 }
             }
@@ -45,53 +45,53 @@ section {
     }
     >h2 {
         @include media('>=desktop') {
-            margin-bottom: 50px;
+            margin-bottom: 50rem;
         }
         @include media('<desktop') {
-            width: calc(100vw - 32px);
+            width: calc(100vw - 32rem);
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 35px;
+            margin-bottom: 35rem;
         }
-        font-size: 34px;
+        font-size: 34rem;
         font-weight: bold;
-        letter-spacing: -0.34px;
+        letter-spacing: -0.34rem;
         color: $FontColorTitle;
         line-height: 1;
-        border-bottom: 2px solid $FontColorTitle;
-        padding-bottom: 20px;
+        border-bottom: 2rem solid $FontColorTitle;
+        padding-bottom: 20rem;
     }
     >.list {
         >li {
             &:not(:last-of-type) {
-                border-bottom: 1px solid #e5e5e5;
+                border-bottom: 1rem solid #e5e5e5;
             }
             >* {
                 @include media('>=desktop') {
-                    padding: 20px 20px;
+                    padding: 20rem 20rem;
                 }
                 @include media('<desktop') {
-                    padding: 25px 16px;
+                    padding: 25rem 16rem;
                 }
             }
             >h3 {
                 display: grid;
-                grid-template-columns: 20px auto 12px;
+                grid-template-columns: 20rem auto 12rem;
                 cursor: pointer;
                 >span {
-                    font-size: 16px;
+                    font-size: 16rem;
                     font-weight: 500;
-                    padding-left: 7px;
+                    padding-left: 7rem;
                     line-height: 1;
                 }
                 >s {
-                    @include icon(20px, 20px, 'ico_q.png');
+                    @include icon(20rem, 20rem, 'ico_q.png');
                     font-size: 0;
                 }
                 >svg {
-                    font-size: 12px;
+                    font-size: 12rem;
                     color: #999ba4;
-                    margin-top: 3px;
+                    margin-top: 3rem;
                 }
                 &.active {
                     >svg {
@@ -101,16 +101,16 @@ section {
             }
             >article {
                 display: grid;
-                grid-template-columns: 20px auto;
+                grid-template-columns: 20rem auto;
                 background-color: $BgColorWhite;
                 >s {
-                    @include icon(20px, 20px, 'ico_a.png');
+                    @include icon(20rem, 20rem, 'ico_a.png');
                     font-size: 0;
-                    margin-top: 3px;
+                    margin-top: 3rem;
                 }
                 >div {
                     color: $FontColorFaq;
-                    padding-left: 7px;
+                    padding-left: 7rem;
                 }
             }
         }

@@ -21,54 +21,54 @@
     }
     @include media('>=desktop') {
         @include displayflex(column, center, flex-start, unset);
-        padding-left: 5px;
+        padding-left: 5rem;
         >div {
             @include displayflex(column, flex-start, flex-start, unset);
             width: 100%;
-            padding-left: 33px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #242936;
+            padding-left: 33rem;
+            padding-bottom: 40rem;
+            border-bottom: 1rem solid #242936;
             >a {
                 @include displayflex(row, center, flex-start, unset);
                 width: 100%;
                 line-height: 1;
-                font-size: 17px;
+                font-size: 17rem;
                 &:not(:last-of-type) {
-                    margin-bottom: 40px;
+                    margin-bottom: 40rem;
                     // >span {
                     //     &:last-of-type {
-                    //         font-size: 14px;
+                    //         font-size: 14rem;
                     //     }
                     // }
                 }
                 >span {
                     &:first-of-type {
-                        margin-right: 7px;
+                        margin-right: 7rem;
                         >svg {
                             fill: $FontColorGray;
-                            font-size: 17px;
+                            font-size: 17rem;
                         }
                     }
                     &:nth-of-type(2) {
-                        margin-right: 5px;
+                        margin-right: 5rem;
                     }
                 }
                 &:last-of-type {
                     >span {
                         &:last-of-type {
                             margin-left: auto;
-                            margin-right: 19px;
+                            margin-right: 19rem;
                             >svg {
                                 fill: $FontColorGray;
-                                font-size: 17px;
+                                font-size: 17rem;
                             }
                         }
                     }
                 }
                 &.router-link-exact-active {
                     &::after {
-                        width: 2px;
-                        height: 20px;
+                        width: 2rem;
+                        height: 20rem;
                         margin-left: auto;
                     }
                     &:last-of-type {
@@ -77,7 +77,7 @@
                         }
                         >span {
                             &:last-of-type {
-                                margin-right: 17px;
+                                margin-right: 17rem;
                                 >svg {
                                     transform: rotate(180deg)
                                 }
@@ -88,13 +88,13 @@
             }
             >div {
                 @include displayflex(column, flex-start, flex-start, unset);
-                margin-top: 38px;
-                margin-left: 23px;
+                margin-top: 38rem;
+                margin-left: 23rem;
                 >a {
                     @include displayflex(row, center, flex-start, unset);
                     line-height: 1;
                     &:not(:last-of-type) {
-                        margin-bottom: 23px;
+                        margin-bottom: 23rem;
                     }
                     &:first-of-type {
                         >svg {
@@ -102,9 +102,9 @@
                         }
                     }
                     &:last-of-type ::before {
-                        @include icon(14px, 14px, 'ico-promotion-off.png');
+                        @include icon(14rem, 14rem, 'ico-promotion-off.png');
                         content: '';
-                        margin-right: 8px;
+                        margin-right: 8rem;
                     }
                     &.router-link-exact-active {
                         >* {
@@ -116,11 +116,11 @@
                     }
                     >svg {
                         color: $FontColorGray;
-                        font-size: 15px;
-                        margin-right: 8px;
+                        font-size: 15rem;
+                        margin-right: 8rem;
                     }
                     >span {
-                        font-size: 15px;
+                        font-size: 15rem;
                         color: $FontColorGray;
                     }
                 }

@@ -6,8 +6,8 @@
 .buySell {
     >.tabs {
         @include displayflex(row, center, space-between, unset);
-        @include sticky(63px);
-        padding-bottom: 20px;
+        @include sticky(63rem);
+        padding-bottom: 20rem;
         background-color: $BgColorTable;
         >li {
             @include displayflex(row, center, center, unset);
@@ -15,7 +15,7 @@
             >button {
                 &:not(.icoReg) {
                     color: $FontColorGray;
-                    font-size: 13px;
+                    font-size: 13rem;
                     font-weight: 500;
                     position: relative;
                     line-height: 1;
@@ -25,7 +25,7 @@
                             content: '';
                             position: absolute;
                             left: 0;
-                            bottom: -5px;
+                            bottom: -5rem;
                             width: 100%;
                             height: 1px;
                             background-color: $FontColorGreen;
@@ -34,39 +34,39 @@
                 }
                 &.icoReg {
                     font-size: 0;
-                    width: 16px;
-                    height: 16px;
+                    width: 16rem;
+                    height: 16rem;
                     background-repeat: no-repeat;
                     background-size: 100% auto;
                     background-image: url(#{$img}/buy-add-btn.png);
-                    margin-left: 10px
+                    margin-left: 10rem
                 }
             }
         }
     }
     >p {
         @include displayflex(row, center, flex-start, unset);
-        padding: 0 15px 18px 15px;
+        padding: 0 15rem 18rem 15rem;
         position: relative;
-        border-bottom: 1px solid $BgColorFullBackground;
+        border-bottom: 1rem solid $BgColorFullBackground;
         >span {
-            font-size: 14px;
+            font-size: 14rem;
             &:first-of-type {
-                margin-right: 23px;
+                margin-right: 23rem;
             }
             &:last-of-type {
                 margin-right: auto;
             }
         }
         >button {
-            font-size: 15px;
+            font-size: 15rem;
             color: $FontColorGray;
             line-height: 1;
             >span {
                 font-size: 0;
             }
             &:last-of-type {
-                margin-left: 10px;
+                margin-left: 10rem;
             }
         }
     }

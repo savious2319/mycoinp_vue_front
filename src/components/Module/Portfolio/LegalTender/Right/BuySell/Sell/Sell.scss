@@ -2,25 +2,25 @@
 article {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-row-gap: 17px;
-    margin-top: 16px;
-    padding: 0 15px;
+    grid-row-gap: 17rem;
+    margin-top: 16rem;
+    padding: 0 15rem;
     position: relative;
     >dl {
         >dt {
             line-height: 1;
             color: $FontColorGray;
-            font-size: 15px;
+            font-size: 15rem;
             font-weight: 300;
-            margin-bottom: 10px;
+            margin-bottom: 10rem;
             text-align: right;
             >em {
                 display: inline-block;
                 font-style: normal;
                 vertical-align: top;
                 font-weight: normal;
-                font-size: 11px;
-                margin-top: 2px;
+                font-size: 11rem;
+                margin-top: 2rem;
                 color: $FontColorGray;
             }
         }
@@ -35,31 +35,31 @@ article {
                 font-weight: 500;
                 font-weight: normal;
                 @include media('>=tablet') {
-                    font-size: 17px;
+                    font-size: 17rem;
                 }
                 @include media('<tablet') {
-                    font-size: 14px;
+                    font-size: 14rem;
                 }
                 >em {
                     display: inline-block;
                     font-style: normal;
                     vertical-align: top;
                     font-weight: normal;
-                    font-size: 11px;
-                    margin-top: 2px;
+                    font-size: 11rem;
+                    margin-top: 2rem;
                 }
             }
             >span {
                 color: $FontColorAmountUnit;
                 @include media('>=tablet') {
-                    font-size: 17px;
+                    font-size: 17rem;
                 }
                 @include media('<tablet') {
-                    font-size: 14px;
+                    font-size: 14rem;
                 }
             }
             >em {
-                font-size: 11px;
+                font-size: 11rem;
                 font-style: normal;
                 vertical-align: top;
                 color: $FontColorGray;
@@ -70,8 +70,8 @@ article {
         @include displayflex(row, center, flex-end, unset);
         >button {
             color: $BgColorWhite;
-            padding: 6px 8px;
-            border-radius: 5px;
+            padding: 6rem 8rem;
+            border-radius: 5rem;
             background-color: $FontColorOrange;
             font-weight: 500;
         }

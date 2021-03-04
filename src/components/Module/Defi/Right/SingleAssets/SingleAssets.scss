@@ -11,14 +11,14 @@ table {
                     text-align: right;
                     line-height: 1;
                     &:last-of-type {
-                        font-size: 13px;
+                        font-size: 13rem;
                         color: $FontColorIvory;
-                        margin-top: 10px;
+                        margin-top: 10rem;
                     }
                     >img {
-                        width: 13px;
+                        width: 13rem;
                         vertical-align: bottom;
-                        margin: 0 2px;
+                        margin: 0 2rem;
                     }
                 }
             }

@@ -4,23 +4,23 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: fixed;
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
     background-image: url(#{$img}/top-btn-2.png);
     @include media('>=desktop') {
-        left: calc(100vw - 100px);
-        bottom: 65px;
+        left: calc(100vw - 100rem);
+        bottom: 65rem;
     }
-    @include media('>=890px', '<desktop') {
-        left: calc(100vw - 50px);
-        bottom: 65px;
+    @include media('>=890rem', '<desktop') {
+        left: calc(100vw - 50rem);
+        bottom: 65rem;
     }
-    @include media('>=tablet', '<890px') {
-        left: calc(100vw - 50px);
-        bottom: 87px;
+    @include media('>=tablet', '<890rem') {
+        left: calc(100vw - 50rem);
+        bottom: 87rem;
     }
     @include media('<tablet') {
-        right: 15px;
-        bottom: 18px;
+        right: 15rem;
+        bottom: 18rem;
     }
 }

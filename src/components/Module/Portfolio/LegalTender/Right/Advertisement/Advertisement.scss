@@ -4,17 +4,17 @@
     background-color: $BgColorHeaderFooter;
     text-align: center;
     @include media('>=tablet') {
-        height: 150px;
+        height: 150rem;
         >img {
             width: 100%;
-            height: 150px;
+            height: 150rem;
         }
     }
     @include media('<tablet') {
-        height: 100px;
+        height: 100rem;
         >img {
             width: 100%;
-            height: 100px;
+            height: 100rem;
         }
     }
 }

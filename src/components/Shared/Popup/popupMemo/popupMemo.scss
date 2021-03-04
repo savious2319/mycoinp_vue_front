@@ -1,29 +1,29 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup] {
-    @include layer(500px, absolute);
+    @include layer(500rem, absolute);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     >.tit {
         >img {
-            width: 17px;
-            margin-right: 3px;
+            width: 17rem;
+            margin-right: 3rem;
         }
         >strong {
             line-height: 1;
         }
         >span {
             @include displayflex(row, center, flex-start, unset);
-            font-size: 11px;
+            font-size: 11rem;
             color: $FontColorFaq;
             position: relative;
-            margin-left: 8px;
+            margin-left: 8rem;
             &::before {
                 content: '';
                 display: inline-block;
                 width: 1px;
-                height: 10px;
-                margin-right: 8px;
+                height: 10rem;
+                margin-right: 8rem;
                 background-color: #e8e8e8;
             }
         }
@@ -31,16 +31,16 @@
     >article {
         @include displayflex(column, center, center, unset);
         background-color: $BgColorNotFullDiv;
-        height: 220px;
+        height: 220rem;
         >svg {
-            font-size: 37px;
+            font-size: 37rem;
             color: $FontColorInactive;
         }
         >p {
             color: $FontColorInactive;
-            font-size: 12px;
+            font-size: 12rem;
             font-weight: 500;
-            margin-top: 11px;
+            margin-top: 11rem;
         }
     }
 }
