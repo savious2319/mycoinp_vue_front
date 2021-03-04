@@ -2,25 +2,25 @@
 section {
     width: 100%;
     position: relative;
-    @media (min-width: 1240px) {
+    @include media('>=desktop') {
         padding: 0 50px;
     }
-    @media (min-width: 640px) {
+    @include media('>=tablet') {
         @include displayGrid(50% 50%, auto, 3px);
     }
-    @media (max-width: 639px) {
+    @include media('<tablet') {
         background-color: $BgColorTable;
     }
     .ps {
         position: relative;
         background-color: $BgColorTable;
-        @media (min-width: 1240px) {
+        @include media('>=desktop') {
             height: calc(100vh - 42px) !important;
         }
-        @media (min-width: 891px) and (max-width: 1239px) {
+        @include media('>890px', '<desktop') {
             height: calc(100vh - 135px) !important;
         }
-        @media (min-width: 767px) and (max-width: 890px) {
+        @include media('>=767px', '<890px') {
             height: calc(100vh - 157px) !important;
         }
     }

@@ -9,10 +9,10 @@ button {
         &::before {
             margin-top: 2px;
         }
-        @media (min-width: 1240px) {
+        @include media('>=desktop') {
             font-size: 16px;
         }
-        @media (max-width: 1239px) {
+        @include media('<desktop') {
             font-size: 14px;
         }
     }
@@ -129,15 +129,15 @@ button {
             }
         }
     }
-    @media (min-width: 1240px) {
+    @include media('>=desktop') {
         bottom: 53px;
         left: 170px;
     }
-    @media (min-width: 640px) and (max-width: 1239px) {
+    @include media('>=tablet', '<desktop') {
         top: 45px;
         right: 15px;
     }
-    @media (max-width: 639px) {
+    @include media('<tablet') {
         top: 55px;
         left: 50%;
         transform: translateX(-50%);

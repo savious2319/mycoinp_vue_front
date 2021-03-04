@@ -7,7 +7,7 @@
     >#container {
         @include displayflex(column, flex-start, flex-start, unset);
     }
-    @media (min-width: 1240px) {
+    @include media('>=desktop') {
         $header: 200px;
         display: grid;
         grid-template-columns: 200px auto;
@@ -32,14 +32,14 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1239px) {
+    @include media('>=tablet', '<desktop') {
         display: grid;
         grid-template-rows: 93px auto;
         >header {
             background-color: $BgColorHeaderFooter;
         }
     }
-    @media (max-width: 639px) {
+    @include media('<tablet') {
         overflow-x: hidden;
         >header {
             background-color: $BgColorHeaderFooter;

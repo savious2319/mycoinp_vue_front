@@ -34,10 +34,10 @@ article {
             >strong {
                 font-weight: 500;
                 font-weight: normal;
-                @media (min-width: 640px) {
+                @include media('>=tablet') {
                     font-size: 17px;
                 }
-                @media (max-width: 639px) {
+                @include media('<tablet') {
                     font-size: 14px;
                 }
                 >em {
@@ -51,10 +51,10 @@ article {
             }
             >span {
                 color: $FontColorAmountUnit;
-                @media (min-width: 640px) {
+                @include media('>=tablet') {
                     font-size: 17px;
                 }
-                @media (max-width: 639px) {
+                @include media('<tablet') {
                     font-size: 14px;
                 }
             }

@@ -4,19 +4,19 @@ footer {
     width: 100%;
     margin-top: auto;
     background-color: $BgColorHeaderFooter;
-    @media (min-width: 640px) {
+    @include media('>=tablet') {
         padding: 15px 55px;
     }
-    @media (max-width: 639px) {
+    @include media('<tablet') {
         display: none;
     }
     >div {
-        @media (min-width: 891px) {
+        @include media('>890px') {
             @include displayflex(row, center, flex-start, unset);
             margin-right: auto;
             height: 100%;
         }
-        @media (max-width: 890px) {
+        @include media('<=890px') {
             @include displayflex(row, center, center, unset);
             width: 100%;
         }
@@ -33,11 +33,11 @@ footer {
         }
     }
     >p {
-        @media (min-width: 890px) {
+        @include media('>890px') {
             @include displayflex(row, center, flex-start, unset);
             height: 100%;
         }
-        @media (max-width: 889px) {
+        @include media('<=890px') {
             @include displayflex(row, center, center, unset);
             width: 100%;
             margin-top: 10px;

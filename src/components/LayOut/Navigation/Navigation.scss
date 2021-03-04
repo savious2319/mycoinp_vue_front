@@ -19,7 +19,7 @@
             }
         }
     }
-    @media (min-width: 1240px) {
+    @include media('>=desktop') {
         @include displayflex(column, center, flex-start, unset);
         padding-left: 5px;
         >div {
@@ -127,10 +127,10 @@
             }
         }
     }
-    @media (min-width: 640px) and (max-width: 1239px) {
+    @include media('>=tablet', '<desktop') {
         @include navigation('tab');
     }
-    @media (max-width: 639px) {
+    @include media('<tablet') {
         @include navigation('mobile');
     }
 }

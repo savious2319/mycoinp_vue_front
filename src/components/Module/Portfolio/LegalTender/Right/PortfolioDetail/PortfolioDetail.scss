@@ -122,10 +122,10 @@
                 }
                 >strong {
                     font-weight: 500;
-                    @media (min-width: 640px) {
+                    @include media('>=tablet') {
                         font-size: 17px;
                     }
-                    @media (max-width: 639px) {
+                    @include media('<tablet') {
                         font-size: 14px;
                     }
                     >em {
@@ -139,10 +139,10 @@
                 }
                 >span {
                     color: $FontColorAmountUnit;
-                    @media (min-width: 640px) {
+                    @include media('>=tablet') {
                         font-size: 17px;
                     }
-                    @media (max-width: 639px) {
+                    @include media('<tablet') {
                         font-size: 14px;
                     }
                 }

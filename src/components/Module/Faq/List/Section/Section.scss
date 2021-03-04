@@ -5,21 +5,21 @@ section {
     * {
         color: #343434;
     }
-    @media (min-width: 1240px) {
+    @include media('>=desktop') {
         padding: 50px 50px 370px 50px;
     }
-    @media (max-width: 1239px) {
+    @include media('<desktop') {
         padding: 50px 0;
     }
     >.location {
         @include displayflex(row, center, flex-start, unset);
-        @media (min-width: 1240px) {
+        @include media('>=desktop') {
             margin-bottom: 26px;
             >li {
                 font-size: 13px;
             }
         }
-        @media (max-width: 1239px) {
+        @include media('<desktop') {
             width: calc(100vw - 32px);
             margin-left: auto;
             margin-right: auto;
@@ -44,10 +44,10 @@ section {
         }
     }
     >h2 {
-        @media (min-width: 1240px) {
+        @include media('>=desktop') {
             margin-bottom: 50px;
         }
-        @media (max-width: 1239px) {
+        @include media('<desktop') {
             width: calc(100vw - 32px);
             margin-left: auto;
             margin-right: auto;
@@ -67,10 +67,10 @@ section {
                 border-bottom: 1px solid #e5e5e5;
             }
             >* {
-                @media (min-width: 1240px) {
+                @include media('>=desktop') {
                     padding: 20px 20px;
                 }
-                @media (max-width: 1239px) {
+                @include media('<desktop') {
                     padding: 25px 16px;
                 }
             }
