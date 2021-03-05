@@ -569,7 +569,7 @@ $FontColorReturn:#666;
     z-index: 2;
 }
 
-@mixin list($stickyTop, $BgColorTable, $grid-template-columns, $grid-template-areas) {
+@mixin list($stickyTop, $grid-area, $grid-template-columns, $grid-template-areas) {
     em {
         font-style: normal;
         font-size: 11rem;
@@ -643,7 +643,7 @@ $FontColorReturn:#666;
                     }
                     @each $number,
                     $size,
-                    $align in $BgColorTable {
+                    $align in $grid-area {
                         &:nth-of-type(#{$number}) {
                             width: $size;
                             text-align: $align;
@@ -718,7 +718,10 @@ $FontColorReturn:#666;
     }
     >thead {
         >tr {
-            background-color: #13131f;
+            background-color: $BgColorTable;
+            >th {
+                background-color: $BgColorTable;
+            }
         }
         @include media('>=tablet') {
             >tr>th {
