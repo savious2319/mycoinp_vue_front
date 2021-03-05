@@ -11,7 +11,7 @@ article {
                     &:nth-of-type(5) {
                         color: $FontColorIvory;
                     }
-                    @include media('<=840rem') {
+                    @include media('<=840px') {
                         >mark {
                             right: calc(30% + 5rem);
                         }

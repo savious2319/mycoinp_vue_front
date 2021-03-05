@@ -11,11 +11,11 @@
         left: calc(100vw - 100rem);
         bottom: 65rem;
     }
-    @include media('>=890rem', '<desktop') {
+    @include media('>=890px', '<desktop') {
         left: calc(100vw - 50rem);
         bottom: 65rem;
     }
-    @include media('>=tablet', '<890rem') {
+    @include media('>=tablet', '<890px') {
         left: calc(100vw - 50rem);
         bottom: 87rem;
     }

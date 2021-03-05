@@ -17,10 +17,10 @@ section {
         @include media('>=desktop') {
             height: calc(100vh - 42rem) !important;
         }
-        @include media('>890rem', '<desktop') {
+        @include media('>890px', '<desktop') {
             height: calc(100vh - 135rem) !important;
         }
-        @include media('>=767rem', '<890rem') {
+        @include media('>=767px', '<890px') {
             height: calc(100vh - 157rem) !important;
         }
     }

@@ -3,7 +3,7 @@
 @import "@/assets/scss/function.scss";
 #mycoinp {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - env(safe-area-inset-bottom));
     >#container {
         @include displayflex(column, flex-start, flex-start, unset);
     }
@@ -13,7 +13,7 @@
         grid-template-columns: 200rem auto;
         >header {
             @include displayflex(column, flex-start, flex-start, unset);
-            min-height: 100vh;
+            min-height: calc(100vh - env(safe-area-inset-bottom));
             background-color: $BgColorTable;
             >.btnSet {
                 @include displayflex(column, center, center, unset);
@@ -47,7 +47,7 @@
         }
         >#container {
             position: relative;
-            height: calc(100vh - 46rem);
+            height: calc(100vh - 46rem - env(safe-area-inset-bottom));
             overflow-y: auto;
         }
         >footer {

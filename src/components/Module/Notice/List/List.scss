@@ -6,12 +6,12 @@
         background-color: $BgColorNotFullSection;
         padding: 20rem 50rem;
     }
-    @include media('>890rem', '<desktop') {
+    @include media('>890px', '<desktop') {
         width: 100vw;
         height: calc(100vh - 135rem) !important;
         background-color: $BgColorNotFullDiv;
     }
-    @include media('>=767rem', '<890rem') {
+    @include media('>=767px', '<890px') {
         width: 100vw;
         height: calc(100vh - 157rem) !important;
         background-color: $BgColorNotFullDiv;

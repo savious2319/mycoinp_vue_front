@@ -35,11 +35,11 @@
         left: 250rem;
         bottom: 42rem;
     }
-    @include media('>=890rem', '<desktop') {
+    @include media('>=890px', '<desktop') {
         left: 0;
         bottom: 42rem;
     }
-    @include media('>=tablet', '<890rem') {
+    @include media('>=tablet', '<890px') {
         left: 0;
         bottom: 64rem;
     }

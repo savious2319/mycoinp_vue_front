@@ -11,12 +11,12 @@ footer {
         display: none;
     }
     >div {
-        @include media('>890rem') {
+        @include media('>890px') {
             @include displayflex(row, center, flex-start, unset);
             margin-right: auto;
             height: 100%;
         }
-        @include media('<=890rem') {
+        @include media('<=890px') {
             @include displayflex(row, center, center, unset);
             width: 100%;
         }
@@ -33,11 +33,11 @@ footer {
         }
     }
     >p {
-        @include media('>890rem') {
+        @include media('>890px') {
             @include displayflex(row, center, flex-start, unset);
             height: 100%;
         }
-        @include media('<=890rem') {
+        @include media('<=890px') {
             @include displayflex(row, center, center, unset);
             width: 100%;
             margin-top: 10rem;

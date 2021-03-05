@@ -575,10 +575,10 @@ $FontColorReturn:#666;
         font-size: 11rem;
         color: $FontColorGray;
         position: relative;
-        @include media('>840rem') {
+        @include media('>840px') {
             top: -3rem;
         }
-        @include media('<=840rem') {
+        @include media('<=840px') {
             top: 0;
         }
     }
@@ -596,7 +596,7 @@ $FontColorReturn:#666;
             }
         }
     }
-    @include media('>840rem') {
+    @include media('>840px') {
         >thead,
         >tbody {
             >tr {
@@ -653,7 +653,7 @@ $FontColorReturn:#666;
             }
         }
     }
-    @include media('<=840rem') {
+    @include media('<=840px') {
         display: block;
         >tbody>tr {
             border-top: 1rem solid $BgColorFullBackground;
@@ -830,10 +830,10 @@ $FontColorReturn:#666;
                         background-color: #242936;
                         width: 50rem;
                         z-index: 2;
-                        @include media('>840rem') {
+                        @include media('>840px') {
                             right: 0;
                         }
-                        @include media('<=840rem') {
+                        @include media('<=840px') {
                             left: 34%;
                         }
                         >button {
@@ -916,10 +916,10 @@ $FontColorReturn:#666;
                         font-size: 11rem;
                         text-decoration: none;
                         position: relative;
-                        @include media('>840rem') {
+                        @include media('>840px') {
                             top: -3rem;
                         }
-                        @include media('<=840rem') {
+                        @include media('<=840px') {
                             top: 0;
                         }
                     }
@@ -1055,12 +1055,14 @@ $FontColorReturn:#666;
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     z-index: 2;
     background-color: $BgColorTable;
     #contents {
-        height: calc(100vh - 46rem);
+        padding-bottom: 15rem;
+        height: calc(100% - 46rem - env(safe-area-inset-bottom));
         overflow-y: auto;
     }
 }
