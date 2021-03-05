@@ -13,7 +13,7 @@
         <HeaderBackUp/>
     </div>
 </div>
-<div class="mask" v-if="$windowWidth > 640 && isAside" @click="btnAside"></div>
+<div class="mask" v-if="$windowWidth >= 640 && isAside" @click="btnAside"></div>
 </template>
 
 <script>

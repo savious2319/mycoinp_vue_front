@@ -23,7 +23,7 @@
 			</router-link>
 			<a href="#none" :class="{'router-link-exact-active': isPlus}" @click="isPlus = !isPlus">
 				<span v-if="$windowWidth < 640"><i class="fas fa-ellipsis-v"/></span>
-				<span v-if="$windowWidth > 640"><i class="fas fa-ellipsis-h"/></span>
+				<span v-if="$windowWidth >= 640"><i class="fas fa-ellipsis-h"/></span>
 				<span v-if="$windowWidth > 1240">++Plus</span>
 				<span v-if="$windowWidth > 1240"><i class="fas fa-angle-down"/></span>
 			</a>
@@ -49,7 +49,7 @@
 				</router-link>
 			</div>
 		</div>
-		<NavigationGasPrice v-if="$windowWidth > 640"/>
+		<NavigationGasPrice v-if="$windowWidth >= 640"/>
 	</div>
 </template>
 

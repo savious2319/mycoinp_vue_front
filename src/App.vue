@@ -2,7 +2,7 @@
   <div id="mycoinp">
       <header>
         <Header/>
-        <Navigation v-if="$windowWidth > 640"/>
+        <Navigation v-if="$windowWidth >= 640"/>
         <div class="btnSet" v-if="$windowWidth > 1240">
           <HeaderLanguage/>
           <i/>
@@ -11,7 +11,7 @@
       </header>
       <div id="container" v-on:scroll.passive="handleScroll">
         <router-view v-bind:container="container" />
-        <Footer v-if="$windowWidth > 640"/>
+        <Footer v-if="$windowWidth >= 640"/>
       </div>
       <footer v-if="$windowWidth < 640" :class="{'hide': !container.scrollDown}">
         <Navigation/>

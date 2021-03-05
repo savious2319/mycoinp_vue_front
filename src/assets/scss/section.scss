@@ -20,7 +20,7 @@ section {
         @include media('>890px', '<desktop') {
             height: calc(100vh - 135rem) !important;
         }
-        @include media('>=767px', '<890px') {
+        @include media('>=tablet', '<890px') {
             height: calc(100vh - 157rem) !important;
         }
     }

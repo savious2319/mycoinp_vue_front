@@ -1,5 +1,5 @@
 <template>
-	<section v-if="$windowWidth > 640">
+	<section v-if="$windowWidth >= 640">
         <perfect-scrollbar id="sectionLeft" v-on:scroll.passive="handleScrollLeft">
 			<DefiLeft v-bind:container="sectionLeft"/>
 		</perfect-scrollbar>

@@ -1,5 +1,5 @@
 <template>
-  <perfect-scrollbar id="contentsSection" v-on:scroll.passive="handleScrollFull" v-if="$windowWidth > 640">
+  <perfect-scrollbar id="contentsSection" v-on:scroll.passive="handleScrollFull" v-if="$windowWidth >= 640">
     <FaqListSection v-bind:container="fullSection"/>
   </perfect-scrollbar>
   <div class="contentsSection" v-if="$windowWidth < 640">
