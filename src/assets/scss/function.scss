@@ -706,7 +706,7 @@ $FontColorReturn:#666;
                         }
                         @each $number,
                         $size,
-                        $align in $BgColorTable {
+                        $align in $grid-area {
                             &:nth-of-type(#{$number}) {
                                 grid-area: item#{$number};
                             }
@@ -738,11 +738,16 @@ $FontColorReturn:#666;
                 font-weight: 500;
                 line-height: 1;
                 letter-spacing: -0.3rem;
+                position: relative;
                 >.thSearch {
                     @include displayflex(row, center, center, unset);
-                    position: relative;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    z-index: 2;
                     >button {
-                        &:not(.btnBookmark) {
+                        &.btnSearch {
                             @include displayflex(row, center, center, unset);
                             position: absolute;
                             top: 50%;
@@ -757,24 +762,41 @@ $FontColorReturn:#666;
                                 font-size: 0;
                             }
                         }
+                        &.btnClear {
+                            @include displayflex(row, center, center, unset);
+                            position: absolute;
+                            top: 50%;
+                            right: 10rem;
+                            transform: translateY(-50%);
+                            line-height: 1;
+                            width: 12rem;
+                            height: 12rem;
+                            background-color: #676870;
+                            border-radius: 100%;
+                            >svg {
+                                font-size: 8rem;
+                                color: #b9babd;
+                                margin-right: 0.5rem;
+                            }
+                            >span {
+                                font-size: 0;
+                            }
+                        }
                         &.btnBookmark {
                             margin-right: 13rem;
                             &+.btnSearch {
                                 left: 40rem;
-                                &+input[type=text] {
-                                    width: calc(100% - 30rem);
-                                }
                             }
                         }
                     }
                     >input[type=text] {
-                        width: 100%;
+                        width: 100rem;
                         height: 28rem;
                         line-height: 28rem;
                         border-radius: 6rem;
                         background-color: $BgColorFullBackground;
                         padding-left: 25rem;
-                        padding-right: 10rem;
+                        padding-right: 25rem;
                         border: 0;
                         color: $BgColorWhite;
                         &::placeholder {

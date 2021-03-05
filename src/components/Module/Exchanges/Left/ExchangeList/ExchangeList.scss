@@ -16,7 +16,7 @@ table {
                 &:nth-of-type(5) {
                     color: $FontColorIvory;
                 }
-                @include media('<=840px') {
+                @include media('<=840rem') {
                     &:nth-of-type(5) {
                         font-size: 13rem;
                         color: $FontColorIvory;

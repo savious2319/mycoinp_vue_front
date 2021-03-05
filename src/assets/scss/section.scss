@@ -10,10 +10,12 @@ section {
     }
     @include media('<tablet') {
         background-color: $BgColorTable;
+        padding-bottom: 85rem;
     }
     .ps {
         position: relative;
         background-color: $BgColorTable;
+        padding-bottom: 85rem;
         @include media('>=desktop') {
             height: calc(100vh - 42rem) !important;
         }

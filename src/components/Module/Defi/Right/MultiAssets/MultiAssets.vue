@@ -12,7 +12,11 @@
             <i class="fas fa-search"/>
             <span>Search</span>
           </button>
-          <input type="text" placeholder="Search...">
+          <input type="text" v-model="searchText" placeholder="Search...">
+          <button type="button" class="btnClear" title="Clear" v-if="searchText.length > 0" @click="searchText = ''">
+            <i class="fas fa-times"/>
+            <span>Clear</span>
+          </button>
         </span>
       </th>
       <th><button type="button" class="thSort up"><em>%</em>Net</button></th>

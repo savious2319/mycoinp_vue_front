@@ -20,5 +20,6 @@
 
 .contentsSection {
     width: 100vw;
+    min-height: calc(100vh - env(safe-area-inset-bottom));
     background-color: $BgColorNotFullDiv;
 }

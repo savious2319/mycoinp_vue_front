@@ -46,6 +46,9 @@
     @include media('<tablet') {
         left: 0;
         bottom: 40rem;
+        &.scrollDown {
+            bottom: 0
+        }
     }
 }
 
