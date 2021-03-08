@@ -54,7 +54,11 @@
 
 <script>
 export default {
-
+  data () {
+		return {
+      searchText: "",
+		}
+	},
 }
 </script>
 

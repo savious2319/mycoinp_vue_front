@@ -746,14 +746,18 @@ $FontColorReturn:#666;
                 font-weight: 500;
                 line-height: 1;
                 letter-spacing: -0.3rem;
-                position: relative;
+                @include media('<tablet') {
+                    position: relative;
+                    >.thSearch {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        z-index: 2;
+                    }
+                }
                 >.thSearch {
                     @include displayflex(row, center, center, unset);
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-50%);
-                    z-index: 2;
                     >button {
                         &.btnSearch {
                             @include displayflex(row, center, center, unset);

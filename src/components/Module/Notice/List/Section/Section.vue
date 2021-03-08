@@ -8,8 +8,8 @@
       <h2>Notice</h2>
       <span>
         <button type="button" class="btnSearch" title="Search">Search</button>
-        <input type="text" placeholder="Search...">
-        <button type="button" class="btnClear" title="Search">Clear</button>
+        <input type="text" v-model="searchText" placeholder="Search...">
+        <button type="button" class="btnClear" title="Clear" v-if="searchText.length > 0" @click="searchText = ''">Clear</button>
       </span>
     </div>
 
@@ -149,7 +149,13 @@
 
 <script>
 export default {
-    props : ['container'],
+  props : ['container'],
+  data () {
+		return {
+      searchText: "",
+		}
+	},
+
 }
 </script>
 
