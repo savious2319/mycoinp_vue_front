@@ -1,6 +1,5 @@
 <template>
-  <a class="btnTop" href="#adLeft" v-if="$windowWidth < 640" v-smooth-scroll="{container: '#container'}">Top</a>
-  <a class="btnTop" href="#adLeft" v-if="$windowWidth >= 640" v-smooth-scroll="{container: '#sectionLeft'}">Top</a>
+  <a class="btnTop" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}">Top</a>
 </template>
 
 

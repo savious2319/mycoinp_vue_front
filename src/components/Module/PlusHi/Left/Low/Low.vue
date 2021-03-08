@@ -61,7 +61,7 @@
   <!-- 모바일 상세 페이지 Start -->
   <div class="mobileDetail" v-if="isMobile.wrap">
       <SubHeader title="Defi Detail" @MobileDetailHide="MobileDetailHide"/>
-      <div id="contents" v-on:scroll.passive="handleScrollMobile">
+      <div class="sectionRight" v-on:scroll.passive="handleScrollMobile">
           <DefiRightSingleAssets v-bind:container="isMobile"/>
       </div>
   </div>

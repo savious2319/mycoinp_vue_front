@@ -756,8 +756,14 @@ $FontColorReturn:#666;
                         z-index: 2;
                     }
                 }
+                @include media('>=tablet') {
+                    >.thSearch {
+                        position: relative;
+                    }
+                }
                 >.thSearch {
                     @include displayflex(row, center, center, unset);
+                    width: fit-content;
                     >button {
                         &.btnSearch {
                             @include displayflex(row, center, center, unset);
@@ -801,7 +807,13 @@ $FontColorReturn:#666;
                         }
                     }
                     >input[type=text] {
-                        width: 100rem;
+                        @include media('<tablet') {
+                            width: 100rem;
+                        }
+                        @include media('>=tablet') {
+                            width: 100%;
+                            max-width: 150rem;
+                        }
                         height: 28rem;
                         line-height: 28rem;
                         border-radius: 6rem;
@@ -888,7 +900,8 @@ $FontColorReturn:#666;
     }
     >tbody {
         >tr {
-            &.active {
+            &:hover,
+            &:active {
                 background-color: $BgColorSidemenuBorder;
             }
             &.not {
@@ -1096,7 +1109,7 @@ $FontColorReturn:#666;
     height: auto;
     z-index: 2;
     background-color: $BgColorTable;
-    #contents {
+    .sectionRight {
         padding-bottom: 15rem;
         height: calc(100% - 46rem - env(safe-area-inset-bottom));
         overflow-y: auto;

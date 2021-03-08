@@ -1,9 +1,9 @@
 <template>
 	<section v-if="$windowWidth >= 640">
-        <perfect-scrollbar id="sectionLeft" v-on:scroll.passive="handleScrollLeft">
+        <perfect-scrollbar class="sectionLeft" v-on:scroll.passive="handleScrollLeft">
 			<AllCoinLeft v-bind:container="sectionLeft"/>
 		</perfect-scrollbar>
-		<perfect-scrollbar id="sectionRight" v-on:scroll.passive="handleScrollRight">
+		<perfect-scrollbar class="sectionRight" v-on:scroll.passive="handleScrollRight">
 			<AllCoinRight v-bind:container="sectionRight"/>
 		</perfect-scrollbar>
 	</section>

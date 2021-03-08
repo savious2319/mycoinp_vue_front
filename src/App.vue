@@ -9,7 +9,7 @@
           <HeaderBackUp/>
         </div>
       </header>
-      <div id="container" v-on:scroll.passive="handleScroll">
+      <div id="container" :class="{'sectionLeft': $windowWidth < 640}" v-on:scroll.passive="handleScroll">
         <router-view v-bind:container="container" />
         <Footer v-if="$windowWidth >= 640"/>
       </div>

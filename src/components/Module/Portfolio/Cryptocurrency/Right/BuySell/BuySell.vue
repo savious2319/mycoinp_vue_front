@@ -2,14 +2,14 @@
   <div class="buySell">
     <ul class="tabs">
       <li>
-        <button type="button" :class="{'active': tabs.isBuy}" @click="btnBy('isBuy')">Buy [ 3/15 ]</button>
+        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isBuy}" @click="btnBy('isBuy')">Buy [ 3/15 ]</button>
         <button type="button" class="icoReg" @click="btnpopupPortfolio">Registration</button>
       </li>
       <li>
-        <button type="button" :class="{'active': tabs.isSell}" @click="btnBy('isSell')">Sell [ 3 ]</button>
+        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isSell}" @click="btnBy('isSell')">Sell [ 3 ]</button>
       </li>
       <li>
-        <button type="button" :class="{'active': tabs.isHistory}" @click="btnBy('isHistory')">History</button>
+        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isHistory}" @click="btnBy('isHistory')">History</button>
       </li>
     </ul>
     <p>
