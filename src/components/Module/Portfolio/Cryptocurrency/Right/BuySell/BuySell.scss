@@ -43,29 +43,4 @@
             }
         }
     }
-    >p {
-        @include displayflex(row, center, flex-start, unset);
-        padding: 0 15rem 18rem 15rem;
-        position: relative;
-        border-bottom: 1rem solid $BgColorFullBackground;
-        >span {
-            font-size: 14rem;
-            &:first-of-type {
-                margin-right: 23rem;
-            }
-            &:last-of-type {
-                margin-right: auto;
-            }
-        }
-        >button {
-            font-size: 15rem;
-            color: $FontColorGray;
-            >span {
-                font-size: 0;
-            }
-            &:last-of-type {
-                margin-left: 10rem;
-            }
-        }
-    }
 }

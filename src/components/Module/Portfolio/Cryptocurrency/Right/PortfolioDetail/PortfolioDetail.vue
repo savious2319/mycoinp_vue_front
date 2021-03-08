@@ -11,11 +11,20 @@
         <popupMemo v-if="isLayerPopup" @cancel="btnLayerPopup"/>
         <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
     </div>
-    <p>1 USD = <em>₩</em>1,150</p>
+    <ul>
+        <li>
+            <span><em>₫</em>123,456,78</span>
+            <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </li>
+        <li>
+            <span>+0.12</span>
+            <em>%</em>
+        </li>
+    </ul>
     <article>
         <button type="button" :class="{'on': isMore}" @click="btnMore">More</button>
         <dl>
-            <dt>Buy Value</dt>
+            <dt>Est.Value</dt>
             <dd>
                 <em>₫</em>
                 <strong>123,456,789</strong>

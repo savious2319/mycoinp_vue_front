@@ -41,7 +41,7 @@
 	</article>
 
 	<div class="btnSet">
-		<button type="button">Cancel</button>
+		<button type="button" @click="cancel">Cancel</button>
 		<button type="button">Buy</button>
 	</div>
 </div>
@@ -65,6 +65,9 @@ export default {
         }
     },
 	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
 		btnSelectCoinWhereWallet: function(){
 			if(this.popups.isSelectCoinWhereWallet == false){
 				this.popups.isSelectCoinWhereWallet = true;

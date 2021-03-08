@@ -1,16 +1,13 @@
 @import "@/assets/scss/function.scss";
 article {
-    $interval: (1 17% left, 2 9% right, 3 12% right, 4 19% right, 5 22% right, 6 21% right);
+    $interval: (1 21% left, 2 13% right, 3 16% right, 4 23% right, 5 27% right);
     $grid-template-columns: 29% 15% 28% auto;
-    $grid-template-areas: ( 'item1 item2 item3 item4' 'item1 item2 item5 item6');
+    $grid-template-areas: ( 'item1 item2 item3 item5' 'item1 item2 item4 item5');
     >table {
         @include list(99rem, $interval, $grid-template-columns, $grid-template-areas);
         >tbody {
             >tr {
                 >td {
-                    &:nth-of-type(5) {
-                        color: $FontColorIvory;
-                    }
                     @include media('<=840px') {
                         >mark {
                             right: calc(30% + 5rem);

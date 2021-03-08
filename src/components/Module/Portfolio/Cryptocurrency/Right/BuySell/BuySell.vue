@@ -12,12 +12,6 @@
         <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isHistory}" @click="btnBy('isHistory')">History</button>
       </li>
     </ul>
-    <p>
-      <span>2020-03-24</span>
-      <span>Wallet name</span>
-      <button type="button"><i class="fas fa-pencil-alt"/><span>Memo</span></button>
-      <button type="button"><i class="fas fa-trash-alt"/><span>Delete</span></button>
-    </p>
     <CryptocurrencyRightBuySellBuy v-if="tabs.isBuy"/>
     <CryptocurrencyRightBuySellSell v-if="tabs.isSell"/>
     <CryptocurrencyRightBuySellHistory v-if="tabs.isHistory"/>

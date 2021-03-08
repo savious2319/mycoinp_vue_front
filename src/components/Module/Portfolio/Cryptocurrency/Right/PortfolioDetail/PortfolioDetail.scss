@@ -60,14 +60,65 @@
             @include mask;
         }
     }
-    >p {
-        text-align: center;
-        font-size: 17rem;
-        font-weight: 500;
-        >em {
-            @include symbol {
-                top: 1rem;
-                color: $FontColorGray;
+    >ul {
+        display: grid;
+        grid-template-columns: (100%/3) (100%/3) (100%/3);
+        margin-top: 10rem;
+        &::before {
+            content: '';
+        }
+        >li {
+            &:first-of-type {
+                @include displayflex(row, center, center, unset);
+                color: $FontColorGreen;
+                >span {
+                    font-size: 17rem;
+                    font-weight: 500;
+                    >em {
+                        @include symbol {
+                            top: 1rem;
+                            color: $FontColorGray;
+                        }
+                    }
+                }
+                >mark {
+                    display: inline-block;
+                    width: 10rem;
+                    height: 30rem;
+                    background-color: transparent;
+                    position: relative;
+                    margin-left: 10rem;
+                    >i {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 10rem;
+                        background-color: $FontColorGreen;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 1px;
+                        height: 100%;
+                        background-color: $FontColorGreen;
+                    }
+                }
+            }
+            &:last-of-type {
+                @include displayflex(row, center, flex-end, unset);
+                color: $FontColorGreen;
+                >span {
+                    font-size: 17rem;
+                    font-weight: 500;
+                }
+                >em {
+                    @include symbol {
+                        top: -1.5rem;
+                    }
+                }
             }
         }
     }
