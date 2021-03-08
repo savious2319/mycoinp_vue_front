@@ -33,7 +33,7 @@
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>Buy Value</dt>
+                <dt>Net Invest</dt>
                 <dd>
                     <em>₫</em>
                     <strong>123,456,789</strong>
@@ -41,7 +41,7 @@
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>Profit & Loss</dt>
+                <dt>Cumulative Gain</dt>
                 <dd>
                     <em>₫</em>
                     <strong class="fall">123,456,789</strong>
@@ -49,7 +49,7 @@
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>%Profit </dt>
+                <dt>Realized Gain</dt>
                 <dd>
                     <strong class="fall">-10000<em>%</em></strong>
                 </dd>
