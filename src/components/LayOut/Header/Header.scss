@@ -18,7 +18,7 @@
     }
     >button {
         @include displayflex(column, center, space-between, unset);
-        font-size: 16rem;
+        font-size: 19rem;
         color: $BgColorWhite;
     }
     @include media('>=desktop') {

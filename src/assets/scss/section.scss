@@ -3,7 +3,7 @@ section {
     width: 100%;
     position: relative;
     @include media('>=desktop') {
-        padding: 0 50rem;
+        padding: 20rem 50rem 0 50rem;
     }
     @include media('>=tablet') {
         @include displayGrid(50% 50%, auto, 3rem);
@@ -17,7 +17,7 @@ section {
         background-color: $BgColorTable;
         padding-bottom: 85rem;
         @include media('>=desktop') {
-            height: calc(100vh - 42rem) !important;
+            height: calc(100vh - 62rem) !important;
         }
         @include media('>890px', '<desktop') {
             height: calc(100vh - 135rem) !important;

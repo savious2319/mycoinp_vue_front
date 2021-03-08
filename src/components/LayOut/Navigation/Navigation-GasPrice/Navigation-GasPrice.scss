@@ -9,9 +9,10 @@
         color: $BgColorWhite;
         >span {
             color: $FontColorRise;
+            margin: 0 5rem;
         }
         >svg {
-            font-size: 13rem;
+            font-size: 15rem;
             margin-left: 10rem;
         }
         @include media('>=desktop') {

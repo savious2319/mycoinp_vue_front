@@ -10,7 +10,7 @@
     @include media('>=desktop') {
         $header: 200rem;
         display: grid;
-        grid-template-columns: 200rem auto;
+        grid-template-columns: 250rem auto;
         >header {
             @include displayflex(column, flex-start, flex-start, unset);
             min-height: calc(100vh - env(safe-area-inset-bottom));

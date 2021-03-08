@@ -34,11 +34,6 @@
                 font-size: 17rem;
                 &:not(:last-of-type) {
                     margin-bottom: 40rem;
-                    // >span {
-                    //     &:last-of-type {
-                    //         font-size: 14rem;
-                    //     }
-                    // }
                 }
                 >span {
                     &:first-of-type {
@@ -66,7 +61,7 @@
                 }
                 &.router-link-exact-active {
                     &::after {
-                        width: 2rem;
+                        width: 4rem;
                         height: 20rem;
                         margin-left: auto;
                     }

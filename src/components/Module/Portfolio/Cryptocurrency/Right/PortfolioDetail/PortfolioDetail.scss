@@ -43,15 +43,15 @@
                 vertical-align: top;
             }
             &:first-of-type {
-                width: 16rem;
-                height: 16rem;
+                width: 15rem;
+                height: 15rem;
                 background-image: url(#{$img}/ico-memo-off.png);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-size: 100% auto;
             }
             &:last-of-type {
-                font-size: 16rem;
+                font-size: 15rem;
                 color: $FontColorGray;
                 margin-left: 10rem;
             }
