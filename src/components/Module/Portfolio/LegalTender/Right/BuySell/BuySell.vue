@@ -2,24 +2,17 @@
   <div class="buySell">
     <ul class="tabs">
       <li>
-        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isBuy}" @click="btnBy('isBuy')">Buy [ 3/15 ]</button>
-        <button type="button" class="icoReg" @click="btnpopupPortfolio">Registration</button>
+        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isBuy}" @click="btnBy('isBuy')">Deposit [ 100 ]</button>
       </li>
       <li>
-        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isSell}" @click="btnBy('isSell')">Sell [ 3 ]</button>
+        <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isSell}" @click="btnBy('isSell')">Withdraw [ 3 ]</button>
       </li>
       <li>
         <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isHistory}" @click="btnBy('isHistory')">History</button>
       </li>
     </ul>
-    <p>
-      <span>2020-03-24</span>
-      <span>Wallet name</span>
-      <button type="button"><i class="fas fa-pencil-alt"/><span>Memo</span></button>
-      <button type="button"><i class="fas fa-trash-alt"/><span>Delete</span></button>
-    </p>
-    <LegalTenderRightBuySellBuy v-if="tabs.isBuy"/>
-    <LegalTenderRightBuySellSell v-if="tabs.isSell"/>
+    <LegalTenderRightBuySellDeposit v-if="tabs.isBuy"/>
+    <LegalTenderRightBuySellWithdraw v-if="tabs.isSell"/>
     <LegalTenderRightBuySellHistory v-if="tabs.isHistory"/>
   </div>
   <!--

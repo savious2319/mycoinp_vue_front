@@ -1,10 +1,40 @@
 @import "@/assets/scss/function.scss";
+p {
+    @include displayflex(row, center, flex-start, unset);
+    padding: 0 15rem 14rem 15rem;
+    position: relative;
+    border-bottom: 1rem solid $BgColorFullBackground;
+    &:not(:first-of-type) {
+        padding-top: 14rem;
+        border-top: 1rem solid $BgColorFullBackground;
+    }
+    >span {
+        font-size: 14rem;
+        &:first-of-type {
+            margin-right: 23rem;
+        }
+        &:last-of-type {
+            margin-right: auto;
+        }
+    }
+    >button {
+        font-size: 15rem;
+        color: $FontColorGray;
+        >span {
+            font-size: 0;
+        }
+        &:last-of-type {
+            margin-left: 10rem;
+        }
+    }
+}
+
 article {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-row-gap: 17rem;
-    margin-top: 16rem;
-    padding: 0 15rem;
+    margin-top: 10rem;
+    padding: 0 15rem 10rem 15rem;
     position: relative;
     >dl {
         >dt {
@@ -66,4 +96,8 @@ article {
             font-weight: 500;
         }
     }
+}
+
+.mask {
+    @include mask;
 }

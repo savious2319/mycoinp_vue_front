@@ -136,8 +136,8 @@ import LegalTenderLeftPortfoliobyDates from '@/components/Module/Portfolio/Legal
 import LegalTenderRight from '@/components/Module/Portfolio/LegalTender/Right/Right.vue';
 import LegalTenderRightAdvertisement from '@/components/Module/Portfolio/LegalTender/Right/Advertisement/Advertisement.vue';
 import LegalTenderRightBuySell from '@/components/Module/Portfolio/LegalTender/Right/BuySell/BuySell.vue';
-import LegalTenderRightBuySellBuy from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Buy/Buy.vue';
-import LegalTenderRightBuySellSell from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Sell/Sell.vue';
+import LegalTenderRightBuySellDeposit from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Deposit/Deposit.vue';
+import LegalTenderRightBuySellWithdraw from '@/components/Module/Portfolio/LegalTender/Right/BuySell/Withdraw/Withdraw.vue';
 import LegalTenderRightBuySellHistory from '@/components/Module/Portfolio/LegalTender/Right/BuySell/History/History.vue';
 import LegalTenderRightOfficialMessages from '@/components/Module/Portfolio/LegalTender/Right/OfficialMessages/OfficialMessages.vue';
 import LegalTenderRightPortfolioDetail from '@/components/Module/Portfolio/LegalTender/Right/PortfolioDetail/PortfolioDetail.vue';
@@ -159,8 +159,8 @@ app.component('LegalTenderRightPortfolioDetail', LegalTenderRightPortfolioDetail
 app.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
 app.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
 app.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
-app.component('LegalTenderRightBuySellBuy', LegalTenderRightBuySellBuy)
-app.component('LegalTenderRightBuySellSell', LegalTenderRightBuySellSell)
+app.component('LegalTenderRightBuySellDeposit', LegalTenderRightBuySellDeposit)
+app.component('LegalTenderRightBuySellWithdraw', LegalTenderRightBuySellWithdraw)
 app.component('LegalTenderRightBuySellHistory', LegalTenderRightBuySellHistory)
 /** Portfolio LegalTender End */
 

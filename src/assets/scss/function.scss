@@ -995,6 +995,7 @@ $FontColorReturn:#666;
         &:first-of-type {
             @include displayflex(row, flex-start, flex-start, unset);
             font-size: 15rem;
+            font-weight: 500;
             grid-area: ddFirst;
         }
         &:last-of-type {

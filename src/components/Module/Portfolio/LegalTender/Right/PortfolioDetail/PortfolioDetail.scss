@@ -23,7 +23,8 @@
             >dd {
                 &:first-of-type {
                     @include displayflex(row, flex-start, flex-start, unset);
-                    font-size: 15rem;
+                    font-size: 16rem;
+                    font-weight: 500;
                     grid-area: ddFirst;
                 }
                 &:last-of-type {
@@ -99,17 +100,10 @@
                 font-weight: 300;
                 margin-bottom: 10rem;
                 text-align: right;
-                >em {
-                    @include symbol {
-                        top: 1rem;
-                        color: $FontColorIvory;
-                    }
-                }
             }
             >dd {
                 @include displayflex(row, flex-start, flex-end, unset);
                 text-align: right;
-                >* {}
                 >strong {
                     font-weight: 500;
                     @include media('>=tablet') {
@@ -117,11 +111,6 @@
                     }
                     @include media('<tablet') {
                         font-size: 14rem;
-                    }
-                    >em {
-                        @include symbol {
-                            top: 1rem;
-                        }
                     }
                 }
                 >span {
@@ -135,7 +124,7 @@
                 }
                 >em {
                     @include symbol {
-                        top: 1rem;
+                        top: 1.5rem;
                         color: $FontColorGray;
                     }
                 }

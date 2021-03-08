@@ -13,49 +13,26 @@
     </div>
     <p>1 USD = <em>₩</em>1,150</p>
     <article>
-        <button type="button" :class="{'on': isMore}" @click="btnMore">More</button>
         <dl>
-            <dt>Buy Value</dt>
+            <dt>Net Invest</dt>
             <dd>
-                <em>₫</em>
+                <em>$</em>
+                <strong>123,456,789</strong>
+            </dd>
+        </dl>
+        <dl>
+            <dt>Deposit</dt>
+            <dd>
+                <em>$</em>
                 <strong>123,456,789</strong>
                 <span>K</span>
             </dd>
         </dl>
         <dl>
-            <dt>Profit & Loss</dt>
+            <dt>Withdrawal</dt>
             <dd>
-                <em>₫</em>
-                <strong class="fall">123,456,789</strong>
-                <span>K</span>
-            </dd>
-        </dl>
-        <dl>
-            <dt><em>%</em>Profit </dt>
-            <dd>
-                <strong class="fall">-10000<em>%</em></strong>
-            </dd>
-        </dl>
-        <dl v-if="isMore">
-            <dt>Buy Value</dt>
-            <dd>
-                <em>₫</em>
-                <strong>123,456,789</strong>
-                <span>K</span>
-            </dd>
-        </dl>
-        <dl v-if="isMore">
-            <dt>Profit & Loss</dt>
-            <dd>
-                <em>₫</em>
-                <strong class="fall">123,456,789</strong>
-                <span>K</span>
-            </dd>
-        </dl>
-        <dl v-if="isMore">
-            <dt>%Profit </dt>
-            <dd>
-                <strong class="fall">-10000<em>%</em></strong>
+                <em>$</em>
+                <strong>10,000</strong>
             </dd>
         </dl>
     </article>
