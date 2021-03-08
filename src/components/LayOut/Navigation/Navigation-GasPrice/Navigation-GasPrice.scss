@@ -32,7 +32,7 @@
         @include mask;
     }
     >.layer_gas {
-        @include layer(500rem, absolute);
+        @include layer(500rem, fixed);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

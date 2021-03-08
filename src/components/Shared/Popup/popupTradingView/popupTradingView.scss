@@ -1,10 +1,7 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup] {
-    @include media('>=tablet') {
-        @include layer(500rem, absolute);
-    }
+    @include layer(500rem, fixed);
     @include media('<tablet') {
-        @include layer(500rem, fixed);
         top: 0;
         left: 0;
         bottom: 0;
