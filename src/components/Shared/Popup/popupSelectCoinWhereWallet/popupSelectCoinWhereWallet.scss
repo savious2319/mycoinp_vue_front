@@ -9,7 +9,7 @@
         margin: 0 auto;
         width: calc(100% - 40rem);
         border-radius: 2rem;
-        background-color: #dddddd;
+        background-color: $BgColorLayerPopupButton;
         height: 45rem;
         color: $FontColorFaq;
         font-size: 14rem;
@@ -24,7 +24,7 @@
             color: $FontColorInactive;
             font-size: 13rem;
             font-weight: 500;
-            border-bottom: 1rem solid #e8e8e8;
+            border-bottom: 1rem solid $BgColorLayerPopupTabActive;
             &.on {
                 color: $FontColorGreen;
                 border-bottom-color: $FontColorGreen;

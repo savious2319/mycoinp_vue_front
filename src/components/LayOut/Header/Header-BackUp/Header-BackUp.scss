@@ -45,7 +45,7 @@ button {
             color: $FontColorInactive;
             font-size: 13rem;
             font-weight: 500;
-            border-bottom: 1rem solid #e8e8e8;
+            border-bottom: 1rem solid $BgColorLayerPopupTabActive;
             &::before {
                 content: '';
                 width: 15rem;
@@ -113,7 +113,7 @@ button {
                     margin-right: 4rem;
                 }
                 &:first-of-type {
-                    border-right: 1rem solid #e8e8e8;
+                    border-right: 1rem solid $BgColorLayerPopupTabActive;
                     background-image: url(#{$img}/mycom.png);
                 }
                 &:last-of-type {

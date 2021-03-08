@@ -22,7 +22,7 @@ aside {
                 padding-left: 45rem;
                 height: 40rem;
                 &:hover {
-                    background-color: #e8e8e8;
+                    background-color: $BgColorLayerPopupTabActive;
                 }
             }
         }
@@ -88,7 +88,7 @@ aside {
         }
         >.footer {
             @include displayflex(row, center, center, unset);
-            background-color: #dddddd;
+            background-color: $BgColorLayerPopupButton;
             height: 45rem;
             font-size: 10rem;
             color: $FontColorFaq;

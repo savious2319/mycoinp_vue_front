@@ -33,13 +33,13 @@
             padding: 0 14rem;
             height: 35rem;
             border-radius: 3rem;
-            background-color: #a5a9b4;
+            background-color: $BgColorPlusSetingCheckOffRadio;
             color: $BgColorWhite;
             font-size: 15rem;
             letter-spacing: -0.3rem;
             line-height: 1;
             &.active {
-                background-color: #4b4f5e;
+                background-color: $BgColorPlusSetingCheckOnRadio;
             }
             >span {
                 font-size: 12rem;

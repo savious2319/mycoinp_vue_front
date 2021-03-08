@@ -62,7 +62,7 @@
                 padding-top: 10rem;
                 &:not(:last-of-type) {
                     padding-bottom: 10rem;
-                    border-bottom: 1rem solid #e8e8e8;
+                    border-bottom: 1rem solid $BgColorLayerPopupTabActive;
                 }
                 >strong {
                     font-size: 15rem;

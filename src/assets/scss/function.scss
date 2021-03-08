@@ -1,7 +1,7 @@
 @import "include-media.scss";
 $img: "~@/assets/img";
 $moAside: 270rem;
-// Colors Start
+// BG Colors Start
 $BgColorMask: #000;
 $BgColorTable: #13131f;
 $BgColorFullBackground: #1c1e2a;
@@ -12,11 +12,18 @@ $BgColorWhite: #fff;
 $BgColorNotFullDiv: #f8f8f8;
 $BgColorNotFullSection: #e1e1e7;
 $BgColorSidemenuBorder: #242936;
+$BgColorPlusSetingCheckOnRadio: #4b4f5e;
+$BgColorPlusSetingCheckOffRadio: #a5a9b4;
+$BgColorLayerPopupButton: #ddd;
+$BgColorLayerPopupTabActive: #e8e8e8;
+$BgColorGray: #67686f;
+// BG Colors End
+// Font Colors Start
 $FontColorRise: #0fc14b;
 $FontColorOrange: #eb9a2c;
 $FontColorGreen: #6bbd46;
 $FontColorAmountUnit: #ffe640;
-$FontColorGray: #67686f;
+$FontColorGray: $BgColorGray;
 $FontColorIvory: #fff0d0;
 $FontColorPortfolioList: #e4b677;
 $FontColorAllSelect: #62636b;
@@ -135,7 +142,7 @@ $FontColorReturn:#666;
                     margin-right: 8rem;
                 }
                 &:active {
-                    background-color: #e8e8e8;
+                    background-color: $BgColorLayerPopupTabActive;
                 }
                 >svg {
                     color: $FontColorContent;
@@ -514,7 +521,7 @@ $FontColorReturn:#666;
     padding-bottom: 20rem;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
-        border-bottom: 1rem solid #e8e8e8;
+        border-bottom: 1rem solid $BgColorLayerPopupTabActive;
         line-height: 1;
         font-weight: 500;
         color: $FontColorTitle;
@@ -538,7 +545,7 @@ $FontColorReturn:#666;
             height: 45rem;
             line-height: 1;
             &:first-of-type {
-                background-color: #dddddd;
+                background-color: $BgColorLayerPopupButton;
                 color: $FontColorFaq;
                 font-weight: 500;
                 font-size: 16rem;
@@ -555,7 +562,7 @@ $FontColorReturn:#666;
         display: inherit;
         margin-top: 15rem;
         border-radius: 2rem;
-        background-color: #dddddd;
+        background-color: $BgColorLayerPopupButton;
         height: 45rem;
         color: $FontColorFaq;
         font-size: 14rem;

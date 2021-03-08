@@ -33,7 +33,7 @@ button {
             color: $FontColorInactive;
             font-size: 13rem;
             font-weight: 500;
-            border-bottom: 1rem solid #e8e8e8;
+            border-bottom: 1rem solid $BgColorLayerPopupTabActive;
             &.on {
                 color: $FontColorGreen;
                 border-bottom-color: $FontColorGreen;
