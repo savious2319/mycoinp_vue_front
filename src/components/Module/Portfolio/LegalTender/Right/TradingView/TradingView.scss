@@ -1,6 +1,6 @@
 @import "@/assets/scss/function.scss";
 .tradingview {
-    background-color: #171b23;
+    background-color: $BgColorHeaderFooter;
     margin-top: 4.5rem;
     position: relative;
     >.btnSet {

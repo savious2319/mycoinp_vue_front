@@ -31,7 +31,7 @@
     @include media('<desktop') {
         @include displayflex(row, center, center, unset);
         height: 46rem;
-        border-bottom: 1rem solid #242936;
+        border-bottom: 1rem solid $BgColorSidemenuBorder;
         >h1 {
             @include displayflex(row, center, center, unset);
             position: absolute;

@@ -48,7 +48,7 @@ aside {
         }
         >.header {
             @include displayflex(row, center, flex-start, unset);
-            background-color: #242936;
+            background-color: $BgColorSidemenuBorder;
             height: 78rem;
             padding-left: 20rem;
             position: relative;

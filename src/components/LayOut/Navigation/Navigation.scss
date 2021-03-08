@@ -27,7 +27,7 @@
             width: 100%;
             padding-left: 33rem;
             padding-bottom: 40rem;
-            border-bottom: 1rem solid #242936;
+            border-bottom: 1rem solid $BgColorSidemenuBorder;
             >a {
                 @include displayflex(row, center, flex-start, unset);
                 width: 100%;

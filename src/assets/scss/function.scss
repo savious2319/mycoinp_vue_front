@@ -11,6 +11,7 @@ $BgColorChart: #1c202a;
 $BgColorWhite: #fff;
 $BgColorNotFullDiv: #f8f8f8;
 $BgColorNotFullSection: #e1e1e7;
+$BgColorSidemenuBorder: #242936;
 $FontColorRise: #0fc14b;
 $FontColorOrange: #eb9a2c;
 $FontColorGreen: #6bbd46;
@@ -851,7 +852,7 @@ $FontColorReturn:#666;
                     &+div {
                         position: absolute;
                         top: 30rem;
-                        background-color: #242936;
+                        background-color: $BgColorSidemenuBorder;
                         width: 50rem;
                         z-index: 2;
                         @include media('>840px') {
@@ -877,7 +878,7 @@ $FontColorReturn:#666;
     >tbody {
         >tr {
             &.active {
-                background-color: #242936;
+                background-color: $BgColorSidemenuBorder;
             }
             &.not {
                 >td {
@@ -1044,7 +1045,7 @@ $FontColorReturn:#666;
         width: (100%/$length);
         height: 33rem;
         &.active {
-            background-color: #242936;
+            background-color: $BgColorSidemenuBorder;
             color: $FontColorGreen;
         }
     }
