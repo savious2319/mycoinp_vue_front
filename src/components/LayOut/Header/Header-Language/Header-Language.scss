@@ -4,7 +4,6 @@ button {
         @include language;
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
-        line-height: 1;
         color: $BgColorWhite;
         &::before {
             margin-top: 2rem;

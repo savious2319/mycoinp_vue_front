@@ -8,29 +8,22 @@ article {
     position: relative;
     >dl {
         >dt {
-            line-height: 1;
             color: $FontColorGray;
             font-size: 15rem;
             font-weight: 300;
             margin-bottom: 10rem;
             text-align: right;
             >em {
-                display: inline-block;
-                font-style: normal;
-                vertical-align: top;
-                font-weight: normal;
-                font-size: 11rem;
-                margin-top: 2rem;
-                color: $FontColorGray;
+                @include symbol {
+                    top: 1rem;
+                    color: $FontColorGray;
+                }
             }
         }
         >dd {
             @include displayflex(row, flex-start, flex-end, unset);
             text-align: right;
-            line-height: 1;
-            >* {
-                line-height: 1;
-            }
+            >* {}
             >strong {
                 font-weight: 500;
                 font-weight: normal;
@@ -41,12 +34,9 @@ article {
                     font-size: 14rem;
                 }
                 >em {
-                    display: inline-block;
-                    font-style: normal;
-                    vertical-align: top;
-                    font-weight: normal;
-                    font-size: 11rem;
-                    margin-top: 2rem;
+                    @include symbol {
+                        top: 1rem;
+                    }
                 }
             }
             >span {
@@ -59,10 +49,10 @@ article {
                 }
             }
             >em {
-                font-size: 11rem;
-                font-style: normal;
-                vertical-align: top;
-                color: $FontColorGray;
+                @include symbol {
+                    top: 1rem;
+                    color: $FontColorGray;
+                }
             }
         }
     }

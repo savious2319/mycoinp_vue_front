@@ -18,7 +18,6 @@
                     font-size: 13rem;
                     font-weight: 500;
                     position: relative;
-                    line-height: 1;
                     &.active {
                         color: $BgColorWhite;
                         &::after {
@@ -61,7 +60,6 @@
         >button {
             font-size: 15rem;
             color: $FontColorGray;
-            line-height: 1;
             >span {
                 font-size: 0;
             }

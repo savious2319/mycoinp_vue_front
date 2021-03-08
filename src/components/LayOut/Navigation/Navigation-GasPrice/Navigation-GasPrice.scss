@@ -6,7 +6,6 @@
     >button {
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
-        line-height: 1;
         color: $BgColorWhite;
         >span {
             color: $FontColorRise;
@@ -95,11 +94,9 @@
                             font-size: 15rem;
                             color: $FontColorContent;
                             >em {
-                                font-style: normal;
-                                font-size: 10rem;
-                                vertical-align: top;
-                                width: 12rem;
-                                display: inline-block;
+                                @include symbol {
+                                    color: $FontColorGray;
+                                }
                             }
                         }
                         >input[type=text] {

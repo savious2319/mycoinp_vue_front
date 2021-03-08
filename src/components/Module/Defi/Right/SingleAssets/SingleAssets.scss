@@ -9,11 +9,13 @@ table {
             >td {
                 >div {
                     text-align: right;
-                    line-height: 1;
                     &:last-of-type {
                         font-size: 13rem;
                         color: $FontColorIvory;
                         margin-top: 10rem;
+                        >s {
+                            top: 0;
+                        }
                     }
                     >img {
                         width: 13rem;

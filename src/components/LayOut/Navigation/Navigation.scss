@@ -31,7 +31,6 @@
             >a {
                 @include displayflex(row, center, flex-start, unset);
                 width: 100%;
-                line-height: 1;
                 font-size: 17rem;
                 &:not(:last-of-type) {
                     margin-bottom: 40rem;
@@ -92,7 +91,6 @@
                 margin-left: 23rem;
                 >a {
                     @include displayflex(row, center, flex-start, unset);
-                    line-height: 1;
                     &:not(:last-of-type) {
                         margin-bottom: 23rem;
                     }

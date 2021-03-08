@@ -14,8 +14,7 @@
             >dt {
                 @include displayflex(row, center, center, unset);
                 color: $FontColorIvory;
-                font-size: 12rem;
-                line-height: 1;
+                font-size: 13rem;
                 grid-area: dt;
                 >img {
                     width: 20rem;
@@ -39,7 +38,6 @@
                 }
             }
             >dd {
-                line-height: 1;
                 &:first-of-type {
                     @include displayflex(row, flex-start, flex-start, unset);
                     font-size: 15rem;
@@ -47,7 +45,7 @@
                 }
                 &:last-of-type {
                     @include displayflex(row, center, flex-start, unset);
-                    font-size: 12rem;
+                    font-size: 13rem;
                     font-weight: 300;
                     color: $FontColorIvory;
                     grid-area: ddLast;
@@ -73,7 +71,6 @@
                 font-size: 16rem;
                 color: $FontColorGray;
                 margin-left: 10rem;
-                line-height: 1;
             }
         }
         >.mask {
@@ -88,7 +85,6 @@
             &:first-of-type {
                 @include displayflex(row, center, flex-start, unset);
                 font-size: 13rem;
-                line-height: 1;
                 color: $FontColorIvory;
                 font-weight: 300;
             }
@@ -99,10 +95,10 @@
                     font-size: 17rem;
                     font-weight: 500;
                     >em {
-                        font-style: normal;
-                        font-size: 11rem;
-                        color: $FontColorGray;
-                        vertical-align: top;
+                        @include symbol {
+                            top: 1rem;
+                            color: $FontColorGray;
+                        }
                     }
                 }
                 >mark {
@@ -134,11 +130,8 @@
             &:last-of-type {
                 @include displayflex(row, center, flex-end, unset);
                 color: $FontColorGreen;
-                >em {
-                    font-style: normal;
-                    font-size: 11rem;
-                    vertical-align: top;
-                    text-decoration: none;
+                @include symbol {
+                    top: 1rem;
                 }
             }
         }

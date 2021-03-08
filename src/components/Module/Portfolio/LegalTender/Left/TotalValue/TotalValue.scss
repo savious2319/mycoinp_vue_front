@@ -13,28 +13,23 @@
         >h2 {
             font-weight: 500;
             font-size: 18rem;
-            line-height: 1;
         }
         >p {
-            line-height: 1;
             margin-left: auto;
             text-align: right;
             >em {
-                font-style: normal;
-                font-size: 11rem;
-                line-height: 1;
-                color: $FontColorGray;
-                vertical-align: top;
-                margin-right: 3rem;
+                @include symbol {
+                    top: 1rem;
+                    color: $FontColorGray;
+                    margin-right: 3rem;
+                }
             }
             >strong {
-                line-height: 1;
                 font-size: 18rem;
                 font-weight: 500;
             }
             >Span {
                 display: block;
-                line-height: 1;
                 font-size: 13rem;
                 font-weight: 500;
                 color: $FontColorGray;
@@ -66,29 +61,22 @@
         }
         >dl {
             >dt {
-                line-height: 1;
                 color: $FontColorIvory;
                 font-size: 15rem;
                 font-weight: 300;
                 margin-bottom: 10rem;
                 text-align: right;
                 >em {
-                    display: inline-block;
-                    font-style: normal;
-                    vertical-align: top;
-                    font-weight: normal;
-                    font-size: 11rem;
-                    margin-top: 2rem;
-                    color: $FontColorIvory;
+                    @include symbol {
+                        top: 1rem;
+                        color: $FontColorIvory;
+                    }
                 }
             }
             >dd {
                 @include displayflex(row, flex-start, flex-end, unset);
                 text-align: right;
-                line-height: 1;
-                >* {
-                    line-height: 1;
-                }
+                >* {}
                 >strong {
                     font-weight: 500;
                     @include media('>=tablet') {
@@ -98,12 +86,9 @@
                         font-size: 14rem;
                     }
                     >em {
-                        display: inline-block;
-                        font-style: normal;
-                        vertical-align: top;
-                        font-weight: normal;
-                        font-size: 11rem;
-                        margin-top: 2rem;
+                        @include symbol {
+                            top: 1rem;
+                        }
                     }
                 }
                 >span {
@@ -116,10 +101,10 @@
                     }
                 }
                 >em {
-                    font-size: 11rem;
-                    font-style: normal;
-                    vertical-align: top;
-                    color: $FontColorGray;
+                    @include symbol {
+                        top: 1rem;
+                        color: $FontColorGray;
+                    }
                 }
             }
         }

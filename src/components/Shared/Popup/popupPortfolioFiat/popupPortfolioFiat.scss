@@ -58,7 +58,6 @@
                     height: 30rem;
                     em {
                         font-style: normal;
-                        line-height: 1;
                     }
                     >input[type=date],
                     >input[type=text] {
@@ -140,20 +139,16 @@
                     color: $FontColorGreen;
                     font-size: 15rem;
                     font-weight: 500;
-                    line-height: 1;
                 }
                 >dd {
                     @include displayflex(row, center, flex-end, unset);
-                    line-height: 1;
                     >em {
-                        line-height: 1;
-                        font-style: normal;
-                        color: $FontColorGray;
-                        font-size: 11rem;
-                        vertical-align: top;
+                        @include symbol {
+                            top: 1rem;
+                            color: $FontColorGray;
+                        }
                     }
                     >span {
-                        line-height: 1;
                         color: $FontColorGreen;
                         font-size: 15rem;
                         font-weight: 500;

@@ -126,7 +126,6 @@ $FontColorReturn:#666;
             overflow: hidden;
             >a {
                 @include displayflex(row, center, flex-start, unset);
-                line-height: 1;
                 width: 100%;
                 height: 40rem;
                 padding-left: 22rem;
@@ -522,7 +521,6 @@ $FontColorReturn:#666;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
         border-bottom: 1rem solid $BgColorLayerPopupTabActive;
-        line-height: 1;
         font-weight: 500;
         color: $FontColorTitle;
         margin-bottom: 20rem;
@@ -543,7 +541,6 @@ $FontColorReturn:#666;
         >button {
             width: 50%;
             height: 45rem;
-            line-height: 1;
             &:first-of-type {
                 background-color: $BgColorLayerPopupButton;
                 color: $FontColorFaq;
@@ -578,18 +575,6 @@ $FontColorReturn:#666;
 }
 
 @mixin list($stickyTop, $grid-area, $grid-template-columns, $grid-template-areas) {
-    em {
-        font-style: normal;
-        font-size: 11rem;
-        color: $FontColorGray;
-        position: relative;
-        @include media('>840px') {
-            top: -3rem;
-        }
-        @include media('<=840px') {
-            top: 0;
-        }
-    }
     .btnBookmark {
         >svg {
             font-size: 17rem;
@@ -725,12 +710,6 @@ $FontColorReturn:#666;
         }
     }
     >thead {
-        >tr {
-            background-color: $BgColorTable;
-            >th {
-                background-color: $BgColorTable;
-            }
-        }
         @include media('>=tablet') {
             >tr>th {
                 @include sticky($stickyTop);
@@ -740,11 +719,12 @@ $FontColorReturn:#666;
             @include sticky($stickyTop);
         }
         >tr {
+            background-color: $BgColorTable;
             th {
+                background-color: $BgColorTable;
                 font-size: 14rem;
                 color: $FontColorGray;
                 font-weight: 500;
-                line-height: 1;
                 letter-spacing: -0.3rem;
                 @include media('<tablet') {
                     position: relative;
@@ -761,6 +741,12 @@ $FontColorReturn:#666;
                         position: relative;
                     }
                 }
+                >em {
+                    @include symbol {
+                        top: 1rem;
+                        color: $FontColorGray;
+                    }
+                }
                 >.thSearch {
                     @include displayflex(row, center, center, unset);
                     width: fit-content;
@@ -771,7 +757,6 @@ $FontColorReturn:#666;
                             top: 50%;
                             left: 10rem;
                             transform: translateY(-50%);
-                            line-height: 1;
                             >svg {
                                 font-size: 10rem;
                                 color: #454753;
@@ -786,7 +771,6 @@ $FontColorReturn:#666;
                             top: 50%;
                             right: 10rem;
                             transform: translateY(-50%);
-                            line-height: 1;
                             width: 12rem;
                             height: 12rem;
                             background-color: #676870;
@@ -833,8 +817,13 @@ $FontColorReturn:#666;
                     font-size: 14rem;
                     color: $FontColorGray;
                     font-weight: 500;
-                    line-height: 1;
                     letter-spacing: -0.3rem;
+                    >em {
+                        @include symbol {
+                            color: $FontColorGray;
+                            top: -2rem;
+                        }
+                    }
                     &:after {
                         content: '';
                         width: 9rem;
@@ -857,7 +846,6 @@ $FontColorReturn:#666;
                     background-color: transparent;
                     font-size: 14rem;
                     color: $FontColorGray;
-                    line-height: 1;
                     &::after {
                         content: '';
                         display: inline-block;
@@ -887,7 +875,6 @@ $FontColorReturn:#666;
                         >button {
                             display: block;
                             width: 100%;
-                            line-height: 1;
                             text-align: center;
                             padding: 8rem 0;
                             color: $FontColorAllSelect;
@@ -916,9 +903,14 @@ $FontColorReturn:#666;
             }
             &:not(.not) {
                 >td {
-                    line-height: 1;
                     letter-spacing: -0.3rem;
                     font-size: 15rem;
+                    >em {
+                        @include symbol {
+                            top: 1rem;
+                            color: $FontColorGray;
+                        }
+                    }
                     >dl {
                         @include coinName;
                     }
@@ -961,15 +953,8 @@ $FontColorReturn:#666;
                         font-style: normal;
                     }
                     s {
-                        font-style: normal;
-                        font-size: 11rem;
-                        text-decoration: none;
-                        position: relative;
-                        @include media('>840px') {
-                            top: -3rem;
-                        }
-                        @include media('<=840px') {
-                            top: 0;
+                        @include symbol {
+                            top: 1rem;
                         }
                     }
                 }
@@ -1001,14 +986,12 @@ $FontColorReturn:#666;
     >dt {
         @include displayflex(row, center, center, unset);
         color: $FontColorIvory;
-        font-size: 12rem;
-        line-height: 1;
+        font-size: 13rem;
         >img {
             width: 18rem;
         }
     }
     >dd {
-        line-height: 1;
         &:first-of-type {
             @include displayflex(row, flex-start, flex-start, unset);
             font-size: 15rem;
@@ -1016,7 +999,7 @@ $FontColorReturn:#666;
         }
         &:last-of-type {
             @include displayflex(row, center, flex-start, unset);
-            font-size: 12rem;
+            font-size: 13rem;
             color: $FontColorIvory;
             grid-area: ddLast;
         }
@@ -1114,4 +1097,13 @@ $FontColorReturn:#666;
         height: calc(100% - 46rem - env(safe-area-inset-bottom));
         overflow-y: auto;
     }
+}
+
+@mixin symbol {
+    font-style: normal;
+    font-size: 11rem;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    @content;
 }

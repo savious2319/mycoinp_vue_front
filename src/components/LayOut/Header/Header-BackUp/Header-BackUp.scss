@@ -16,7 +16,6 @@ button {
             @include displayflex(row, center, flex-start, unset);
             font-size: 16rem;
             font-weight: 500;
-            line-height: 1;
             &::before {
                 margin-right: 8rem;
             }

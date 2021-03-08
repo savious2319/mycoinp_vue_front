@@ -31,7 +31,6 @@ section {
         >li {
             @include displayflex(row, center, flex-start, unset);
             color: $FontColorFaq;
-            line-height: 1;
             &:not(:first-of-type) {
                 margin-left: 10rem;
                 &::before {
@@ -103,7 +102,7 @@ section {
         }
         >span {
             margin-top: 20rem;
-            font-size: 12rem;
+            font-size: 13rem;
             letter-spacing: -0.24rem;
             color: $FontColorFaq;
         }
@@ -120,7 +119,6 @@ section {
         width: 90rem;
         height: 29rem;
         margin-top: 200rem;
-        line-height: 1;
         letter-spacing: -0.26rem;
         border-radius: 27rem;
         &:active,
@@ -133,7 +131,6 @@ section {
             margin-right: 10rem;
         }
         >span {
-            line-height: 1;
             font-size: 13rem;
             color: $FontColorReturn;
         }

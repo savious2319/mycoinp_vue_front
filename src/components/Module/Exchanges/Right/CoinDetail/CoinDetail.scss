@@ -10,8 +10,7 @@
             >dt {
                 @include displayflex(row, center, center, unset);
                 color: $FontColorIvory;
-                font-size: 12rem;
-                line-height: 1;
+                font-size: 13rem;
                 >img {
                     width: 20rem;
                 }
@@ -35,7 +34,6 @@
             }
             >dd {
                 margin-left: 10rem;
-                line-height: 1;
                 font-size: 15rem;
             }
         }

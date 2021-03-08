@@ -31,7 +31,6 @@ section {
         >li {
             @include displayflex(row, center, flex-start, unset);
             color: $FontColorFaq;
-            line-height: 1;
             &:not(:first-of-type) {
                 margin-left: 10rem;
                 &::before {
@@ -57,7 +56,6 @@ section {
         font-weight: bold;
         letter-spacing: -0.34rem;
         color: $FontColorTitle;
-        line-height: 1;
         border-bottom: 2rem solid $FontColorTitle;
         padding-bottom: 20rem;
     }
@@ -82,14 +80,13 @@ section {
                     font-size: 16rem;
                     font-weight: 500;
                     padding-left: 7rem;
-                    line-height: 1;
                 }
                 >s {
                     @include icon(20rem, 20rem, 'ico_q.png');
                     font-size: 0;
                 }
                 >svg {
-                    font-size: 12rem;
+                    font-size: 13rem;
                     color: #999ba4;
                     margin-top: 3rem;
                 }
