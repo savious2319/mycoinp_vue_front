@@ -18,7 +18,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr @click="MobileDetailShow">
         <td>2020-07-20</td>
         <td class="flugrean">Sell</td>
         <td>GUSD</td>
@@ -26,7 +26,7 @@
         <td><em>₫</em>123,456,78<i>K</i></td>
         <td>123,456,78<i>K</i></td>
       </tr>
-      <tr>
+      <tr @click="MobileDetailShow">
         <td>2020-07-20</td>
         <td class="orange">Buy</td>
         <td>GUSD</td>

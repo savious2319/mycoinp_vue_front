@@ -7,7 +7,7 @@
     <div class="searchSet">
       <span>
         <button type="button" class="btnSearch" title="Search">Search</button>
-        <input type="text" placeholder="Search...">
+        <input type="text" v-model="searchtext" placeholder="Search...">
         <button type="button" class="btnClear" title="Search">Clear</button>
       </span>
     </div>

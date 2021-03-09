@@ -12,8 +12,8 @@
 				<i class="fas fa-search"/>
 				<span>Search</span>
 			</button>
-			<input type="text" placeholder="Search..."> 
-			<button type="button" class="btnDel">삭제</button>
+			<input type="text" v-model="searchtext" placeholder="Search..."> 
+			<button type="button" class="btnDel" v-if="searchText.length > 0" @click="searchText = ''">삭제</button>
 		</div>
 		<perfect-scrollbar>
 			<div class="currency">
@@ -48,6 +48,7 @@
 export default {
 	data () {
 		return {
+			searchText: "",
 			isLayerLang: false,
 			article:{
 				isCurrency: true,

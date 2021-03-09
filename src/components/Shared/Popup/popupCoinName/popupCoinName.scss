@@ -1,0 +1,90 @@
+@import "@/assets/scss/function.scss";
+[data-layerPopup^="popupCoinName"] {
+    @include layer(500rem, fixed);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    padding-top: 20rem;
+    >button {
+        margin: 0 auto;
+        width: calc(100% - 40rem);
+        border-radius: 2rem;
+        background-color: $BgColorLayerPopupButton;
+        height: 45rem;
+        color: $FontColorFaq;
+        font-size: 14rem;
+    }
+    >article {
+        >.scarch {
+            @include displayflex(row, center, flex-start, unset);
+            background-color: $BgColorNotFullDiv;
+            margin-bottom: 10rem;
+            padding-left: 10rem;
+            >input[type=text] {
+                width: calc(100% - 30rem);
+                height: 30rem;
+                line-height: 30rem;
+                border: 0;
+                box-shadow: none;
+                padding: 0;
+                color: $FontColorContent;
+                font-size: 13rem;
+                font-weight: 500;
+                background-color: transparent;
+                &::placeholder {
+                    color: $FontColorInactive;
+                }
+            }
+            >button {
+                &.btnDel {
+                    font-size: 0;
+                    width: 30rem;
+                    height: 30rem;
+                    background-color: transparent;
+                    border: 0;
+                    background-image: url(#{$img}/ico-clear-2.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: 11rem auto;
+                }
+                &.btnSearch {
+                    margin-right: 10rem;
+                    >svg {
+                        font-size: 15rem;
+                        color: $FontColorInactive;
+                    }
+                    >span {
+                        font-size: 0;
+                    }
+                }
+            }
+        }
+        >.noData {
+            text-align: center;
+            padding: 90rem 0;
+            font-size: 14rem;
+            color: $FontColorInactive;
+        }
+        >.ps {
+            height: 200rem !important;
+            .list {
+                padding: 10rem 0;
+                >a {
+                    @include displayflex(row, center, flex-start, unset);
+                    padding: 13rem 0;
+                    color: $FontColorContent;
+                    font-size: 13rem;
+                    border-bottom: 1rem solid $BgColorNotFullDiv;
+                    >img {
+                        width: 13rem;
+                        margin-right: 5rem;
+                    }
+                    >span {
+                        color: $FontColorGreen;
+                    }
+                }
+            }
+        }
+    }
+}

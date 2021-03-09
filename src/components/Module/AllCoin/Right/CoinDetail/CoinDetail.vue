@@ -12,6 +12,7 @@
                 <dd>XZC</dd>
                 <dd>ZCoin</dd>
             </dl>
+            <button type="button" @click="btnLayerPopup"><i class="fas fa-search"/><span>Search</span></button>
         </div>
         <ul>
             <li>https://bitcoin.org</li>
@@ -25,10 +26,25 @@
             </li>
         </ul>
     </div>
+    <popupCoinName v-if="isLayerPopup" @cancel="btnLayerPopup"/>
+    <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
 </template>
 
 <script>
 export default {
+  props : ['container'],
+  data () {
+    return {
+      isLayerPopup: false,
+    }
+  },
+  methods: {
+    btnLayerPopup: function(){
+      this.isLayerPopup = !this.isLayerPopup;
+    },
+
+  }
+
 }
 </script>
 

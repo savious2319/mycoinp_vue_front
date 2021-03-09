@@ -1,4 +1,8 @@
 @import "@/assets/scss/function.scss";
+.mask {
+    @include mask;
+}
+
 .PortfolioDetail {
     padding: 15rem;
     background-color: $BgColorTotalValue;
@@ -53,24 +57,14 @@
             }
         }
         >button {
+            font-size: 20rem;
+            color: $FontColorGray;
+            margin-left: auto;
             >span {
                 font-size: 0;
             }
             >svg {
                 vertical-align: top;
-            }
-            &:first-of-type {
-                width: 15rem;
-                height: 15rem;
-                background-image: url(#{$img}/ico-memo-off.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: 100% auto;
-            }
-            &:last-of-type {
-                font-size: 15rem;
-                color: $FontColorGray;
-                margin-left: 10rem;
             }
         }
         >.mask {

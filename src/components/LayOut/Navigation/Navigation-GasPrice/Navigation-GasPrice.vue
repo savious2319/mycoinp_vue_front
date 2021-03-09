@@ -9,12 +9,12 @@
                     <strong>Up Price</strong>
                     <p>
                         <span>2<em>nd</em> level</span>
-                        <input type="text" placeholder="Setting gas price">
+                        <input type="text" v-model="searchtext" placeholder="Setting gas price">
                         <span>Gwei</span>
                     </p>
                     <p>
                         <span>1<em>st</em> level</span>
-                        <input type="text" placeholder="Setting gas price">
+                        <input type="text" v-model="searchtext" placeholder="Setting gas price">
                         <span>Gwei</span>
                     </p>
                 </li>
@@ -29,12 +29,12 @@
                     <strong>Down Price</strong>
                     <p>
                         <span>2<em>nd</em> level</span>
-                        <input type="text" placeholder="Setting gas price">
+                        <input type="text" v-model="searchtext" placeholder="Setting gas price">
                         <span>Gwei</span>
                     </p>
                     <p>
                         <span>1<em>st</em> level</span>
-                        <input type="text" placeholder="Setting gas price">
+                        <input type="text" v-model="searchtext" placeholder="Setting gas price">
                         <span>Gwei</span>
                     </p>
                 </li>
