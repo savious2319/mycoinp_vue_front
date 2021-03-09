@@ -34,10 +34,10 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td class="rise">6,789<i>K</i></td>
+      <td class="grean">6,789<i>K</i></td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
       <td>6,789<i>K</i></td>
-      <td class="rise">+661<s>%</s></td>
+      <td class="grean">+661<s>%</s></td>
     </tr>
     <tr @click="MobileDetailShow">
       <td>
@@ -47,10 +47,10 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td class="rise">6,789<i>K</i></td>
+      <td class="grean">6,789<i>K</i></td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
       <td>6,789<i>K</i></td>
-      <td class="rise">+661<s>%</s></td>
+      <td class="grean">+661<s>%</s></td>
     </tr>
     <tr class="not">
       <td colspan="4">Add Your Portfolio ...</td>

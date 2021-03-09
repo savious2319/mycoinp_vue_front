@@ -7,16 +7,14 @@ table {
     >tbody {
         >tr {
             >td {
-                &:nth-of-type(4) {
-                    color: $FontColorIvory;
-                }
                 @include media('<=840px') {
                     >mark {
                         right: calc(30% + 5rem);
                     }
                     &:nth-of-type(4),
                     &:nth-of-type(5) {
-                        font-size: 14rem;
+                        font-size: 13rem;
+                        color: $FontColorIvory;
                     }
                     &:nth-of-type(2),
                     &:nth-of-type(4) {

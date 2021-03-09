@@ -9,7 +9,6 @@
             width: 17rem;
             margin-right: 3rem;
         }
-        >strong {}
         >span {
             @include displayflex(row, center, flex-start, unset);
             font-size: 11rem;

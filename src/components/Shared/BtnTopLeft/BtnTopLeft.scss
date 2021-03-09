@@ -9,7 +9,7 @@
     height: 35rem;
     background-image: url(#{$img}/top-btn-2.png);
     @include media('>=desktop') {
-        left: calc(50vw + 50rem);
+        left: calc(50vw + 75rem);
         bottom: 65rem;
     }
     @include media('>=890px', '<desktop') {
@@ -22,6 +22,6 @@
     }
     @include media('<tablet') {
         right: 15rem;
-        bottom: 27rem;
+        bottom: 15rem;
     }
 }

@@ -19,9 +19,9 @@ $BgColorLayerPopupTabActive: #e8e8e8;
 $BgColorGray: #67686f;
 // BG Colors End
 // Font Colors Start
-$FontColorRise: #0fc14b;
-$FontColorOrange: #eb9a2c;
 $FontColorGreen: #6bbd46;
+$FontColorFluGreen: #0fc14b;
+$FontColorOrange: #eb9a2c;
 $FontColorAmountUnit: #ffe640;
 $FontColorGray: $BgColorGray;
 $FontColorIvory: #fff0d0;
@@ -97,6 +97,14 @@ $FontColorReturn:#666;
                 position: absolute;
                 left: 0;
                 bottom: 0;
+            }
+            >span {
+                font-weight: 500;
+                @if $size=='mobile' {
+                    &:last-of-type {
+                        margin-top: 5rem;
+                    }
+                }
             }
             &:last-of-type {
                 @if $size=='mobile' {
@@ -499,13 +507,9 @@ $FontColorReturn:#666;
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 3;
     background-color: $BgColorMask;
     opacity: 0.5;
-    // @include media('<tablet') {
-    //     background-color: $BgColorMask;
-    //     opacity: 0.5;
-    // }
 }
 
 @mixin layer($width, $position) {
@@ -520,7 +524,7 @@ $FontColorReturn:#666;
     padding-bottom: 20rem;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
-        border-bottom: 1rem solid $BgColorLayerPopupTabActive;
+        // border-bottom: 1rem solid $BgColorLayerPopupTabActive;
         font-weight: 500;
         color: $FontColorTitle;
         margin-bottom: 20rem;
@@ -617,6 +621,7 @@ $FontColorReturn:#666;
                 }
                 >td {
                     padding: 10rem 0;
+                    vertical-align: middle;
                 }
                 >th,
                 >td {
@@ -821,7 +826,7 @@ $FontColorReturn:#666;
                     >em {
                         @include symbol {
                             color: $FontColorGray;
-                            top: -2rem;
+                            top: -1.5rem;
                         }
                     }
                     &:after {
@@ -890,6 +895,13 @@ $FontColorReturn:#666;
             &:hover,
             &:active {
                 background-color: $BgColorSidemenuBorder;
+            }
+            >td {
+                @for $i from 1 to 10 {
+                    &:nth-of-type(#{$i}) {
+                        @include fontColor;
+                    }
+                }
             }
             &.not {
                 >td {
@@ -961,21 +973,6 @@ $FontColorReturn:#666;
             }
         }
     }
-}
-
-@mixin realTime ($name, $color) {
-    @keyframes #{$name} {
-        from {
-            color: $BgColorWhite;
-        }
-        to {
-            color: $color;
-        }
-    }
-    animation-name: #{$name};
-    animation-duration: 0.5s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
 }
 
 @mixin coinName {
@@ -1059,25 +1056,53 @@ $FontColorReturn:#666;
     }
 }
 
-.rise,
-.rise>* {
-    color: $FontColorRise;
-    &.realTime,
-    &.realTime>* {
-        @include realTime(rise, $FontColorRise);
+@mixin realTime ($name, $color) {
+    @keyframes #{$name} {
+        from {
+            color: $BgColorWhite;
+        }
+        to {
+            color: $color;
+        }
+    }
+    animation-name: #{$name};
+    animation-duration: 0.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@mixin fontColor {
+    &.grean,
+    &.grean>* {
+        color: $FontColorGreen;
+        &.realTime,
+        &.realTime>* {
+            @include realTime(grean, $FontColorGreen);
+        }
+    }
+    &.flugrean,
+    &.flugrean>* {
+        color: $FontColorFluGreen;
+        &.realTime,
+        &.realTime>* {
+            @include realTime(flugrean, $FontColorFluGreen);
+        }
+    }
+    &.orange,
+    &.orange>* {
+        color: $FontColorOrange;
+        >* {
+            color: $FontColorOrange;
+        }
+        &.realTime,
+        &.realTime>* {
+            @include realTime(orange, $FontColorOrange);
+        }
     }
 }
 
-.fall,
-.fall>* {
-    color: $FontColorOrange;
-    >* {
-        color: $FontColorOrange;
-    }
-    &.realTime,
-    &.realTime>* {
-        @include realTime(fall, $FontColorOrange);
-    }
+* {
+    @include fontColor;
 }
 
 .pointer {
@@ -1094,7 +1119,7 @@ $FontColorReturn:#666;
     z-index: 2;
     background-color: $BgColorTable;
     .sectionRight {
-        padding-bottom: 15rem;
+        padding-bottom: 65rem;
         height: calc(100% - 46rem - env(safe-area-inset-bottom));
         overflow-y: auto;
     }

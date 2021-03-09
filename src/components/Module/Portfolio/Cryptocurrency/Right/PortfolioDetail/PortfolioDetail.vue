@@ -35,14 +35,14 @@
             <dt>Profit & Loss</dt>
             <dd>
                 <em>₫</em>
-                <strong class="fall">123,456,789</strong>
+                <strong class="orange">123,456,789</strong>
                 <span>K</span>
             </dd>
         </dl>
         <dl>
             <dt><em>%</em>Profit </dt>
             <dd>
-                <strong class="fall">-10000<em>%</em></strong>
+                <strong class="orange">-10000<em>%</em></strong>
             </dd>
         </dl>
         <dl v-if="isMore">
@@ -57,14 +57,14 @@
             <dt>Avg.Buy Price</dt>
             <dd>
                 <em>₫</em>
-                <strong class="fall">123,456,789</strong>
+                <strong class="orange">123,456,789</strong>
                 <span>K</span>
             </dd>
         </dl>
         <dl v-if="isMore">
             <dt>Hold Amount</dt>
             <dd>
-                <strong class="fall">-10000<em>%</em></strong>
+                <strong class="orange">-10000<em>%</em></strong>
             </dd>
         </dl>
         <div v-if="isMore">
@@ -74,14 +74,14 @@
             <dt>Cumulative Gain</dt>
             <dd>
                 <em>₫</em>
-                <strong class="fall">123,456,789</strong>
+                <strong class="orange">123,456,789</strong>
                 <span>K</span>
             </dd>
         </dl>
         <dl v-if="isMore">
             <dt>Realized Gain</dt>
             <dd>
-                <strong class="fall">-10000<em>%</em></strong>
+                <strong class="orange">-10000<em>%</em></strong>
             </dd>
         </dl>
     </article>

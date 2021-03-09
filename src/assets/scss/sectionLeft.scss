@@ -41,13 +41,13 @@
     }
     @include media('>=tablet', '<890px') {
         left: 0;
-        bottom: 64rem;
+        bottom: 60rem;
     }
     @include media('<tablet') {
         left: 0;
         bottom: 40rem;
         &.scrollDown {
-            bottom: 0
+            bottom: -12rem;
         }
     }
 }

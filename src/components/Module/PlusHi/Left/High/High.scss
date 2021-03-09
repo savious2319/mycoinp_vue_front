@@ -10,15 +10,19 @@ table {
                 color: $FontColorAmountUnit;
             }
             >td {
-                $fontSize: (1 15rem, 2 15rem, 3 13rem, 4 13rem);
-                @each $i,
-                $size in $fontSize {
-                    &:nth-of-type(#{$i}) {
-                        font-size: $size;
+                @include media('<=840px') {
+                    $fontSize: (1 15rem, 2 15rem, 3 13rem, 4 13rem, 5 13rem);
+                    @each $i,
+                    $size in $fontSize {
+                        &:nth-of-type(#{$i}) {
+                            font-size: $size;
+                        }
                     }
                 }
                 &:nth-of-type(4) {
-                    color: $FontColorIvory;
+                    @include media('<=840px') {
+                        color: $FontColorIvory;
+                    }
                 }
                 >strong {
                     color: $BgColorWhite;
@@ -30,7 +34,7 @@ table {
                     color: $FontColorGray;
                 }
                 >img {
-                    width: 18rem;
+                    width: 15rem;
                     vertical-align: middle;
                     margin-right: 5rem;
                 }

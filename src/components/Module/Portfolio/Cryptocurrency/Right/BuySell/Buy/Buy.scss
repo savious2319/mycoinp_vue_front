@@ -53,7 +53,6 @@ article {
         >dd {
             @include displayflex(row, flex-start, flex-end, unset);
             text-align: right;
-            >* {}
             >strong {
                 font-weight: 500;
                 font-weight: normal;

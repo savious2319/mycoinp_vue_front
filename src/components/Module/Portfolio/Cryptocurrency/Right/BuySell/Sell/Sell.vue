@@ -18,14 +18,14 @@
             <dt>Sell Price</dt>
             <dd>
                 <em>₫</em>
-                <strong class="fall">123,456,789</strong>
+                <strong class="orange">123,456,789</strong>
                 <span>K</span>
             </dd>
         </dl>
         <dl>
             <dt>Sell Amount</dt>
             <dd>
-                <strong class="fall">-10000</strong>
+                <strong class="orange">-10000</strong>
                 <span>K</span>
             </dd>
         </dl>
@@ -40,13 +40,13 @@
         <dl>
             <dt><em>%</em> Profit</dt>
             <dd>
-                <strong class="fall">123,456,789<em>%</em></strong>
+                <strong class="orange">123,456,789<em>%</em></strong>
             </dd>
         </dl>
         <dl>
             <dt>Sell Exchange</dt>
             <dd>
-                <strong class="fall">-10000</strong>
+                <strong class="orange">-10000</strong>
                 <span>K</span>
             </dd>
         </dl>

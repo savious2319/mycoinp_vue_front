@@ -12,9 +12,9 @@
 	<article v-if="tabs.isCoin">
 		<dl>
 			<dt>Coin</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnSelectCoinPair">
+			<dd class="full" @click="btnSelectCoinPair">
+				<input type="text" readonly>
+				<button type="button">
 					<i class="fas fa-search"/>
 					<span>Search</span>
 				</button>
@@ -30,9 +30,9 @@
 			<dt>When</dt>
 			<dd class="full"><input type="date"></dd>
 			<dt>Where</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnSelectCoinWhereWallet">
+			<dd class="full" @click="btnSelectCoinWhereWallet">
+				<input type="text" readonly>
+				<button type="button">
 					<i class="fas fa-search"/>
 					<span>Search</span>
 				</button>
@@ -69,9 +69,9 @@
 	<article v-if="tabs.isFiat">
 		<dl>
 			<dt>Type</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnFiatType">
+			<dd class="full" @click="btnFiatType">
+				<input type="text" readonly>
+				<button type="button">
 					<i class="fas fa-search"/>
 					<span>Search</span>
 				</button>
@@ -79,9 +79,9 @@
 			<dt>When</dt>
 			<dd class="full"><input type="date"></dd>
 			<dt>Where</dt>
-			<dd class="full">
-				<input type="text">
-				<button type="button" @click="btnSelectCoinWhereWallet">
+			<dd class="full" @click="btnSelectCoinWhereWallet">
+				<input type="text" readonly>
+				<button type="button">
 					<i class="fas fa-search"/>
 					<span>Search</span>
 				</button>

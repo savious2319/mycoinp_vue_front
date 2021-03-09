@@ -20,7 +20,7 @@
       <tbody>
         <tr>
           <td>2020-07-20</td>
-          <td class="rise">Withdraw</td>
+          <td class="flugrean">Withdraw</td>
           <td>Upbit</td>
           <td>Nonghyub</td>
           <td><em>$</em>1,456,78</td>

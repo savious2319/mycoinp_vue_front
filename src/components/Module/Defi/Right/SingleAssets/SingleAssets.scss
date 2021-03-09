@@ -10,8 +10,10 @@ table {
                 >div {
                     text-align: right;
                     &:last-of-type {
+                        @include media('<tablet') {
+                            color: $FontColorIvory;
+                        }
                         font-size: 13rem;
-                        color: $FontColorIvory;
                         margin-top: 10rem;
                         >s {
                             top: 0;

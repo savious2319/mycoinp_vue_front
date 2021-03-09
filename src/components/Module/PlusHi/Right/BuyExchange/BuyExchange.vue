@@ -20,21 +20,21 @@
   <tbody>
     <tr class="bookmark">
       <td>
-        <strong class="rise">Hi</strong>
+        <strong class="grean">Hi</strong>
         <strong>Huobi Global</strong>
       </td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
-      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
+      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr>
       <td>
-        <strong class="fall">Lo</strong>
+        <strong class="orange">Lo</strong>
         <strong>Huobi Global</strong>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
+      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr class="bookmark">
       <td>
@@ -43,7 +43,7 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
-      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
+      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr>
       <td>
@@ -52,7 +52,7 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="fall realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
+      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
     <tr class="not">
       <td colspan="4">Add Your Portfolio ...</td>

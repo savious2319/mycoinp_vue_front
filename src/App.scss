@@ -49,6 +49,7 @@
             position: relative;
             height: calc(100vh - 46rem - env(safe-area-inset-bottom));
             overflow-y: auto;
+            padding-bottom: 65rem;
         }
         >footer {
             transition: all 0.3s ease-in-out;

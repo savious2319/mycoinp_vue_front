@@ -4,7 +4,7 @@
             <h2>Total Value</h2>
             <p>
                 <em>₫</em>
-                <strong class="rise">175,580,000,000</strong>
+                <strong class="flugrean">175,580,000,000</strong>
                 <span>₿0.00000000.72</span>
             </p>
         </div>
@@ -22,18 +22,18 @@
                 <dt>Profit & Loss</dt>
                 <dd>
                     <em>₫</em>
-                    <strong class="fall">123,456,789</strong>
+                    <strong class="orange">123,456,789</strong>
                     <span>K</span>
                 </dd>
             </dl>
             <dl>
                 <dt><em>%</em>Profit </dt>
                 <dd>
-                    <strong class="fall">-10000<em>%</em></strong>
+                    <strong class="orange">-10000<em>%</em></strong>
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>Buy Value</dt>
+                <dt>Net Invest</dt>
                 <dd>
                     <em>₫</em>
                     <strong>123,456,789</strong>
@@ -41,17 +41,17 @@
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>Profit & Loss</dt>
+                <dt>Cumulative Gain</dt>
                 <dd>
                     <em>₫</em>
-                    <strong class="fall">123,456,789</strong>
+                    <strong class="orange">123,456,789</strong>
                     <span>K</span>
                 </dd>
             </dl>
             <dl v-if="isMore">
-                <dt>%Profit </dt>
+                <dt>Realized Gain</dt>
                 <dd>
-                    <strong class="fall">-10000<em>%</em></strong>
+                    <strong class="orange">-10000<em>%</em></strong>
                 </dd>
             </dl>
         </article>

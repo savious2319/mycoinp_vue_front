@@ -9,22 +9,19 @@ table {
             >td {
                 &:nth-of-type(4) {
                     >img {
-                        width: 18rem;
+                        width: 15rem;
                         vertical-align: top;
                     }
                 }
-                &:nth-of-type(5) {
-                    color: $FontColorIvory;
-                }
-                @include media('<=840rem') {
+                @include media('<=840px') {
                     &:nth-of-type(5) {
-                        font-size: 13rem;
                         color: $FontColorIvory;
+                        font-size: 13rem;
                     }
-                    &:nth-of-type(4),
-                    &:nth-of-type(5) {
-                        padding-right: 17rem;
-                    }
+                }
+                &:nth-of-type(4),
+                &:nth-of-type(5) {
+                    padding-right: 17rem;
                 }
             }
         }

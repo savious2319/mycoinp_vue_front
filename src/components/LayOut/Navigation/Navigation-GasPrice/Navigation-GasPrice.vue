@@ -40,7 +40,7 @@
                 </li>
             </ol>
             <div class="btnSet">
-                <button type="button">Cancel</button>
+                <button type="button" @click="btnLayerGas">Cancel</button>
                 <button type="button">Save Alert</button>
             </div>
         </div>

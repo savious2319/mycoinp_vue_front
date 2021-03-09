@@ -5,7 +5,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
-    min-height: 510rem;
     >.tit {
         @include displayflex(row, center, flex-start, unset);
         font-size: 13rem;
@@ -82,7 +81,7 @@
             color: $FontColorInactive;
         }
         >.ps {
-            height: 300rem !important;
+            height: 200rem !important;
             .list {
                 padding: 10rem 0;
                 >a {
