@@ -72,7 +72,7 @@ section {
                 }
                 &.btnClear {
                     @include icon(30rem, 30rem, 'ico_search_clear-2.png');
-                    background-size: 10rem auto;
+                    background-size: 12rem auto;
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -94,6 +94,11 @@ section {
         @include displayflex(column, flex-start, flex-start, unset);
         padding-bottom: 20rem;
         border-bottom: 1rem solid #e5e5e5;
+        @include media('<desktop') {
+            width: calc(100vw - 32rem);
+            margin-left: auto;
+            margin-right: auto;
+        }
         >h2 {
             font-size: 30rem;
             font-weight: 500;
@@ -108,11 +113,16 @@ section {
         }
     }
     >article {
-        margin-top: 25rem;
+        margin-top: 20rem;
         font-size: 16rem;
         line-height: 1.56;
         letter-spacing: -0.32rem;
         color: #343434;
+        @include media('<desktop') {
+            width: calc(100vw - 32rem);
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     >.btnReturn {
         @include displayflex(row, center, center, unset);

@@ -41,6 +41,8 @@
     >p {
         margin-top: 13rem;
         font-size: 13rem;
-        color: $FontColorIvory;
+        >a {
+            color: $FontColorIvory;
+        }
     }
 }

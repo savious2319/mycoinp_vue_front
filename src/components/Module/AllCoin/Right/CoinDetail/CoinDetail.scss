@@ -79,8 +79,10 @@
             &:first-of-type {
                 @include displayflex(row, center, flex-start, unset);
                 font-size: 13rem;
-                color: $FontColorIvory;
                 font-weight: 300;
+                >a {
+                    color: $FontColorIvory;
+                }
             }
             &:nth-of-type(2) {
                 @include displayflex(row, center, center, unset);

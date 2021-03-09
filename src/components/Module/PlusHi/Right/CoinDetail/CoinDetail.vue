@@ -14,7 +14,7 @@
             </dl>
         </div>
         <ul>
-            <li>https://bitcoin.org</li>
+            <li><a href="https://bitcoin.org" target="_blank">https://bitcoin.org</a></li>
             <li>
                 <span><em>₫</em>123,456,78</span>
                 <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>

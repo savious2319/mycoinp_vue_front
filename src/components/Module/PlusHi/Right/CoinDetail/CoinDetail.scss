@@ -42,6 +42,7 @@
                     @include displayflex(row, flex-start, flex-start, unset);
                     font-size: 15rem;
                     grid-area: ddFirst;
+                    font-weight: 500;
                 }
                 &:last-of-type {
                     @include displayflex(row, center, flex-start, unset);
@@ -85,8 +86,10 @@
             &:first-of-type {
                 @include displayflex(row, center, flex-start, unset);
                 font-size: 13rem;
-                color: $FontColorIvory;
                 font-weight: 300;
+                >a {
+                    color: $FontColorIvory;
+                }
             }
             &:nth-of-type(2) {
                 @include displayflex(row, center, center, unset);
@@ -130,6 +133,9 @@
             &:last-of-type {
                 @include displayflex(row, center, flex-end, unset);
                 color: $FontColorGreen;
+                >span {
+                    font-size: 17rem;
+                }
                 @include symbol {
                     top: 1rem;
                 }

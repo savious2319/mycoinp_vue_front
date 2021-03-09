@@ -580,8 +580,9 @@ $FontColorReturn:#666;
 
 @mixin list($stickyTop, $grid-area, $grid-template-columns, $grid-template-areas) {
     .btnBookmark {
+        margin-right: 5rem;
         >svg {
-            font-size: 17rem;
+            font-size: 18rem;
             color: $FontColorGray;
         }
         >span {
@@ -897,6 +898,14 @@ $FontColorReturn:#666;
             &.lower {
                 background-color: $BgColorSidemenuBorder;
             }
+            &.hi,
+            &.lo {
+                background-color: #0f0f18;
+                &:hover,
+                &:active {
+                    background-color: $BgColorSidemenuBorder;
+                }
+            }
             >td {
                 @for $i from 1 to 10 {
                     &:nth-of-type(#{$i}) {
@@ -998,6 +1007,19 @@ $FontColorReturn:#666;
         font-size: 13rem;
         >img {
             width: 18rem;
+        }
+        >b {
+            font-size: 18rem;
+            font-weight: 500;
+        }
+        >svg {
+            font-size: 18rem;
+            &.off {
+                color: $FontColorGray;
+            }
+            &.on {
+                color: $FontColorAmountUnit;
+            }
         }
     }
     >dd {

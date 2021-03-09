@@ -4,6 +4,11 @@ $grid-template-columns:auto 20% 20% 25%;
 $grid-template-areas:( 'item1 item2 item3 item4' 'item1 item2 item3 item5');
 table {
     @include list(0, $interval, $grid-template-columns, $grid-template-areas);
+    @include media('<=840px') {
+        >thead>tr {
+            grid-row-gap: 0 !important;
+        }
+    }
     >tbody {
         >tr {
             >td {

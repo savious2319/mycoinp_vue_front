@@ -3,16 +3,12 @@
         <div class="coinName">
             <dl>
                 <dt>
-                    <button type="button" class="btnBookmark">
-                        <i class="fas fa-star"></i>
-                        <span>bookmark</span>
-                    </button>           
                     <img src="@/assets/img/ico_coin.png" alt="">
                 </dt>
                 <dd>XZC</dd>
             </dl>
         </div>
-        <p>https://bitcoin.org</p>
+        <p><a href="https://bitcoin.org" target="_blank">https://bitcoin.org</a></p>
     </div>
 </template>
 

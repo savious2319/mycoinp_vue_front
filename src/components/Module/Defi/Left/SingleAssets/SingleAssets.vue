@@ -19,7 +19,7 @@
           </button>
         </span>
       </th>
-      <th><button type="button" class="thSort up"><em>%</em>APY</button></th>
+      <th><button type="button" class="thSort up">APY</button></th>
       <th><button type="button" class="thSort up"><em>%</em>APR</button></th>
     </tr>
   </thead>
@@ -85,6 +85,8 @@
   <div class="mobileDetail" v-if="isMobile.wrap">
       <SubHeader title="Defi Detail" @MobileDetailHide="MobileDetailHide"/>
       <div class="sectionRight" v-on:scroll.passive="handleScrollMobile">
+          <CryptocurrencyRightAdvertisement/>
+          <DefiRightCoinDetail/>
           <DefiRightSingleAssets v-bind:container="isMobile"/>
       </div>
   </div>

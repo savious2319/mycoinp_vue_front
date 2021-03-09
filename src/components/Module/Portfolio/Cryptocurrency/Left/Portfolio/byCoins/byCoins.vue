@@ -39,7 +39,7 @@
         <td><em>₫</em>123,456,78<i>K</i></td>
         <td class="flugrean">
           +10000<s>%</s>
-          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">정렬</button>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
       </tr>
       <tr class="not" v-if="isTradingview">

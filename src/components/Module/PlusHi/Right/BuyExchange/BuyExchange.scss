@@ -31,9 +31,27 @@ table {
                     }
                 }
                 &:first-of-type {
+                    >b {
+                        font-weight: 500;
+                        width: 18rem;
+                        display: inline-block;
+                        margin-right: 5rem;
+                    }
+                    >.fa-star {
+                        font-size: 18rem;
+                        vertical-align: top;
+                        margin-right: 5rem;
+                        &.off {
+                            color: $FontColorGray;
+                        }
+                        &.on {
+                            color: $FontColorAmountUnit;
+                        }
+                    }
                     >img {
                         width: 18rem;
                         vertical-align: top;
+                        margin-right: 5rem;
                     }
                     >strong {
                         font-weight: 500;
@@ -74,6 +92,9 @@ table {
                     }
                     @include media('<=840px') {
                         padding-right: 20rem;
+                        position: initial;
+                        font-size: 13rem;
+                        color: $FontColorIvory;
                     }
                 }
             }

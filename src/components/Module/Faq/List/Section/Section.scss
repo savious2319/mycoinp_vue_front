@@ -84,9 +84,10 @@ section {
                 >s {
                     @include icon(20rem, 20rem, 'ico_q.png');
                     font-size: 0;
+                    background-size: 100% auto;
                 }
                 >svg {
-                    font-size: 13rem;
+                    font-size: 19rem;
                     color: #999ba4;
                     margin-top: 3rem;
                 }
@@ -108,6 +109,8 @@ section {
                 >div {
                     color: $FontColorFaq;
                     padding-left: 7rem;
+                    font-size: 14rem;
+                    line-height: 25rem;
                 }
             }
         }

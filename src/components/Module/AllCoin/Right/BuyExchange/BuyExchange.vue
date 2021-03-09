@@ -18,40 +18,40 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark">
+    <tr class="hi">
       <td>
-        <strong class="grean">Hi</strong>
+        <b class="grean">Hi</b>
         <strong>Huobi Global</strong>
       </td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
-      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort" @click="isLower = !isLower" :class="{'up': isLower}">정렬</button></td>
+      <td>-100<s>%</s> <button type="button" class="tdSort" @click="isLower = !isLower" :class="{'up': isLower}">열기</button></td>
     </tr>
     <!-- <template> -->
     <tr class="lower" v-if="isLower">
       <td></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="orange realTime">-100<s>%</s></td>
+      <td>-100<s>%</s></td>
     </tr>
     <!-- </template> -->
-    <tr>
+    <tr class="lo">
       <td>
-        <strong class="orange">Lo</strong>
+        <b class="orange">Lo</b>
         <strong>Huobi Global</strong>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort down">정렬</button></td>
+      <td>-100<s>%</s> <button type="button" class="tdSort">열기</button></td>
     </tr>
     <tr class="bookmark">
       <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
+        <i class="fas fa-star on"></i>
         <strong>Huobi Global</strong>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
-      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort down">정렬</button></td>
+      <td>-100<s>%</s> <button type="button" class="tdSort">열기</button></td>
     </tr>
     <tr>
       <td>
@@ -60,7 +60,7 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort down">정렬</button></td>
+      <td>-100<s>%</s> <button type="button" class="tdSort down">열기</button></td>
     </tr>
   </tbody>
 </table>

@@ -12,7 +12,7 @@
                 <dd>XZC</dd>
             </dl>
         </div>
-        <p>https://bitcoin.org</p>
+        <p><a href="https://bitcoin.org" target="_blank">https://bitcoin.org</a></p>
     </div>
 </template>
 

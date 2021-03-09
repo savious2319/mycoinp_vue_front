@@ -35,12 +35,15 @@
             >dd {
                 margin-left: 10rem;
                 font-size: 15rem;
+                font-weight: 500;
             }
         }
     }
     >p {
         margin-top: 13rem;
         font-size: 13rem;
-        color: $FontColorIvory;
+        >a {
+            color: $FontColorIvory;
+        }
     }
 }

@@ -24,10 +24,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark">
+    <tr class="hi">
       <td>
         <dl class="col3">
-          <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+          <dt><b class="grean">Hi</b></dt>
           <dd>XZC</dd>
           <dd>ZCoin</dd>
         </dl>
@@ -51,10 +51,10 @@
         </div>
       </td>
     </tr>
-    <tr>
+    <tr class="lo">
       <td>
         <dl class="col3">
-          <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+          <dt><b class="orange">Lo</b></dt>
           <dd>XZC</dd>
           <dd>ZCoin</dd>
         </dl>

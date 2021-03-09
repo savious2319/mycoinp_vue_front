@@ -21,8 +21,7 @@
       </th>
       <th>#Coins</th>
       <th><em>$</em>Vol</th>
-      <th>Top</th>
-      <th><em>$</em>Vol</th>
+      <th colspan="2">Top <em>$</em>Vol</th>
     </tr>
   </thead>
   <tbody>
@@ -36,8 +35,8 @@
       </td>
       <td>313</td>
       <td><em>₫</em>456<i>K</i></td>
-      <td><img src="@/assets/img/ico_coin.png" alt=""> BTC</td>
-      <td><em>₫</em>456,78<i>K</i></td>
+      <td><img src="@/assets/img/ico_coin.png" alt=""> BTC :</td>
+      <td><em>₫</em>456<i>K</i></td>
     </tr>
   </tbody>
 </table>

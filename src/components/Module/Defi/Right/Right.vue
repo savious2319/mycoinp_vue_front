@@ -2,6 +2,7 @@
   <CryptocurrencyRightAdvertisement/>
   <DefiRightCoinDetail/>
   <DefiRightSingleAssets/>
+  <!-- <DefiRightMultiAssets/> -->
   <BtnTopRight v-if="!container.scrollDown"/>
 </template>
 

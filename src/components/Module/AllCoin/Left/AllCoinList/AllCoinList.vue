@@ -48,7 +48,7 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td>
         <span class="grean" @click="isMarketcap = !isMarketcap">+10000<s>%</s></span>
-        <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">정렬</button>
+        <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         <div class="marketcap" v-if="isMarketcap">
           <dl @click="MobileDetailShow">
             <dt>Max:</dt>
