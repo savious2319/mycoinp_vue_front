@@ -3,17 +3,21 @@
     @include media('<desktop') {
         margin-left: auto;
     }
-    >button {
+    >span {
         @include displayflex(row, center, flex-start, unset);
         font-weight: 500;
         color: $BgColorWhite;
-        >span {
+        >em {
+            font-style: normal;
             color: $FontColorRise;
             margin: 0 5rem;
         }
-        >svg {
+        >button {
             font-size: 15rem;
             margin-left: 10rem;
+            >svg {
+                color: $BgColorWhite;
+            }
         }
         @include media('>=desktop') {
             font-size: 14rem;

@@ -5,7 +5,8 @@
 		<strong>XZC</strong>
 		<span>ZCoin</span>
 	</p>
-	<article>
+	<textarea v-if="isMemo"></textarea>
+	<article v-if="!isMemo" @click="isMemo = !isMemo">
 		<i class="fas fa-edit"/>
 		<p>Please take note if necessary.</p>
 	</article>
@@ -18,6 +19,12 @@
 
 <script>
 export default {
+    data () {
+        return {
+            isMemo : false,
+        }
+    },
+
 	methods: {
 		cancel: function(){
 			this.$emit("cancel");

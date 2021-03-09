@@ -123,7 +123,7 @@ button {
     }
     @include media('>=desktop') {
         bottom: 53rem;
-        left: 170rem;
+        left: 250rem;
     }
     @include media('>=tablet', '<desktop') {
         top: 45rem;

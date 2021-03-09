@@ -1,6 +1,6 @@
 <template>
     <span class="btn_gasprice">
-        <button type="button" @click="btnLayerGas">ETH Gas <span>155</span> Gwei <i class="fas fa-cog"/></button>
+        <span>ETH Gas <em>155</em> Gwei <button type="button" @click="btnLayerGas"><i class="fas fa-cog"/></button></span>
         <div class="layer_gas" v-if="isLayerGas">
             <p class="tit">Eth Das Price Alerts Setting</p>
             <p class="alert">Alert me when ETH Gas Price crosses</p>
