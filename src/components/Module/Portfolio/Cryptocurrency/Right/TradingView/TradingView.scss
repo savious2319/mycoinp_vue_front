@@ -1,65 +1,12 @@
 @import "@/assets/scss/function.scss";
 .tradingview {
-    background-color: $BgColorHeaderFooter;
-    margin-top: 4.5rem;
-    position: relative;
-    >.btnSet {
-        @include displayflex(row, center, flex-start, wrap);
-        padding: 0 15rem;
-        height: 35rem;
-        >strong {
-            font-size: 14rem;
-            font-weight: 500;
+    @include tradingview {
+        margin-top: 4.5rem;
+        >.chart {
+            height: 240rem;
         }
-        >label {
-            font-size: 13rem;
-            color: $FontColorGray;
-            margin-left: 15rem;
-            >input[type=radio] {
-                width: 12rem;
-                height: 12rem;
-                appearance: none;
-                background-image: url(#{$img}/radio-trad2-off.png);
-                background-repeat: no-repeat;
-                background-size: 100% auto;
-                margin-right: 5rem;
-                &:checked {
-                    background-image: url(#{$img}/radio-trad2-on.png);
-                }
-            }
+        >.mask {
+            @include mask;
         }
-        >button {
-            font-size: 14rem;
-            font-weight: normal;
-            color: $FontColorGray;
-            margin-left: 10rem;
-            &.add {
-                font-size: 0;
-                width: 17rem;
-                height: 15rem;
-                background-image: url(#{$img}/btn-tradingview-indi.png);
-                background-repeat: no-repeat;
-                background-size: 100% auto;
-            }
-            &.fullscrean {
-                font-size: 0;
-                width: 13rem;
-                height: 13rem;
-                background-image: url(#{$img}/btn-tradingview-big.png);
-                background-repeat: no-repeat;
-                background-size: 100% auto;
-            }
-        }
-        >span {
-            margin-left: auto;
-            font-size: 10rem;
-            color: $FontColorGray;
-        }
-    }
-    >.chart {
-        height: 240rem;
-    }
-    >.mask {
-        @include mask;
     }
 }

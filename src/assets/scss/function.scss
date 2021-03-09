@@ -101,7 +101,7 @@ $FontColorReturn:#666;
             >span {
                 font-weight: 500;
                 @if $size=='mobile' {
-                    &:last-of-type {
+                    &+span {
                         margin-top: 5rem;
                     }
                 }
@@ -905,12 +905,23 @@ $FontColorReturn:#666;
             }
             &.not {
                 >td {
-                    text-align: center;
-                    color: #454753;
-                    font-size: 15rem;
-                    font-weight: 500;
-                    padding: 200rem 0;
-                    width: 100%;
+                    >div {
+                        &:not(.tradingview) {
+                            text-align: center;
+                            color: #454753;
+                            font-size: 15rem;
+                            font-weight: 500;
+                            padding: 200rem 0;
+                            width: 100%;
+                        }
+                        &.tradingview {
+                            @include tradingview {
+                                >.chart {
+                                    height: 200rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             &:not(.not) {
@@ -1131,5 +1142,64 @@ $FontColorReturn:#666;
     vertical-align: top;
     text-decoration: none;
     position: relative;
+    @content;
+}
+
+@mixin tradingview {
+    background-color: $BgColorHeaderFooter;
+    position: relative;
+    >.btnSet {
+        @include displayflex(row, center, flex-start, wrap);
+        padding: 0 15rem;
+        height: 35rem;
+        >strong {
+            font-size: 14rem;
+            font-weight: 500;
+        }
+        >label {
+            font-size: 13rem;
+            color: $FontColorGray;
+            margin-left: 15rem;
+            >input[type=radio] {
+                width: 12rem;
+                height: 12rem;
+                appearance: none;
+                background-image: url(#{$img}/radio-trad2-off.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                margin-right: 5rem;
+                &:checked {
+                    background-image: url(#{$img}/radio-trad2-on.png);
+                }
+            }
+        }
+        >button {
+            font-size: 14rem;
+            font-weight: normal;
+            color: $FontColorGray;
+            margin-left: 10rem;
+            &.add {
+                font-size: 0;
+                width: 17rem;
+                height: 15rem;
+                background-image: url(#{$img}/btn-tradingview-indi.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
+            &.fullscrean {
+                font-size: 0;
+                width: 13rem;
+                height: 13rem;
+                background-image: url(#{$img}/btn-tradingview-big.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        >span {
+            margin-left: auto;
+            font-size: 10rem;
+            color: $FontColorGray;
+        }
+    }
     @content;
 }

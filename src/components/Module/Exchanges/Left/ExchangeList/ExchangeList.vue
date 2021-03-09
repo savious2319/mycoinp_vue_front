@@ -37,7 +37,7 @@
       <td>313</td>
       <td><em>₫</em>456<i>K</i></td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> BTC</td>
-      <td><em>₫</em>456,78<i>K</i> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
+      <td><em>₫</em>456,78<i>K</i></td>
     </tr>
   </tbody>
 </table>

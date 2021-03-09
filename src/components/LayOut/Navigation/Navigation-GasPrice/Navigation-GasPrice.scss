@@ -8,6 +8,7 @@
         font-weight: 500;
         color: $BgColorWhite;
         >em {
+            font-weight: 500;
             font-style: normal;
             color: $FontColorFluGreen;
             margin: 0 5rem;
@@ -24,6 +25,7 @@
             margin-top: 40rem;
         }
         @include media('<desktop') {
+            font-size: 12rem;
             margin-left: auto;
             margin-right: 15rem;
             border-radius: 2rem;
