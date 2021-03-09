@@ -888,9 +888,6 @@
         </div>
       </td>
     </tr>
-    <tr class="not">
-      <td colspan="3">Add Your Portfolio ...</td>
-    </tr>
   </tbody>
 </table>
 </template>

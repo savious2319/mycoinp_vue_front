@@ -22,9 +22,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -42,9 +42,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -62,9 +62,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -82,9 +82,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -102,9 +102,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -122,9 +122,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -142,9 +142,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -162,9 +162,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -182,9 +182,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -202,9 +202,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -222,9 +222,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -242,9 +242,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -262,9 +262,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -282,9 +282,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -302,9 +302,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -322,9 +322,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -342,9 +342,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -362,9 +362,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -382,9 +382,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -402,9 +402,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -422,9 +422,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -442,9 +442,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -462,9 +462,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -482,9 +482,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -502,9 +502,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -522,9 +522,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -542,9 +542,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -562,9 +562,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -582,9 +582,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -602,9 +602,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -622,9 +622,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -642,9 +642,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -662,9 +662,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -682,9 +682,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -702,9 +702,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -722,9 +722,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -742,9 +742,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -762,9 +762,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -782,9 +782,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -802,9 +802,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -822,9 +822,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -842,9 +842,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -862,9 +862,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -882,9 +882,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -902,9 +902,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -922,9 +922,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -942,9 +942,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -962,9 +962,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -982,9 +982,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1002,9 +1002,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1022,9 +1022,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1042,9 +1042,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1062,9 +1062,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1082,9 +1082,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1102,9 +1102,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1122,9 +1122,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1142,9 +1142,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1162,9 +1162,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1182,9 +1182,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1202,9 +1202,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1222,9 +1222,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1242,9 +1242,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1262,9 +1262,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1282,9 +1282,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1302,9 +1302,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1322,9 +1322,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1342,9 +1342,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1362,9 +1362,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1382,9 +1382,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1402,9 +1402,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1422,9 +1422,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1442,9 +1442,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1462,9 +1462,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1482,9 +1482,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1502,9 +1502,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1522,9 +1522,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1542,9 +1542,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1562,9 +1562,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1582,9 +1582,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1602,9 +1602,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1622,9 +1622,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1642,9 +1642,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1662,9 +1662,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1682,9 +1682,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1702,9 +1702,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1722,9 +1722,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1742,9 +1742,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>
@@ -1762,9 +1762,9 @@
           <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
         </td>
       </tr>
-      <tr @click="MobileDetailShow">
+      <tr>
         <td>
-          <dl>
+          <dl @click="MobileDetailShow">
             <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
             <dd>XZC</dd>
             <dt>4</dt>

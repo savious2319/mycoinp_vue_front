@@ -4,55 +4,12 @@ $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
     @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
+    >thead>tr>th {
+        padding-top: 0;
+    }
     >tbody {
         >tr {
             >td {
-                .marketcap {
-                    width: 200rem;
-                    text-align: left;
-                    background-color: $BgColorWhite;
-                    border-radius: 5rem;
-                    padding: 10rem;
-                    position: absolute;
-                    top: 40rem;
-                    right: 0;
-                    z-index: 4;
-                    line-height: 1.21;
-                    &::after {
-                        border-top: 0rem solid transparent;
-                        border-left: 5rem solid transparent;
-                        border-right: 5rem solid transparent;
-                        border-bottom: 5rem solid $BgColorWhite;
-                        content: "";
-                        position: absolute;
-                        top: -5rem;
-                        right: 20rem;
-                    }
-                    >dl {
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        >* {
-                            font-size: 15rem;
-                            color: $FontColorContent;
-                        }
-                        >dd {
-                            text-align: right;
-                        }
-                    }
-                    >p {
-                        margin-top: 20rem;
-                        >span {
-                            color: $FontColorFaq;
-                            font-size: 13rem;
-                            display: block;
-                        }
-                        >a {
-                            font-size: 14rem;
-                            color: #3b33df;
-                            text-decoration: underline;
-                        }
-                    }
-                }
                 &:first-of-type {
                     >img {
                         width: 18rem;

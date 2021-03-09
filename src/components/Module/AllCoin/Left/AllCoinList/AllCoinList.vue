@@ -26,9 +26,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -46,11 +46,27 @@
       </td>
       <td class="orange realTime">-10000<s>%</s></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
+      <td class="grean" @click="isMarketcap = !isMarketcap">
+        +10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button>
+        <div class="marketcap" v-if="isMarketcap">
+          <dl @click="MobileDetailShow">
+            <dt>Max:</dt>
+            <dd>21,000,000</dd>
+            <dt>Total:</dt>
+            <dd>18,559,743</dd>
+            <dt>Circulation:</dt>
+            <dd>18,599,743</dd>
+          </dl>
+          <p>
+            <span>Source</span>
+            <a href="#none">https://blockchain.info</a>
+          </p>
+        </div>
+      </td>
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -65,9 +81,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -89,7 +105,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -104,9 +120,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -128,7 +144,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -143,9 +159,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -167,7 +183,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -182,9 +198,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -206,7 +222,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -221,9 +237,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -245,7 +261,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -260,9 +276,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -284,7 +300,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -299,9 +315,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -323,7 +339,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -338,9 +354,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -362,7 +378,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -377,9 +393,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -401,7 +417,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -416,9 +432,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -440,7 +456,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -455,9 +471,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -479,7 +495,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -494,9 +510,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -518,7 +534,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -533,9 +549,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -557,7 +573,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -572,9 +588,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -596,7 +612,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -611,9 +627,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -635,7 +651,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -650,9 +666,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -674,7 +690,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -689,9 +705,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -713,7 +729,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -728,9 +744,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -752,7 +768,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -767,9 +783,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -791,7 +807,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -806,9 +822,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -830,7 +846,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -845,9 +861,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -869,7 +885,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -884,9 +900,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -908,7 +924,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -923,9 +939,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -947,7 +963,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -962,9 +978,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -986,7 +1002,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1001,9 +1017,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1025,7 +1041,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1040,9 +1056,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1064,7 +1080,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1079,9 +1095,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1103,7 +1119,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1118,9 +1134,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1142,7 +1158,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1157,9 +1173,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1181,7 +1197,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1196,9 +1212,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1220,7 +1236,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1235,9 +1251,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1259,7 +1275,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1274,9 +1290,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1298,7 +1314,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1313,9 +1329,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1337,7 +1353,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1352,9 +1368,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1376,7 +1392,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1391,9 +1407,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1415,7 +1431,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1430,9 +1446,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1454,7 +1470,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1469,9 +1485,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1493,7 +1509,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1508,9 +1524,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1532,7 +1548,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1547,9 +1563,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1571,7 +1587,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1586,9 +1602,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1610,7 +1626,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1625,9 +1641,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1649,7 +1665,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1664,9 +1680,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1688,7 +1704,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1703,9 +1719,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1727,7 +1743,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1742,9 +1758,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1766,7 +1782,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1781,9 +1797,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1805,7 +1821,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1820,9 +1836,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1844,7 +1860,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1859,9 +1875,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1883,7 +1899,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1898,9 +1914,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1922,7 +1938,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1937,9 +1953,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -1961,7 +1977,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -1976,9 +1992,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2000,7 +2016,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2015,9 +2031,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2039,7 +2055,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2054,9 +2070,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2078,7 +2094,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2093,9 +2109,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2117,7 +2133,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2132,9 +2148,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2156,7 +2172,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2171,9 +2187,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2195,7 +2211,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2210,9 +2226,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2234,7 +2250,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2249,9 +2265,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2273,7 +2289,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2288,9 +2304,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2312,7 +2328,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2327,9 +2343,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2351,7 +2367,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2366,9 +2382,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2390,7 +2406,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2405,9 +2421,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2429,7 +2445,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2444,9 +2460,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2468,7 +2484,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2483,9 +2499,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2507,7 +2523,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2522,9 +2538,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2546,7 +2562,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2561,9 +2577,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2585,7 +2601,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2600,9 +2616,9 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt>
             <button type="button" class="btnBookmark active">
               <i class="fas fa-star"></i>
@@ -2624,7 +2640,7 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <dl>
+        <dl @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dt>4</dt>
@@ -2638,9 +2654,6 @@
       <td class="orange realTime">-10000<s>%</s></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="grean">+10000<s>%</s> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
-    </tr>
-    <tr class="not">
-      <td colspan="5">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>
@@ -2661,6 +2674,7 @@ const OFFSET = 60;
 export default {
   data () {
 		return {
+      isMarketcap: false,
       searchText: "",
       isMobile : {
           wrap: false,

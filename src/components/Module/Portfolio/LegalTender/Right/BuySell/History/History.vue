@@ -25,9 +25,6 @@
           <td>Nonghyub</td>
           <td><em>$</em>1,456,78</td>
         </tr>
-        <tr class="not">
-          <td colspan="6">Add Your Portfolio ...</td>
-        </tr>
       </tbody>
     </table>
   </article>

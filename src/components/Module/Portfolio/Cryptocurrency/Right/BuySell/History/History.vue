@@ -819,9 +819,6 @@
           <td><em>₫</em>123,456,78<i>K</i></td>
           <td>123,456,78<i>K</i></td>
         </tr>
-        <tr class="not">
-          <td colspan="6">Add Your Portfolio ...</td>
-        </tr>
       </tbody>
     </table>
   </article>

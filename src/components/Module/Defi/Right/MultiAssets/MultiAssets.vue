@@ -61,9 +61,6 @@
       <td>+</td>
       <td>16.65<s>%</s></td>
     </tr>
-    <tr class="not">
-      <td colspan="4">Add Your Portfolio ...</td>
-    </tr>
   </tbody>
 </table>
 </template>

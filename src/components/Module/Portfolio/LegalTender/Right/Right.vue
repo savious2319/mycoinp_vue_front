@@ -1,7 +1,7 @@
 <template>
   <LegalTenderRightAdvertisement/>
   <LegalTenderRightPortfolioDetail/>
-  <LegalTenderRightTradingView/>
+  <CryptocurrencyRightTradingView/>
   <div class="tabContents">
     <div class="tabs">
       <button type="button">Official Messages</button>

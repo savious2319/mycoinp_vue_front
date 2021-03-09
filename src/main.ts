@@ -141,7 +141,6 @@ import LegalTenderRightBuySellWithdraw from '@/components/Module/Portfolio/Legal
 import LegalTenderRightBuySellHistory from '@/components/Module/Portfolio/LegalTender/Right/BuySell/History/History.vue';
 import LegalTenderRightOfficialMessages from '@/components/Module/Portfolio/LegalTender/Right/OfficialMessages/OfficialMessages.vue';
 import LegalTenderRightPortfolioDetail from '@/components/Module/Portfolio/LegalTender/Right/PortfolioDetail/PortfolioDetail.vue';
-import LegalTenderRightTradingView from '@/components/Module/Portfolio/LegalTender/Right/TradingView/TradingView.vue';
 
 app.component('LegalTender', LegalTender)
 
@@ -156,7 +155,6 @@ app.component('LegalTenderLeftPortfoliobyDates', LegalTenderLeftPortfoliobyDates
 app.component('LegalTenderRight', LegalTenderRight)
 app.component('LegalTenderRightAdvertisement', LegalTenderRightAdvertisement)
 app.component('LegalTenderRightPortfolioDetail', LegalTenderRightPortfolioDetail)
-app.component('LegalTenderRightTradingView', LegalTenderRightTradingView)
 app.component('LegalTenderRightOfficialMessages', LegalTenderRightOfficialMessages)
 app.component('LegalTenderRightBuySell', LegalTenderRightBuySell)
 app.component('LegalTenderRightBuySellDeposit', LegalTenderRightBuySellDeposit)
@@ -171,7 +169,6 @@ import AllCoinLeftAllCoinList from '@/components/Module/AllCoin/Left/AllCoinList
 
 import AllCoinRight from '@/components/Module/AllCoin/Right/Right.vue';
 import AllCoinRightCoinDetail from '@/components/Module/AllCoin/Right/CoinDetail/CoinDetail.vue';
-import AllCoinRightTradingView from '@/components/Module/AllCoin/Right/TradingView/TradingView.vue';
 import AllCoinRightBuyExchange from '@/components/Module/AllCoin/Right/BuyExchange/BuyExchange.vue';
 import AllCoinRightOfficialMessages from '@/components/Module/AllCoin/Right/OfficialMessages/OfficialMessages.vue';
 
@@ -180,7 +177,6 @@ app.component('AllCoinLeft', AllCoinLeft)
 app.component('AllCoinLeftAllCoinList', AllCoinLeftAllCoinList)
 app.component('AllCoinRight', AllCoinRight)
 app.component('AllCoinRightCoinDetail', AllCoinRightCoinDetail)
-app.component('AllCoinRightTradingView', AllCoinRightTradingView)
 app.component('AllCoinRightBuyExchange', AllCoinRightBuyExchange)
 app.component('AllCoinRightOfficialMessages', AllCoinRightOfficialMessages)
 /** AllCoin End */
@@ -231,7 +227,6 @@ import PlusHiLeftLow from '@/components/Module/PlusHi/Left/Low/Low.vue';
 
 import PlusHiRight from '@/components/Module/PlusHi/Right/Right.vue';
 import PlusHiRightCoinDetail from '@/components/Module/PlusHi/Right/CoinDetail/CoinDetail.vue';
-import PlusHiRightTradingView from '@/components/Module/PlusHi/Right/TradingView/TradingView.vue';
 import PlusHiRightBuyExchange from '@/components/Module/PlusHi/Right/BuyExchange/BuyExchange.vue';
 import PlusHiRightOfficialMessages from '@/components/Module/PlusHi/Right/OfficialMessages/OfficialMessages.vue';
 
@@ -241,7 +236,6 @@ app.component('PlusHiLeftHigh', PlusHiLeftHigh)
 app.component('PlusHiLeftLow', PlusHiLeftLow)
 app.component('PlusHiRight', PlusHiRight)
 app.component('PlusHiRightCoinDetail', PlusHiRightCoinDetail)
-app.component('PlusHiRightTradingView', PlusHiRightTradingView)
 app.component('PlusHiRightBuyExchange', PlusHiRightBuyExchange)
 app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
 /** PlusHi End */

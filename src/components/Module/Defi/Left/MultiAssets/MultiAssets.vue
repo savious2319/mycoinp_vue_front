@@ -26,7 +26,7 @@
   </thead>
   <tbody>
     <tr class="bookmark">
-      <td>
+      <td @click="MobileDetailShow">
         <img src="@/assets/img/ico_coin.png" alt="">
         <strong>busd + ETH</strong>
       </td>
@@ -34,35 +34,14 @@
       <td>+</td>
       <td>16.65<s>%</s></td>
     </tr>
-    <tr @click="MobileDetailShow">
-      <td>
+    <tr>
+      <td @click="MobileDetailShow">
         <img src="@/assets/img/ico_coin.png" alt="">
         <strong>busd + ETH</strong>
       </td>
       <td>16.65<s>%</s></td>
       <td>+</td>
       <td>16.65<s>%</s></td>
-    </tr>
-    <tr class="bookmark">
-      <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
-      </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
-    </tr>
-    <tr class="bookmark">
-      <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
-      </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
-    </tr>
-    <tr class="not">
-      <td colspan="4">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>

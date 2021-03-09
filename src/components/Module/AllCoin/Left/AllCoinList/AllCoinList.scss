@@ -7,6 +7,64 @@ table {
     >tbody {
         >tr {
             >td {
+                &:last-of-type {
+                    cursor: pointer;
+                }
+                >.marketcap {
+                    width: 200rem;
+                    text-align: left;
+                    background-color: $BgColorWhite;
+                    border-radius: 5rem;
+                    padding: 10rem;
+                    position: absolute;
+                    @include media('<=840px') {
+                        top: 55rem;
+                        right: 10rem;
+                    }
+                    @include media('>840px') {
+                        top: 40rem;
+                        right: 0;
+                    }
+                    z-index: 4;
+                    line-height: 1.21;
+                    * {
+                        line-height: 1.21;
+                    }
+                    &::after {
+                        border-top: 0rem solid transparent;
+                        border-left: 5rem solid transparent;
+                        border-right: 5rem solid transparent;
+                        border-bottom: 5rem solid $BgColorWhite;
+                        content: "";
+                        position: absolute;
+                        top: -5rem;
+                        right: 20rem;
+                    }
+                    >dl {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        >* {
+                            font-size: 15rem;
+                            color: $FontColorContent;
+                        }
+                        >dd {
+                            text-align: right;
+                        }
+                    }
+                    >p {
+                        margin-top: 20rem;
+                        >span {
+                            color: $FontColorFaq;
+                            font-size: 13rem;
+                            display: block;
+                        }
+                        >a {
+                            font-size: 14rem;
+                            color: #3b33df;
+                            text-decoration: underline;
+                        }
+                    }
+                }
                 @include media('<=840px') {
                     >mark {
                         right: calc(30% + 5rem);

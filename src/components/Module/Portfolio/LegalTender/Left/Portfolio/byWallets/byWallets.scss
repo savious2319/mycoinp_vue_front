@@ -4,6 +4,9 @@ $grid-template-columns:29% 15% 28% auto;
 $grid-template-areas:( 'item1 item2 item3 item4' 'item1 item2 item5 item6');
 table {
     @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
+    >thead>tr>th {
+        padding-top: 0;
+    }
     >tbody {
         >tr {
             >td {

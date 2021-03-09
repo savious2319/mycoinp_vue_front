@@ -54,9 +54,6 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
-    <tr class="not">
-      <td colspan="4">Add Your Portfolio ...</td>
-    </tr>
   </tbody>
 </table>
   <ul>

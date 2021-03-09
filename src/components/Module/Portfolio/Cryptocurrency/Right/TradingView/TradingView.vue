@@ -7,11 +7,11 @@
       <button class="active" type="button">D</button>
       <button type="button">W</button>
       <button type="button">M</button>
-      <button class="add" type="button">add</button>
+      <button class="add" type="button" @click="btnLayerPopup">add</button>
       <span>by TradingView</span>
       <button class="fullscrean" type="button">fullscrean</button>
     </div>
-    <div class="chart" @click="btnLayerPopup">
+    <div class="chart">
       Chart
     </div>
     <popupTradingView v-if="isLayerPopup" @cancel="btnLayerPopup"/>

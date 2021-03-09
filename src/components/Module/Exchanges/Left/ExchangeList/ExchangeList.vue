@@ -26,9 +26,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark" @click="MobileDetailShow">
+    <tr class="bookmark">
       <td>
-        <dl class="col3">
+        <dl class="col3" @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
           <dd>XZC</dd>
           <dd>ZCoin</dd>
@@ -38,9 +38,6 @@
       <td><em>₫</em>456<i>K</i></td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> BTC</td>
       <td><em>₫</em>456,78<i>K</i> <button type="button" class="tdSort up" v-if="$windowWidth < 841">정렬</button></td>
-    </tr>
-    <tr class="not">
-      <td colspan="5">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>

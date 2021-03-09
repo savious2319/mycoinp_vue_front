@@ -25,23 +25,7 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td>
-        <span class="pointer" @click="isMarketcap = !isMarketcap">
-          <em>₫</em>123,456,78<i>K</i>
-        </span>
-        <div class="marketcap" v-if="isMarketcap">
-          <dl>
-            <dt>Max:</dt>
-            <dd>21,000,000</dd>
-            <dt>Total:</dt>
-            <dd>18,559,743</dd>
-            <dt>Circulation:</dt>
-            <dd>18,599,743</dd>
-          </dl>
-          <p>
-            <span>Source</span>
-            <a href="#none">https://blockchain.info</a>
-          </p>
-        </div>
+        <em>₫</em>123,456,78<i>K</i>
       </td>
       <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
@@ -54,20 +38,12 @@
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort up">정렬</button></td>
     </tr>
-    <tr class="not">
-      <td colspan="4">Add Your Portfolio ...</td>
-    </tr>
   </tbody>
 </table>
 </template>
 
 <script>
 export default {
-  data () {
-		return {
-      isMarketcap: false,
-    }
-  },
 }
 </script>
 

@@ -26,9 +26,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark" @click="MobileDetailShow">
+    <tr class="bookmark">
       <td>
-        <dl class="col3">
+        <dl class="col3" @click="MobileDetailShow">
           <dt><i class="fas fa-star"></i></dt>
           <dd>XZC</dd>
           <dd>ZCoin</dd>
@@ -39,9 +39,9 @@
       <td>6,789<i>K</i></td>
       <td class="grean">+661<s>%</s></td>
     </tr>
-    <tr @click="MobileDetailShow">
+    <tr>
       <td>
-        <dl class="col3">
+        <dl class="col3" @click="MobileDetailShow">
           <dt><i class="fas fa-star"></i></dt>
           <dd>XZC</dd>
           <dd>ZCoin</dd>
@@ -51,9 +51,6 @@
       <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
       <td>6,789<i>K</i></td>
       <td class="grean">+661<s>%</s></td>
-    </tr>
-    <tr class="not">
-      <td colspan="4">Add Your Portfolio ...</td>
     </tr>
   </tbody>
 </table>
