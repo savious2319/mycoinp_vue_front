@@ -32,7 +32,7 @@
     height: 75rem;
     background-image: url(#{$img}/btn_rg.png);
     @include media('>=desktop') {
-        left: 250rem;
+        left: 300rem;
         bottom: 42rem;
     }
     @include media('>=890px', '<desktop') {
