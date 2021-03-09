@@ -10,8 +10,8 @@
 				<i class="fas fa-search"/>
 				<span>Search</span>
 			</button>
-			<input type="text" placeholder="Search..."> 
-			<button type="button" class="btnDel">삭제</button>
+			<input type="text" v-model="popupSearchText" placeholder="Search..."> 
+			<button type="button" class="btnDel" v-if="popupSearchText.length > 0" @click="popupSearchText = ''">삭제</button>
 		</div>
 		<div class="noData">
 			No data, need to add.
@@ -48,6 +48,7 @@
 export default {
 	data () {
         return {
+			popupSearchText: "",
 			tabs:{
 				isSearchExchange: true,
 				isAddExchange: false,

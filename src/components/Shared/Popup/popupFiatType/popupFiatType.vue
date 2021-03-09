@@ -6,8 +6,8 @@
 				<i class="fas fa-search"/>
 				<span>Search</span>
 			</button>
-			<input type="text" placeholder="Search..."> 
-			<button type="button" class="btnDel">삭제</button>
+			<input type="text" v-model="popupSearchText" placeholder="Search..."> 
+			<button type="button" class="btnDel" v-if="popupSearchText.length > 0" @click="popupSearchText = ''">삭제</button>
 		</div>
 		<perfect-scrollbar>
 			<div class="currency">
@@ -23,6 +23,7 @@
 export default {
 	data () {
 		return {
+			popupSearchText: "",
 			langs:[
 				{symbol: "usd", coin_cd: "100001", mark: "$"},
 				{symbol: "usd", coin_cd: "100001", mark: "$"},

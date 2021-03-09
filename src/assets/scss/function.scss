@@ -978,7 +978,7 @@ $FontColorReturn:#666;
 @mixin coinName {
     display: grid;
     grid-template-columns: 18rem auto;
-    grid-column-gap: 10rem;
+    grid-column-gap: 16rem;
     grid-row-gap: 5rem;
     >dt {
         @include displayflex(row, center, center, unset);

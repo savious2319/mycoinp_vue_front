@@ -6,8 +6,8 @@
 				<i class="fas fa-search"/>
 				<span>Search</span>
 			</button>
-			<input type="text" placeholder="Input the coin name.. "> 
-			<button type="button" class="btnDel">삭제</button>
+			<input type="text" v-model="popupSearchText" placeholder="Input the coin name.. "> 
+			<button type="button" class="btnDel" v-if="popupSearchText.length > 0" @click="popupSearchText = ''">삭제</button>
 		</div>
 		<perfect-scrollbar>
 			<div class="list">
@@ -47,6 +47,11 @@
 
 <script>
 export default {
+	data () {
+		return {
+			popupSearchText: "",
+		}
+	},
 	methods: {
 		cancel: function(){
 			this.$emit("cancel");
