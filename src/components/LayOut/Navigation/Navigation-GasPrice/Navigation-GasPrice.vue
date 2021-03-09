@@ -7,18 +7,16 @@
             <ol class="body">
                 <li>
                     <strong>Up Price</strong>
-                    <div>
-                        <p>
-                            <span>2<em>nd</em> level</span>
-                            <input type="text" placeholder="Setting gas price">
-                            <span>Gwei</span>
-                        </p>
-                        <p>
-                            <span>1<em>st</em> level</span>
-                            <input type="text" placeholder="Setting gas price">
-                            <span>Gwei</span>
-                        </p>
-                    </div>
+                    <p>
+                        <span>2<em>nd</em> level</span>
+                        <input type="text" placeholder="Setting gas price">
+                        <span>Gwei</span>
+                    </p>
+                    <p>
+                        <span>1<em>st</em> level</span>
+                        <input type="text" placeholder="Setting gas price">
+                        <span>Gwei</span>
+                    </p>
                 </li>
                 <li>
                     <strong>Current Price </strong>
@@ -29,18 +27,16 @@
                 </li>
                 <li>
                     <strong>Down Price</strong>
-                    <div>
-                        <p>
-                            <span>2<em>nd</em> level</span>
-                            <input type="text" placeholder="Setting gas price">
-                            <span>Gwei</span>
-                        </p>
-                        <p>
-                            <span>1<em>st</em> level</span>
-                            <input type="text" placeholder="Setting gas price">
-                            <span>Gwei</span>
-                        </p>
-                    </div>
+                    <p>
+                        <span>2<em>nd</em> level</span>
+                        <input type="text" placeholder="Setting gas price">
+                        <span>Gwei</span>
+                    </p>
+                    <p>
+                        <span>1<em>st</em> level</span>
+                        <input type="text" placeholder="Setting gas price">
+                        <span>Gwei</span>
+                    </p>
                 </li>
             </ol>
             <div class="btnSet">

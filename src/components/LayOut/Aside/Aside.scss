@@ -17,6 +17,7 @@ aside {
             >a {
                 @include displayflex(row, center, flex-start, unset);
                 font-size: 13rem;
+                font-weight: 500;
                 color: $FontColorContent;
                 padding-left: 45rem;
                 height: 40rem;
