@@ -64,7 +64,7 @@
       </tr>
       <tr class="not">
         <td colspan="5">
-          <div>
+          <div class="sum">
             Add Your Portfolio ...
           </div>
         </td>

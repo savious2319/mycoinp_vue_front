@@ -62,13 +62,6 @@
           </div>
         </td>
       </tr>
-      <tr class="not">
-        <td colspan="5">
-          <div>
-            Add Your Portfolio ...
-          </div>
-        </td>
-      </tr>
     </tbody>
   </table>
 

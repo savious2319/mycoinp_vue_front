@@ -25,8 +25,16 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
-      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort down">정렬</button></td>
+      <td class="orange realTime">-100<s>%</s> <button type="button" class="tdSort" @click="isLower = !isLower" :class="{'up': isLower}">정렬</button></td>
     </tr>
+    <!-- <template> -->
+    <tr class="lower" v-if="isLower">
+      <td></td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td><em>₫</em>123,456,78<i>K</i></td>
+      <td class="orange realTime">-100<s>%</s></td>
+    </tr>
+    <!-- </template> -->
     <tr>
       <td>
         <strong class="orange">Lo</strong>
@@ -68,7 +76,7 @@
 export default {
   data () {
 		return {
-      isMarketcap: false,
+      isLower: false,
     }
   },
 }

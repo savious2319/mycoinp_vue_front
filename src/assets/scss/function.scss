@@ -893,7 +893,8 @@ $FontColorReturn:#666;
     >tbody {
         >tr {
             &:hover,
-            &:active {
+            &:active,
+            &.lower {
                 background-color: $BgColorSidemenuBorder;
             }
             >td {
@@ -906,7 +907,7 @@ $FontColorReturn:#666;
             &.not {
                 >td {
                     >div {
-                        &:not(.tradingview) {
+                        &.sum {
                             text-align: center;
                             color: #454753;
                             font-size: 15rem;

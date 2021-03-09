@@ -16,6 +16,9 @@ table {
     }
     >tbody {
         >tr {
+            @include media('<=840px') {
+                padding-right: 35rem !important;
+            }
             >td {
                 .fa-asterisk {
                     font-size: 8rem;
@@ -46,16 +49,31 @@ table {
                 &:nth-of-type(2),
                 &:nth-of-type(3) {
                     padding-right: 20rem;
+                    position: relative;
                     >span {
                         position: absolute;
-                        top: 8rem;
                         right: 0;
+                        @include media('<=840px') {
+                            top: -4rem;
+                        }
+                        @include media('>840px') {
+                            top: 8rem;
+                        }
                     }
                 }
-                @include media('<=840px') {
-                    &:nth-of-type(3),
-                    &:nth-of-type(4) {
-                        padding-right: 17rem;
+                &:nth-of-type(4) {
+                    position: relative;
+                    @include media('>840px') {
+                        padding-right: 35rem;
+                        >.tdSort {
+                            position: absolute;
+                            right: 15rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    @include media('<=840px') {
+                        padding-right: 20rem;
                     }
                 }
             }
