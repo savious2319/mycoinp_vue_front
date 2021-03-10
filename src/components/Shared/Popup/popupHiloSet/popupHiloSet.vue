@@ -33,5 +33,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-	@import "popupPlusHiSet.scss";
+	@import "popupHiloSet.scss";
 </style>

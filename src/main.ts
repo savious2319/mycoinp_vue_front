@@ -64,7 +64,7 @@ import popupPortfolioCoinSell from '@/components/Shared/Popup/popupPortfolioCoin
 import popupPortfolioFiatSell from '@/components/Shared/Popup/popupPortfolioFiatSell/popupPortfolioFiatSell.vue';
 import popupSelectCoinPair from '@/components/Shared/Popup/popupSelectCoinPair/popupSelectCoinPair.vue';
 import popupSelectCoinWhereWallet from '@/components/Shared/Popup/popupSelectCoinWhereWallet/popupSelectCoinWhereWallet.vue';
-import popupPlusHiSet from '@/components/Shared/Popup/popupPlusHiSet/popupPlusHiSet.vue';
+import popupHiloSet from '@/components/Shared/Popup/popupHiloSet/popupHiloSet.vue';
 import popupCoinName from '@/components/Shared/Popup/popupCoinName/popupCoinName.vue';
 
 app.component('popupTradingView', popupTradingView)
@@ -77,7 +77,7 @@ app.component('popupPortfolioCoinSell', popupPortfolioCoinSell)
 app.component('popupPortfolioFiatSell', popupPortfolioFiatSell)
 app.component('popupSelectCoinPair', popupSelectCoinPair)
 app.component('popupSelectCoinWhereWallet', popupSelectCoinWhereWallet)
-app.component('popupPlusHiSet', popupPlusHiSet)
+app.component('popupHiloSet', popupHiloSet)
 app.component('popupCoinName', popupCoinName)
 /** Popup End */
 
@@ -221,26 +221,26 @@ app.component('DefiRightSingleAssets', DefiRightSingleAssets)
 app.component('DefiRightMultiAssets', DefiRightMultiAssets)
 /** Defi End */
 
-/** PlusHi Start */
-import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
-import PlusHiLeft from '@/components/Module/PlusHi/Left/Left.vue';
-import PlusHiLeftHigh from '@/components/Module/PlusHi/Left/High/High.vue';
-import PlusHiLeftLow from '@/components/Module/PlusHi/Left/Low/Low.vue';
+/** Hilo Start */
+import Hilo from '@/components/Module/Plus/Hilo/Hilo.vue';
+import HiloLeft from '@/components/Module/Plus/Hilo/Left/Left.vue';
+import HiloLeftHigh from '@/components/Module/Plus/Hilo/Left/High/High.vue';
+import HiloLeftLow from '@/components/Module/Plus/Hilo/Left/Low/Low.vue';
 
-import PlusHiRight from '@/components/Module/PlusHi/Right/Right.vue';
-import PlusHiRightCoinDetail from '@/components/Module/PlusHi/Right/CoinDetail/CoinDetail.vue';
-import PlusHiRightBuyExchange from '@/components/Module/PlusHi/Right/BuyExchange/BuyExchange.vue';
-import PlusHiRightOfficialMessages from '@/components/Module/PlusHi/Right/OfficialMessages/OfficialMessages.vue';
+import HiloRight from '@/components/Module/Plus/Hilo/Right/Right.vue';
+import HiloRightCoinDetail from '@/components/Module/Plus/Hilo/Right/CoinDetail/CoinDetail.vue';
+import HiloRightBuyExchange from '@/components/Module/Plus/Hilo/Right/BuyExchange/BuyExchange.vue';
+import HiloRightOfficialMessages from '@/components/Module/Plus/Hilo/Right/OfficialMessages/OfficialMessages.vue';
 
-app.component('PlusHi', PlusHi)
-app.component('PlusHiLeft', PlusHiLeft)
-app.component('PlusHiLeftHigh', PlusHiLeftHigh)
-app.component('PlusHiLeftLow', PlusHiLeftLow)
-app.component('PlusHiRight', PlusHiRight)
-app.component('PlusHiRightCoinDetail', PlusHiRightCoinDetail)
-app.component('PlusHiRightBuyExchange', PlusHiRightBuyExchange)
-app.component('PlusHiRightOfficialMessages', PlusHiRightOfficialMessages)
-/** PlusHi End */
+app.component('Hilo', Hilo)
+app.component('HiloLeft', HiloLeft)
+app.component('HiloLeftHigh', HiloLeftHigh)
+app.component('HiloLeftLow', HiloLeftLow)
+app.component('HiloRight', HiloRight)
+app.component('HiloRightCoinDetail', HiloRightCoinDetail)
+app.component('HiloRightBuyExchange', HiloRightBuyExchange)
+app.component('HiloRightOfficialMessages', HiloRightOfficialMessages)
+/** Hilo End */
 
 /** Notice Start */
 import NoticeList from '@/components/Module/Notice/List/List.vue';

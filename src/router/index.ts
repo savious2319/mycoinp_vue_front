@@ -4,7 +4,7 @@ import LegalTender from '@/components/Module/Portfolio/LegalTender/LegalTender.v
 import AllCoin from '@/components/Module/AllCoin/AllCoin.vue'
 import Exchanges from '@/components/Module/Exchanges/Exchanges.vue'
 import Defi from '@/components/Module/Defi/Defi.vue';
-import PlusHi from '@/components/Module/PlusHi/PlusHi.vue';
+import Hilo from '@/components/Module/Plus/Hilo/Hilo.vue';
 import NoticeList from '@/components/Module/Notice/List/List.vue';
 import NoticeDetails from '@/components/Module/Notice/Details/Details.vue';
 import FaqList from '@/components/Module/Faq/List/List.vue';
@@ -41,9 +41,9 @@ const routes = [
     component: Defi
   },
   {
-    path: '/PlusHi',
-    name: 'PlusHi',
-    component: PlusHi
+    path: '/plus/hilo',
+    name: 'hilo',
+    component: Hilo
   },
   {
     path: '/notice/list',
