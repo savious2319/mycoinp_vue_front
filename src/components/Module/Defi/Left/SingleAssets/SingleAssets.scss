@@ -3,27 +3,28 @@ $interval: (1 (100%/3) left, 2 (100%/3) right, 3 (100%/3) right);
 $grid-template-columns:auto 33% 33%;
 $grid-template-areas:( 'item1 item2 item3');
 table {
-    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
-    >thead>tr>th {
-        padding-top: 0;
-    }
-    >tbody {
-        >tr {
-            >td {
-                >div {
-                    text-align: right;
-                    &:last-of-type {
-                        color: $FontColorIvory;
-                        font-size: 13rem;
-                        margin-top: 10rem;
-                        >s {
-                            top: 0;
+    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas) {
+        >thead>tr>th {
+            padding-top: 0;
+        }
+        >tbody {
+            >tr {
+                >td {
+                    >div {
+                        text-align: right;
+                        &:last-of-type {
+                            color: $FontColorIvory;
+                            font-size: 13rem;
+                            margin-top: 10rem;
+                            >s {
+                                top: 0;
+                            }
                         }
-                    }
-                    >img {
-                        width: 13rem;
-                        vertical-align: bottom;
-                        margin: 0 2rem;
+                        >img {
+                            width: 13rem;
+                            vertical-align: bottom;
+                            margin: 0 2rem;
+                        }
                     }
                 }
             }

@@ -993,6 +993,7 @@ $FontColorReturn:#666;
             }
         }
     }
+    @content;
 }
 
 @mixin coinName {
