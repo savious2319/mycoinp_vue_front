@@ -60,7 +60,7 @@
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
-      <td>-100<s>%</s> <button type="button" class="tdSort down">열기</button></td>
+      <td>-100<s>%</s> <button type="button" class="tdSort">열기</button></td>
     </tr>
   </tbody>
 </table>

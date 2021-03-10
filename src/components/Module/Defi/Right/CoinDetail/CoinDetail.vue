@@ -1,7 +1,7 @@
 <template>
     <div class="PortfolioDetail">
         <div class="coinName">
-            <dl>
+            <dl class="col3">
                 <dt>
                     <button type="button" class="btnBookmark">
                         <i class="fas fa-star"></i>
@@ -10,6 +10,7 @@
                     <img src="@/assets/img/ico_coin.png" alt="">
                 </dt>
                 <dd>XZC</dd>
+                <dd>ZCoin</dd>
             </dl>
         </div>
         <p><a href="https://bitcoin.org" target="_blank">https://bitcoin.org</a></p>
