@@ -1,17 +1,17 @@
 <template>
 	<section v-if="$windowWidth >= 640">
         <perfect-scrollbar class="sectionLeft" v-on:scroll.passive="handleScrollLeft">
-			<PlusHiLeft v-bind:container="sectionLeft"/>
+			<HiloLeft v-bind:container="sectionLeft"/>
 		</perfect-scrollbar>
 		<perfect-scrollbar class="sectionRight" v-on:scroll.passive="handleScrollRight">
-			<PlusHiRight v-bind:container="sectionRight"/>
+			<HiloRight v-bind:container="sectionRight"/>
 		</perfect-scrollbar>
 	</section>
 
 	<!-- Mobile Only -->
     <section v-if="$windowWidth < 640">
-      <PlusHiLeft v-bind:container="container"/>
-      <!-- <PlusHiRight/> -->
+      <HiloLeft v-bind:container="container"/>
+      <!-- <HiloRight/> -->
     </section>
 </template>
 

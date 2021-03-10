@@ -59,7 +59,7 @@
   <div class="mobileDetail" v-if="isMobile.wrap">
       <SubHeader title="Hi-Lo" @MobileDetailHide="MobileDetailHide"/>
       <div class="sectionRight" v-on:scroll.passive="handleScrollMobile">
-        <PlusHiRight v-bind:container="isMobile"/>
+        <HiloRight v-bind:container="isMobile"/>
       </div>
   </div>
   <!-- 모바일 상세 페이지 End -->

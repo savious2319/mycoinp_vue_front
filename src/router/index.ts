@@ -13,8 +13,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Cryptocurrency
+    component: Cryptocurrency,
+    props: true
   },
+  // {
+  //   path: '/plus/:userId',
+  //   name: 'plus',
+  //   component: Cryptocurrency
+  // },
   {
     path: '/portfolio/cryptocurrency',
     name: 'portfolio',

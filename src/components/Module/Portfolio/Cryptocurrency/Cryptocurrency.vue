@@ -17,6 +17,7 @@
 <script>
 const OFFSET = 60;
 export default {
+    name: 'home',
 	props : ['container'],
     data () {
 		return {

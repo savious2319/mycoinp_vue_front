@@ -5,10 +5,10 @@
     <button type="button" :class="{'active': left.isbyLow}" @click="btnBy('isbyLow')">Low</button>
     <a href="#none" @click="btnLayerPopup"><i class="fas fa-cog"></i><span>Set</span></a>
   </div>
-  <popupPlusHiSet v-if="isLayerPopup" @cancel="btnLayerPopup"/>
+  <popupHiloSet v-if="isLayerPopup" @cancel="btnLayerPopup"/>
   <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
-  <PlusHiLeftHigh v-if="left.isbyHigh"/>
-  <PlusHiLeftLow v-if="left.isbyLow"/>
+  <HiloLeftHigh v-if="left.isbyHigh"/>
+  <HiloLeftLow v-if="left.isbyLow"/>
   <BtnTopLeft v-if="!container.scrollDown"/>
 </template>
 
