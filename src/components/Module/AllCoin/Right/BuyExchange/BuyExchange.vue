@@ -20,8 +20,10 @@
   <tbody>
     <tr class="hi">
       <td>
-        <b class="grean">Hi</b>
-        <strong>Huobi Global</strong>
+        <div>
+          <b class="grean">Hi</b>
+          <strong>Huobi Global</strong>
+        </div>
       </td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
@@ -29,7 +31,7 @@
     </tr>
     <!-- <template> -->
     <tr class="lower" v-if="isLower">
-      <td></td>
+      <td>BTC/USD</td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td>-100<s>%</s></td>
@@ -37,8 +39,10 @@
     <!-- </template> -->
     <tr class="lo">
       <td>
-        <b class="orange">Lo</b>
-        <strong>Huobi Global</strong>
+        <div>
+          <b class="orange">Lo</b>
+          <strong>Huobi Global</strong>
+        </div>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>
@@ -46,8 +50,13 @@
     </tr>
     <tr class="bookmark">
       <td>
-        <i class="fas fa-star on"></i>
-        <strong>Huobi Global</strong>
+        <div>
+          <button type="button" class="btnBookmark active">
+            <i class="fas fa-star"></i>
+            <span>bookmark</span>
+          </button>
+          <strong>Huobi Global</strong>
+        </div>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i> <span><i class="fas fa-asterisk on"></i><i class="fas fa-asterisk off"></i></span></td>
@@ -55,8 +64,10 @@
     </tr>
     <tr>
       <td>
-        <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>Huobi Global</strong>
+        <div>
+          <img src="@/assets/img/ico_coin.png" alt="">
+          <strong>Huobi Global</strong>
+        </div>
       </td>
       <td><em>₫</em>123,456,78<i>K</i></td>
       <td><em>₫</em>123,456,78<i>K</i></td>

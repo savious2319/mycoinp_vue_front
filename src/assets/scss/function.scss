@@ -580,9 +580,8 @@ $FontColorReturn:#666;
 
 @mixin list($stickyTop, $grid-area, $grid-template-columns, $grid-template-areas) {
     .btnBookmark {
-        margin-right: 5rem;
         >svg {
-            font-size: 18rem;
+            font-size: 16rem;
             color: $FontColorGray;
         }
         >span {

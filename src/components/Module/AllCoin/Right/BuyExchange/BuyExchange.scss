@@ -1,19 +1,9 @@
 @import "@/assets/scss/function.scss";
 $interval: (1 28% left, 2 28% right, 3 28% right, 4 auto right);
-$grid-template-columns:35% 30% 35%;
+$grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
     @include list(63rem, $interval, $grid-template-columns, $grid-template-areas);
-    >thead {
-        >tr {
-            >th {
-                &:nth-of-type(2),
-                &:nth-of-type(3) {
-                    padding-right: 20rem;
-                }
-            }
-        }
-    }
     >tbody {
         >tr {
             @include media('<=840px') {
@@ -31,36 +21,32 @@ table {
                     }
                 }
                 &:first-of-type {
-                    >b {
-                        font-weight: 500;
-                        width: 18rem;
-                        display: inline-block;
-                        margin-right: 5rem;
-                    }
-                    >.fa-star {
-                        font-size: 18rem;
-                        vertical-align: top;
-                        margin-right: 5rem;
-                        &.off {
-                            color: $FontColorGray;
+                    >div {
+                        @include media('<=840px') {
+                            @include displayflex(row, center, flex-start, unset);
+                            >strong {
+                                width: calc(100% - 23rem);
+                                line-height: 20rem;
+                            }
                         }
-                        &.on {
-                            color: $FontColorAmountUnit;
+                        >b {
+                            font-weight: 500;
+                            width: 18rem;
+                            display: inline-block;
                         }
-                    }
-                    >img {
-                        width: 18rem;
-                        vertical-align: top;
-                        margin-right: 5rem;
-                    }
-                    >strong {
-                        font-weight: 500;
-                        font-size: 15rem;
-                        margin-left: 2rem;
-                        vertical-align: top;
-                        &.rise,
-                        &.fall {
-                            margin-right: 5rem;
+                        >img {
+                            width: 18rem;
+                            vertical-align: top;
+                        }
+                        >strong {
+                            margin-left: 5rem;
+                            font-weight: 500;
+                            font-size: 15rem;
+                            vertical-align: top;
+                            &.rise,
+                            &.fall {
+                                margin-right: 5rem;
+                            }
                         }
                     }
                 }
