@@ -1,9 +1,9 @@
 <template>
   <div class="Portfolio">
     <div class="tab">
-      <button type="button" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}" :class="{'active': portfolio.isbyCoins}" @click="btnBy('isbyCoins')">by Coins</button>
-      <button type="button" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}" :class="{'active': portfolio.isbyWallets}" @click="btnBy('isbyWallets')">by Wallets</button>
-      <button type="button" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}" :class="{'active': portfolio.isbyDates}" @click="btnBy('isbyDates')">by Dates</button>
+      <button type="button" :class="{'active': portfolio.isbyCoins}" @click="btnBy('isbyCoins')">by Coins</button>
+      <button type="button" :class="{'active': portfolio.isbyWallets}" @click="btnBy('isbyWallets')">by Wallets</button>
+      <button type="button" :class="{'active': portfolio.isbyDates}" @click="btnBy('isbyDates')">by Dates</button>
     </div>
     <LegalTenderLeftPortfoliobyCoins v-if="portfolio.isbyCoins"/>
     <LegalTenderLeftPortfoliobyWallets v-if="portfolio.isbyWallets"/>

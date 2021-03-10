@@ -1,8 +1,8 @@
 <template>
   <CryptocurrencyLeftAdvertisement/>
   <div class="tabs btnSet">
-    <button type="button" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}" :class="{'active': left.isbyHigh}" @click="btnBy('isbyHigh')">High [118]</button>
-    <button type="button" href="#adLeft" v-smooth-scroll="{container: '.sectionLeft'}" :class="{'active': left.isbyLow}" @click="btnBy('isbyLow')">Low</button>
+    <button type="button" :class="{'active': left.isbyHigh}" @click="btnBy('isbyHigh')">High [118]</button>
+    <button type="button" :class="{'active': left.isbyLow}" @click="btnBy('isbyLow')">Low</button>
     <a href="#none" @click="btnLayerPopup"><i class="fas fa-cog"></i><span>Set</span></a>
   </div>
   <popupPlusHiSet v-if="isLayerPopup" @cancel="btnLayerPopup"/>
