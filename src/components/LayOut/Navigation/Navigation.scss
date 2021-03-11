@@ -7,7 +7,7 @@
             >span {
                 color: $FontColorGray;
             }
-            &.router-link-exact-active {
+            &.active {
                 color: $BgColorWhite;
                 >span {
                     color: $BgColorWhite;
@@ -59,7 +59,7 @@
                         }
                     }
                 }
-                &.router-link-exact-active {
+                &.active {
                     &::after {
                         width: 4rem;
                         height: 20rem;

@@ -4,10 +4,11 @@
 			<a v-for="(isLink, idx) in isLinks" :key="idx" @click="btnRouter(isLink.path)" :class="{'active': isLink.active}">
 				<span v-if="$windowWidth < 640 && isLink.path === 'plus'"><i class="fas fa-ellipsis-v"/></span>
 				<span v-if="$windowWidth >= 640 && isLink.path === 'plus'"><i class="fas fa-ellipsis-h"/></span>
-
 				<span v-if="$windowWidth > 1240 && isLink.path !== 'plus'"><i class="fas" :class="isLink.icon"/></span>
-				<span>{{isLink.name}}</span>
-				<span>[25]</span>
+				<span v-if="isLink.path !== 'plus'">{{isLink.name}}</span>
+				<span v-if="isLink.path === 'plus' && $windowWidth > 640">{{isLink.name}}</span>
+				<span v-if="isLink.path !== 'plus'">[25]</span>
+				<span v-if="$windowWidth > 1240 && isLink.path === 'plus'"><i class="fas fa-angle-down"/></span>
 			</a>
 			<div v-if="isPlus">
 				<router-link to="/plus/hilo">
