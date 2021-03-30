@@ -2,7 +2,7 @@
 .TotalValue {
     padding: 15rem;
     background-color: $BgColorTotalValue;
-    border-bottom: 5rem solid $BgColorHeaderFooter;
+    border-bottom: 5px solid $BgColorHeaderFooter;
     // @include media('<tablet') {
     //     position: sticky;
     //     top: 0;

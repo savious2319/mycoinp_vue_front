@@ -3,7 +3,7 @@ $interval: (1 30% left, 2 30% right, 3 10% center, 4 30 right);
 $grid-template-columns:auto 30% 10% 30%;
 $grid-template-areas:( 'item1 item2 item3 item4');
 table {
-    @include list(63rem, $interval, $grid-template-columns, $grid-template-areas) {
+    @include list(48rem, $interval, $grid-template-columns, $grid-template-areas) {
         >thead>tr>th {
             padding-top: 0;
         }

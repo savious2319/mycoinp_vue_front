@@ -1,6 +1,7 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup^="popupSelectCoinPair"] {
     @include layer(500rem, fixed);
+    min-height: 510rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -27,7 +28,8 @@
         background-color: $BgColorLayerPopupButton;
         height: 45rem;
         color: $FontColorFaq;
-        font-size: 14rem;
+        font-weight: 500;
+        font-size: 16rem;
     }
     >article {
         >.scarch {
@@ -81,7 +83,7 @@
             color: $FontColorInactive;
         }
         >.ps {
-            height: 200rem !important;
+            height: 312rem !important;
             .list {
                 padding: 10rem 0;
                 >a {

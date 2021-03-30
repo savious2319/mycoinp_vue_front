@@ -1,38 +1,7 @@
 @import "include-media.scss";
+@import "color.scss";
 $img: "~@/assets/img";
 $moAside: 270rem;
-// BG Colors Start
-$BgColorMask: #000;
-$BgColorTable: #13131f;
-$BgColorFullBackground: #1c1e2a;
-$BgColorHeaderFooter: #1b1e25;
-$BgColorTotalValue :#0b0c0f;
-$BgColorChart: #1c202a;
-$BgColorWhite: #fff;
-$BgColorNotFullDiv: #f8f8f8;
-$BgColorNotFullSection: #e1e1e7;
-$BgColorSidemenuBorder: #242936;
-$BgColorPlusSetingCheckOnRadio: #4b4f5e;
-$BgColorPlusSetingCheckOffRadio: #a5a9b4;
-$BgColorLayerPopupButton: #ddd;
-$BgColorLayerPopupTabActive: #e8e8e8;
-$BgColorGray: #67686f;
-// BG Colors End
-// Font Colors Start
-$FontColorGreen: #6bbd46;
-$FontColorFluGreen: #0fc14b;
-$FontColorOrange: #eb9a2c;
-$FontColorAmountUnit: #ffe640;
-$FontColorGray: $BgColorGray;
-$FontColorIvory: #fff0d0;
-$FontColorPortfolioList: #e4b677;
-$FontColorAllSelect: #62636b;
-$FontColorTitle:#222;
-$FontColorContent: #444;
-$FontColorFaq: #888;
-$FontColorInactive:#bfbfbf;
-$FontColorReturn:#666;
-// Colors End
 @mixin displayflex($direction, $align, $justify, $wrap) {
     display: flex;
     flex-direction: $direction;
@@ -617,14 +586,15 @@ $FontColorReturn:#666;
                     }
                 }
                 >th {
-                    padding: 10rem 0 15rem;
+                    border-bottom: 1rem solid $BgColorFullBackground;
                 }
                 >td {
-                    padding: 10rem 0;
                     vertical-align: middle;
+                    height: 52rem;
                 }
                 >th,
                 >td {
+                    padding: 15rem 0;
                     position: relative;
                     &:first-of-type {
                         padding-left: 15rem;
@@ -681,7 +651,7 @@ $FontColorReturn:#666;
                 }
                 &:not(.not) {
                     position: relative;
-                    padding: 10rem 15rem;
+                    padding: 15rem;
                     display: grid;
                     grid-row-gap: 7rem;
                     grid-template-columns: $grid-template-columns;
@@ -892,10 +862,17 @@ $FontColorReturn:#666;
     }
     >tbody {
         >tr {
-            &:hover,
-            &:active,
+            &:not(.lower) {
+                &:hover,
+                &:active {
+                    background-color: $BgColorSidemenuBorder;
+                }
+            }
             &.lower {
-                background-color: $BgColorSidemenuBorder;
+                &:hover,
+                &:active {
+                    background-color: #1c202a;
+                }
             }
             &.hi,
             &.lo {
@@ -1058,10 +1035,15 @@ $FontColorReturn:#666;
 @mixin tabs ($length) {
     @include displayflex(row, flex-start, flex-start, unset);
     @include sticky(0);
-    padding: 15rem;
     width: 100%;
     background-color: $BgColorTable;
     overflow: hidden;
+    @include media('>=tablet') {
+        padding: 15rem;
+    }
+    @include media('<tablet') {
+        padding: 15rem 15rem 0 15rem;
+    }
     &::before {
         content: '';
         width: calc(100% - 30rem);
@@ -1069,9 +1051,8 @@ $FontColorReturn:#666;
         background-color: $BgColorFullBackground;
         border-radius: 5rem;
         position: absolute;
-        top: 50%;
+        top: 15rem;
         left: 15rem;
-        transform: translateY(-50%);
         z-index: -1;
     }
     >button {
@@ -1169,7 +1150,7 @@ $FontColorReturn:#666;
 }
 
 @mixin tradingview {
-    background-color: $BgColorHeaderFooter;
+    background-color: #171b23;
     position: relative;
     >.btnSet {
         @include displayflex(row, center, flex-start, wrap);

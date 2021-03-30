@@ -1,21 +1,26 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup^="popupSelectCoinWhereWallet"] {
     @include layer(500rem, fixed);
+    @include displayflex(column, flex-start, flex-start, unset);
+    min-height: 510rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
     >button {
-        margin: 0 auto;
+        @include displayflex(row, center, center, unset);
+        margin: auto auto 0 auto;
         width: calc(100% - 40rem);
         border-radius: 2rem;
         background-color: $BgColorLayerPopupButton;
         height: 45rem;
         color: $FontColorFaq;
-        font-size: 14rem;
+        font-weight: 500;
+        font-size: 16rem;
     }
     >.tabs {
         @include displayflex(row, flex-start, flex-start, unset);
+        width: 100%;
         margin-bottom: 20rem;
         >button {
             @include displayflex(row, center, center, unset);
@@ -77,8 +82,8 @@
             }
         }
         >.noData {
-            text-align: center;
-            padding: 90rem 0;
+            @include displayflex(row, center, center, unset);
+            height: 315rem;
             font-size: 14rem;
             color: $FontColorInactive;
         }

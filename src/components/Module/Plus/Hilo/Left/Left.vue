@@ -6,7 +6,7 @@
     <a href="#none" @click="btnLayerPopup"><i class="fas fa-cog"></i><span>Set</span></a>
   </div>
   <popupHiloSet v-if="isLayerPopup" @cancel="btnLayerPopup"/>
-  <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
+  <div class="mask" v-if="isLayerPopup"></div>
   <HiloLeftHigh v-if="left.isbyHigh"/>
   <HiloLeftLow v-if="left.isbyLow"/>
   <BtnTopLeft v-if="!container.scrollDown"/>

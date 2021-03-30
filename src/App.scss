@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import "@/assets/scss/function.scss";
 #mycoinp {
+    background-color: $BgColorFullBackground;
+    color: #fff;
     width: 100%;
     min-height: calc(100vh - env(safe-area-inset-bottom));
     >#container {

@@ -1,6 +1,7 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup^="popupCoinName"] {
     @include layer(500rem, fixed);
+    min-height: 510rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

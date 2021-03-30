@@ -69,10 +69,10 @@
 </div>
 
 <popupSelectCoinPair v-if="popups.isSelectCoinPair"/>
-<div class="mask" v-if="popups.isSelectCoinPair" @click="btnSelectCoinPair"></div>
+<div class="mask" v-if="popups.isSelectCoinPair"></div>
 
 <popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet"/>
-<div class="mask" v-if="popups.isSelectCoinWhereWallet" @click="btnSelectCoinWhereWallet"></div>
+<div class="mask" v-if="popups.isSelectCoinWhereWallet"></div>
 
 </template>
 

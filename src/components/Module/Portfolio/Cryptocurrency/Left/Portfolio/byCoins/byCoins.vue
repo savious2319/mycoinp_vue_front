@@ -42,6 +42,1166 @@
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
       </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dl @click="MobileDetailShow">
+            <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+            <dd>XZC</dd>
+            <dt>4</dt>
+            <dd>ZCoin</dd>
+          </dl>
+        </td>
+        <td>
+          <em>₫</em>123,456,78<i>K</i>
+          <mark><i style="height: 20.1505%; top: 22.9562%;"></i></mark>
+        </td>
+        <td class="orange realTime">-10000<s>%</s></td>
+        <td><em>₫</em>123,456,78<i>K</i></td>
+        <td class="flugrean">
+          +10000<s>%</s>
+          <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
+        </td>
+      </tr>
       <tr class="not" v-if="isTradingview">
         <td colspan="5">
           <div class="tradingview">

@@ -1,7 +1,6 @@
 @import "@/assets/scss/function.scss";
 .tradingview {
     @include tradingview {
-        margin-top: 4.5rem;
         >.chart {
             height: 240rem;
         }

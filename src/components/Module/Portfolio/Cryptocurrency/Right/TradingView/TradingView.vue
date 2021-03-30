@@ -15,7 +15,7 @@
       Chart
     </div>
     <popupTradingView v-if="isLayerPopup" @cancel="btnLayerPopup"/>
-    <div class="mask" v-if="isLayerPopup" @click="btnLayerPopup"></div>
+    <div class="mask" v-if="isLayerPopup"></div>
   </div>
 </template>
 

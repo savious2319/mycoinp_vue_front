@@ -6,7 +6,10 @@
 .buySell {
     >.tabs {
         @include displayflex(row, center, space-between, unset);
-        @include sticky(63rem);
+        @include sticky(48rem);
+        @include media('<tablet') {
+            padding-top: 20rem;
+        }
         padding-bottom: 20rem;
         background-color: $BgColorTable;
         >li {

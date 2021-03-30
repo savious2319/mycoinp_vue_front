@@ -43,7 +43,7 @@
         </span>
     </article>
     <popupPortfolioFiatSell v-if="ispopupPortfolioSell" @cancel="btnpopupPortfolioSell"/>
-    <div class="mask" v-if="ispopupPortfolioSell" @click="btnpopupPortfolioSell"></div>
+    <div class="mask" v-if="ispopupPortfolioSell"></div>
 </template>
 
 <script>

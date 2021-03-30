@@ -44,7 +44,7 @@
                 <button type="button">Save Alert</button>
             </div>
         </div>
-        <div class="mask" v-if="isLayerGas" @click="btnLayerGas"></div>
+        <div class="mask" v-if="isLayerGas"></div>
     </span>
 </template>
 

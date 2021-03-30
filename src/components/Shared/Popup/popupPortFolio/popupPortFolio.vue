@@ -108,13 +108,13 @@
 </div>
 
 <popupSelectCoinPair v-if="popups.isSelectCoinPair" @cancel="btnSelectCoinPair"/>
-<div class="mask" v-if="popups.isSelectCoinPair" @click="btnSelectCoinPair"></div>
+<div class="mask" v-if="popups.isSelectCoinPair"></div>
 
 <popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet" @cancel="btnSelectCoinWhereWallet"/>
-<div class="mask" v-if="popups.isSelectCoinWhereWallet" @click="btnSelectCoinWhereWallet"></div>
+<div class="mask" v-if="popups.isSelectCoinWhereWallet"></div>
 
 <popupFiatType v-if="popups.isFiatType" @cancel="btnFiatType"/>
-<div class="mask" v-if="popups.isFiatType" @click="btnFiatType"></div>
+<div class="mask" v-if="popups.isFiatType"></div>
 </template>
 
 <script>

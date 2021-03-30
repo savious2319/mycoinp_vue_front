@@ -1,8 +1,8 @@
 @import "@/assets/scss/function.scss";
 [data-layerPopup^="popupPortFolio"] {
     @include layer(500rem, fixed);
+    @include displayflex(column, flex-start, flex-start, unset);
     @include media('<tablet') {
-        @include displayflex(column, flex-start, flex-start, unset);
         top: 0;
         left: 0;
         bottom: 0;
@@ -31,14 +31,15 @@
             width: 100%;
             height: 45rem;
         }
-        >.btnSet {
-            margin-top: auto;
-        }
     }
     @include media('>=tablet') {
+        min-height: 510rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    >.btnSet {
+        margin-top: auto;
     }
     >article {
         margin-top: 20rem;
