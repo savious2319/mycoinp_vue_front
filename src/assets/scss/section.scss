@@ -4,9 +4,10 @@ section {
     position: relative;
     @include media('>=desktop') {
         padding: 20rem 50rem 0 50rem;
+        @include displayGrid(calc(50% - 2.5rem) calc(50% - 2.5rem), auto, 5rem);
     }
-    @include media('>=tablet') {
-        @include displayGrid(50% 50%, auto, 5rem);
+    @include media('>=tablet', '<desktop') {
+        @include displayGrid(calc(50vw - 2.5rem) calc(50vw - 2.5rem), auto, 5rem);
     }
     @include media('<tablet') {
         background-color: $BgColorTable;

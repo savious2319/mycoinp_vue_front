@@ -34,12 +34,25 @@
                 }
                 &.icoReg {
                     font-size: 0;
-                    width: 16rem;
-                    height: 16rem;
-                    background-repeat: no-repeat;
-                    background-size: 100% auto;
-                    background-image: url(#{$img}/buy-add-btn.png);
-                    margin-left: 10rem
+                    @include media('>=tablet') {
+                        width: 16rem;
+                        height: 16rem;
+                        background-repeat: no-repeat;
+                        background-size: 100% auto;
+                        background-image: url(#{$img}/buy-add-btn.png);
+                        margin-left: 10rem;
+                    }
+                    @include media('<tablet') {
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        position: fixed;
+                        transition: all 0.3s ease-in-out;
+                        width: 75rem;
+                        height: 75rem;
+                        background-image: url(#{$img}/btn_rg.png);
+                        left: 0;
+                        bottom: -12rem;
+                    }
                 }
             }
         }

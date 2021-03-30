@@ -82,14 +82,16 @@
                     @include displayflex(row, center, flex-start, unset);
                     padding: 13rem 0;
                     color: $FontColorContent;
-                    font-size: 13rem;
+                    font-size: 15rem;
                     border-bottom: 1rem solid $BgColorNotFullDiv;
+                    font-weight: 500;
                     >img {
-                        width: 13rem;
+                        width: 15rem;
                         margin-right: 5rem;
                     }
                     >span {
                         color: $FontColorGreen;
+                        font-weight: 500;
                     }
                 }
             }

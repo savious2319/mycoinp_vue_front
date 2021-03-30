@@ -57,10 +57,15 @@
         >dl {
             >dt {
                 color: $FontColorIvory;
-                font-size: 15rem;
                 font-weight: 300;
                 margin-bottom: 10rem;
                 text-align: right;
+                @include media('>=tablet') {
+                    font-size: 15rem;
+                }
+                @include media('<tablet') {
+                    font-size: 13rem;
+                }
                 >em {
                     @include symbol {
                         top: 1rem;

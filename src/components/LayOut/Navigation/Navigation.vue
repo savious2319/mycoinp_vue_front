@@ -6,7 +6,7 @@
 				<span v-if="$windowWidth >= 640 && isLink.path === 'plus'"><i class="fas fa-ellipsis-h"/></span>
 				<span v-if="$windowWidth > 1240 && isLink.path !== 'plus'"><i class="fas" :class="isLink.icon"/></span>
 				<span v-if="isLink.path !== 'plus'">{{isLink.name}}</span>
-				<span v-if="isLink.path === 'plus' && $windowWidth > 640">{{isLink.name}}</span>
+				<span v-if="isLink.path === 'plus' && $windowWidth > 1240">{{isLink.name}}</span>
 				<span v-if="isLink.path !== 'plus'">[25]</span>
 				<span v-if="$windowWidth > 1240 && isLink.path === 'plus'"><i class="fas fa-angle-down"/></span>
 			</a>
