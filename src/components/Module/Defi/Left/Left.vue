@@ -6,7 +6,7 @@
   </div>
   <DefiLeftSingleAssets v-if="left.isbySingleAssets"/>
   <DefiLeftMultiAssets v-if="left.isbyMultiAssets"/>
-  <BtnTopLeft v-if="!container.scrollDown"/>
+  <BtnTopLeft v-if="!container.scrollDown" :class="{'scrollTop': container.scrollTop}"/>
 </template>
 
 <script>

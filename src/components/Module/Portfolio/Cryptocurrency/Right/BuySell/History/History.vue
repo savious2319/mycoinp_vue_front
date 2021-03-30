@@ -21,7 +21,7 @@
       <tbody>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -37,7 +37,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -53,7 +53,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -69,7 +69,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -85,7 +85,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -101,7 +101,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -117,7 +117,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -133,7 +133,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -149,7 +149,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -165,7 +165,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -181,7 +181,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -197,7 +197,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -213,7 +213,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -229,7 +229,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -245,7 +245,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -261,7 +261,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -277,7 +277,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -293,7 +293,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -309,7 +309,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -325,7 +325,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -341,7 +341,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -357,7 +357,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -373,7 +373,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -389,7 +389,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -405,7 +405,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -421,7 +421,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -437,7 +437,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -453,7 +453,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -469,7 +469,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -485,7 +485,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -501,7 +501,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -517,7 +517,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -533,7 +533,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -549,7 +549,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -565,7 +565,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -581,7 +581,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -597,7 +597,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -613,7 +613,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -629,7 +629,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -645,7 +645,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -661,7 +661,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -677,7 +677,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -693,7 +693,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -709,7 +709,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -725,7 +725,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -741,7 +741,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -757,7 +757,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -773,7 +773,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -789,7 +789,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -805,7 +805,7 @@
         </tr>
         <tr>
           <td>2020-07-20</td>
-          <td class="flugrean">Sell</td>
+          <td class="orange">Sell</td>
           <td>GUSD</td>
           <td>Upbit</td>
           <td><em>₫</em>123,456,78<i>K</i></td>
@@ -823,6 +823,16 @@
     </table>
   </article>
 </template>
+
+<script lang="ts">
+export default {
+  data () {
+    return {
+      isAll: false
+    }
+  }
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">

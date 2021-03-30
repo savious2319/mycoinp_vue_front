@@ -63,15 +63,15 @@
 	</article>
 
 	<div class="btnSet">
-		<button type="button">Cancel</button>
+		<button type="button" @click="cancel">Cancel</button>
 		<button type="button">Buy</button>
 	</div>
 </div>
 
-<popupSelectCoinPair v-if="popups.isSelectCoinPair"/>
+<popupSelectCoinPair v-if="popups.isSelectCoinPair" @cancel="btnSelectCoinPair"/>
 <div class="mask" v-if="popups.isSelectCoinPair"></div>
 
-<popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet"/>
+<popupSelectCoinWhereWallet v-if="popups.isSelectCoinWhereWallet" @cancel="btnSelectCoinWhereWallet"/>
 <div class="mask" v-if="popups.isSelectCoinWhereWallet"></div>
 
 </template>
@@ -87,6 +87,9 @@ export default {
         }
     },
 	methods: {
+		cancel: function(){
+			this.$emit("cancel");
+		},
 		btnCoin: function(){
 			this.tabs.isCoin = true;
 			this.tabs.isFiat = false;

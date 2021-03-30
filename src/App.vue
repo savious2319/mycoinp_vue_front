@@ -13,7 +13,7 @@
         <router-view v-bind:container="container" />
         <Footer v-if="$windowWidth >= 640"/>
       </div>
-      <footer v-if="$windowWidth < 640" :class="{'hide': !container.scrollDown}">
+      <footer v-if="$windowWidth < 640" :class="{'hide': !container.scrollTop}">
         <Navigation/>
       </footer>
   </div>
@@ -25,6 +25,7 @@ export default {
     data () {
         return {
             container : {
+                scrollTop: true,
                 scrollDown: true,
                 lastScrollPosition: 0,
             },
@@ -33,13 +34,14 @@ export default {
     methods: {
         handleScroll: function(e) {
             if (e.target.scrollTop < 0) {
-                return
+                return;
             }
             if (Math.abs(e.target.scrollTop - this.container.lastScrollPosition) < OFFSET) {
-                return
+                return;
             }
-            this.container.scrollDown = e.target.scrollTop < this.container.lastScrollPosition
-            this.container.lastScrollPosition = e.target.scrollTop
+            this.container.scrollTop = e.target.scrollTop < this.container.lastScrollPosition;
+            this.container.scrollDown = e.target.scrollTop < 500;
+            this.container.lastScrollPosition = e.target.scrollTop;            
         },
     }
 }

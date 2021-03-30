@@ -30,6 +30,16 @@
   </article>
 </template>
 
+<script lang="ts">
+export default {
+  data () {
+    return {
+      isAll: false
+    }
+  }
+}
+</script>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "History.scss";

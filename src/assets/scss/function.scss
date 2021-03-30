@@ -778,13 +778,13 @@ $moAside: 270rem;
                         height: 28rem;
                         line-height: 28rem;
                         border-radius: 6rem;
-                        background-color: $BgColorFullBackground;
+                        background-color: $BgColorSerch;
                         padding-left: 25rem;
                         padding-right: 25rem;
                         border: 0;
                         color: $BgColorWhite;
                         &::placeholder {
-                            color: #454753;
+                            color: $FontSearchPlaceholder;
                         }
                     }
                 }
@@ -841,7 +841,8 @@ $moAside: 270rem;
                         position: absolute;
                         top: 30rem;
                         background-color: $BgColorSidemenuBorder;
-                        width: 50rem;
+                        min-width: 50rem;
+                        padding: 0 10rem;
                         z-index: 2;
                         @include media('>840px') {
                             right: 0;

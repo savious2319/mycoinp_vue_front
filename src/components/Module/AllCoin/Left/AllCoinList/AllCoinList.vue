@@ -130,8 +130,7 @@ export default {
         if (Math.abs(e.target.scrollTop - this.isMobile.lastScrollPosition) < OFFSET) {
             return
         }
-        this.isMobile.scrollDown = e.target.scrollTop < this.isMobile.lastScrollPosition
-        this.isMobile.lastScrollPosition = e.target.scrollTop
+        this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
   }
   

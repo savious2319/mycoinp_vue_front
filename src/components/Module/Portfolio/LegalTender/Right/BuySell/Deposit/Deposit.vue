@@ -17,7 +17,7 @@
             </dd>
         </dl>
         <span>
-            <button type="button" @click="btnpopupPortfolioSell">widthraw</button>
+            <button type="button" @click="btnpopupPortfolioSell">withdraw</button>
         </span>
     </article>
 
@@ -39,7 +39,7 @@
             </dd>
         </dl>
         <span>
-            <button type="button" @click="btnpopupPortfolioSell">widthraw</button>
+            <button type="button" @click="btnpopupPortfolioSell">withdraw</button>
         </span>
     </article>
     <popupPortfolioFiatSell v-if="ispopupPortfolioSell" @cancel="btnpopupPortfolioSell"/>

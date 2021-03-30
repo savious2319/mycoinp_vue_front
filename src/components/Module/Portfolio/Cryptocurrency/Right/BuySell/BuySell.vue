@@ -20,10 +20,10 @@
   <popupPortfolioFiat v-if="ispopupPortfolio"/>
   <popupPortfolioFiatSell v-if="ispopupPortfolio"/>
   -->
-  <popupPortfolioCoin v-if="ispopupPortfolio"/>
+  <popupPortfolioCoin v-if="ispopupPortfolio" @cancel="btnpopupPortfolio"/>
   <div class="mask" v-if="ispopupPortfolio"></div>
 
-  <popupPortfolioCoinSell v-if="ispopupPortfolioSell"/>
+  <popupPortfolioCoinSell v-if="ispopupPortfolioSell" @cancel="btnpopupPortfolioSell"/>
   <div class="mask" v-if="ispopupPortfolioSell"></div>
 </template>
 

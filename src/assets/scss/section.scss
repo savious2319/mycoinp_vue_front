@@ -6,7 +6,7 @@ section {
         padding: 20rem 50rem 0 50rem;
     }
     @include media('>=tablet') {
-        @include displayGrid(50% 50%, auto, 3rem);
+        @include displayGrid(50% 50%, auto, 5rem);
     }
     @include media('<tablet') {
         background-color: $BgColorTable;

@@ -1,7 +1,7 @@
 <template>
   <CryptocurrencyLeftAdvertisement/>
   <ExchangesLeftExchangeList/>
-  <BtnTopLeft v-if="!container.scrollDown"/>
+  <BtnTopLeft v-if="!container.scrollDown" :class="{'scrollTop': !container.scrollTop}"/>
 </template>
 
 <script>

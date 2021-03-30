@@ -18,23 +18,22 @@ p {
         }
     }
     >button {
-        font-size: 15rem;
+        font-size: 20rem;
         color: $FontColorGray;
         >span {
             font-size: 0;
         }
         &:last-of-type {
-            margin-left: 10rem;
+            margin-left: 20rem;
         }
     }
 }
 
 article {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: (100%/3) (100%/3) (100%/3);
     grid-row-gap: 17rem;
-    margin-top: 16rem;
-    padding: 0 15rem 10rem 15rem;
+    padding: 15rem;
     position: relative;
     >dl {
         >dt {

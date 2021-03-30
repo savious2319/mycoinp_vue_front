@@ -45,15 +45,15 @@
                 vertical-align: top;
             }
             &:first-of-type {
-                width: 15rem;
-                height: 15rem;
+                width: 20rem;
+                height: 20rem;
                 background-image: url(#{$img}/ico-memo-off.png);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-size: 100% auto;
             }
             &:last-of-type {
-                font-size: 15rem;
+                font-size: 20rem;
                 color: $FontColorGray;
                 margin-left: 10rem;
             }
@@ -126,7 +126,7 @@
     }
     >article {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: (100%/3) (100%/3) (100%/3);
         grid-row-gap: 17rem;
         margin-top: 16rem;
         padding-right: 22rem;

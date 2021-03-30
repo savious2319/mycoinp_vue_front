@@ -9,7 +9,7 @@
   <div class="mask" v-if="isLayerPopup"></div>
   <HiloLeftHigh v-if="left.isbyHigh"/>
   <HiloLeftLow v-if="left.isbyLow"/>
-  <BtnTopLeft v-if="!container.scrollDown"/>
+  <BtnTopLeft v-if="!container.scrollDown" :class="{'scrollTop': container.scrollTop}"/>
 </template>
 
 <script>

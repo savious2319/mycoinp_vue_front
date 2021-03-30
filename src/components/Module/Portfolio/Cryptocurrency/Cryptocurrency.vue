@@ -58,8 +58,7 @@ export default {
             if (Math.abs(e.target.scrollTop - this.sectionLeft.lastScrollPosition) < OFFSET) {
                 return
             }
-            this.sectionLeft.scrollDown = e.target.scrollTop < this.sectionLeft.lastScrollPosition
-            this.sectionLeft.lastScrollPosition = e.target.scrollTop
+            this.sectionLeft.scrollDown = e.target.scrollTop < 500;
         },
         handleScrollRight: function(e) {
             if (e.target.scrollTop < 0) {
@@ -68,8 +67,7 @@ export default {
             if (Math.abs(e.target.scrollTop - this.sectionRight.lastScrollPosition) < OFFSET) {
                 return
             }
-            this.sectionRight.scrollDown = e.target.scrollTop < this.sectionRight.lastScrollPosition
-            this.sectionRight.lastScrollPosition = e.target.scrollTop
+            this.sectionRight.scrollDown = e.target.scrollTop < 500;
         },
     }
 }

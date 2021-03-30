@@ -23,5 +23,8 @@
     @include media('<tablet') {
         right: 15rem;
         bottom: 15rem;
+        &.scrollTop {
+            bottom: 65rem;
+        }
     }
 }

@@ -37,7 +37,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -57,7 +57,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -77,7 +77,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -97,7 +97,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -117,7 +117,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -137,7 +137,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -157,7 +157,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -177,7 +177,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -197,7 +197,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -217,7 +217,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -237,7 +237,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -257,7 +257,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -277,7 +277,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -297,7 +297,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -317,7 +317,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -337,7 +337,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -357,7 +357,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -377,7 +377,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -397,7 +397,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -417,7 +417,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -437,7 +437,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -457,7 +457,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -477,7 +477,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -497,7 +497,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -517,7 +517,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -537,7 +537,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -557,7 +557,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -577,7 +577,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -597,7 +597,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -617,7 +617,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -637,7 +637,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -657,7 +657,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -677,7 +677,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -697,7 +697,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -717,7 +717,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -737,7 +737,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -757,7 +757,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -777,7 +777,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -797,7 +797,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -817,7 +817,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -837,7 +837,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -857,7 +857,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -877,7 +877,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -897,7 +897,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -917,7 +917,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -937,7 +937,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -957,7 +957,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -977,7 +977,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -997,7 +997,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1017,7 +1017,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1037,7 +1037,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1057,7 +1057,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1077,7 +1077,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1097,7 +1097,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1117,7 +1117,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1137,7 +1137,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1157,7 +1157,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1177,7 +1177,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1197,7 +1197,7 @@
         </td>
         <td class="orange realTime">-10000<s>%</s></td>
         <td><em>₫</em>123,456,78<i>K</i></td>
-        <td class="flugrean">
+        <td class="grean">
           +10000<s>%</s>
           <button type="button" class="tdSort" v-if="$windowWidth < 841" @click="isTradingview = !isTradingview" :class="{'up': isTradingview}">열기</button>
         </td>
@@ -1268,13 +1268,13 @@ export default {
     },
     handleScrollMobile: function(e) {
         if (e.target.scrollTop < 0) {
-            return
+            return;
         }
         if (Math.abs(e.target.scrollTop - this.isMobile.lastScrollPosition) < OFFSET) {
-            return
+            return;
         }
-        this.isMobile.scrollDown = e.target.scrollTop < this.isMobile.lastScrollPosition
-        this.isMobile.lastScrollPosition = e.target.scrollTop
+        this.isMobile.scrollDown = e.target.scrollTop < 500;;
+        this.isMobile.lastScrollPosition = e.target.scrollTop;
     },
   }
   

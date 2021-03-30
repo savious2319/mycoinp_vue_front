@@ -3,6 +3,7 @@
     <ul class="tabs">
       <li>
         <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isBuy}" @click="btnBy('isBuy')">Deposit [ 100 ]</button>
+        <button type="button" class="icoReg" @click="btnpopupPortfolio">Registration</button>
       </li>
       <li>
         <button type="button" href="#adRight" v-smooth-scroll="{container: '.sectionRight'}" :class="{'active': tabs.isSell}" @click="btnBy('isSell')">Withdraw [ 3 ]</button>
@@ -19,10 +20,10 @@
   <popupPortfolioFiat v-if="ispopupPortfolio"/>
   <popupPortfolioFiatSell v-if="ispopupPortfolio"/>
   -->
-  <popupPortfolioCoin v-if="ispopupPortfolio"/>
+  <popupPortfolioCoin v-if="ispopupPortfolio" @cancel="btnpopupPortfolio"/>
   <div class="mask" v-if="ispopupPortfolio"></div>
 
-  <popupPortfolioCoinSell v-if="ispopupPortfolioSell"/>
+  <popupPortfolioCoinSell v-if="ispopupPortfolioSell" @cancel="btnpopupPortfolioSell"/>
   <div class="mask" v-if="ispopupPortfolioSell"></div>
 </template>
 
