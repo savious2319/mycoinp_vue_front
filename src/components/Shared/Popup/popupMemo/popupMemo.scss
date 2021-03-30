@@ -12,7 +12,7 @@
         }
         >span {
             @include displayflex(row, center, flex-start, unset);
-            font-size: 11rem;
+            font-size: 13rem;
             color: $FontColorFaq;
             position: relative;
             margin-left: 8rem;
@@ -25,35 +25,36 @@
                 background-color: $BgColorLayerPopupTabActive;
             }
         }
-    }
-    >textarea {
-        background-color: $BgColorNotFullDiv;
-        margin: 0 20rem 30rem 20rem;
-        width: calc(100% - 40rem);
-        height: 348rem;
-        border: 0;
-        padding: 20rem;
-        line-height: 150%;
-        &::placeholder {
-            color: $FontColorInactive;
-            font-size: 12rem;
+        >strong {
             font-weight: 500;
-            margin-top: 11rem;
         }
     }
     >article {
-        @include displayflex(column, center, center, unset);
         background-color: $BgColorNotFullDiv;
-        height: 348rem;
+        position: relative;
         >svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 37rem;
             color: $FontColorInactive;
         }
-        >p {
-            color: $FontColorInactive;
-            font-size: 12rem;
-            font-weight: 500;
-            margin-top: 11rem;
+        >textarea {
+            background-color: transparent;
+            width: calc(100% - 40rem);
+            height: 346rem;
+            border: 0;
+            padding: 20rem;
+            line-height: 150%;
+            position: relative;
+            font-size: 13rem;
+            &::placeholder {
+                color: $FontColorInactive;
+                font-weight: 500;
+                text-align: center;
+                padding-top: 52%;
+            }
         }
     }
 }

@@ -106,6 +106,7 @@ button {
         }
         >.dateFormat {
             @include displayflex(column, flex-start, flex-start, wrap);
+            padding-top: 20rem;
             >label {
                 @include displayflex(row, center, flex-start, wrap);
                 width: 100%;

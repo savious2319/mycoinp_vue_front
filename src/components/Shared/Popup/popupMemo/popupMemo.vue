@@ -5,10 +5,9 @@
 		<strong>XZC</strong>
 		<span>ZCoin</span>
 	</p>
-	<textarea v-if="isMemo"></textarea>
-	<article v-if="!isMemo" @click="isMemo = !isMemo">
+	<article>
 		<i class="fas fa-edit"/>
-		<p>Please take note if necessary.</p>
+		<textarea placeholder="Please take note if necessary."></textarea>
 	</article>
 	<div class="btnSet">
 		<button type="button" @click="cancel">Cancel</button>

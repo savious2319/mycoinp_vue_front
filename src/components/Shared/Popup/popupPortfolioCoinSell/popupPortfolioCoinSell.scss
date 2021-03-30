@@ -87,17 +87,17 @@
                         @include displayflex(row, center, flex-start, unset);
                         >span {
                             @include displayflex(row, center, flex-start, unset);
-                            width: 50rem;
                             height: 100%;
                             font-size: 13rem;
                             color: $FontColorContent;
+                            margin-right: 5rem;
                             >em {
                                 color: $FontColorOrange;
                             }
                         }
                         >input[type=text] {
                             background-color: $BgColorNotFullDiv;
-                            width: calc(100% - 50rem);
+                            width: calc(100% - 80rem);
                         }
                     }
                     &.full {

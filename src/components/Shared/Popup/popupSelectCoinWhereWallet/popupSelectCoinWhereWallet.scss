@@ -7,17 +7,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
-    >button {
-        @include displayflex(row, center, center, unset);
-        margin: auto auto 0 auto;
-        width: calc(100% - 40rem);
-        border-radius: 2rem;
-        background-color: $BgColorLayerPopupButton;
-        height: 45rem;
-        color: $FontColorFaq;
-        font-weight: 500;
-        font-size: 16rem;
-    }
     >.tabs {
         @include displayflex(row, flex-start, flex-start, unset);
         width: 100%;

@@ -10,6 +10,8 @@
         @include displayflex(row, center, flex-start, unset);
         font-size: 13rem;
         color: $FontColorGreen;
+        border-bottom: none;
+        margin-bottom: 0;
         &::before {
             content: '';
             width: 15rem;
@@ -20,16 +22,6 @@
             background-size: 100% auto;
             margin-right: 5rem;
         }
-    }
-    >button {
-        margin: 0 auto;
-        width: calc(100% - 40rem);
-        border-radius: 2rem;
-        background-color: $BgColorLayerPopupButton;
-        height: 45rem;
-        color: $FontColorFaq;
-        font-weight: 500;
-        font-size: 16rem;
     }
     >article {
         >.scarch {
@@ -83,7 +75,7 @@
             color: $FontColorInactive;
         }
         >.ps {
-            height: 312rem !important;
+            height: 332rem !important;
             .list {
                 padding: 10rem 0;
                 >a {

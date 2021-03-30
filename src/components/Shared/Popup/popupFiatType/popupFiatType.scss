@@ -7,15 +7,6 @@
     transform: translate(-50%, -50%);
     z-index: 6;
     padding-top: 20rem;
-    >button {
-        margin: 0 auto;
-        width: calc(100% - 40rem);
-        border-radius: 2rem;
-        background-color: $BgColorLayerPopupButton;
-        height: 45rem;
-        color: $FontColorFaq;
-        font-size: 14rem;
-    }
     >article {
         >.scarch {
             @include displayflex(row, center, flex-start, unset);

@@ -3,9 +3,13 @@
     <h1>
         <a href="/">MyCoinP</a>
     </h1>
-    <button type="button" @click="btnAside">
+    <button type="button" @click="btnAside" v-if="isAside == false">
         <i class="fas fa-align-justify"/>
     </button>
+    <button type="button" @click="btnAside" v-if="isAside == true">
+        <i class="fas fa-times"/>
+    </button>
+
     <Aside :class="{'hide': !isAside}"/>
 
     <div v-if="$windowWidth < 1240">
