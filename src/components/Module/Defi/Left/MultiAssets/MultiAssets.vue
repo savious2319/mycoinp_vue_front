@@ -21,27 +21,29 @@
       </th>
       <th><button type="button" class="thSort up"><em>%</em>Net</button></th>
       <th>APY<br>+</th>
-      <th><button type="button" class="thSort up"><em>%</em>APR</button></th>
+      <th><button type="button" class="thSort up"><em>%</em>Farming</button></th>
     </tr>
   </thead>
   <tbody>
     <tr class="bookmark">
       <td @click="MobileDetailShow">
         <img src="@/assets/img/ico_coin.png" alt="">
-        <strong>busd + ETH</strong>
-      </td>
-      <td>16.65<s>%</s></td>
-      <td>+</td>
-      <td>16.65<s>%</s></td>
-    </tr>
-    <tr>
-      <td @click="MobileDetailShow">
         <img src="@/assets/img/ico_coin.png" alt="">
         <strong>busd + ETH</strong>
       </td>
       <td>16.65<s>%</s></td>
       <td>+</td>
+      <td><img src="@/assets/img/ico_coin.png" alt=""> 16.65<s>%</s></td>
+    </tr>
+    <tr>
+      <td @click="MobileDetailShow">
+        <img src="@/assets/img/ico_coin.png" alt="">
+        <img src="@/assets/img/ico_coin.png" alt="">
+        <strong>busd + ETH</strong>
+      </td>
       <td>16.65<s>%</s></td>
+      <td>+</td>
+      <td><img src="@/assets/img/ico_coin.png" alt=""> 16.65<s>%</s></td>
     </tr>
   </tbody>
 </table>

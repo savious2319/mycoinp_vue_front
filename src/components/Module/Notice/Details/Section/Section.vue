@@ -7,8 +7,8 @@
     <div class="searchSet">
       <span>
         <button type="button" class="btnSearch" title="Search">Search</button>
-        <input type="text" v-model="searchtext" placeholder="Search...">
-        <button type="button" class="btnClear" title="Search">Clear</button>
+        <input type="text" v-model="searchText" placeholder="Search...">
+        <button type="button" class="btnClear" title="Search" v-if="searchText.length > 0" @click="searchText = ''">Clear</button>
       </span>
     </div>
 
@@ -34,7 +34,12 @@
 
 <script>
 export default {
-    props : ['container'],
+  props : ['container'],
+  data () {
+		return {
+      searchText: "",
+		}
+	},
 }
 </script>
 

@@ -8,6 +8,7 @@
                         <span>bookmark</span>
                     </button>           
                     <img src="@/assets/img/ico_coin.png" alt="">
+                    <img src="@/assets/img/ico_coin.png" alt="">
                 </dt>
                 <dd>XZC</dd>
                 <dd>ZCoin</dd>

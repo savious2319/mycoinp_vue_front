@@ -4,19 +4,9 @@
             <button type="button" @click="btnAside">닫기</button>
         </div>
         <div class="body">
-            <router-link class="new" to="/notice/list">Notice</router-link>
-            <router-link to="/">About Us</router-link>
-            <router-link to="/">Terms of Use</router-link>
-            <router-link to="/">Privacy Policy</router-link>
-            <router-link to="/">Cookie Policy</router-link>
-            <router-link to="/">Business proposal</router-link>
-            <router-link to="/">Advertising</router-link>
-            <router-link to="/">Changelog</router-link>
-            <router-link to="/">기능 개선 요청</router-link>
-            <router-link to="/">오류 수정 요청</router-link>
-            <router-link to="/">API</router-link>
-            <router-link to="/">Widget</router-link>
-            <router-link to="/faq">FAQ</router-link>
+            <a v-for="(isLink, idx) in isLinks" :key="idx" @click="btnRouter(isLink.path)">
+                {{isLink.name}}
+            </a>
             <router-link to="/" v-if="$windowWidth < 640">PUSH_TEST</router-link>
         </div>
         <div class="footer" v-if="$windowWidth < 640">
@@ -27,7 +17,74 @@
 
 <script>
 export default {
-    methods: {
+	data () {
+        return {
+			isLinks: [
+				{
+					name : 'Notice',
+					path : '/notice/list',
+				},
+				{
+					name : 'About Us',
+					path : '',
+				},
+				{
+					name : 'Terms of Use',
+					path : '',
+				},
+				{
+					name : 'Privacy Policy',
+					path : '',
+				},
+				{
+					name : 'Cookie Policy',
+					path : '',
+				},
+				{
+					name : 'Business proposal',
+					path : '',
+				},
+				{
+					name : 'Advertising',
+					path : '',
+				},
+				{
+					name : 'Changelog',
+					path : '',
+				},
+				{
+					name : '기능 개선 요청',
+					path : '',
+				},
+				{
+					name : '오류 수정 요청',
+					path : '',
+				},
+				{
+					name : 'API',
+					path : '',
+				},
+				{
+					name : 'Widget',
+					path : '',
+				},
+				{
+					name : 'FAQ',
+					path : 'faq',
+				},
+				// {
+				// 	name : 'PUSH_TEST',
+				// 	path : '',
+				// 	active : false,
+				// },
+			]
+        }
+    },
+	methods: {
+		btnRouter: function(arg){
+            this.$router.push({ path: arg });
+            this.$parent.isAside = false;
+		},
         btnAside: function(){
             if(this.$parent.isAside == false){
                 this.$parent.isAside = true;

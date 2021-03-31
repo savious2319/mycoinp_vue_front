@@ -1,18 +1,42 @@
-$interval: (1 30% left, 2 30% right, 3 10% center, 4 30 right);
-$grid-template-columns:auto 30% 10% 30%;
+$interval: (1 auto left, 2 30% right, 3 20% left, 4 20% right);
+$grid-template-columns:auto 30% 15% 30%;
 $grid-template-areas:( 'item1 item2 item3 item4');
 table {
     @include list(48rem, $interval, $grid-template-columns, $grid-template-areas) {
+        th,
+        td {
+            &:nth-of-type(3) {
+                @include media('>840px') {
+                    padding-left: 50rem;
+                }
+                @include media('<=840px') {
+                    padding-left: 20rem;
+                    text-align: left !important;
+                }
+            }
+        }
         >tbody {
             >tr {
                 >td {
-                    >img {
-                        width: 18rem;
-                        vertical-align: middle;
-                        margin-right: 5rem;
+                    &:first-of-type {
+                        >img {
+                            width: 18rem;
+                            vertical-align: middle;
+                            &:last-of-type {
+                                margin-left: -5rem;
+                                margin-right: 5rem;
+                            }
+                        }
                     }
                     &:nth-of-type(3) {
                         color: $FontColorGray;
+                    }
+                    &:last-of-type {
+                        >img {
+                            width: 13rem;
+                            vertical-align: middle;
+                            margin-right: 2rem;
+                        }
                     }
                 }
             }

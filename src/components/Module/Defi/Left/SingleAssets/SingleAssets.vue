@@ -20,7 +20,7 @@
         </span>
       </th>
       <th><button type="button" class="thSort up">APY</button></th>
-      <th><button type="button" class="thSort up"><em>%</em>APR</button></th>
+      <th><button type="button" class="thSort up">APR</button></th>
     </tr>
   </thead>
   <tbody>
@@ -33,7 +33,7 @@
         </dl>
       </td>
       <td>
-        <div>
+        <div class="grean">
           <img src="@/assets/img/ico_coin.png" alt="">
           456<s>%</s>
         </div>
@@ -42,7 +42,7 @@
         </div>
       </td>
       <td>
-        <div>
+        <div class="orange">
           <img src="@/assets/img/ico_coin.png" alt="">
           456<s>%</s>
         </div>

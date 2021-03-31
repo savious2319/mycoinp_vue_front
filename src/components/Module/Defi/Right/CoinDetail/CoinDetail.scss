@@ -18,6 +18,10 @@
                 grid-area: dt;
                 >img {
                     width: 20rem;
+                    &:last-of-type {
+                        margin-left: -5rem;
+                        margin-right: 5rem;
+                    }
                 }
                 >button {
                     margin-right: 10rem;
@@ -41,6 +45,7 @@
                 &:first-of-type {
                     @include displayflex(row, flex-start, flex-start, unset);
                     font-size: 15rem;
+                    font-weight: 500;
                     grid-area: ddFirst;
                 }
                 &:last-of-type {

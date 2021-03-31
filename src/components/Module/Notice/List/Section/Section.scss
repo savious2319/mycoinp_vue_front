@@ -141,6 +141,7 @@ section {
                     letter-spacing: -0.12rem;
                     text-align: left;
                     color: $FontColorFaq;
+                    line-height: 1.67;
                 }
                 @include media('>=desktop') {
                     @include displayflex(row, center, flex-start, unset);

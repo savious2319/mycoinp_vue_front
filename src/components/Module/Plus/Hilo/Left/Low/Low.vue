@@ -19,9 +19,11 @@
           </button>
         </span>
       </th>
-      <th>High</th>
+      <th>
+        <span>High</span>
+        <span>Price</span>
+      </th>
       <th>Exchange</th>
-      <th>Price</th>
       <th><em>%</em>Premium</th>
     </tr>
   </thead>
@@ -34,9 +36,11 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td class="grean">6,789<i>K</i></td>
+      <td>
+        <span class="grean">6,789<i>K</i></span>
+        <span>6,789<i>K</i></span>
+      </td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
-      <td>6,789<i>K</i></td>
       <td class="grean">+661<s>%</s></td>
     </tr>
     <tr>
@@ -47,9 +51,11 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td class="grean">6,789<i>K</i></td>
+      <td>
+        <span class="grean">6,789<i>K</i></span>
+        <span>6,789<i>K</i></span>
+      </td>
       <td><img src="@/assets/img/ico_coin.png" alt=""> <strong>Huobi Global</strong></td>
-      <td>6,789<i>K</i></td>
       <td class="grean">+661<s>%</s></td>
     </tr>
   </tbody>
