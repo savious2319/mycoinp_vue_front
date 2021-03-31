@@ -1,4 +1,3 @@
-@import "@/assets/scss/function.scss";
 [data-layerPopup^="popupSelectCoinWhereWallet"] {
     @include layer(500rem, fixed);
     @include displayflex(column, flex-start, flex-start, unset);

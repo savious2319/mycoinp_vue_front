@@ -1,4 +1,3 @@
-@import "@/assets/scss/function.scss";
 [data-layerPopup^="popupFiatType"] {
     @include layer(500rem, fixed);
     min-height: 510rem;

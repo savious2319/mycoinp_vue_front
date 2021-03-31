@@ -1,5 +1,5 @@
 <template>
-  <div id="mycoinp">
+  <div id="mycoinp" class="mode-dark">
       <header>
         <Header/>
         <Navigation v-if="$windowWidth >= 640"/>
@@ -47,5 +47,5 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    @import "App.scss";
+  @import "App.scss";
 </style>
