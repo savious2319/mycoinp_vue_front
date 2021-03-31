@@ -45,6 +45,7 @@
                 &:first-of-type {
                     @include displayflex(row, flex-start, flex-start, unset);
                     font-size: 15rem;
+                    font-weight: 500;
                     grid-area: ddFirst;
                 }
                 &:last-of-type {
@@ -82,6 +83,12 @@
                 font-weight: 300;
                 >a {
                     color: $FontColorIvory;
+                    white-space: nowrap;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: normal;
+                    padding-right: 10rem;
                 }
             }
             &:nth-of-type(2) {

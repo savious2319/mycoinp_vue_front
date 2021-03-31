@@ -8,8 +8,7 @@
             <i class="fas fa-star"></i>
             <span>bookmark</span>
           </button>
-        
-          Exchange
+          <strong>Exchange</strong>
         </span>
       </th>
       <th>Price</th>
@@ -75,6 +74,12 @@
     </tr>
   </tbody>
 </table>
+  <ul>
+    <li><i class="fas fa-asterisk off"></i> Excluded</li>
+    <li><i class="fas fa-asterisk on"></i> Excluded for abnormal price</li>
+    <li><img src="@/assets/img/ico_info.png" alt=""> As BitMex is a Futures exchange, it is excluded from the MCP's Global Price calculation.</li>
+    <li><img src="@/assets/img/ico_info.png" alt=""> The price shown, even if there have been no trades inthe last 24 hours, represents the most recently tradedprice 24 hours ago.</li>
+  </ul>
 </template>
 
 <script>

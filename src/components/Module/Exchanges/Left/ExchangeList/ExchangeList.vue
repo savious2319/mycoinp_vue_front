@@ -21,7 +21,7 @@
       </th>
       <th>#Coins</th>
       <th><em>$</em>Vol</th>
-      <th colspan="2">Top <em>$</em>Vol</th>
+      <th>Top <em>$</em>Vol</th>
     </tr>
   </thead>
   <tbody>
@@ -35,19 +35,21 @@
       </td>
       <td>313</td>
       <td><em>₫</em>456<i>K</i></td>
-      <td><img src="@/assets/img/ico_coin.png" alt=""> BTC :</td>
-      <td><em>₫</em>456<i>K</i></td>
+      <td>
+        <span><img src="@/assets/img/ico_coin.png" alt=""> BTC : </span>
+        <span><em>₫</em>456<i>K</i></span>
+      </td>
     </tr>
   </tbody>
 </table>
-<p>#Coins는 본 사이트에서 제공하는 해당거래소의 코인 수이며, 실제 해당거래소에 상장
+<p><img src="@/assets/img/ico_info.png" alt=""> #Coins는 본 사이트에서 제공하는 해당거래소의 코인 수이며, 실제 해당거래소에 상장
 된 코인의 수와 다를 수 있습니다.</p>
 
   <!-- 모바일 상세 페이지 Start -->
   <div class="mobileDetail" v-if="isMobile.wrap">
       <SubHeader title="Exchanges Detail" @MobileDetailHide="MobileDetailHide"/>
       <div class="sectionRight" v-on:scroll.passive="handleScrollMobile">
-          <AllCoinRight v-bind:container="isMobile"/>
+          <ExchangesRight v-bind:container="isMobile"/>
       </div>
   </div>
   <!-- 모바일 상세 페이지 End -->

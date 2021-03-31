@@ -15,9 +15,9 @@
           </button>
         </span>
       </th>
-      <th><em>#</em>Coins</th>
-      <th><em>$</em>Vol</th>
-      <th>Top <em>%</em>Vol</th>
+      <th>Price</th>
+      <th><button type="button" class="thSort up"><em>$</em>Vol</button></th>
+      <th>Share</th>
     </tr>
   </thead>
   <tbody>
@@ -29,13 +29,13 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td>123</td>
+      <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>6,789<i>K</i> <button type="button" class="tdSort" @click="isLower = !isLower" :class="{'up': isLower}">열기</button></td>
     </tr>
     <tr class="lower" v-if="isLower">
       <td></td>
-      <td>123</td>
+      <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>6,789<i>K</i> </td>
     </tr>
@@ -47,7 +47,7 @@
           <dd>ZCoin</dd>
         </dl>
       </td>
-      <td>123</td>
+      <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>789K<i>K</i></td>
       <td><em>₫</em>6,789<i>K</i>  <button type="button" class="tdSort">열기</button></td>
     </tr>

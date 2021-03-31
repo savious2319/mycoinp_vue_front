@@ -3,6 +3,21 @@ $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
     @include list(48rem, $interval, $grid-template-columns, $grid-template-areas) {
+        >thead>tr {
+            >th {
+                &:first-of-type {
+                    text-align: left;
+                }
+                &:nth-of-type(2),
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    padding-right: 20rem;
+                }
+            }
+            @include media('<=840px') {
+                padding-right: 35rem !important;
+            }
+        }
         >tbody {
             >tr {
                 @include media('<=840px') {
@@ -11,7 +26,7 @@ table {
                 >td {
                     .fa-asterisk {
                         font-size: 8rem;
-                        vertical-align: middle;
+                        vertical-align: top;
                         &.off {
                             color: $FontColorGray;
                         }
@@ -56,11 +71,12 @@ table {
                         >span {
                             position: absolute;
                             right: 0;
+                            height: 8rem;
                             @include media('<=840px') {
-                                top: -4rem;
+                                top: 2rem;
                             }
                             @include media('>840px') {
-                                top: 8rem;
+                                top: 20rem;
                             }
                         }
                     }
@@ -80,6 +96,16 @@ table {
                             position: initial;
                             font-size: 13rem;
                             color: $FontColorIvory;
+                        }
+                    }
+                }
+                &.lower {
+                    >td:first-of-type {
+                        @include media('>840px') {
+                            padding-left: 38rem;
+                        }
+                        @include media('<=840px') {
+                            padding-left: 23rem;
                         }
                     }
                 }

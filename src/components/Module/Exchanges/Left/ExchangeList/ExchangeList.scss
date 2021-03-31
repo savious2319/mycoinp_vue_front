@@ -1,6 +1,6 @@
-$interval: (1 28% left, 2 21% right, 3 15% right, 4 20% right, 5 16% right);
+$interval: (1 auto left, 2 21% right, 3 20% right, 4 30% right);
 $grid-template-columns:auto 20% 20% 25%;
-$grid-template-areas:( 'item1 item2 item3 item4' 'item1 item2 item3 item5');
+$grid-template-areas:( 'item1 item2 item3 item4');
 table {
     @include list(0, $interval, $grid-template-columns, $grid-template-areas) {
         @include media('<=840px') {
@@ -12,9 +12,23 @@ table {
             >tr {
                 >td {
                     &:nth-of-type(4) {
-                        >img {
-                            width: 15rem;
-                            vertical-align: top;
+                        >span {
+                            >img {
+                                width: 15rem;
+                                vertical-align: top;
+                            }
+                            >em {
+                                @include symbol {
+                                    top: 1rem;
+                                    color: $FontColorGray;
+                                }
+                            }
+                            @include media('<=840px') {
+                                display: block;
+                                &:first-of-type {
+                                    margin-bottom: 7rem;
+                                }
+                            }
                         }
                     }
                     @include media('<=840px') {
@@ -30,8 +44,27 @@ table {
 }
 
 p {
+    width: calc(100% - 36rem);
+    position: relative;
     padding: 0 15rem;
     margin-top: 20rem;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 13rem;
     color: $FontColorGray;
+    >img,
+    >svg {
+        width: 8rem;
+        font-size: 8rem;
+        vertical-align: middle;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        &.off {
+            color: $FontColorGray;
+        }
+        &.on {
+            color: $FontColorAmountUnit;
+        }
+    }
 }

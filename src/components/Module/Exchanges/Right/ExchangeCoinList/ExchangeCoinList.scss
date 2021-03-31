@@ -1,8 +1,23 @@
-$interval: (1 20% left, 2 20% right, 3 20% right, 4 auto right);
+$interval: (1 auto left, 2 20% right, 3 20% right, 4 20% right);
 $grid-template-columns:30% 35% 35%;
 $grid-template-areas:( 'item1 item2 item3' 'item1 item2 item4');
 table {
     @include list(0, $interval, $grid-template-columns, $grid-template-areas) {
+        >thead>tr {
+            >th {
+                @include media('>840px') {
+                    &:last-of-type {
+                        padding-right: 35rem;
+                    }
+                }
+                @include media('<=840px') {
+                    &:nth-of-type(3),
+                    &:nth-of-type(4) {
+                        padding-right: 17rem;
+                    }
+                }
+            }
+        }
         >tbody {
             >tr {
                 >td {
@@ -11,6 +26,11 @@ table {
                         &:nth-of-type(4) {
                             padding-right: 17rem;
                         }
+                    }
+                }
+                &.lower {
+                    >td:last-of-type {
+                        padding-right: 35rem;
                     }
                 }
             }

@@ -549,12 +549,16 @@ $moAside: 270rem;
 
 @mixin list($stickyTop, $grid-area, $grid-template-columns, $grid-template-areas) {
     .btnBookmark {
+        width: 18rem;
+        +strong {
+            margin-left: 5rem;
+        }
         >svg {
             font-size: 16rem;
             color: $FontColorGray;
         }
         >span {
-            font-size: 0
+            font-size: 0;
         }
         &.active {
             >svg {

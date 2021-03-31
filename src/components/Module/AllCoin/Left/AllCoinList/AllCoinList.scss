@@ -16,13 +16,13 @@ table {
                         border-radius: 5rem;
                         padding: 10rem;
                         position: absolute;
-                        @include media('<=840px') {
-                            top: 55rem;
-                            right: 10rem;
-                        }
-                        @include media('>840px') {
+                        @include media('>=tablet') {
                             top: 40rem;
                             right: 0;
+                        }
+                        @include media('<tablet') {
+                            top: 55rem;
+                            right: 10rem;
                         }
                         z-index: 4;
                         line-height: 1.21;

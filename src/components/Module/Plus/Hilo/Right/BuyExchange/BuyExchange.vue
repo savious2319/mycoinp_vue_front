@@ -8,8 +8,7 @@
             <i class="fas fa-star"></i>
             <span>bookmark</span>
           </button>
-        
-          Exchange
+          <strong>Exchange</strong>
         </span>
       </th>
       <th>Price</th>

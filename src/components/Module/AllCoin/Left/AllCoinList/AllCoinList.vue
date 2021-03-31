@@ -118,6 +118,7 @@ export default {
     MobileDetailShow: function(){
       if(this.$windowWidth < 640){
         this.isMobile.wrap = !this.isMobile.wrap;
+        this.isMarketcap = false;
       }
     },
     MobileDetailHide: function() {
