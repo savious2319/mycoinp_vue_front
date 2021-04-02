@@ -1273,7 +1273,7 @@ export default {
         if (Math.abs(e.target.scrollTop - this.isMobile.lastScrollPosition) < OFFSET) {
             return;
         }
-        this.isMobile.scrollDown = e.target.scrollTop < 500;;
+        this.isMobile.scrollDown = e.target.scrollTop < 500;
         this.isMobile.lastScrollPosition = e.target.scrollTop;
     },
   }
