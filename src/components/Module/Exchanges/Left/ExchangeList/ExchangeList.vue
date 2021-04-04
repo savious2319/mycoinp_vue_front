@@ -25,12 +25,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in new_data" :key="item.id" class="bookmark">
+    <tr v-for="item in data" :key="item.id" class="bookmark">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
-          <dd>{{ item }}</dd>
-          <dd>{{ item }}</dd>
+          <dd>{{ item.user }}</dd>
+          <dd>{{ item.genre }}</dd>
         </dl>
       </td>
       <td>313</td>
@@ -65,7 +65,24 @@ export default {
 		return {
       //new_data: [],
       data: [
-        
+        {
+		"user":"AAA",
+		"genre":"myS",
+		"location":"A3",
+		"size":"2"
+	},
+	{
+		"user":"BBB",
+		"genre":"myS",
+		"location":"A13",
+		"size":"1"
+	},
+	{
+		"user":"CCC",
+		"genre":"myS",
+		"location":"B2",
+		"size":"2"
+	}
       ],
       searchText: "",
       isMobile : {
