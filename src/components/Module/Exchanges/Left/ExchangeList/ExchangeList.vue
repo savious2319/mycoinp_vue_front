@@ -25,12 +25,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="bookmark">
+    <tr v-for="item in new_data" :key="item.id" class="bookmark">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
-          <dd>XZC</dd>
-          <dd>ZCoin</dd>
+          <dd>{{ item }}</dd>
+          <dd>{{ item }}</dd>
         </dl>
       </td>
       <td>313</td>
@@ -58,9 +58,15 @@
 
 <script>
 const OFFSET = 60;
+import axios from 'axios'
 export default {
+  //name: "my-little-div",
   data () {
 		return {
+      //new_data: [],
+      data: [
+        
+      ],
       searchText: "",
       isMobile : {
           wrap: false,
@@ -87,7 +93,29 @@ export default {
         }
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
-  }
+    getNewData: function(){
+      console.log(window.location.hostname);
+      let path = "https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json";
+
+      axios.get(path)
+            .then(res => {
+              console.log(res);
+              this.new_data = res.data;
+              console.log("this.new_data : " + JSON.stringify(this.new_data));
+              console.log(this.new_data.fe1);
+              console.log(this.new_data.fe2);
+            })
+            .catch(error => console.error(error))
+    }
+  },
+  
+    created() {
+       this.getNewData();
+    },
+
+    mounted(){
+      
+    }
   
 }
 </script>
