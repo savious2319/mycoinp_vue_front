@@ -25,19 +25,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in new_data" :key="item.id" class="bookmark">
+    <tr v-for="item in data1" :key="item" class="bookmark">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
-          <dd>{{ item }}</dd>
-          <dd>{{ item }}</dd>
+          <dd>{{ item.exchange_name_eng }}</dd>
+          <dd>{{ item.country_nm }}</dd>
         </dl>
       </td>
-      <td>313</td>
-      <td><em>₫</em>456<i>K</i></td>
+      <td>345</td> 
+      <td><em>₫</em>{{ item.exchange_total }}<i>K</i></td>
       <td>
         <span><img src="@/assets/img/ico_coin.png" alt=""> BTC : </span>
-        <span><em>₫</em>456<i>K</i></span>
+        <span><em>₫</em>{{ item.exchange_max_vol24 }}<i>K</i></span>
       </td>
     </tr>
   </tbody>
@@ -59,31 +59,19 @@
 <script>
 const OFFSET = 60;
 import axios from 'axios'
+
+  let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
+  let coin_count_api = "";
+  let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
+  let coin_map_list_api = "";
 export default {
   //name: "my-little-div",
   data () {
 		return {
-      new_data: [],
-      data: [
-        {
-		"user":"AAA",
-		"genre":"myS",
-		"location":"A3",
-		"size":"2"
-	},
-	{
-		"user":"BBB",
-		"genre":"myS",
-		"location":"A13",
-		"size":"1"
-	},
-	{
-		"user":"CCC",
-		"genre":"myS",
-		"location":"B2",
-		"size":"2"
-	}
-      ],
+      data1: [],
+      data2: [],
+      data3: [],
+      data4: [],
       searchText: "",
       isMobile : {
           wrap: false,
@@ -110,29 +98,65 @@ export default {
         }
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
-    getNewData: function(){
-      console.log(window.location.hostname);
-      //let path = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=5dc753fbb35d7e99e7fd80b06a9a18a7";
-      let path = "https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json";
+    exchange_list: function(){
+      //console.log(window.location.hostname);
 
-      axios.get(path)
+      axios.get(exchange_list_api)
             .then(res => {
+              console.log("exchange_list_api");
               console.log(res);
-              this.new_data = res.data;
-              console.log("this.new_data : " + JSON.stringify(this.new_data));
-              //console.log(this.new_data.fe1);
-              //console.log(this.new_data.fe2);
+              // this.exchanges = [].concat(res.data.exchange_list);
+              this.data1 = res.data.exchange_list;
+              //console.log(this.exchanges[1].exchange_name_eng);
             })
             .catch(error => console.error(error))
-    }
+    },
+    coin_count: function(){
+      axios.get(coin_count_api)
+            .then(res => {
+              console.log(res);
+              // this.exchanges = [].concat(res.data.exchange_list);
+              //this.data2 = res.data.exchange_list;
+              //console.log(this.exchanges[1].exchange_name_eng);
+            })
+            .catch(error => console.error(error))
+
+    },
+    exchange_trade_data: function(){
+      axios.get(exchange_trade_data_api)
+            .then(res => {
+              console.log("exchange_trade_data_api");
+              console.log(res);
+              // this.exchanges = [].concat(res.data.exchange_list);
+              this.data3 = res.data.data;
+              //console.log(this.exchanges[1].exchange_name_eng);
+              console.log(JSON.stringify(this.exchangeLeft));
+            })
+            .catch(error => console.error(error))
+
+    },
+    coin_map_list: function(){
+      axios.get(coin_map_list_api)
+            .then(res => {
+              console.log(res);
+              // this.exchanges = [].concat(res.data.exchange_list);
+              //this.exchanges = res.data.exchange_list;
+              //console.log(this.exchanges[1].exchange_name_eng);
+            })
+            .catch(error => console.error(error))
+
+    },
+
   },
   
     created() {
-       this.getNewData();
+       this.exchange_list();
+       //this.coin_count();
+       this.exchange_trade_data();
+       //this.coin_map_list();
     },
 
     mounted(){
-      
     }
   
 }
