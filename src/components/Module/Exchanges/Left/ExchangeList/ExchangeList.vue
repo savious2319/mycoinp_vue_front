@@ -25,12 +25,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in data" :key="item.id" class="bookmark">
+    <tr v-for="item in new_data" :key="item.id" class="bookmark">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
-          <dd>{{ item.user }}</dd>
-          <dd>{{ item.genre }}</dd>
+          <dd>{{ item }}</dd>
+          <dd>{{ item }}</dd>
         </dl>
       </td>
       <td>313</td>
@@ -63,7 +63,7 @@ export default {
   //name: "my-little-div",
   data () {
 		return {
-      //new_data: [],
+      new_data: [],
       data: [
         {
 		"user":"AAA",
@@ -112,6 +112,7 @@ export default {
     },
     getNewData: function(){
       console.log(window.location.hostname);
+      //let path = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=5dc753fbb35d7e99e7fd80b06a9a18a7";
       let path = "https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json";
 
       axios.get(path)
@@ -119,8 +120,8 @@ export default {
               console.log(res);
               this.new_data = res.data;
               console.log("this.new_data : " + JSON.stringify(this.new_data));
-              console.log(this.new_data.fe1);
-              console.log(this.new_data.fe2);
+              //console.log(this.new_data.fe1);
+              //console.log(this.new_data.fe2);
             })
             .catch(error => console.error(error))
     }
