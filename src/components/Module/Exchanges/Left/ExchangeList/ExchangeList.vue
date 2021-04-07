@@ -25,12 +25,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in data1" :key="item" class="bookmark">
+    <tr v-for="item in exchangeLeft" :key="item" class="bookmark">
       <td>
         <dl class="col3" @click="MobileDetailShow">
+          <!-- <dt><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
           <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
-          <dd>{{ item.exchange_name_eng }}</dd>
-          <dd>{{ item.country_nm }}</dd>
+          <dd>{{ item.ex_name }}</dd>
+          <dd>{{ item.ex_country }}</dd>
         </dl>
       </td>
       <td>345</td> 
@@ -59,19 +60,20 @@
 <script>
 const OFFSET = 60;
 import axios from 'axios'
-
+//var exchangeLeft = new Array();
+var seq_key = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
   let coin_count_api = "";
   let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
-  let coin_map_list_api = "";
+  let coin_map_list_api = "http://192.168.1.115:18100/mpi/allcoin/coin-list";
 export default {
-  //name: "my-little-div",
   data () {
 		return {
-      data1: [],
-      data2: [],
-      data3: [],
-      data4: [],
+      ex_list: [],
+      ex_coin: [],
+      ex_trade: [],
+      coin_list: [],
+      exchangeLeft: [],
       searchText: "",
       isMobile : {
           wrap: false,
@@ -80,6 +82,9 @@ export default {
       },
 		}
 	},
+  computed: {
+    
+  },
   methods: {
     MobileDetailShow: function(){
       if(this.$windowWidth < 640){
@@ -105,9 +110,17 @@ export default {
             .then(res => {
               console.log("exchange_list_api");
               console.log(res);
-              // this.exchanges = [].concat(res.data.exchange_list);
-              this.data1 = res.data.exchange_list;
-              //console.log(this.exchanges[1].exchange_name_eng);
+              this.ex_list.push(res.data.exchange_list);
+              //console.log(Object.keys(this.ex_list[0]));
+              for (const key in this.ex_list[0]) {
+                seq_key.push(key);
+              }
+              //console.log(seq_key);
+              //console.log(seq_key[0]);
+
+              // console.log(JSON.stringify(this.ex_list[0][seq_key[0]].exchange_name_eng));
+              // console.log(JSON.stringify(this.ex_list[0][seq_key[0]].country_nm));
+
             })
             .catch(error => console.error(error))
     },
@@ -127,10 +140,30 @@ export default {
             .then(res => {
               console.log("exchange_trade_data_api");
               console.log(res);
-              // this.exchanges = [].concat(res.data.exchange_list);
-              this.data3 = res.data.data;
+              this.ex_trade.push(res.data.data);
               //console.log(this.exchanges[1].exchange_name_eng);
-              console.log(JSON.stringify(this.exchangeLeft));
+              console.log(JSON.stringify(this.ex_trade[0][1]));
+
+              console.log(">>>>>>>>" + seq_key.length);
+
+// console.log(JSON.stringify(this.ex_list[0][seq_key[0]].exchange_name_eng));
+
+        for (var i = 0; i < seq_key.length; i++) {
+          let arr = {};
+          arr["ex_img"] = this.ex_list[0][seq_key[i]].reqHash;
+          arr["ex_name"] = this.ex_list[0][seq_key[i]].exchange_name_eng;
+          arr["ex_country"] = this.ex_list[0][seq_key[i]].country_nm;
+          arr["ex_max_vol24"] = this.ex_trade[0][seq_key[i]].exchange_max_vol24;
+          arr["ex_max_vol24_coinId"] = this.ex_trade[0][seq_key[i]].exchange_max_vol24_coin_id;
+          arr["exchange_total"] = this.ex_trade[0][seq_key[i]].exchange_total;
+
+          console.log(arr);
+          this.exchangeLeft.push(arr);
+          
+        }
+
+        console.log("exchangeLeft");
+        console.log(JSON.stringify(this.exchangeLeft));
             })
             .catch(error => console.error(error))
 
@@ -138,25 +171,37 @@ export default {
     coin_map_list: function(){
       axios.get(coin_map_list_api)
             .then(res => {
-              console.log(res);
-              // this.exchanges = [].concat(res.data.exchange_list);
-              //this.exchanges = res.data.exchange_list;
+              console.log(res.data);
+              this.coin_list.push(res.data);
+              console.log(JSON.stringify(res.data));
               //console.log(this.exchanges[1].exchange_name_eng);
+              // for (let i = 0; i < this.ex_trade.length; i++) {
+                
+              // }
             })
             .catch(error => console.error(error))
 
     },
+    exchangeLeftData: function(){
+        
+    }
 
   },
   
     created() {
+      console.log("created");
        this.exchange_list();
        //this.coin_count();
        this.exchange_trade_data();
        //this.coin_map_list();
+       //this.exchangeLeftData();
     },
-
+    beforeMount() {
+      console.log("beforeMount");
+      
+    },
     mounted(){
+      console.log("mounted");
     }
   
 }
