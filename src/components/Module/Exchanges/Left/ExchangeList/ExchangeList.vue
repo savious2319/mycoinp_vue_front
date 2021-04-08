@@ -66,7 +66,7 @@ var coinCd = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
   let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
   let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
-  let coin_map_list_api = "http://192.168.1.115:18100/mpi/allcoin/each-coin?coin_cd=";
+  let coin_map_list_api = "http://192.168.1.115:18100/mpi/allcoin/coin-light";
 export default {
   data () {
 		return {
@@ -105,15 +105,30 @@ export default {
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
     exchange_list: function(){
-
       axios.get(exchange_list_api)
             .then(res => {
-              console.log("exchange_list_api");
+              console.log("exchange_list");
               console.log(res);
               this.ex_list.push(res.data.exchange_list);
-
+              //console.log(JSON.stringify(this.ex_list));
             })
-            .catch(error => console.error(error))
+            .catch(error => console.error(error))  
+
+    //  return new Promise((resolve, reject) => {
+       
+    //    axios.get(exchange_list_api)
+    //          .then(res => {
+    //            console.log("exchange_list_api");
+    //            //console.log(res);
+    //            this.ex_list.push(res.data.exchange_list);
+    //            console.log(JSON.stringify(this.ex_list));
+    //            resolve('1');
+    //          })
+    //          .catch(error => {
+    //            console.error(error)
+    //            reject(error)
+    //          })
+    //  }) 
     },
     coin_count: function(){
       axios.get(coin_count_api)
@@ -125,6 +140,21 @@ export default {
             })
             .catch(error => console.error(error))
 
+    //   return new Promise((resolve, reject) => {
+       
+    //    axios.get(coin_count_api)
+    //          .then(res => {
+    //            console.log("coin_cnt");
+    //            //console.log(res);
+    //            this.ex_coin.push(res.data.exchangecntlist);
+    //            console.log(JSON.stringify(this.ex_coin));
+    //            resolve("1");
+    //          })
+    //          .catch(error => {
+    //            console.error(error)
+    //            reject(error)
+    //          })
+    //  })   
     },
     exchange_trade_data: function(){
       
@@ -136,48 +166,83 @@ export default {
       
        })
        .catch(error => console.error(error))
+
+    //   return new Promise((resolve, reject) => {
+       
+    //    axios.get(exchange_trade_data_api)
+    //          .then(res => {
+    //            console.log("exchange_trade_data_api");
+    //            //console.log(res);
+    //            this.ex_trade.push(res.data.data);
+    //            console.log(JSON.stringify(this.ex_trade));
+    //            resolve("1");
+    //          })
+    //          .catch(error => {
+    //            console.error(error)
+    //            reject(error)
+    //          })
+    //  })
          
     },
     coin_map_list: function(){
-      console.log("coin_map_list");
-       
+      
       //var sDate = new Date().getTime();
       //         var eDate = new Date().getTime();
       //         var resDate = (eDate - sDate) / 1000;
 
       axios.get(coin_map_list_api)
             .then(res => {
+              console.log("coin_map_list");
               console.log(res);
-              this.coin_info.push(res.data.data);
-      
+              this.coin_info.push(res.data);
        })
        .catch(error => console.error(error))  
 
-           
+    //   return new Promise((resolve, reject) => {
+       
+    //    axios.get(coin_map_list_api)
+    //          .then(res => {
+    //            console.log("coin_map_list");
+    //            //console.log(res);
+    //            this.coin_info.push(res.data);
+    //            console.log(JSON.stringify(this.coin_info));
+    //            resolve("1")
+    //          })
+    //          .catch(error => {
+    //            console.error(error)
+    //            reject(error)
+    //          })
+    //  })     
           
-      console.log(JSON.stringify(this.coin_info));
 
     },
     exchangeLeftData: function(){
+      console.log("exchangeLeftData");
       //exchange_cd 값만 가져오기
       for (const key in this.ex_list[0]) {
                 ex_cd.push(key);
               }
         
-        console.log(JSON.stringify(this.ex_trade[0]));
+        //console.log(JSON.stringify(this.ex_trade[0]));
 
       //각 거래소의 max_vol24 coin_cd값만 가져오기
       for (const key in this.ex_trade[0]) {
                 coinCd.push(this.ex_trade[0][key].exchange_max_vol24_coin_id);
               }
 
-        console.log(coinCd);
-       
+      console.log(coinCd);
+      
+      console.log(JSON.stringify(this.coin_info));
        let coin_symbol = [];
        let coin_icon_url = [];
        for (var j = 0; j < coinCd.length; j++) {
-         coin_symbol.push(this.coin_info[coinCd[j]].symbol);
-         coin_icon_url.push(this.coin_info[coinCd[j]].coin_icon_url);
+         if(coinCd[j] == 0){
+           coin_symbol.push("-");
+          coin_icon_url.push("N/A");
+           continue;
+         }
+         coin_symbol.push(this.coin_info[0][coinCd[j]].symbol);
+         coin_icon_url.push(this.coin_info[0][coinCd[j]].coin_icon_url);
 
        }
 
@@ -189,8 +254,6 @@ export default {
             arr["ex_country"] = this.ex_list[0][ex_cd[i]].country_nm;
             arr["ex_cnt"] = this.ex_coin[i].cnt;
             arr["exchange_total"] = this.ex_trade[0][ex_cd[i]].exchange_total;
-            // arr["coin_icon_url"] = this.coin_info[i].coin_icon_url;
-            // arr["coin_symbol"] = this.coin_info[i].symbol;
             arr["coin_icon_url"] = coin_icon_url[i];
             arr["coin_symbol"] = coin_symbol[i];
             arr["ex_max_vol24"] = this.ex_trade[0][ex_cd[i]].exchange_max_vol24;
@@ -213,7 +276,7 @@ export default {
        this.exchange_trade_data();
        this.coin_map_list();
       //  this.exchangeLeftData();
-       setTimeout(this.exchangeLeftData, 5000);
+       setTimeout(this.exchangeLeftData, 3000);
     },
     beforeMount() {
       console.log("beforeMount");
