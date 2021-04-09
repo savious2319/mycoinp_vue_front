@@ -1,3 +1,5 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable no-mixed-spaces-and-tabs */
 <template>
 <table>
   <thead>
@@ -29,7 +31,7 @@
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <!-- <dt><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
-          <dt><img src="@/assets/img/ico_coin.png" alt=""></dt>
+          <dt><img :src="item.ex_image" alt=""></dt>
           <dd>{{ item.ex_name }}</dd>
           <dd>{{ item.ex_country }}</dd>
         </dl>
@@ -37,8 +39,9 @@
       <td>{{ item.ex_cnt }}</td> 
       <td><em>₫</em>{{ item.exchange_total }}<i>K</i></td>
       <td>
-        <span><img src="@/assets/img/ico_coin.png" alt=""> {{ item.coin_symbol }} : </span>
-        <span><em>₫</em>{{ item.exchange_max_vol24 }}<i>K</i></span>
+        <!-- <span><img src="@/assets/img/ico_coin.png" alt=""> {{ item.coin_symbol }} : </span> -->
+        <span><img :src="item.coin_icon_url" alt=""> {{ item.coin_symbol }} : </span>
+        <span><em>₫</em>{{ item.ex_max_vol24 }}<i>K</i></span>
       </td>
     </tr>
   </tbody>
@@ -59,6 +62,7 @@
 
 <script>
 const OFFSET = 60;
+
 import axios from 'axios'
 //var exchangeLeft = new Array();
 var ex_cd = [];
@@ -218,6 +222,7 @@ export default {
     },
     exchangeLeftData: function(){
       console.log("exchangeLeftData");
+
       //exchange_cd 값만 가져오기
       for (const key in this.ex_list[0]) {
                 ex_cd.push(key);
@@ -225,14 +230,123 @@ export default {
         
         //console.log(JSON.stringify(this.ex_trade[0]));
 
+    //console.log(JSON.stringify(this.ex_trade));
+
       //각 거래소의 max_vol24 coin_cd값만 가져오기
       for (const key in this.ex_trade[0]) {
                 coinCd.push(this.ex_trade[0][key].exchange_max_vol24_coin_id);
               }
 
       console.log(coinCd);
+
+      for (const key in this.ex_trade[0]) {
+        console.log("exchange_total["+key+"] : " + this.ex_trade[0][key].exchange_total);
+        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[0][key].exchange_max_vol24);
+      }
+
+      let valStr = "";
+      let valStrLen = "";
+      for (const key in this.ex_trade[0]) {
+        let ex_total = this.ex_trade[0][key].exchange_total;
+        
+        valStr = Math.round(ex_total);
+        valStr = String(valStr);
+        valStrLen = String(valStr).length;  
+        console.log("valStr : " + valStr);
+        console.log("valStrLen : " + valStrLen);
+      /* eslint-disable no-mixed-spaces-and-tabs */
+        if(valStrLen >= 13){
+          valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+            
+            valStr = (Number(ex_total)/1000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 10){
+          valStr = valStr.substring(0, valStrLen-9);
+    			
+    			if(valStr.length==1){
+            
+            valStr = (Number(ex_total)/1000000000).toFixed(1);
+    				console.log("valStr.length==1 : " + valStr);
+    			}
+    		}else if(valStrLen >= 7){
+          valStr = valStr.substring(0, valStrLen-6);
+    			
+    			if(valStr.length==1){
+            valStr = (Number(ex_total)/1000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 4){
+          valStr = valStr.substring(0, valStrLen-3);
+    			
+    			if(valStr.length==1){
+            valStr = (Number(ex_total)/1000).toFixed(1);
+    			}
+    		}else{
+          // eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+            valStr = Number(ex_total).toFixed(1);
+    			}
+    		}
+        this.ex_trade[0][key].exchange_total = valStr;
+  }
+
+       for (const key in this.ex_trade[0]) {
+        let max_coin_price = this.ex_trade[0][key].exchange_max_vol24;
+        
+        valStr = Math.round(max_coin_price);
+        valStr = String(valStr);
+        valStrLen = String(valStr).length;  
+        console.log("valStr : " + valStr);
+        console.log("valStrLen : " + valStrLen);
+      /* eslint-disable no-mixed-spaces-and-tabs */
+        if(valStrLen >= 13){
+          valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+            
+            valStr = (Number(max_coin_price)/1000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 10){
+          valStr = valStr.substring(0, valStrLen-9);
+    			
+    			if(valStr.length==1){
+            
+            valStr = (Number(max_coin_price)/1000000000).toFixed(1);
+    				console.log("valStr.length==1 : " + valStr);
+    			}
+    		}else if(valStrLen >= 7){
+          valStr = valStr.substring(0, valStrLen-6);
+    			
+    			if(valStr.length==1){
+            valStr = (Number(max_coin_price)/1000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 4){
+          valStr = valStr.substring(0, valStrLen-3);
+    			
+    			if(valStr.length==1){
+            valStr = (Number(max_coin_price)/1000).toFixed(1);
+    			}
+    		}else{
+          // eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+            valStr = Number(max_coin_price).toFixed(1);
+    			}
+    		}
+        this.ex_trade[0][key].exchange_max_vol24 = valStr;
+  }
+    
+    for (const key in this.ex_trade[0]) {
+        console.log("exchange_total["+key+"] : " + this.ex_trade[0][key].exchange_total);
+        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[0][key].exchange_max_vol24);
+      }
       
-      console.log(JSON.stringify(this.coin_info));
+      
+      //console.log(JSON.stringify(this.coin_info));
        let coin_symbol = [];
        let coin_icon_url = [];
        for (var j = 0; j < coinCd.length; j++) {
@@ -258,15 +372,14 @@ export default {
             arr["coin_symbol"] = coin_symbol[i];
             arr["ex_max_vol24"] = this.ex_trade[0][ex_cd[i]].exchange_max_vol24;
           
-            console.log(arr);
+            //console.log(arr);
             this.exchangeLeft.push(arr);
             
           }
-
-        console.log(JSON.stringify(this.exchangeLeft));
+        //console.log(JSON.stringify(this.exchangeLeft));
 
     },
-
+    
   },
   
     created() {
@@ -276,7 +389,7 @@ export default {
        this.exchange_trade_data();
        this.coin_map_list();
       //  this.exchangeLeftData();
-       setTimeout(this.exchangeLeftData, 3000);
+       setTimeout(this.exchangeLeftData, 5000);
     },
     beforeMount() {
       console.log("beforeMount");
