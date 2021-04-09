@@ -67,7 +67,6 @@ import axios from 'axios'
 // import mcoinp from '@/assets/js/mcoinp.js'
 // import CmnUtil from '@/assets/js/CmnUtil.js'
 
-//var exchangeLeft = new Array();
 var ex_cd = [];
 var coinCd = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
@@ -116,25 +115,25 @@ export default {
           console.log("exchange_list")
           console.log(res1)
           this.ex_list.push(res1.data.exchange_list)
-          //console.log(JSON.stringify(this.ex_list))
+          console.log(JSON.stringify(this.ex_list))
         
         const res2 = await axios.get(coin_count_api)
           console.log("coin_count")
           console.log(res2)
           this.ex_coin = res2.data.exchangecntlist;
-          //console.log(JSON.stringify(this.ex_coin))
+          console.log(JSON.stringify(this.ex_coin))
 
         const res3 = await axios.get(exchange_trade_data_api)
-          console.log("exchange_trade_data_api")
+          console.log("exchange_trade_data")
           console.log(res3)
           this.ex_trade = res3.data.data;
-          //console.log(JSON.stringify(this.ex_coin))
+          console.log(JSON.stringify(this.ex_trade))
         
         const res4 = await axios.get(coin_map_list_api)
-          console.log("coin_map_list_api")
+          console.log("coin_map_list")
           console.log(res4)
           this.coin_info = res4.data
-          //console.log(JSON.stringify(this.coin_info))
+          console.log(JSON.stringify(this.coin_info))
     },
     // exchange_list: function(){
     //   axios.get(exchange_list_api)
@@ -188,22 +187,22 @@ export default {
               }
 
       //각 거래소의 max_vol24 coin_cd값만 가져오기
-      for (const key in this.ex_trade[0]) {
-                coinCd.push(this.ex_trade[0][key].exchange_max_vol24_coin_id);
+      for (const key in this.ex_trade) {
+                coinCd.push(this.ex_trade[key].exchange_max_vol24_coin_id);
               }
 
       console.log(coinCd);
 
-      for (const key in this.ex_trade[0]) {
-        console.log("exchange_total["+key+"] : " + this.ex_trade[0][key].exchange_total);
-        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[0][key].exchange_max_vol24);
+      for (const key in this.ex_trade) {
+        console.log("exchange_total["+key+"] : " + this.ex_trade[key].exchange_total);
+        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[key].exchange_max_vol24);
       }
 
       let valStr = "";
       let valStrLen = "";
 
-      for (const key in this.ex_trade[0]) {
-        let ex_total = this.ex_trade[0][key].exchange_total;
+      for (const key in this.ex_trade) {
+        let ex_total = this.ex_trade[key].exchange_total;
         
         valStr = Math.round(ex_total);
         valStr = String(valStr);
@@ -246,11 +245,11 @@ export default {
             valStr = Number(ex_total).toFixed(1);
     			}
     		}
-        this.ex_trade[0][key].exchange_total = valStr;
+        this.ex_trade[key].exchange_total = valStr;
   }
 
-       for (const key in this.ex_trade[0]) {
-        let max_coin_price = this.ex_trade[0][key].exchange_max_vol24;
+       for (const key in this.ex_trade) {
+        let max_coin_price = this.ex_trade[key].exchange_max_vol24;
         
         valStr = Math.round(max_coin_price);
         valStr = String(valStr);
@@ -293,24 +292,26 @@ export default {
             valStr = Number(max_coin_price).toFixed(1);
     			}
     		}
-        this.ex_trade[0][key].exchange_max_vol24 = valStr;
+        this.ex_trade[key].exchange_max_vol24 = valStr;
   }
     
-    for (const key in this.ex_trade[0]) {
-        console.log("exchange_total["+key+"] : " + this.ex_trade[0][key].exchange_total);
-        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[0][key].exchange_max_vol24);
+    for (const key in this.ex_trade) {
+        console.log("exchange_total["+key+"] : " + this.ex_trade[key].exchange_total);
+        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[key].exchange_max_vol24);
       }
       
       
-      //console.log(JSON.stringify(this.coin_info));
+      console.log(JSON.stringify(this.coin_info));
        let coin_symbol = [];
        let coin_icon_url = [];
        for (var j = 0; j < coinCd.length; j++) {
          if(coinCd[j] == 0){
+           coin_symbol.push("-");
+           coin_icon_url.push("n/a");
            continue;
          }
-         coin_symbol.push(this.coin_info[0][coinCd[j]].symbol);
-         coin_icon_url.push(this.coin_info[0][coinCd[j]].coin_icon_url);
+         coin_symbol.push(this.coin_info[coinCd[j]].symbol);
+         coin_icon_url.push(this.coin_info[coinCd[j]].coin_icon_url);
 
        }
 
@@ -321,10 +322,10 @@ export default {
             arr["ex_name"] = this.ex_list[0][ex_cd[i]].exchange_name_eng;
             arr["ex_country"] = this.ex_list[0][ex_cd[i]].country_nm;
             arr["ex_cnt"] = this.ex_coin[i].cnt;
-            arr["exchange_total"] = this.ex_trade[0][ex_cd[i]].exchange_total;
+            arr["exchange_total"] = this.ex_trade[ex_cd[i]].exchange_total;
             arr["coin_icon_url"] = coin_icon_url[i];
             arr["coin_symbol"] = coin_symbol[i];
-            arr["ex_max_vol24"] = this.ex_trade[0][ex_cd[i]].exchange_max_vol24;
+            arr["ex_max_vol24"] = this.ex_trade[ex_cd[i]].exchange_max_vol24;
           
             console.log(arr);
             this.exchangeLeft.push(arr);
@@ -343,8 +344,8 @@ export default {
       //  this.exchange_trade_data();
       //  this.coin_map_list();
       this.exchange_api_data();
-      this.exchangeLeftData();
-      //  setTimeout(this.exchangeLeftData, 3000);
+      // this.exchangeLeftData();
+       setTimeout(this.exchangeLeftData, 5000);
     },
     beforeMount() {
       console.log("beforeMount");
