@@ -6,7 +6,7 @@
     <tr>
       <th>
         <span class="thSearch">
-          <button type="button" class="btnBookmark active">
+          <button v-on:click="bookmark" type="button" class="btnBookmark">
             <i class="fas fa-star"></i>
             <span>bookmark</span>
           </button>
@@ -27,7 +27,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in exchangeLeft" :key="item" class="bookmark">
+    <tr v-for="item in filterItems(exchangeLeft) " :key="item.ex_name">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <!-- <dt><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
@@ -37,11 +37,14 @@
         </dl>
       </td>
       <td>{{ item.ex_cnt }}</td> 
-      <td><em>$</em>{{ item.exchange_total }}<i>K</i></td>
+      <!-- <td><em>$</em>{{ item.exchange_total }}<i>K</i></td> -->
+      <td v-html="item.exchange_total"></td>
       <td>
         <!-- <span><img src="@/assets/img/ico_coin.png" alt=""> {{ item.coin_symbol }} : </span> -->
-        <span><img :src="item.coin_icon_url" alt=""> {{ item.coin_symbol }} : </span>
-        <span><em>$</em>{{ item.ex_max_vol24 }}<i>K</i></span>
+        <span><img :src="item.coin_icon_url" alt="">{{ item.coin_symbol }}</span>
+        <!-- <span><em>$</em>45 <i>K</i></span> -->
+        <!-- <span><em>$</em>{{ item.ex_max_vol24 }}<i>K</i></span> -->
+        <span v-html="item.ex_max_vol24"></span>
       </td>
     </tr>
   </tbody>
@@ -64,9 +67,18 @@
 const OFFSET = 60;
 
 import axios from 'axios'
-// import mcoinp from '@/assets/js/mcoinp.js'
-// import CmnUtil from '@/assets/js/CmnUtil.js'
-
+import numeral from 'numeral-es6'
+//import mcoinp from '@/assets/js/mcoinp.js'
+//import CmnUtil from '@/assets/js/CmnUtil.js'
+const GlobalLocale = {
+    qSymbol: '$',
+    rate: 1,
+    lang: 'en',
+    decimal: 'a', //['a': 3.14], ['b':3,14]
+    langList: {},
+    currList: {},
+    currency: '100001'
+}
 var ex_cd = [];
 var coinCd = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
@@ -90,7 +102,7 @@ export default {
 		}
 	},
   computed: {
-    
+
   },
   methods: {
     MobileDetailShow: function(){
@@ -110,75 +122,369 @@ export default {
         }
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
-    async exchange_api_data(){
+	bookmark: function(event){
+		console.log("bookmark");
+		console.log(event);
+
+		
+	},
+	filterItems: function(exchangeLeft){
+		
+		var searchText = this.searchText.toLowerCase();
+
+		if(searchText === ""){
+			return exchangeLeft;
+		}
+
+		return exchangeLeft.filter(function(item){
+			return item.ex_name.toLowerCase().indexOf(searchText) >= 0;
+		})
+	},
+    async exchangeLeftData(){
         const res1 = await axios.get(exchange_list_api)
           console.log("exchange_list")
-          console.log(res1)
+          //console.log(res1)
           this.ex_list.push(res1.data.exchange_list)
-          console.log(JSON.stringify(this.ex_list))
+          //console.log(JSON.stringify(this.ex_list))
         
         const res2 = await axios.get(coin_count_api)
           console.log("coin_count")
-          console.log(res2)
+          //console.log(res2)
           this.ex_coin = res2.data.exchangecntlist;
-          console.log(JSON.stringify(this.ex_coin))
+          //console.log(JSON.stringify(this.ex_coin))
 
         const res3 = await axios.get(exchange_trade_data_api)
           console.log("exchange_trade_data")
-          console.log(res3)
+          //console.log(res3)
           this.ex_trade = res3.data.data;
           console.log(JSON.stringify(this.ex_trade))
         
         const res4 = await axios.get(coin_map_list_api)
           console.log("coin_map_list")
-          console.log(res4)
+          //console.log(res4)
           this.coin_info = res4.data
-          console.log(JSON.stringify(this.coin_info))
+          //console.log(JSON.stringify(this.coin_info))
+
+        this.exchange();
     },
-    // exchange_list: function(){
-    //   axios.get(exchange_list_api)
-    //         .then(res => {
-    //           console.log("exchange_list");
-    //           console.log(res);
-    //           this.ex_list.push(res.data.exchange_list);
-    //           //console.log(JSON.stringify(this.ex_list));
-    //         })
-    //         .catch(error => console.error(error))  
-    // },
-    // coin_count: function(){
-    //   axios.get(coin_count_api)
-    //         .then(res => {
-    //           console.log("coin_count");
-    //           console.log(res);
-    //           this.ex_coin = res.data.exchangecntlist;
-    //           //console.log(this.ex_coin[37].cnt);
-    //         })
-    //         .catch(error => console.error(error))
-    // },
-    // exchange_trade_data: function(){
-      
-    //   axios.get(exchange_trade_data_api)
-    //         .then(res => {
-    //           console.log("exchange_trade_data_api");
-    //           console.log(res);
-    //           this.ex_trade.push(res.data.data);
-      
-    //    })
-    //    .catch(error => console.error(error))
-         
-    // },
-    // coin_map_list: function(){
-
-    //   axios.get(coin_map_list_api)
-    //         .then(res => {
-    //           console.log("coin_map_list");
-    //           console.log(res);
-    //           this.coin_info.push(res.data);
-    //    })
-    //    .catch(error => console.error(error))  
-
-    // },
-    exchangeLeftData: function(){
+    bigNumber: function(val){
+      /* eslint-disable no-mixed-spaces-and-tabs */
+      console.log("************");
+	  val = String(val);
+    	// console.log("val : " + val);
+    	// console.log("val.length : " + val.length);
+    	// console.log("val.length - 1 : " + val.length - 1);
+    	let tmp = val.charAt(val.length-1);
+    	// console.log("tmp : " + tmp);
+    	
+    	if(val === 'N/A' || val === '∞'){
+    		return val;
+    	}
+    	
+    	val = numeral(val).value();
+    	// console.log("numeral(val).value() : " +numeral(val).value());
+    	
+    	if(val === 0){
+    		return 'N/A';
+    	}
+    	
+		let valStr = "";
+		let valStrLen = "";
+		let tag = "";
+    	
+    	if(GlobalLocale.lang === 'ko'){
+    		
+    		if(tmp =='만'){
+    			val += '0000';
+    		}else if(tmp == '억'){
+    			val += '00000000';
+    		}else if(tmp == '조'){
+    			val += '000000000000';
+    		}else if(tmp == '경'){
+    			val += '0000000000000000';
+    		}
+    		
+    		valStr = Math.round(val)+"";
+    		valStrLen = valStr.length;
+    		tag = "";
+    		
+    		console.log("valStr : " + valStr);
+    		console.log("valStrLen : " + valStrLen);
+    		
+    		if(valStrLen >= 17){
+    			tag = " <span style='color:#ec9b2a'>경</span>"
+    				valStr = valStr.substring(0, valStrLen-16);
+    			if(valStr.length==1){
+    				
+    				valStr = (Number(val)/10000000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 13){
+    			tag = " <span style='color:#ec9b2a'>조</span>"
+    				valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+    				valStr = (Number(val)/1000000000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 9){
+    			tag = " <span style='color:#ec9b2a'>억</span>"
+    				valStr = valStr.substring(0, valStrLen-8);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/100000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 5){
+    			tag = " <span style='color:#ec9b2a'>만</span>"
+    				valStr = valStr.substring(0, valStrLen-4);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/10000).toFixed(1);
+    			}
+    		}else{
+    			// eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+    				valStr = Number(val).toFixed(1);
+    			}
+    		}
+//    		valStr = numeral(valStr).format('0,0');
+    	} else if(GlobalLocale.lang === 'zh'){
+    		
+    		if(tmp =='万'){
+    			val += '0000';
+    		}else if(tmp == '亿'){
+    			val += '00000000';
+    		}else if(tmp == '万亿'){
+    			val += '000000000000';
+    		}else if(tmp == '亿亿'){
+    			val += '0000000000000000';
+    		}
+    		
+    		valStr = Math.round(val)+"";
+    		valStrLen = valStr.length;
+    		tag = "";
+    		
+    		if(valStrLen >= 17){
+    			tag = " <span style='color:#ec9b2a'>亿亿</span>"
+    				valStr = valStr.substring(0, valStrLen-16);
+    			if(valStr.length==1){
+    				
+    				valStr = (Number(val)/10000000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 13){
+    			tag = " <span style='color:#ec9b2a'>万亿</span>"
+    				valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+    				valStr = (Number(val)/1000000000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 9){
+    			tag = " <span style='color:#ec9b2a'>亿</span>"
+    				valStr = valStr.substring(0, valStrLen-8);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/100000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 5){
+    			tag = " <span style='color:#ec9b2a'>万</span>"
+    				valStr = valStr.substring(0, valStrLen-4);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/10000).toFixed(1);
+    			}
+    		}else{
+    			// eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+    				valStr = Number(val).toFixed(1);
+    			}
+    		}
+//    		valStr = numeral(valStr).format('0,0');
+    	} else if(GlobalLocale.lang === 'ja'){
+    		
+    		if(tmp =='万'){
+    			val += '0000';
+    		}else if(tmp == '億'){
+    			val += '00000000';
+    		}else if(tmp == '兆'){
+    			val += '000000000000';
+    		}else if(tmp == '京'){
+    			val += '0000000000000000';
+    		}
+    		
+    		valStr = Math.round(val)+"";
+    		valStrLen = valStr.length;
+    		tag = "";
+    		
+    		if(valStrLen >= 17){
+    			tag = " <span style='color:#ec9b2a'>京</span>"
+    				valStr = valStr.substring(0, valStrLen-16);
+    			if(valStr.length==1){
+    				
+    				valStr = (Number(val)/10000000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 13){
+    			tag = " <span style='color:#ec9b2a'>兆</span>"
+    				valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+    				valStr = (Number(val)/1000000000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 9){
+    			tag = " <span style='color:#ec9b2a'>億</span>"
+    				valStr = valStr.substring(0, valStrLen-8);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/100000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 5){
+    			tag = " <span style='color:#ec9b2a'>万</span>"
+    				valStr = valStr.substring(0, valStrLen-4);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/10000).toFixed(1);
+    			}
+    		}else{
+    			// eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+    				valStr = Number(val).toFixed(1);
+    			}
+    		}
+//    		valStr = numeral(valStr).format('0,0');
+    	} else  if (GlobalLocale.lang === 'de'){
+    		
+    		if(tmp =='Tsd'){
+    			val += '000';
+    		}else if(tmp == 'Mio'){
+    			val += '000000';
+    		}else if(tmp == 'Mrd'){
+    			val += '000000000';
+    		}else if(tmp == 'Brd'){
+    			val += '000000000000';
+    		}
+    		
+    		valStr = Math.round(val)+"";
+    		valStrLen = valStr.length;
+    		tag = "";
+    		
+    		if(valStrLen >= 13){
+    			tag = " <span style='color:#ec9b2a'>Brd</span>"
+    				valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+    				
+    				valStr = (Number(val)/1000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 10){
+    			tag = " <span style='color:#ec9b2a'>Mrd</span>"
+    				valStr = valStr.substring(0, valStrLen-9);
+    			
+    			if(valStr.length==1){
+    				
+    				valStr = (Number(val)/1000000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 7){
+    			tag = " <span style='color:#ec9b2a'>Mio</span>"
+    				valStr = valStr.substring(0, valStrLen-6);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/1000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 4){
+    			tag = " <span style='color:#ec9b2a'>Tsd</span>"
+    				valStr = valStr.substring(0, valStrLen-3);
+    			
+    			if(valStr.length==1){
+    				valStr = (Number(val)/1000).toFixed(1);
+    			}
+    		}else{
+    			// eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+    				valStr = Number(val).toFixed(1);
+    			}
+    		}
+    		
+    	} else {
+    		//console.log("$$$$ tmp : " + tmp);
+    		if(tmp =='K'){
+    			val += '000';
+    		}else if(tmp == 'M'){
+    			val += '000000';
+    		}else if(tmp == 'B'){
+    			val += '000000000';
+    		}else if(tmp == 'T'){
+    			val += '000000000000';
+    		}
+    		
+    		valStr = Math.round(val)+"";
+    		valStrLen = valStr.length;
+    		tag = "";
+    		
+    		console.log("valStr : " + valStr);
+    		console.log("valStrLen : " + valStrLen);
+    		
+    		if(valStrLen >= 13){
+				// tag = " <span style='color:#ec9b2a'>T</span>"
+				tag = "<i data-v-7e64d089>T</i>"
+    				valStr = valStr.substring(0, valStrLen-12);
+    			if(valStr.length==1){
+					
+					valStr = (Number(val)/1000000000000).toFixed(1);
+    			}
+    			
+    		}else if(valStrLen >= 10){
+				// tag = " <span style='color:#ec9b2a'>B</span>"
+				tag = "<i data-v-7e64d089>B</i>"
+    				valStr = valStr.substring(0, valStrLen-9);
+    			
+    			if(valStr.length==1){
+					
+					valStr = (Number(val)/1000000000).toFixed(1);
+    				console.log("valStr.length==1 : " + valStr);
+    			}
+    		}else if(valStrLen >= 7){
+				// tag = " <span style='color:#ec9b2a'>M</span>"
+				tag = "<i data-v-7e64d089>M</i>"
+    				valStr = valStr.substring(0, valStrLen-6);
+    			
+    			if(valStr.length==1){
+					valStr = (Number(val)/1000000).toFixed(1);
+    			}
+    		}else if(valStrLen >= 4){
+				// tag = " <span style='color:#ec9b2a'>K</span>"
+				tag = "<i data-v-7e64d089>K</i>"
+    				valStr = valStr.substring(0, valStrLen-3);
+    			
+    			if(valStr.length==1){
+					valStr = (Number(val)/1000).toFixed(1);
+    			}
+    		}else{
+				// eslint-disable-next-line no-self-assign
+    			valStr = valStr;
+    			
+    			if(valStr.length==1){
+					valStr = Number(val).toFixed(1);
+    			}
+    		}
+    		
+    	}
+    	if ( valStr === '0.0' ) valStr = '<' + valStr;
+    	
+    	// if(GlobalLocale.decimal==='b'){
+			// 	valStr = CmnUtil.changer(valStr);
+        // }
+		console.log("valStr : " + valStr);
+    	
+    	// return '<sup style="color:#808080;">'+GlobalLocale.qSymbol+'</sup>' + valStr + tag;
+    	return '<em data-v-7e64d089>'+GlobalLocale.qSymbol+'</em>' + valStr + tag+'';
+    
+    },
+    exchange: function(){
       console.log("exchangeLeftData");
 
       //exchange_cd 값만 가져오기
@@ -194,123 +500,23 @@ export default {
       console.log(coinCd);
 
       for (const key in this.ex_trade) {
-        console.log("exchange_total["+key+"] : " + this.ex_trade[key].exchange_total);
-        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[key].exchange_max_vol24);
+         this.ex_trade[key].exchange_total = this.bigNumber(this.ex_trade[key].exchange_total);
+         this.ex_trade[key].exchange_max_vol24 = this.bigNumber(this.ex_trade[key].exchange_max_vol24);
+
+		 console.log("exchange_total : " + this.ex_trade[key].exchange_total);
+		 console.log("exchange_max_vol24 : " + this.ex_trade[key].exchange_max_vol24);
       }
 
-      let valStr = "";
-      let valStrLen = "";
 
-      for (const key in this.ex_trade) {
-        let ex_total = this.ex_trade[key].exchange_total;
-        
-        valStr = Math.round(ex_total);
-        valStr = String(valStr);
-        valStrLen = valStr.length;  
-        console.log("valStr : " + valStr);
-        console.log("valStrLen : " + valStrLen);
-      /* eslint-disable no-mixed-spaces-and-tabs */
-        if(valStrLen >= 13){
-          valStr = valStr.substring(0, valStrLen-12);
-    			if(valStr.length==1){
-            
-            valStr = (Number(ex_total)/1000000000000).toFixed(1);
-    			}
-    			
-    		}else if(valStrLen >= 10){
-          valStr = valStr.substring(0, valStrLen-9);
-    			
-    			if(valStr.length==1){
-            
-            valStr = (Number(ex_total)/1000000000).toFixed(1);
-    				console.log("valStr.length==1 : " + valStr);
-    			}
-    		}else if(valStrLen >= 7){
-          valStr = valStr.substring(0, valStrLen-6);
-    			
-    			if(valStr.length==1){
-            valStr = (Number(ex_total)/1000000).toFixed(1);
-    			}
-    		}else if(valStrLen >= 4){
-          valStr = valStr.substring(0, valStrLen-3);
-    			
-    			if(valStr.length==1){
-            valStr = (Number(ex_total)/1000).toFixed(1);
-    			}
-    		}else{
-          // eslint-disable-next-line no-self-assign
-    			valStr = valStr;
-    			
-    			if(valStr.length==1){
-            valStr = Number(ex_total).toFixed(1);
-    			}
-    		}
-        this.ex_trade[key].exchange_total = valStr;
-  }
-
-       for (const key in this.ex_trade) {
-        let max_coin_price = this.ex_trade[key].exchange_max_vol24;
-        
-        valStr = Math.round(max_coin_price);
-        valStr = String(valStr);
-        valStrLen = valStr.length;  
-        console.log("valStr : " + valStr);
-        console.log("valStrLen : " + valStrLen);
-      /* eslint-disable no-mixed-spaces-and-tabs */
-        if(valStrLen >= 13){
-          valStr = valStr.substring(0, valStrLen-12);
-    			if(valStr.length==1){
-            
-            valStr = (Number(max_coin_price)/1000000000000).toFixed(1);
-    			}
-    			
-    		}else if(valStrLen >= 10){
-          valStr = valStr.substring(0, valStrLen-9);
-    			
-    			if(valStr.length==1){
-            
-            valStr = (Number(max_coin_price)/1000000000).toFixed(1);
-    				console.log("valStr.length==1 : " + valStr);
-    			}
-    		}else if(valStrLen >= 7){
-          valStr = valStr.substring(0, valStrLen-6);
-    			
-    			if(valStr.length==1){
-            valStr = (Number(max_coin_price)/1000000).toFixed(1);
-    			}
-    		}else if(valStrLen >= 4){
-          valStr = valStr.substring(0, valStrLen-3);
-    			
-    			if(valStr.length==1){
-            valStr = (Number(max_coin_price)/1000).toFixed(1);
-    			}
-    		}else{
-          // eslint-disable-next-line no-self-assign
-    			valStr = valStr;
-    			
-    			if(valStr.length==1){
-            valStr = Number(max_coin_price).toFixed(1);
-    			}
-    		}
-        this.ex_trade[key].exchange_max_vol24 = valStr;
-  }
-    
-    for (const key in this.ex_trade) {
-        console.log("exchange_total["+key+"] : " + this.ex_trade[key].exchange_total);
-        console.log("exchange_max_vol24["+key+"] : " + this.ex_trade[key].exchange_max_vol24);
-      }
-      
-      
-      console.log(JSON.stringify(this.coin_info));
        let coin_symbol = [];
        let coin_icon_url = [];
        for (var j = 0; j < coinCd.length; j++) {
          if(coinCd[j] == 0){
            coin_symbol.push("-");
-           coin_icon_url.push("n/a");
+           coin_icon_url.push("");
            continue;
          }
-         coin_symbol.push(this.coin_info[coinCd[j]].symbol);
+         coin_symbol.push(this.coin_info[coinCd[j]].symbol + " : ");
          coin_icon_url.push(this.coin_info[coinCd[j]].coin_icon_url);
 
        }
@@ -331,7 +537,6 @@ export default {
             this.exchangeLeft.push(arr);
             
           }
-        //console.log(JSON.stringify(this.exchangeLeft));
 
     },
     
@@ -339,13 +544,7 @@ export default {
   
     created() {
       console.log("created");
-      //  this.exchange_list();
-      //  this.coin_count();
-      //  this.exchange_trade_data();
-      //  this.coin_map_list();
-      this.exchange_api_data();
-      // this.exchangeLeftData();
-       setTimeout(this.exchangeLeftData, 5000);
+      this.exchangeLeftData();
     },
     beforeMount() {
       console.log("beforeMount");
@@ -353,7 +552,9 @@ export default {
     },
     mounted(){
       console.log("mounted");
-    }
+    },
+	updated(){
+	}
   
 }
 </script>
