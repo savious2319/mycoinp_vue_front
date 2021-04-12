@@ -6,7 +6,7 @@
     <tr>
       <th>
         <span class="thSearch">
-          <button v-on:click="bookmark" type="button" class="btnBookmark">
+          <button v-on:click="bookmark" type="button" class="btnBookmark" v-bind:class="{active:isActive}">
             <i class="fas fa-star"></i>
             <span>bookmark</span>
           </button>
@@ -94,6 +94,7 @@ export default {
       coin_info: [],
       exchangeLeft: [],
       searchText: "",
+      isActive: false,
       isMobile : {
           wrap: false,
           scrollDown: true,
@@ -122,11 +123,13 @@ export default {
         }
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
-	bookmark: function(event){
+	bookmark: function(){
 		console.log("bookmark");
-		console.log(event);
-
-		
+		if(this.isActive == false){
+		this.isActive = true;
+		}else{
+			this.isActive = false;
+		}
 	},
 	filterItems: function(exchangeLeft){
 		
@@ -169,7 +172,7 @@ export default {
     },
     bigNumber: function(val){
       /* eslint-disable no-mixed-spaces-and-tabs */
-      console.log("************");
+    //   console.log("************");
 	  val = String(val);
     	// console.log("val : " + val);
     	// console.log("val.length : " + val.length);
@@ -478,7 +481,7 @@ export default {
     	// if(GlobalLocale.decimal==='b'){
 			// 	valStr = CmnUtil.changer(valStr);
         // }
-		console.log("valStr : " + valStr);
+		// console.log("valStr : " + valStr);
     	
     	// return '<sup style="color:#808080;">'+GlobalLocale.qSymbol+'</sup>' + valStr + tag;
     	return '<em data-v-7e64d089>'+GlobalLocale.qSymbol+'</em>' + valStr + tag+'';
@@ -533,7 +536,7 @@ export default {
             arr["coin_symbol"] = coin_symbol[i];
             arr["ex_max_vol24"] = this.ex_trade[ex_cd[i]].exchange_max_vol24;
           
-            console.log(arr);
+            //console.log(arr);
             this.exchangeLeft.push(arr);
             
           }
