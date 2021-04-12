@@ -31,7 +31,11 @@
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <!-- <dt><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
-          <dt><img :src="item.ex_image" alt=""></dt>
+          <!-- <dt><img :src="item.ex_image" alt=""></dt> -->
+          <button type="button" class="btnBookmark" style="display: none">	  
+ <i class="fas fa-star"></i>
+              <span>bookmark</span>
+            </button>
           <dd>{{ item.ex_name }}</dd>
           <dd>{{ item.ex_country }}</dd>
         </dl>
