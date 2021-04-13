@@ -32,7 +32,7 @@
         <dl class="col3" @click="MobileDetailShow">
           <!-- <dt v-if="image"><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
           <dt v-if="image"><img :src="item.ex_image" alt=""></dt>
-          <button v-on:click="bookmarkExchange(item)" type="button" class="btnBookmark" v-bind:class="{active:item.bookmarkStar}" v-if="display">	  
+          <button v-on:click="addRemoveFavExchanges(item)" type="button" class="btnBookmark" v-bind:class="{active:item.bookmarkStar}" v-if="display">	  
  <i class="fas fa-star"></i>
               <span>bookmark</span>
             </button>
@@ -87,11 +87,55 @@ const _ControlFlag = {
 		favMode : false,
 		favExList : [],
 }
+function isJson(str){
+		try{
+			JSON.parse(str);
+		}catch(e){
+			return false;
+		}
+		return true;
+	}
+var LocalStorage = {
+
+    get: function (name){
+        var tmp = localStorage.getItem(name);
+        
+		//console.log("%%%%tmp : " + tmp);
+
+        if(isJson(tmp)){
+            return JSON.parse(tmp);
+        }else{
+            return tmp;
+        }
+        
+    },
+    
+    set: function (name, value) {
+        if(value==null || undefined == typeof(value)){
+            return false;
+//        }else if('string' == typeof(value) || 'number' == typeof(value) ){
+            
+        }else if('object' == typeof(value)){
+//            console.log(value);
+            value = JSON.stringify(value);
+            
+        }
+        localStorage.setItem(name, value);
+        return true;
+    },
+    
+    remove: function (name){
+        localStorage.removeItem(name);
+    }
+
+}
+var _userIdKey = "myCoinpUserInfo";
 var ex_cd = [];
 var coinCd = [];
 let coin_symbol = [];
 let coin_icon_url = [];
 let tmpList = [];
+let _myCoinpUserInfo = new Object();
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
   let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
   let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
@@ -118,7 +162,7 @@ export default {
 		}
 	},
   computed: {
-
+	
   },
   methods: {
     MobileDetailShow: function(){
@@ -150,32 +194,27 @@ export default {
 			this.image = true;
 		}
 	},
-	bookmarkExchange: function(item){
+	addRemoveFavExchanges: function(item){
 		console.log("bookmarkExchange")
 
 			let preList = [];
 			let postList = [];
 			
 		if(item.bookmarkStar == false){
-
+			console.log("false");
 			item.bookmarkStar = true;
 			item.isBookmarked = true;
 
 			_ControlFlag.favExList.push(item);
 
-			for (var i = 0; i < this.exchangeLeft.length; i++) {
-				if(this.exchangeLeft[i].bookmarkStar == true){
-					preList.push(this.exchangeLeft[i]);
-				}else{
-					postList.push(this.exchangeLeft[i]);
-				}
-			}
-
-			this.exchangeLeft = preList.concat(postList);
-
 		}else{
 			item.bookmarkStar = false;
 			item.isBookmarked = false;
+
+			_ControlFlag.favExList.splice(item, 1);
+		}
+			_myCoinpUserInfo["acFavEx"] = _ControlFlag.favExList;
+			LocalStorage.set(_userIdKey, _myCoinpUserInfo);
 
 			for (var j = 0; j < this.exchangeLeft.length; j++) {
 				if(tmpList[j].bookmarkStar == true){
@@ -187,7 +226,6 @@ export default {
 			
 			let modList = preList.concat(postList);
 			this.exchangeLeft = modList;
-		}
 
 	},
 	filterItems: function(exchangeLeft){
@@ -199,6 +237,9 @@ export default {
 		}
 
 		return exchangeLeft.filter(function(item){
+			// console.log("item.ex_name : " + item.ex_name.toLowerCase());
+			// console.log("item.ex_name index : " + item.ex_name.toLowerCase().indexOf(searchText));
+			// console.log("searchText : " + searchText);
 			return item.ex_name.toLowerCase().indexOf(searchText) >= 0;
 		})
 	},
@@ -219,7 +260,7 @@ export default {
           console.log("exchange_trade_data")
           //console.log(res3)
           this.ex_trade = res3.data.data;
-          console.log(JSON.stringify(this.ex_trade))
+          //console.log(JSON.stringify(this.ex_trade))
         
         const res4 = await axios.get(coin_map_list_api)
           console.log("coin_map_list")
@@ -581,7 +622,8 @@ export default {
        }
 
        for (var i = 0; i < ex_cd.length; i++) {
-              let arr = {};
+		   let arr = {};
+			
             arr["ex_code"] = this.ex_list[0][ex_cd[i]].exchange_cd;
             arr["ex_img"] = this.ex_list[0][ex_cd[i]].reqHash;
             arr["ex_name"] = this.ex_list[0][ex_cd[i]].exchange_name_eng;
@@ -593,24 +635,54 @@ export default {
             arr["ex_max_vol24"] = this.ex_trade[ex_cd[i]].exchange_max_vol24;
 			arr["bookmarkStar"] = false;
 			arr["isBookmarked"] = false;
-          
+
             //console.log(arr);
-            this.exchangeLeft.push(arr);
+			tmpList.push(arr);
+		}
+		// console.log(JSON.stringify(tmpList));
 
-			tmpList = this.exchangeLeft;
+		// this.exchangeLeft = tmpList;
+
+		_myCoinpUserInfo = LocalStorage.get(_userIdKey);
+		 _ControlFlag.favExList = _myCoinpUserInfo["acFavEx"];
+			
+		let preList = [];
+		let postList = [];
+		let cnt = 0;
+			if(_ControlFlag.favExList.length != 0){
+				for (var k = 0; k < tmpList.length; k++) {
+					cnt = 0;
+					console.log("ex_code : " + tmpList[k].ex_code)
+					for (var r = 0; r < _ControlFlag.favExList.length; r++) {
+						console.log("favExList : " + _ControlFlag.favExList[r].ex_code)
+						if(_ControlFlag.favExList[r].ex_code == tmpList[k].ex_code){
+							tmpList[k] = _ControlFlag.favExList[r];
+							preList.push(tmpList[k]);
+							console.log(preList);
+						}else{
+							cnt++;
+						}
+					}
+					// console.log("cnt : " + cnt);
+					if(cnt == _ControlFlag.favExList.length){
+						postList.push(tmpList[k]);
+						console.log(postList);
+					}
+				}
+				this.exchangeLeft = preList.concat(postList);
+			}else{
+				this.exchangeLeft = tmpList;
+			}
             
-          }
-
     },
-    
   },
   
     created() {
-      console.log("created");
+		console.log("created");
       this.exchangeLeftData();
     },
     beforeMount() {
-      console.log("beforeMount");
+		console.log("beforeMount");
       
     },
     mounted(){
@@ -624,6 +696,7 @@ export default {
 	}
   
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
