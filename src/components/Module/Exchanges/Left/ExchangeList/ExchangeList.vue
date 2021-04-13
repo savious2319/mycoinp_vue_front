@@ -6,7 +6,7 @@
     <tr>
       <th>
         <span class="thSearch">
-          <button v-on:click="bookmark" type="button" class="btnBookmark" v-bind:class="{active:isActive}">
+          <button v-on:click="showBookmark" type="button" class="btnBookmark" v-bind:class="{active:isActive}">
             <i class="fas fa-star"></i>
             <span>bookmark</span>
           </button>
@@ -27,12 +27,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="item in filterItems(exchangeLeft) " :key="item.ex_name">
+    <tr v-for="item in filterItems(exchangeLeft) " :key="item.ex_name" v-bind:class="{bookmark:item.isBookmarked}">
       <td>
         <dl class="col3" @click="MobileDetailShow">
           <!-- <dt v-if="image"><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
           <dt v-if="image"><img :src="item.ex_image" alt=""></dt>
-          <button type="button" class="btnBookmark" v-bind:class="{active:isBookmark}" v-if="display">	  
+          <button v-on:click="bookmarkExchange(item)" type="button" class="btnBookmark" v-bind:class="{active:item.bookmarkStar}" v-if="display">	  
  <i class="fas fa-star"></i>
               <span>bookmark</span>
             </button>
@@ -85,6 +85,8 @@ const GlobalLocale = {
 }
 var ex_cd = [];
 var coinCd = [];
+let coin_symbol = [];
+let coin_icon_url = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
   let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
   let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
@@ -99,7 +101,8 @@ export default {
       exchangeLeft: [],
       searchText: "",
       isActive: false,
-      isBookmark: false,
+      isBookmarked: false,
+      bookmarkStar: false,
       display: false,
       image: true,
       isMobile : {
@@ -130,7 +133,7 @@ export default {
         }
         this.isMobile.scrollDown = e.target.scrollTop < 500;
     },
-	bookmark: function(){
+	showBookmark: function(){
 		console.log("bookmark");
 		if(this.isActive == false){
 			this.isActive = true;
@@ -140,6 +143,32 @@ export default {
 			this.isActive = false;
 			this.display = false;
 			this.image = true;
+		}
+	},
+	bookmarkExchange: function(item){
+		console.log("bookmarkExchange")
+		// let sortedList = [];
+
+		if(item.bookmarkStar == false){
+			item.bookmarkStar = true;
+			item.isBookmarked = true;
+
+			let preList = [];
+			let postList = [];
+			for (var i = 0; i < this.exchangeLeft.length; i++) {
+				if(this.exchangeLeft[i].bookmarkStar == true){
+					preList.push(this.exchangeLeft[i]);
+				}else{
+					postList.push(this.exchangeLeft[i]);
+				}
+			}
+			this.exchangeLeft = preList.concat(postList);
+
+			console.log(JSON.stringify(this.exchangeLeft));
+			
+		}else{
+			item.bookmarkStar = false;
+			item.isBookmarked = false;
 		}
 	},
 	filterItems: function(exchangeLeft){
@@ -521,9 +550,6 @@ export default {
 		 console.log("exchange_max_vol24 : " + this.ex_trade[key].exchange_max_vol24);
       }
 
-
-       let coin_symbol = [];
-       let coin_icon_url = [];
        for (var j = 0; j < coinCd.length; j++) {
          if(coinCd[j] == 0){
            coin_symbol.push("-");
@@ -537,7 +563,7 @@ export default {
 
        for (var i = 0; i < ex_cd.length; i++) {
               let arr = {};
-            arr["ex_code"] = this.ex_list[0][ex_cd[i]].exchange_cd;  
+            arr["ex_code"] = this.ex_list[0][ex_cd[i]].exchange_cd;
             arr["ex_img"] = this.ex_list[0][ex_cd[i]].reqHash;
             arr["ex_name"] = this.ex_list[0][ex_cd[i]].exchange_name_eng;
             arr["ex_country"] = this.ex_list[0][ex_cd[i]].country_nm;
@@ -546,6 +572,8 @@ export default {
             arr["coin_icon_url"] = coin_icon_url[i];
             arr["coin_symbol"] = coin_symbol[i];
             arr["ex_max_vol24"] = this.ex_trade[ex_cd[i]].exchange_max_vol24;
+			arr["bookmarkStar"] = false;
+			arr["isBookmarked"] = false;
           
             //console.log(arr);
             this.exchangeLeft.push(arr);
@@ -567,7 +595,11 @@ export default {
     mounted(){
       console.log("mounted");
     },
+	beforeUpdate(){
+		console.log("beforeUpdate");
+	},
 	updated(){
+		console.log("updated");
 	}
   
 }
