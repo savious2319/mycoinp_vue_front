@@ -83,10 +83,15 @@ const GlobalLocale = {
     currList: {},
     currency: '100001'
 }
+const _ControlFlag = {
+		favMode : false,
+		favExList : [],
+}
 var ex_cd = [];
 var coinCd = [];
 let coin_symbol = [];
 let coin_icon_url = [];
+let tmpList = [];
   let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
   let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
   let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
@@ -147,14 +152,17 @@ export default {
 	},
 	bookmarkExchange: function(item){
 		console.log("bookmarkExchange")
-		// let sortedList = [];
-
-		if(item.bookmarkStar == false){
-			item.bookmarkStar = true;
-			item.isBookmarked = true;
 
 			let preList = [];
 			let postList = [];
+			
+		if(item.bookmarkStar == false){
+
+			item.bookmarkStar = true;
+			item.isBookmarked = true;
+
+			_ControlFlag.favExList.push(item);
+
 			for (var i = 0; i < this.exchangeLeft.length; i++) {
 				if(this.exchangeLeft[i].bookmarkStar == true){
 					preList.push(this.exchangeLeft[i]);
@@ -162,14 +170,25 @@ export default {
 					postList.push(this.exchangeLeft[i]);
 				}
 			}
+
 			this.exchangeLeft = preList.concat(postList);
 
-			console.log(JSON.stringify(this.exchangeLeft));
-			
 		}else{
 			item.bookmarkStar = false;
 			item.isBookmarked = false;
+
+			for (var j = 0; j < this.exchangeLeft.length; j++) {
+				if(tmpList[j].bookmarkStar == true){
+					preList.push(tmpList[j]);
+				}else{
+					postList.push(tmpList[j]);
+				}
+			}
+			
+			let modList = preList.concat(postList);
+			this.exchangeLeft = modList;
 		}
+
 	},
 	filterItems: function(exchangeLeft){
 		
@@ -577,6 +596,8 @@ export default {
           
             //console.log(arr);
             this.exchangeLeft.push(arr);
+
+			tmpList = this.exchangeLeft;
             
           }
 
