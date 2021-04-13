@@ -30,9 +30,9 @@
     <tr v-for="item in filterItems(exchangeLeft) " :key="item.ex_name">
       <td>
         <dl class="col3" @click="MobileDetailShow">
-          <!-- <dt><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
-          <!-- <dt><img :src="item.ex_image" alt=""></dt> -->
-          <button type="button" class="btnBookmark" style="display: none">	  
+          <!-- <dt v-if="image"><img src="@/assets/img/ico_coin.png" alt=""></dt> -->
+          <dt v-if="image"><img :src="item.ex_image" alt=""></dt>
+          <button type="button" class="btnBookmark" v-bind:class="{active:isBookmark}" v-if="display">	  
  <i class="fas fa-star"></i>
               <span>bookmark</span>
             </button>
@@ -99,6 +99,9 @@ export default {
       exchangeLeft: [],
       searchText: "",
       isActive: false,
+      isBookmark: false,
+      display: false,
+      image: true,
       isMobile : {
           wrap: false,
           scrollDown: true,
@@ -130,9 +133,13 @@ export default {
 	bookmark: function(){
 		console.log("bookmark");
 		if(this.isActive == false){
-		this.isActive = true;
+			this.isActive = true;
+			this.display = true;
+			this.image = false;
 		}else{
 			this.isActive = false;
+			this.display = false;
+			this.image = true;
 		}
 	},
 	filterItems: function(exchangeLeft){
