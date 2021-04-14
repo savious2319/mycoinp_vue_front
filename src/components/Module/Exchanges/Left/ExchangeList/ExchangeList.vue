@@ -131,15 +131,14 @@ var LocalStorage = {
 }
 var _userIdKey = "myCoinpUserInfo";
 var ex_cd = [];
-var coinCd = [];
 let coin_symbol = [];
 let coin_icon_url = [];
 let tmpList = [];
 let _myCoinpUserInfo = new Object();
-  let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
-  let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
-  let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
-  let coin_map_list_api = "http://192.168.1.115:18100/mpi/allcoin/coin-light";
+let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
+let coin_count_api = "http://192.168.1.115:18100/mpi/exchange/coin-exchange-count?exchange_list=28,31,11,13,26,21,8,5,34,37,1,2,3,9,10,12,17,18,19,22,23,24,25,29,30,32,35,36,39,40,41,42,43,44,45,46,47,48";
+let exchange_trade_data_api = "http://192.168.1.115:18100/mpi/exchange/trade-data";
+let coin_map_list_api = "http://192.168.1.115:18100/mpi/allcoin/coin-light";
 export default {
   data () {
 		return {
@@ -252,7 +251,7 @@ export default {
           console.log("coin_count")
           //console.log(res2)
           this.ex_coin = res2.data.exchangecntlist;
-          //console.log(JSON.stringify(this.ex_coin))
+          console.log(JSON.stringify(this.ex_coin))
 
         const res3 = await axios.get(exchange_trade_data_api)
           console.log("exchange_trade_data")
@@ -593,6 +592,7 @@ export default {
                 ex_cd.push(key);
               }
 
+	var coinCd = [];
       //각 거래소의 max_vol24 coin_cd값만 가져오기
       for (const key in this.ex_trade) {
                 coinCd.push(this.ex_trade[key].exchange_max_vol24_coin_id);
@@ -606,7 +606,12 @@ export default {
 
 		 console.log("exchange_total : " + this.ex_trade[key].exchange_total);
 		 console.log("exchange_max_vol24 : " + this.ex_trade[key].exchange_max_vol24);
+		 console.log("=================================================================")
       }
+	
+	for (var s = 0; s < this.ex_coin.length; s++) {
+		console.log(this.ex_coin[s].cnt);
+	}
 
        for (var j = 0; j < coinCd.length; j++) {
          if(coinCd[j] == 0){
@@ -627,6 +632,7 @@ export default {
             arr["ex_name"] = this.ex_list[0][ex_cd[i]].exchange_name_eng;
             arr["ex_country"] = this.ex_list[0][ex_cd[i]].country_nm;
             arr["ex_cnt"] = this.ex_coin[i].cnt;
+            // arr["ex_cnt"] = this.ex_list[0][ex_cd[i]].country_nm;
             arr["exchange_total"] = this.ex_trade[ex_cd[i]].exchange_total;
             arr["coin_icon_url"] = coin_icon_url[i];
             arr["coin_symbol"] = coin_symbol[i];
