@@ -201,7 +201,6 @@ export default {
 			let postList = [];
 			
 		if(item.bookmarkStar == false){
-			console.log("false");
 			item.bookmarkStar = true;
 			item.isBookmarked = true;
 
@@ -224,8 +223,7 @@ export default {
 				}
 			}
 			
-			let modList = preList.concat(postList);
-			this.exchangeLeft = modList;
+			this.exchangeLeft = preList.concat(postList);
 
 	},
 	filterItems: function(exchangeLeft){
@@ -644,7 +642,12 @@ export default {
 		// this.exchangeLeft = tmpList;
 
 		_myCoinpUserInfo = LocalStorage.get(_userIdKey);
-		 _ControlFlag.favExList = _myCoinpUserInfo["acFavEx"];
+
+		if(_myCoinpUserInfo == null){
+			_myCoinpUserInfo = new Object();
+			this.exchangeLeft = tmpList;
+		}else{
+		_ControlFlag.favExList = _myCoinpUserInfo["acFavEx"];
 			
 		let preList = [];
 		let postList = [];
@@ -673,7 +676,8 @@ export default {
 			}else{
 				this.exchangeLeft = tmpList;
 			}
-            
+		
+		}
     },
   },
   
