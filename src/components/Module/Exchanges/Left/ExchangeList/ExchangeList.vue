@@ -130,9 +130,6 @@ var LocalStorage = {
 
 }
 var _userIdKey = "myCoinpUserInfo";
-var ex_cd = [];
-let coin_symbol = [];
-let coin_icon_url = [];
 let tmpList = [];
 let _myCoinpUserInfo = new Object();
 let exchange_list_api = "http://192.168.1.115:18100/mpi/common/exchange/list";
@@ -587,10 +584,14 @@ export default {
     exchange: function(){
       console.log("exchangeLeftData");
 
+	tmpList = [];
+
+	var ex_cd = [];
       //exchange_cd 값만 가져오기
       for (const key in this.ex_list[0]) {
                 ex_cd.push(key);
               }
+	console.log(ex_cd)
 
 	var coinCd = [];
       //각 거래소의 max_vol24 coin_cd값만 가져오기
@@ -608,10 +609,9 @@ export default {
 		 console.log("exchange_max_vol24 : " + this.ex_trade[key].exchange_max_vol24);
 		 console.log("=================================================================")
       }
-	
-	for (var s = 0; s < this.ex_coin.length; s++) {
-		console.log(this.ex_coin[s].cnt);
-	}
+
+	let coin_symbol = [];
+	let coin_icon_url = [];
 
        for (var j = 0; j < coinCd.length; j++) {
          if(coinCd[j] == 0){
@@ -624,6 +624,11 @@ export default {
 
        }
 
+		console.log("coin_symbol : " + coin_symbol)
+		console.log("coin_icon_url : " + coin_icon_url)
+
+		console.log("-----------------------" +ex_cd.length)
+
        for (var i = 0; i < ex_cd.length; i++) {
 		   let arr = {};
 			
@@ -631,8 +636,7 @@ export default {
             arr["ex_img"] = this.ex_list[0][ex_cd[i]].reqHash;
             arr["ex_name"] = this.ex_list[0][ex_cd[i]].exchange_name_eng;
             arr["ex_country"] = this.ex_list[0][ex_cd[i]].country_nm;
-            arr["ex_cnt"] = this.ex_coin[i].cnt;
-            // arr["ex_cnt"] = this.ex_list[0][ex_cd[i]].country_nm;
+			arr["ex_cnt"] = this.ex_coin[i].cnt;
             arr["exchange_total"] = this.ex_trade[ex_cd[i]].exchange_total;
             arr["coin_icon_url"] = coin_icon_url[i];
             arr["coin_symbol"] = coin_symbol[i];
@@ -643,7 +647,7 @@ export default {
             //console.log(arr);
 			tmpList.push(arr);
 		}
-		// console.log(JSON.stringify(tmpList));
+		// console.log("tmpList &&&&&&&&&&&&&&&&: " + JSON.stringify(tmpList));
 
 		// this.exchangeLeft = tmpList;
 
